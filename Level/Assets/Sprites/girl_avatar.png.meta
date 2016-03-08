@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c33c69e106abf4ef9b44629241b4a286
-timeCreated: 1457042435
+timeCreated: 1457461521
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -11,6 +11,7 @@ TextureImporter:
     21300008: girl_avatar_4
     21300010: girl_avatar_5
     21300012: girl_avatar_6
+    21300014: girl_avatar_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -162,6 +163,21 @@ TextureImporter:
         - {x: -51.5, y: -121}
         - {x: 51.5, y: -121}
         - {x: 51.5, y: 121}
+    - name: girl_avatar_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 284
+        width: 204
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 140}
+        - {x: -102, y: -140}
+        - {x: 102, y: -140}
+        - {x: 102, y: 140}
     outline: []
   spritePackingTag: 
   userData: 
