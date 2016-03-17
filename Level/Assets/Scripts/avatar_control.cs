@@ -29,6 +29,7 @@ public class avatar_control : MonoBehaviour {
 		//updating speed characteristic
 		anim.speed = 1f * speed;
 		var v = Input.GetAxis ("Horizontal");
+		Debug.Log (v);
 		isMoving = false;
 		//character movement across horizontal plane, only if grounded
 		if (rb.velocity.y == 0) {
