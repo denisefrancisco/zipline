@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 91f4e212b6cfb414ca9d734abb3ca19b
+timeCreated: 1458241437
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Boy-Ingame-1TOBEANIMATED_0
+    21300002: Boy-Ingame-1TOBEANIMATED_1
+    21300004: Boy-Ingame-1TOBEANIMATED_2
+    21300006: Boy-Ingame-1TOBEANIMATED_3
+    21300008: Boy-Ingame-1TOBEANIMATED_4
+    21300010: Boy-Ingame-1TOBEANIMATED_5
+    21300012: Boy-Ingame-1TOBEANIMATED_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Boy-Ingame-1TOBEANIMATED_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 550
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: 144.5}
+        - {x: 41, y: 151.5}
+        - {x: -5, y: 151.5}
+        - {x: -51, y: 142.5}
+        - {x: -67, y: 66.5}
+        - {x: -141, y: -5.5}
+        - {x: -141, y: -88.5}
+        - {x: -128, y: -151.5}
+        - {x: -5, y: -151.5}
+        - {x: 106, y: 57.5}
+        - {x: 141, y: 84.5}
+        - {x: 141, y: 120.5}
+    - name: Boy-Ingame-1TOBEANIMATED_1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 193
+        width: 450
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 115.647675, y: 140.7764}
+        - {x: 115.647675, y: 168.7764}
+        - {x: -90.352325, y: 168.7764}
+        - {x: -79.352325, y: 33.776398}
+        - {x: -109.352325, y: -68.2236}
+        - {x: -115.352325, y: -92.2236}
+        - {x: -115.352325, y: -149.2236}
+        - {x: -87.352325, y: -167.2236}
+        - {x: -51.352325, y: -167.2236}
+        - {x: 115.647675, y: -77.2236}
+        - {x: 115.647675, y: -29.223602}
+        - {x: 106.647675, y: 46.776398}
+    - name: Boy-Ingame-1TOBEANIMATED_2
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 298
+        width: 424
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.853333, y: -152.98512}
+        - {x: -60.853333, y: -156.98512}
+        - {x: -40.853333, y: -171.98512}
+        - {x: -14.8533325, y: -170.98512}
+        - {x: 108.14667, y: -44.985123}
+        - {x: 109.14667, y: -32.985123}
+        - {x: 109.14667, y: 174.01488}
+        - {x: -55.853333, y: 174.01488}
+        - {x: -108.85333, y: 114.01488}
+        - {x: -108.85333, y: -168.98512}
+        - {x: -79.85333, y: -172.98512}
+        - {x: -65.85333, y: -172.98512}
+        - {x: -62.853333, y: -167.98512}
+        - {x: -62.853333, y: -156.98512}
+        - {x: -63.853333, y: -155.98512}
+    - name: Boy-Ingame-1TOBEANIMATED_3
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 335
+        width: 615
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 158.29437, y: -72.54872}
+        - {x: 72.29437, y: -16.548721}
+        - {x: 45.294373, y: 79.45128}
+        - {x: -13.705627, y: 138.45128}
+        - {x: -40.705627, y: 164.45128}
+        - {x: -111.70563, y: 164.45128}
+        - {x: -133.70563, y: 135.45128}
+        - {x: -157.70563, y: 78.45128}
+        - {x: -157.70563, y: 12.451279}
+        - {x: -146.70563, y: 1.4512787}
+        - {x: -89.70563, y: -58.54872}
+        - {x: -39.705627, y: -163.54872}
+        - {x: 15.294373, y: -163.54872}
+        - {x: 26.294373, y: -157.54872}
+        - {x: 111.29437, y: -135.54872}
+        - {x: 130.29437, y: -134.54872}
+        - {x: 158.29437, y: -104.54872}
+    - name: Boy-Ingame-1TOBEANIMATED_4
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 132
+        width: 551
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 142.41382, y: 168.05692}
+        - {x: 142.41382, y: 192.05692}
+        - {x: -15.586182, y: 192.05692}
+        - {x: -64.58618, y: 132.05692}
+        - {x: -66.58618, y: 55.056915}
+        - {x: -139.58618, y: 93.056915}
+        - {x: -140.58618, y: 92.056915}
+        - {x: -140.58618, y: 68.056915}
+        - {x: -101.58618, y: 33.056915}
+        - {x: -74.58618, y: -41.943085}
+        - {x: -84.58618, y: -179.94308}
+        - {x: -42.58618, y: -190.94308}
+        - {x: 21.413818, y: -190.94308}
+        - {x: 35.41382, y: -33.943085}
+        - {x: 136.41382, y: 43.056915}
+        - {x: 114.41382, y: 129.05692}
+    - name: Boy-Ingame-1TOBEANIMATED_5
+      rect:
+        serializedVersion: 2
+        x: 2962
+        y: 134
+        width: 551
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.563599, y: -58.919495}
+        - {x: -29.563599, y: -60.919495}
+        - {x: -14.563599, y: -88.919495}
+        - {x: 142.4364, y: 80.080505}
+        - {x: 142.4364, y: 121.080505}
+        - {x: 87.4364, y: 152.0805}
+        - {x: 78.4364, y: 153.0805}
+        - {x: -27.563599, y: 153.0805}
+        - {x: -59.5636, y: 97.080505}
+        - {x: -140.5636, y: -1.9194946}
+        - {x: -140.5636, y: -103.919495}
+        - {x: -119.5636, y: -151.9195}
+        - {x: -41.5636, y: -151.9195}
+        - {x: -30.563599, y: -66.919495}
+        - {x: -29.563599, y: -61.919495}
+    - name: Boy-Ingame-1TOBEANIMATED_6
+      rect:
+        serializedVersion: 2
+        x: 3666
+        y: 110
+        width: 334
+        height: 675
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.23999, y: 173.29744}
+        - {x: -82.76001, y: 173.29744}
+        - {x: -85.76001, y: 171.29744}
+        - {x: -85.76001, y: 82.29744}
+        - {x: -78.76001, y: 54.29744}
+        - {x: -58.76001, y: -121.70256}
+        - {x: -46.76001, y: -124.70256}
+        - {x: -35.76001, y: -107.70256}
+        - {x: -56.76001, y: -172.70256}
+        - {x: 56.23999, y: -172.70256}
+        - {x: 86.23999, y: -15.70256}
+        - {x: 86.23999, y: 159.29744}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

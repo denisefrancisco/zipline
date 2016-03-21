@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 8a96911433f23423abf1af160d5165ca
+timeCreated: 1458314929
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TallFlowerTable_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TallFlowerTable_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1
+        width: 586
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 266, y: -179}
+        - {x: 267, y: -178}
+        - {x: 267, y: -97}
+        - {x: 265, y: -95}
+        - {x: 230, y: -94}
+        - {x: 168, y: -94}
+        - {x: 167, y: -93}
+        - {x: 42, y: -92}
+        - {x: 41, y: -91}
+        - {x: 34, y: -91}
+        - {x: 34, y: -78}
+        - {x: 31, y: -33}
+        - {x: 20, y: 139}
+        - {x: 20, y: 152}
+        - {x: 31, y: 212}
+        - {x: 35, y: 232}
+        - {x: 48, y: 246}
+        - {x: 60, y: 262}
+        - {x: 61, y: 265}
+        - {x: 51, y: 292}
+        - {x: 46, y: 297}
+        - {x: 44, y: 297}
+        - {x: 28, y: 286}
+        - {x: 22, y: 281}
+        - {x: 24, y: 320}
+        - {x: 25, y: 342}
+        - {x: 22, y: 346}
+        - {x: 7, y: 355}
+        - {x: -2, y: 360}
+        - {x: -10, y: 360}
+        - {x: -14, y: 350}
+        - {x: -24, y: 308}
+        - {x: -25, y: 301}
+        - {x: -23, y: 298}
+        - {x: -5, y: 283}
+        - {x: -6, y: 262}
+        - {x: -9, y: 205}
+        - {x: -11, y: 165}
+        - {x: -14, y: 147}
+        - {x: -15, y: 139}
+        - {x: -17, y: 119}
+        - {x: -37, y: -79}
+        - {x: -38, y: -90}
+        - {x: -85, y: -89}
+        - {x: -147, y: -89}
+        - {x: -148, y: -88}
+        - {x: -210, y: -88}
+        - {x: -211, y: -87}
+        - {x: -256, y: -87}
+        - {x: -258, y: -89}
+        - {x: -258, y: -101}
+        - {x: -257, y: -114}
+        - {x: -248, y: -229}
+        - {x: -245, y: -267}
+        - {x: -239, y: -340}
+        - {x: -238, y: -356}
+        - {x: -293, y: -356}
+        - {x: -293, y: -360}
+        - {x: 293, y: -360}
+        - {x: 293, y: -356}
+        - {x: 266, y: -356}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
