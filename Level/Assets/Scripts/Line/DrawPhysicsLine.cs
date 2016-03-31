@@ -47,7 +47,7 @@ public class DrawPhysicsLine : MonoBehaviour
 		line = new GameObject("Line").AddComponent<LineRenderer>();
 		line.material = new Material(Shader.Find("Diffuse"));
 		line.SetVertexCount(2);
-		line.SetWidth(0.35f,0.35f);
+		line.SetWidth(0.25f,0.25f);
 		line.SetColors(Color.black, Color.black);
 		line.useWorldSpace = true;
 	}
@@ -57,7 +57,7 @@ public class DrawPhysicsLine : MonoBehaviour
 		BoxCollider2D col = new GameObject("Collider").AddComponent<BoxCollider2D> ();
 		col.transform.parent = line.transform; // Collider is added as child object of line
 		float lineLength = Vector3.Distance (startPos, endPos); // length of line
-		col.size = new Vector3 (lineLength, 0.35f,1f); // size of collider is set where X is length of line, Y is width of line, Z will be set as per requirement
+		col.size = new Vector3 (lineLength, 0.25f,1f); // size of collider is set where X is length of line, Y is width of line, Z will be set as per requirement
 		Vector3 midPoint = (startPos + endPos)/2;
 		col.transform.position = midPoint; // setting position of collider object
 		// Following lines calculate the angle between startPos and endPos
@@ -69,4 +69,5 @@ public class DrawPhysicsLine : MonoBehaviour
 		angle = Mathf.Rad2Deg * Mathf.Atan (angle);
 		col.transform.Rotate (0, 0, angle);
 	}
+	 
 }
