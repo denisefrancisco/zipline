@@ -18,21 +18,23 @@ public class button_for_customizing : MonoBehaviour {
 		clothes [1] = "girl_purple";
 		clothes [2] = "girl_blue";
 		reset_clothes ();
-		first_cloth = transform.Find (clothes [0]);
-		first_cloth.gameObject.SetActive(true);
+//		first_cloth = transform.Find (clothes [0]);
+//		first_cloth.gameObject.SetActive(true);
 		lButton.transform.position = new Vector3 (lButton.transform.position.x, lButton.transform.position.y, 10000);
 		index = 0;
 	}
 
 	public void next_clothing(){
+		
 		if (index == 0) {
 			transform.Find(clothes[index]).gameObject.SetActive(true);
 		}
-		if (index != 0) {
+		else if (index != 0) {
 			transform.Find(clothes[index]).gameObject.SetActive(true);
 			transform.Find(clothes[index-1]).gameObject.SetActive(false);
 		}
 		index++;
+
 
 	}
 
