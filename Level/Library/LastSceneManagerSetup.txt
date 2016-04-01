@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/zipline_avatar_customization.unity
+- path: Assets/Scenes/male_character_customization.unity
   isLoaded: 1
   isActive: 1
