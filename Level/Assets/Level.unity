@@ -1668,6 +1668,7 @@ GameObject:
   - 4: {fileID: 1031095400}
   - 212: {fileID: 1031095403}
   - 114: {fileID: 1031095402}
+  - 58: {fileID: 1031095401}
   m_Layer: 0
   m_Name: point_2
   m_TagString: Untagged
@@ -1687,6 +1688,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!58 &1031095401
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031095399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.785
 --- !u!114 &1031095402
 MonoBehaviour:
   m_ObjectHideFlags: 0
