@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Level.unity
+=======
 - path: Assets/Scenes/male_character_customization.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1
