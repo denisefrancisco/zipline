@@ -16,50 +16,37 @@ public class snap_point : MonoBehaviour {
 
 	void OnMouseDown () { 
 		/* When a user mouses down on a snap point, that point becomes
-		 * a valid starting point for a new zip line segment but an
-		 * invalid ending point for that line segment  */
+		 * a valid starting point for a new zip line segment */
+		gameObject.tag = "SelectedSnapPoint";
 		validLineStartPoint = true;
-		validLineEndPoint = false;
-
-		//User can draw lines from this snap point
-		canDraw = true;
-		zipline.GetComponent<DrawPhysicsLine>().enabled = true;
 	}
 
-	void OnMouseUp () {
-		/* When a user mouses up on a snap point, that point becomes
-		 * a valid ending point for a zip line segment but an
-		 * invalid starting point for that line segment
-		 * (unless user mouses down on that same snap point) */		
-		validLineStartPoint = false;
-		validLineEndPoint = true;
-
-		//User can't draw lines from this snap point if mouse is released
-		canDraw = false;
+	void OnMouseUp () {	
 	}
 
 	void OnMouseEnter () {
 		startcolor = renderer.color;	//Save initial color of snap point
 		//Change snap point color to black when mouse hovers over it
-		renderer.color = Color.black;	
+		renderer.color = Color.black;
+
+		/* When a user mouses over a snap point, that point becomes a
+		 * valid ending point for the latest drawn line segment */
+		validLineEndPoint = true;
 	}
 
 	void OnMouseExit () {
 		//Change snap point color back to initial color when mouse exits it
 		renderer.color = startcolor;
 
-		/* If mouse leaves snap point w/o being held down to draw a line,
-		  disable DrawPhysicsLine script */
-		if (canDraw == false) {
-			zipline.GetComponent<DrawPhysicsLine>().enabled = false;
-		}
+		/* When a user mouse exits a snap point, that point becomes an
+		 * invalid ending point for the latest drawn line segment */
+		validLineEndPoint = false;
 	}
 
 	// Use this for initialization
 	void Start () {
 		renderer = gameObject.GetComponent<SpriteRenderer>();
-		//Initially player is unable to draw lines
-		zipline.GetComponent<DrawPhysicsLine>().enabled = false;
+		zipline.GetComponent<DrawPhysicsLine>().enabled = true;	//MOVE THIS when the build mode script works
 		validLineStartPoint = false;
 		validLineEndPoint = false;
 	}
