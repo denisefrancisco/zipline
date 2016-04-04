@@ -3,27 +3,37 @@ using System.Collections;
 
 public class enableLineDrawing : MonoBehaviour {
 
-	public GameObject zipline;
-	private bool enabled;
+	// Bool flag representing state of player's ability to draw zip line segments
+	private bool canDraw; 
 
-	void OnMouseDown(){
-		Debug.Log ("weee");
-		Debug.Log(enabled);
-		zipline.GetComponent<DrawPhysicsLine> ().enabled = !enabled;
+	// Enables DrawPhysicsLine script
+	public void EnableDrawing () {
+		gameObject.GetComponent<DrawPhysicsLine> ().enabled = true;
+		Debug.Log ("drawing enabled!");
+	}
+
+	// Disables DrawPhysicsLine script
+	public void DisableDrawing () {
+		gameObject.GetComponent<DrawPhysicsLine> ().enabled = false;
+		Debug.Log ("drawing disabled!");
+	}
+
+	/* Reverses drawing state "canDraw" and either enables
+	 * or disables the drawing ability accordingly */
+	public void SetDrawingState(){
+		canDraw = !canDraw;
+		Debug.Log("on mouse click canDraw=" + canDraw);
+		if (canDraw) {
+			EnableDrawing ();
+		} else {
+			DisableDrawing ();
+		}
 	}
 
 	// Use this for initialization
 	void Start () {
-		enabled = false;
-		Debug.Log (enabled);
-
-	
+		// Initially player is unable to draw zip line segments
+		canDraw = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 
 }

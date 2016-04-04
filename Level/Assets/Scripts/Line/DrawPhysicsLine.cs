@@ -2,27 +2,32 @@
 using System.Collections;
 public class DrawPhysicsLine : MonoBehaviour
 {
+	private GameObject lineGO; // Reference to line game object
 	private LineRenderer line;	// Reference to LineRenderer
+	private Transform lineTrans; // Transform of line
 	private Vector3 mousePos;	// Var to store mouse position
 	private Vector3 startPos;	// Start position of line
 	private Vector3 endPos;		// End position of line
-	private int currLines = 0;	// Number of lines
-	// State indicating player moused down on a snap point (valid starting point of a line)
+	// Var to store new line transform position to bring line forward (in front of furniture)
+	private Vector3 tempTransPos;
+	private int lineCount = 0;	// Counter for uniquely naming line
+
+	/* State indicating player moused down on a snap point
+	 * (valid starting point of a line) or released mouse on a
+	 * snap point (valid ending point of a line) */
 	private bool validStart;
-	// State indicating player released mouse on a snap point (valid ending point of a line)
 	private bool validEnd;
-	//references to snap point game objects
-	public GameObject spt1;
-	public GameObject spt2;
-	public GameObject spt3;
-	public GameObject spt4;
+
+	// Array of references to snap point game objects
+	public GameObject[] points;
+	// Array for storing the GO that becomes the starting snap point of a new line
+	public GameObject[] startSnapPoint;
+
 
 	void Start () {
 		// Initialize snap point GOs
-		spt1 = GameObject.Find ("point_1");
-		spt2 = GameObject.Find ("point_2");
-		spt3 = GameObject.Find ("point_3");
-		spt4 = GameObject.Find ("point_4");
+		points = GameObject.FindGameObjectsWithTag ("SnapPoint");
+		// Initialize boolean flags for valid starting and ending points of a line
 		validStart = false;
 		validEnd = false;
 	}
@@ -31,15 +36,22 @@ public class DrawPhysicsLine : MonoBehaviour
 
 		// Create new line on mouse down if location is valid (i.e. on a snap point)
 		if (Input.GetMouseButtonDown(0)) {
-			validStart = (spt1.GetComponent<snap_point>().validLineStartPoint)
-						|| (spt2.GetComponent<snap_point>().validLineStartPoint)
-						|| (spt3.GetComponent<snap_point>().validLineStartPoint)
-						|| (spt4.GetComponent<snap_point>().validLineStartPoint);
-			Debug.Log ("validStart="+validStart);
+			startSnapPoint = GameObject.FindGameObjectsWithTag ("SelectedSnapPoint");
+
+			// If a snap point has been selected as a starting point for a line, flag validStart
+			if (startSnapPoint.Length == 1) {
+				validStart = true;
+				//reset tag of selected snap point
+				startSnapPoint [0].tag = "SnapPoint";
+			} else {
+				validStart = false;
+			}
+
 			// If mouse down on a snap point, start drawing line
 			if (validStart) {
 				// Check if there's no line renderer created yet
 				if (line == null) {
+					lineCount++;
 					createLine ();	// Create line
 				}
 				// Get mouse position
@@ -51,11 +63,13 @@ public class DrawPhysicsLine : MonoBehaviour
 				startPos = mousePos;
 			}
 		}
+		// End a new line on mouse up if location is valid (i.e on a snap point)
 		else if (Input.GetMouseButtonUp(0)) {
-			validEnd = (spt1.GetComponent<snap_point>().validLineEndPoint)
-				|| (spt2.GetComponent<snap_point>().validLineEndPoint)
-				|| (spt3.GetComponent<snap_point>().validLineEndPoint)
-				|| (spt4.GetComponent<snap_point>().validLineEndPoint);			
+			// Check if mouse up location is valid for currently drawn line
+			foreach (GameObject snappoint in points) {
+				validEnd = validEnd || (snappoint.GetComponent<snap_point>().validLineEndPoint);
+			}
+
 			if (line) {
 				mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 				mousePos.z = 0;
@@ -66,18 +80,19 @@ public class DrawPhysicsLine : MonoBehaviour
 				/* Destroy line GO if line's end point is not a snap point,
 				 * otherwise add a collider to the line */
 				if (validEnd) {
-					Debug.Log ("validEnd on Input.GetMouseButtonUp");
-					currLines++;
 					//add collider to line so avatar GO can interact w/it
 					addColliderToLine();
 				} else {
-					Destroy(line);
-					Debug.Log("line destroyed");
+					Destroy(GameObject.Find("Line"+lineCount));
+					lineCount--; //decrement the current number of lines bc we just destroyed a line
 				}
 				// Set line as null once valid line is created or invalid line is destroyed
 				line = null;
-				Debug.Log("line set to null");
 			}
+
+			// Reset flags
+			validStart = false;
+			validEnd = false;
 		}
 		/* If mouse button is held clicked and line exists, enact "rubber-banding" effect
 		 * that is, let the line stretch and rotate as it follows mouse location */
@@ -92,10 +107,26 @@ public class DrawPhysicsLine : MonoBehaviour
 		}
 	}
 
-	// Following method creates line runtime using Line Renderer component
+	// Creates line using Line Renderer component
 	private void createLine () {
-		// Create new empty GO and line renderer component
-		line = new GameObject("Line").AddComponent<LineRenderer>();
+		// Create new empty GO to serve as our line
+		lineGO = new GameObject("Line"+lineCount);
+		// Add LineRenderer component to lineGO
+		line = lineGO.AddComponent<LineRenderer>();
+		/* Attach ErasePhysicsLine script to lineGO and disable the script bc
+		 * we don't want to give the player the ability to erase lines yet
+		* (only available in Erase Mode activated by EraseButton) */
+		ErasePhysicsLine lineScript = lineGO.AddComponent<ErasePhysicsLine>();
+		lineScript.enabled = false;
+		lineGO.tag = "Line"; // Add the tag "Line" to the line GO
+		Debug.Log ("attached script to " + lineGO.name + " w/tag "+ lineGO.tag);
+
+		// Reset line's transform so that line appears in front of furniture
+		lineTrans = line.GetComponent<Transform> ();
+		tempTransPos = lineTrans.position;
+		tempTransPos.z = -1f;
+		lineTrans.position = tempTransPos;
+
 		// Assign the material to the line
 		line.material = new Material(Shader.Find("Diffuse"));
 		line.SetVertexCount(2); // Set number of points to the line
@@ -105,9 +136,9 @@ public class DrawPhysicsLine : MonoBehaviour
 		line.useWorldSpace = true;
 	}
 
-	// Following method adds collider to created line
+	// Adds collider to created line
 	private void addColliderToLine () {
-		BoxCollider2D col = new GameObject("Collider").AddComponent<BoxCollider2D> ();
+		BoxCollider2D col = new GameObject("Collider"+lineCount).AddComponent<BoxCollider2D> ();
 		col.transform.parent = line.transform; // Collider is added as child object of line
 
 		float lineLength = Vector3.Distance (startPos, endPos); // Length of line
