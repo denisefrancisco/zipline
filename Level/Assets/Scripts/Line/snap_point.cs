@@ -5,14 +5,12 @@ public class snap_point : MonoBehaviour {
 
 	private Color startcolor;
 	private SpriteRenderer renderer;
-	public GameObject zipline;
 	/* State that checks if user starts drawing a valid line i.e.
 	 * if user clicks mouse down on a snap point GO */
 	public bool validLineStartPoint;
 	/* State that checks if user ends drawing a valid line i.e.
 	 * if user clicks mouse up on a snap point GO */
 	public bool validLineEndPoint;
-	public bool canDraw; //State of player's ability to draw lines
 
 	void OnMouseDown () { 
 		/* When a user mouses down on a snap point, that point becomes
@@ -46,12 +44,7 @@ public class snap_point : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		renderer = gameObject.GetComponent<SpriteRenderer>();
-		zipline.GetComponent<DrawPhysicsLine>().enabled = true;	//MOVE THIS when the build mode script works
 		validLineStartPoint = false;
 		validLineEndPoint = false;
-	}
-	
-	// Update is called once per frame
-	void Update () {
 	}
 }
