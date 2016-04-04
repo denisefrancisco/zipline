@@ -6,6 +6,7 @@ TagManager:
   tags:
   - clothing
   - SnapPoint
+  - SelectedSnapPoint
   layers:
   - Default
   - TransparentFX
