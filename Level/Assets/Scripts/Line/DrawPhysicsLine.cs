@@ -2,6 +2,7 @@
 using System.Collections;
 public class DrawPhysicsLine : MonoBehaviour
 {
+	private GameObject lineGO; // Reference to line game object
 	private LineRenderer line;	// Reference to LineRenderer
 	private Transform lineTrans; // Transform of line
 	private Vector3 mousePos;	// Var to store mouse position
@@ -37,7 +38,7 @@ public class DrawPhysicsLine : MonoBehaviour
 		if (Input.GetMouseButtonDown(0)) {
 			startSnapPoint = GameObject.FindGameObjectsWithTag ("SelectedSnapPoint");
 
-			// If a snap point has been selected as a startig point for a line, flag validStart
+			// If a snap point has been selected as a starting point for a line, flag validStart
 			if (startSnapPoint.Length == 1) {
 				validStart = true;
 				//reset tag of selected snap point
@@ -52,12 +53,6 @@ public class DrawPhysicsLine : MonoBehaviour
 				if (line == null) {
 					lineCount++;
 					createLine ();	// Create line
-
-					// Reset line's transform so that line appears in front of furniture
-					tempTransPos = lineTrans.position;
-					tempTransPos.z = -1f;
-					lineTrans.position = tempTransPos;
-					Debug.Log ("brought line transform position forward");
 				}
 				// Get mouse position
 				mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
@@ -114,9 +109,21 @@ public class DrawPhysicsLine : MonoBehaviour
 
 	// Creates line using Line Renderer component
 	private void createLine () {
-		// Create new empty GO and line renderer component
-		line = new GameObject("Line"+lineCount).AddComponent<LineRenderer>();
-		lineTrans = line.GetComponent<Transform> ();	//Initialize line's transform
+		// Create new empty GO to serve as our line
+		lineGO = new GameObject("Line"+lineCount);
+		// Add LineRenderer component to lineGO
+		line = lineGO.AddComponent<LineRenderer>();
+		// Attach ErasePhysicsLine script to lineGO
+		//var lineScript = lineGO.AddComponent<ErasePhysicsLine>();
+		lineGO.tag = "Line"; // Add the tag "Line" to the line GO
+		//Debug.Log ("attached script to " + lineGO.name + " w/tag "+ lineGO.tag);*/
+
+		// Reset line's transform so that line appears in front of furniture
+		lineTrans = line.GetComponent<Transform> ();
+		tempTransPos = lineTrans.position;
+		tempTransPos.z = -1f;
+		lineTrans.position = tempTransPos;
+
 		// Assign the material to the line
 		line.material = new Material(Shader.Find("Diffuse"));
 		line.SetVertexCount(2); // Set number of points to the line
