@@ -113,10 +113,13 @@ public class DrawPhysicsLine : MonoBehaviour
 		lineGO = new GameObject("Line"+lineCount);
 		// Add LineRenderer component to lineGO
 		line = lineGO.AddComponent<LineRenderer>();
-		// Attach ErasePhysicsLine script to lineGO
-		//var lineScript = lineGO.AddComponent<ErasePhysicsLine>();
+		/* Attach ErasePhysicsLine script to lineGO and disable the script bc
+		 * we don't want to give the player the ability to erase lines yet
+		* (only available in Erase Mode activated by EraseButton) */
+		ErasePhysicsLine lineScript = lineGO.AddComponent<ErasePhysicsLine>();
+		lineScript.enabled = false;
 		lineGO.tag = "Line"; // Add the tag "Line" to the line GO
-		//Debug.Log ("attached script to " + lineGO.name + " w/tag "+ lineGO.tag);*/
+		Debug.Log ("attached script to " + lineGO.name + " w/tag "+ lineGO.tag);
 
 		// Reset line's transform so that line appears in front of furniture
 		lineTrans = line.GetComponent<Transform> ();
