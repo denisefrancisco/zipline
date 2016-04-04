@@ -822,10 +822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6ee56e40663424280d87fba8341b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spt1: {fileID: 0}
-  spt2: {fileID: 0}
-  spt3: {fileID: 0}
-  spt4: {fileID: 0}
+  points: []
+  startSnapPoint: []
 --- !u!4 &395896785
 Transform:
   m_ObjectHideFlags: 0
@@ -1484,7 +1482,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 800909226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.51, y: -4.66, z: -1}
+  m_LocalPosition: {x: 10.51, y: -4.66, z: 1}
   m_LocalScale: {x: 1.8614371, y: 1.8614371, z: 1.8614371}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2139,7 +2137,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1209029362}
   m_LocalRotation: {x: 0, y: 0, z: -0.3031891, w: 0.95293045}
-  m_LocalPosition: {x: -9.37, y: 5.7, z: 0}
+  m_LocalPosition: {x: -9.37, y: 5.7, z: -1}
   m_LocalScale: {x: 1.1385876, y: 0.7617387, z: 1.1699296}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2292,10 +2290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6ee56e40663424280d87fba8341b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spt1: {fileID: 0}
-  spt2: {fileID: 0}
-  spt3: {fileID: 0}
-  spt4: {fileID: 0}
+  points: []
+  startSnapPoint: []
 --- !u!4 &1239103241
 Transform:
   m_ObjectHideFlags: 0

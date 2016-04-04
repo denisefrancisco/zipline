@@ -19,9 +19,6 @@ public class snap_point : MonoBehaviour {
 		validLineStartPoint = true;
 	}
 
-	void OnMouseUp () {	
-	}
-
 	void OnMouseEnter () {
 		startcolor = renderer.color;	//Save initial color of snap point
 		//Change snap point color to black when mouse hovers over it
