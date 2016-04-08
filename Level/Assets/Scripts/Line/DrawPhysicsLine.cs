@@ -130,7 +130,7 @@ public class DrawPhysicsLine : MonoBehaviour
 		// Assign the material to the line
 		line.material = new Material(Shader.Find("Diffuse"));
 		line.SetVertexCount(2); // Set number of points to the line
-		line.SetWidth(0.25f,0.25f); // Set width
+		line.SetWidth(5f,5f); // Set width
 		line.SetColors(Color.black, Color.black); //Set color
 		// Render line to the world origin and not to the object's position
 		line.useWorldSpace = true;
