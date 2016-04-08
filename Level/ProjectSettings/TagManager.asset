@@ -8,6 +8,7 @@ TagManager:
   - SnapPoint
   - SelectedSnapPoint
   - Line
+  - Furniture
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 3863503585
     locked: 0
