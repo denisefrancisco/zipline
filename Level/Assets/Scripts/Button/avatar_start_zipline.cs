@@ -8,7 +8,6 @@ public class avatar_start_zipline : MonoBehaviour {
 //	public void start_zip();
 
 	void OnClick() {
-		Debug.Log ("you pressed space!");
 		Rigidbody2D rigid = boyZipping.AddComponent<Rigidbody2D> ();
 		rigid.mass = 4.0f;
 		rigid.angularDrag = 1.0f;
@@ -24,17 +23,5 @@ public class avatar_start_zipline : MonoBehaviour {
 	void Update () {
 
 	}
-
-//	void start_zip() {
-//		if (Input.GetKeyDown (KeyCode.Space) == true) {
-//			Debug.Log ("you pressed space!");
-//			Rigidbody2D rigid = boyZipping.AddComponent<Rigidbody2D> ();
-//			rigid.mass = 4.0f;
-//			rigid.angularDrag = 1.0f;
-//			rigid.gravityScale = 1.0f;
-//
-//		}
-//	}
-//
 		
 }

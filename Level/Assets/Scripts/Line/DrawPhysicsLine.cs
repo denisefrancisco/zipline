@@ -120,12 +120,6 @@ public class DrawPhysicsLine : MonoBehaviour
 		lineScript.enabled = false;
 		lineGO.tag = "Line"; // Add the tag "Line" to the line GO
 
-		// Reset line's transform so that line appears in front of furniture
-		lineTrans = line.GetComponent<Transform> ();
-		tempTransPos = lineTrans.position;
-		tempTransPos.z = -1f;
-		lineTrans.position = tempTransPos;
-
 		// Assign the material to the line
 		line.material = new Material(Shader.Find("Diffuse"));
 		line.SetVertexCount(2); // Set number of points to the line
