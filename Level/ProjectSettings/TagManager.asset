@@ -8,6 +8,7 @@ TagManager:
   - SnapPoint
   - SelectedSnapPoint
   - Line
+  - Furniture
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
