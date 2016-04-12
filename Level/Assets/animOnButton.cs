@@ -6,8 +6,12 @@ public class animOnButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		anim.GetComponent<Animation>;
+		anim.GetComponent<Animation> ();
 	}
+	/*This trigger is a parameter in the animator.
+		*it is used to discern when the player is on the zip line
+		*and will trigger the animation to become avatar holding trolley.
+		*/
 	void OnTriggerEnter2D (Collider2D other) {
 		anim.SetTrigger ("onZip");
 	
@@ -17,3 +21,6 @@ public class animOnButton : MonoBehaviour {
 		
 	}
 }
+
+	//anim.Play(anim.clip.name);
+
