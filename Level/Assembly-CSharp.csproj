@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Avatar\animOnButton.cs" />
      <Compile Include="Assets\Scripts\Avatar\avatar_control.cs" />
      <Compile Include="Assets\Scripts\Avatar\avatar_jump.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\boy\boy_button_disappear.cs" />
@@ -67,7 +68,6 @@
      <Compile Include="Assets\Scripts\Line\line_create.cs" />
      <Compile Include="Assets\Scripts\Line\snap_point.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\start_game.cs" />
-     <Compile Include="Assets\animOnButton.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
