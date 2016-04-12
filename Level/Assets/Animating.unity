@@ -182,6 +182,7 @@ GameObject:
   - 212: {fileID: 1794311985}
   - 95: {fileID: 1794311984}
   - 50: {fileID: 1794311987}
+  - 114: {fileID: 1794311988}
   m_Layer: 0
   m_Name: Boy_3_1
   m_TagString: Untagged
@@ -265,3 +266,14 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1794311988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1794311983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8de9f0d811141ed963dfed7b16ae1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
