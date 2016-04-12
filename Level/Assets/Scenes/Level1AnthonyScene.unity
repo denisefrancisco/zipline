@@ -2609,7 +2609,6 @@ GameObject:
   - 222: {fileID: 1626384235}
   - 114: {fileID: 1626384234}
   - 114: {fileID: 1626384233}
-  - 114: {fileID: 1626384232}
   m_Layer: 5
   m_Name: RebuildButton
   m_TagString: Untagged
@@ -2634,18 +2633,6 @@ RectTransform:
   m_AnchoredPosition: {x: 60, y: 24}
   m_SizeDelta: {x: 35, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1626384232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1626384230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdd7d80f3ee174ca9bc1d1db964c3a11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boyZipping: {fileID: 2144577746}
 --- !u!114 &1626384233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2685,12 +2672,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2144577747}
-        m_MethodName: set_isKinematic
-        m_Mode: 6
+      - m_Target: {fileID: 2144577746}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3951,6 +3938,7 @@ GameObject:
   - 212: {fileID: 2144577749}
   - 68: {fileID: 2144577748}
   - 50: {fileID: 2144577747}
+  - 114: {fileID: 2144577751}
   m_Layer: 0
   m_Name: BoyZipping
   m_TagString: Untagged
@@ -4032,6 +4020,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &2144577751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144577746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4889d027af67a4f74bbe4f4950f27763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2146989141
 GameObject:
   m_ObjectHideFlags: 0
