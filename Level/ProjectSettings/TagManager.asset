@@ -9,6 +9,7 @@ TagManager:
   - SelectedSnapPoint
   - Line
   - Furniture
+  - LineCollider
   layers:
   - Default
   - TransparentFX

@@ -1294,6 +1294,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1005103675}
   - 114: {fileID: 1005103674}
+  - 114: {fileID: 1005103676}
   m_Layer: 0
   m_Name: enableLineErasing
   m_TagString: Untagged
@@ -1312,6 +1313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2759cf3e317d4ecc9a897908c18800b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canErase: 0
 --- !u!4 &1005103675
 Transform:
   m_ObjectHideFlags: 0
@@ -1324,6 +1326,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1005103676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005103673}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca45fda80a0b94e44a28afce4bdd7b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1047971934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1392,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1047971934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -557, y: 215, z: 0}
+  m_LocalPosition: {x: -558, y: 217, z: 0}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2024,6 +2037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8fef6d799fc434db9df9e8e1a0fb8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDraw: 0
 --- !u!114 &1269844732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4013,7 +4027,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2144577746}
   m_LocalRotation: {x: 0, y: 0, z: -0.21643963, w: 0.976296}
-  m_LocalPosition: {x: -537.6, y: 174.6, z: -1}
+  m_LocalPosition: {x: -509, y: 180, z: -1}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}

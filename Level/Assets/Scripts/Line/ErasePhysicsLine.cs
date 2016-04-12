@@ -10,13 +10,7 @@ public class ErasePhysicsLine : MonoBehaviour {
 
 	//when line GO is clicked during Erase Mode, delete the line
 	void OnMouseDown () {
-		Debug.Log ("we've clicked on line object ");
-		//Destroy (gameObject);
-		Debug.Log ("we've destroyed the line object");
+		Destroy (gameObject);
 	}
-
-	void Start () {
-		Debug.Log ("we're inside the erasephysicsline script");
-	}
-
+				
 }

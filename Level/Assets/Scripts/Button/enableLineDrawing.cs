@@ -4,8 +4,8 @@ using System.Collections;
 public class enableLineDrawing : MonoBehaviour {
 
 	// Bool flag representing state of player's ability to draw zip line segments
-	private bool canDraw; 
-	// Reference to the GO's DrawPhysicsLine component
+	public bool canDraw; 
+	// Reference to the GO's DrawPhysicsLine script component
 	private DrawPhysicsLine drawingComponent;
 
 	// Enables DrawPhysicsLine script
@@ -24,7 +24,6 @@ public class enableLineDrawing : MonoBehaviour {
 	 * or disables the drawing ability accordingly */
 	public void SetDrawingState(){
 		canDraw = !canDraw;
-		Debug.Log("on mouse click canDraw=" + canDraw);
 		if (canDraw) {
 			EnableDrawing ();
 		} else {
@@ -36,6 +35,7 @@ public class enableLineDrawing : MonoBehaviour {
 	void Start () {
 		// Initially player is unable to draw zip line segments
 		canDraw = false;
+		Debug.Log ("initialized canDraw="+canDraw);
 		drawingComponent = gameObject.GetComponent<DrawPhysicsLine> ();
 	}
 
