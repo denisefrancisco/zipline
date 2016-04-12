@@ -1,21 +1,23 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Transition Scenes/start_game.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Camera/change_camera.cs">
     <Files>
-      <File FileName="Assets/Scripts/Transition Scenes/start_game.cs" Line="21" Column="1" />
-      <File FileName="Assets/Scripts/Avatar/customization/boy/left_button_customize.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Avatar/customization/boy/right_button_customize.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Avatar/customization/boy/boy_button_disappear.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Avatar/gender pick intro/loadBoy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Avatar/gender pick intro/loadGirl.cs" Line="1" Column="1" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Line/DrawPhysicsLine.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Line/DrawPhysicsLineTestLvl.cs" Line="122" Column="60" />
-      <File FileName="Assets/Scripts/Line/DrawPhysicsLine.cs" Line="146" Column="40" />
->>>>>>> 6d6f336d41c3a466f720d50585f9c60176fed8f5
+      <File FileName="Assets/Scripts/Camera/change_camera.cs" Line="10" Column="17" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Level" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True" selected="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Button" expanded="True" />
+                <Node name="Camera" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
