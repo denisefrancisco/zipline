@@ -16,17 +16,18 @@ public class animOnButton : MonoBehaviour {
 
 	public GameObject avatar;
 	public Animator anim;
-
-
-
 	private bool go = false;
 	private float movement_sp = 2.05f;
 	private Collider2D feet;
 	public Collider2D origin;
 	private Rigidbody2D rb;
+	private Collider2D trolley;
+
+
 
 // Use this for initialization
 	void Start () {
+		trolley = GetComponent<EdgeCollider2D> ();
 		anim = GetComponent<Animator> ();
 		feet = GetComponent<BoxCollider2D> ();
 		rb = GetComponent<Rigidbody2D> ();
@@ -40,16 +41,16 @@ public class animOnButton : MonoBehaviour {
 		go = true;
 	}
 	//The avatar progresses to jump animation.
-	void OnTriggerEnter2D (Collider2D other) {
-	
-		anim.SetTrigger ("onZip");
-	
-	}
+//	void OnTriggerEnter2D (Collider2D other) {
+//			anim.SetTrigger ("onLand");
+//			}
+//	
 	//Update is called once per frame.
-	void Update () {
+	void Update ()
+	{
 		if (go) {
 
-		/* The 'if' statement checks to see if the player is currently on the piece of furniture.
+			/* The 'if' statement checks to see if the player is currently on the piece of furniture.
 			*  if he is, he will keep moving forward, if not he will recieve a force to
 			*  push him on the zip line initially.
 			*/
@@ -61,4 +62,3 @@ public class animOnButton : MonoBehaviour {
 		}
 	}
 }
-
