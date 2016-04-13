@@ -123,7 +123,7 @@ public class DrawPhysicsLine : MonoBehaviour
 		// Assign the material to the line
 		line.material = new Material(Shader.Find("Diffuse"));
 		line.SetVertexCount(2); // Set number of points to the line
-		line.SetWidth(8f,8f); // Set width
+		line.SetWidth(0.15f,0.15f); // Set width
 		line.SetColors(Color.black, Color.black); //Set color
 		// Render line to the world origin and not to the object's position
 		line.useWorldSpace = true;
@@ -137,7 +137,7 @@ public class DrawPhysicsLine : MonoBehaviour
 		float lineLength = Vector3.Distance (startPos, endPos); // Length of line
 
 		// Size of collider is set where X is length of line, Y is width of line, Z will be set as per requirement
-		col.size = new Vector3 (lineLength, 8f, 1f); 
+		col.size = new Vector3 (lineLength, 0.15f, 1f); 
 
 		// Set position of collider object
 		Vector3 midPoint = (startPos + endPos)/2;
