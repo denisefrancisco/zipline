@@ -1,7 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/select_menu.unity
+- path: Assets/Scenes/Level1AnthonyScene.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Scenes/start_menu.unity
-  isLoaded: 1
-  isActive: 0
