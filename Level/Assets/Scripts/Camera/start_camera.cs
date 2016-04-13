@@ -7,7 +7,7 @@ public class start_camera : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		camera.orthographicSize = 500;
+		camera.orthographicSize = 5;
 	
 	}
 	
