@@ -56,11 +56,11 @@
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadBoy.cs" />
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadGirl.cs" />
      <Compile Include="Assets\Scripts\Avatar\jump_avatar.cs" />
-     <Compile Include="Assets\Scripts\Button\avatar_restart_zipline.cs" />
      <Compile Include="Assets\Scripts\Button\avatar_start_zipline.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawing.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawingTestLvl.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineErasing.cs" />
+     <Compile Include="Assets\Scripts\Button\enableRebuild.cs" />
      <Compile Include="Assets\Scripts\Button\loadLevel.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLineTestLvl.cs" />

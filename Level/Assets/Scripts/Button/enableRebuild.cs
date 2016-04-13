@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class avatar_restart_zipline : MonoBehaviour {
+public class enableRebuild : MonoBehaviour {
 
 	public GameObject avatar;
 	private Rigidbody2D rigid;
