@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: e1b09d2026db740699778c540b797e8d
+timeCreated: 1460313630
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ZipMenuButtons2_0
+    21300002: ZipMenuButtons2_1
+    21300004: ZipMenuButtons2_2
+    21300006: ZipMenuButtons2_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ZipMenuButtons2_0
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 1211
+        width: 791
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 160.555, y: 56.810272}
+        - {x: 158.555, y: 57.810272}
+        - {x: -156.445, y: 57.810272}
+        - {x: -159.445, y: 54.810272}
+        - {x: -159.445, y: -53.189728}
+        - {x: -157.445, y: -56.189728}
+        - {x: -154.445, y: -57.189728}
+        - {x: 156.555, y: -57.189728}
+        - {x: 160.555, y: -53.189728}
+    - name: ZipMenuButtons2_1
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 812
+        width: 791
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 160.555, y: 55.421936}
+        - {x: 156.555, y: 58.421936}
+        - {x: -155.445, y: 58.421936}
+        - {x: -159.445, y: 55.421936}
+        - {x: -159.445, y: -55.578064}
+        - {x: -156.445, y: -57.578064}
+        - {x: 155.555, y: -57.578064}
+        - {x: 160.555, y: -54.578064}
+    - name: ZipMenuButtons2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 790
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 154.5, y: 57.5}
+        - {x: -157.5, y: 57.5}
+        - {x: -159.5, y: 54.5}
+        - {x: -159.5, y: -55.5}
+        - {x: -157.5, y: -57.5}
+        - {x: 157.5, y: -57.5}
+        - {x: 159.5, y: -56.5}
+        - {x: 159.5, y: 54.5}
+        - {x: 157.5, y: 56.5}
+    - name: ZipMenuButtons2_3
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 0
+        width: 790
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 155.9491, y: 58}
+        - {x: -153.0509, y: 58}
+        - {x: -156.0509, y: 57}
+        - {x: -159.0509, y: 54}
+        - {x: -159.0509, y: -55}
+        - {x: -156.0509, y: -58}
+        - {x: 157.9491, y: -58}
+        - {x: 159.9491, y: -56}
+        - {x: 159.9491, y: 55}
+        - {x: 158.9491, y: 57}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
