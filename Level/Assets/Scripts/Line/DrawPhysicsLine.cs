@@ -8,8 +8,6 @@ public class DrawPhysicsLine : MonoBehaviour
 	private Vector3 mousePos;	// Var to store mouse position
 	private Vector3 startPos;	// Start position of line
 	private Vector3 endPos;		// End position of line
-	// Var to store new line transform position to bring line forward (in front of furniture)
-	private Vector3 tempTransPos;
 	private int lineCount = 0;	// Counter for uniquely naming line
 
 	/* State indicating player moused down on a snap point
@@ -131,8 +129,12 @@ public class DrawPhysicsLine : MonoBehaviour
 
 	// Adds collider to created line
 	private void addColliderToLine () {
-		BoxCollider2D col = new GameObject("Collider"+lineCount).AddComponent<BoxCollider2D> ();
-		col.transform.parent = line.transform; // Collider is added as child object of line
+		/*BoxCollider2D col = new GameObject("Collider"+lineCount).AddComponent<BoxCollider2D> ();
+		col.transform.parent = line.transform; // Collider is added as child object of line */
+
+		/* Add a collider component directly to the line GO
+		(instead of adding it as a child like the comented out code above*/
+		BoxCollider2D col = lineGO.AddComponent<BoxCollider2D> ();
 
 		float lineLength = Vector3.Distance (startPos, endPos); // Length of line
 
@@ -142,6 +144,9 @@ public class DrawPhysicsLine : MonoBehaviour
 		// Set position of collider object
 		Vector3 midPoint = (startPos + endPos)/2;
 		col.transform.position = midPoint; 
+
+		// Set offset of collider to (0,0)
+		col.offset = Vector2.zero;
 
 		// Calculate the angle between startPos and endPos of line
 		float angle = (Mathf.Abs (startPos.y - endPos.y) / Mathf.Abs (startPos.x - endPos.x));
