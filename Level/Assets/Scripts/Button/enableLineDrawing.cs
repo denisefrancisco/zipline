@@ -35,7 +35,6 @@ public class enableLineDrawing : MonoBehaviour {
 	void Start () {
 		// Initially player is unable to draw zip line segments
 		canDraw = false;
-		Debug.Log ("initialized canDraw="+canDraw);
 		drawingComponent = gameObject.GetComponent<DrawPhysicsLine> ();
 	}
 

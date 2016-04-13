@@ -42,7 +42,6 @@ public class enableLineErasing : MonoBehaviour {
 	void Start () {
 		//Initially player cannot erase lines
 		canErase = false;
-		Debug.Log ("initialized canErase="+canErase);
 	}
 
 }

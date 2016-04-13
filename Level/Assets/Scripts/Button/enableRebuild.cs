@@ -18,7 +18,6 @@ public class enableRebuild : MonoBehaviour {
 		// Reset avatar's position to original position
 		avatar.transform.position = startPos;
 		avatar.transform.rotation = startRot;
-		Debug.Log ("reset pos: "+startPos+" reset rot: "+startRot);
 	}
 
 	// Use this for initialization
