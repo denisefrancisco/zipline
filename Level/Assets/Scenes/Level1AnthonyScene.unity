@@ -1294,7 +1294,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1005103675}
   - 114: {fileID: 1005103674}
-  - 114: {fileID: 1005103676}
   m_Layer: 0
   m_Name: enableLineErasing
   m_TagString: Untagged
@@ -1326,17 +1325,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
---- !u!114 &1005103676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1005103673}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca45fda80a0b94e44a28afce4bdd7b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1047971934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,7 +2006,6 @@ GameObject:
   - 4: {fileID: 1269844734}
   - 114: {fileID: 1269844731}
   - 114: {fileID: 1269844733}
-  - 114: {fileID: 1269844732}
   m_Layer: 0
   m_Name: enableLineDrawing
   m_TagString: Untagged
@@ -2038,19 +2025,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canDraw: 0
---- !u!114 &1269844732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1269844730}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 213b507d0b0b7406a93411f02e5b5e4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  validLineStartPoint: 0
-  validLineEndPoint: 0
 --- !u!114 &1269844733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4031,6 +4005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4889d027af67a4f74bbe4f4950f27763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  avatar: {fileID: 0}
 --- !u!1 &2146989141
 GameObject:
   m_ObjectHideFlags: 0
