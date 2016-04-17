@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: d3f5664ffad0b413693c11df81b24cb4
+timeCreated: 1460930306
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MapMenuButtons_0
+    21300002: MapMenuButtons_1
+    21300004: MapMenuButtons_2
+    21300006: MapMenuButtons_3
+    21300008: MapMenuButtons_4
+    21300010: MapMenuButtons_5
+    21300012: MapMenuButtons_6
+    21300014: MapMenuButtons_7
+    21300016: MapMenuButtons_8
+    21300018: MapMenuButtons_9
+    21300020: MapMenuButtons_10
+    21300022: MapMenuButtons_11
+    21300024: MapMenuButtons_12
+    21300026: MapMenuButtons_13
+    21300028: MapMenuButtons_14
+    21300030: MapMenuButtons_15
+    21300032: MapMenuButtons_16
+    21300034: MapMenuButtons_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MapMenuButtons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1723
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118, y: 40.14038}
+        - {x: 98, y: 75.14038}
+        - {x: 72, y: 98.14038}
+        - {x: 56, y: 109.14038}
+        - {x: 37, y: 118.14038}
+        - {x: -45, y: 118.14038}
+        - {x: -77, y: 99.14038}
+        - {x: -107, y: 64.14038}
+        - {x: -118, y: 34.14038}
+        - {x: -118, y: -36.85962}
+        - {x: -101, y: -75.85962}
+        - {x: -61, y: -107.85962}
+        - {x: -37, y: -117.85962}
+        - {x: 32, y: -117.85962}
+        - {x: 41, y: -116.85962}
+        - {x: 75, y: -99.85962}
+        - {x: 112, y: -52.85962}
+        - {x: 118, y: -33.85962}
+    - name: MapMenuButtons_1
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1741
+        width: 211
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 83.54846, y: 62.595703}
+        - {x: 44.548462, y: 91.5957}
+        - {x: 32.548462, y: 97.5957}
+        - {x: -27.451538, y: 97.5957}
+        - {x: -60.451538, y: 91.5957}
+        - {x: -94.45154, y: 52.595703}
+        - {x: -96.45154, y: 37.595703}
+        - {x: -96.45154, y: -34.404297}
+        - {x: -82.45154, y: -58.404297}
+        - {x: -66.45154, y: -83.4043}
+        - {x: -29.451538, y: -96.4043}
+        - {x: 45.548462, y: -96.4043}
+        - {x: 89.54846, y: -77.4043}
+        - {x: 96.54846, y: -35.404297}
+        - {x: 96.54846, y: 40.595703}
+    - name: MapMenuButtons_2
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 1731
+        width: 124
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57.482056, y: -14.546143}
+        - {x: 57.482056, y: 44.453857}
+        - {x: 48.482056, y: 71.45386}
+        - {x: 35.482056, y: 73.45386}
+        - {x: -31.517944, y: 73.45386}
+        - {x: -42.517944, y: 60.453857}
+        - {x: -56.517944, y: 35.453857}
+        - {x: -56.517944, y: -72.54614}
+        - {x: 57.482056, y: -72.54614}
+        - {x: 57.482056, y: -38.546143}
+        - {x: 56.482056, y: -37.546143}
+    - name: MapMenuButtons_3
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1761
+        width: 146
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.302856, y: 97.879395}
+        - {x: 29.302856, y: 99.879395}
+        - {x: -59.697144, y: 99.879395}
+        - {x: -66.69714, y: 52.879395}
+        - {x: -66.69714, y: -98.120605}
+        - {x: 67.30286, y: -98.120605}
+        - {x: 67.30286, y: 60.879395}
+    - name: MapMenuButtons_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1469
+        width: 558
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -255.08505, y: 75.43738}
+        - {x: -255.08505, y: -73.56262}
+        - {x: 255.91495, y: -73.56262}
+        - {x: 255.91495, y: 75.43738}
+    - name: MapMenuButtons_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1134
+        width: 123
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.992176, y: 76.68555}
+        - {x: -41.992176, y: 66.68555}
+        - {x: -55.992176, y: 27.685547}
+        - {x: -47.992176, y: 26.685547}
+        - {x: -11.992176, y: 25.685547}
+        - {x: -7.992176, y: -12.314453}
+        - {x: -55.992176, y: -19.314453}
+        - {x: -55.992176, y: -43.314453}
+        - {x: -34.992176, y: -72.31445}
+        - {x: -22.992176, y: -75.31445}
+        - {x: 31.007824, y: -75.31445}
+        - {x: 57.007824, y: -62.314453}
+        - {x: 57.007824, y: 52.685547}
+        - {x: 40.007824, y: 76.68555}
+    - name: MapMenuButtons_6
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1134
+        width: 147
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.802368, y: 99.68555}
+        - {x: -20.197632, y: 99.68555}
+        - {x: -51.19763, y: 84.68555}
+        - {x: -67.19763, y: 37.685547}
+        - {x: -67.19763, y: -92.31445}
+        - {x: -63.19763, y: -98.31445}
+        - {x: 67.80237, y: -98.31445}
+        - {x: 67.80237, y: 50.685547}
+        - {x: 56.80237, y: 72.68555}
+    - name: MapMenuButtons_7
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1147
+        width: 131
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.760498, y: 71.06995}
+        - {x: -59.760498, y: -8.930054}
+        - {x: -59.760498, y: -42.930054}
+        - {x: -2.760498, y: -69.93005}
+        - {x: 55.239502, y: -69.93005}
+        - {x: 61.239502, y: -46.930054}
+        - {x: 61.239502, y: 23.069946}
+        - {x: 45.239502, y: 71.06995}
+    - name: MapMenuButtons_8
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1151
+        width: 146
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.302856, y: 99.226685}
+        - {x: -27.697144, y: 99.226685}
+        - {x: -42.697144, y: 81.226685}
+        - {x: -66.69714, y: 31.226685}
+        - {x: -66.69714, y: -95.773315}
+        - {x: -63.697144, y: -98.773315}
+        - {x: 67.30286, y: -98.773315}
+        - {x: 67.30286, y: 49.226685}
+        - {x: 59.302856, y: 82.226685}
+    - name: MapMenuButtons_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 258
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118, y: 34.801605}
+        - {x: 111, y: 62.801605}
+        - {x: 62, y: 109.801605}
+        - {x: 34, y: 119.801605}
+        - {x: -35, y: 119.801605}
+        - {x: -50, y: 115.801605}
+        - {x: -93, y: 84.801605}
+        - {x: -116, y: 63.801605}
+        - {x: -118, y: 45.801605}
+        - {x: -118, y: -40.198395}
+        - {x: -109, y: -54.198395}
+        - {x: -101, y: -67.198395}
+        - {x: -90, y: -85.198395}
+        - {x: -52, y: -117.198395}
+        - {x: -39, y: -118.198395}
+        - {x: 39, y: -118.198395}
+        - {x: 74, y: -99.198395}
+        - {x: 99, y: -74.198395}
+        - {x: 118, y: -31.198395}
+    - name: MapMenuButtons_10
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 571
+        width: 211
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64.54846, y: 97.99951}
+        - {x: -47.451538, y: 97.99951}
+        - {x: -66.45154, y: 80.99951}
+        - {x: -96.45154, y: 38.99951}
+        - {x: -96.45154, y: -29.000488}
+        - {x: -77.45154, y: -65.00049}
+        - {x: -51.451538, y: -95.00049}
+        - {x: -40.451538, y: -96.00049}
+        - {x: 45.548462, y: -96.00049}
+        - {x: 56.548462, y: -90.00049}
+        - {x: 96.54846, y: -40.00049}
+        - {x: 96.54846, y: 40.99951}
+    - name: MapMenuButtons_11
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 588
+        width: 131
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.846313, y: 73.54065}
+        - {x: -59.846313, y: 23.54065}
+        - {x: -59.846313, y: -66.45935}
+        - {x: -57.846313, y: -72.45935}
+        - {x: 61.153687, y: -72.45935}
+        - {x: 61.153687, y: 73.54065}
+    - name: MapMenuButtons_12
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 609
+        width: 146
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.302856, y: 99.738525}
+        - {x: -28.697144, y: 99.738525}
+        - {x: -66.69714, y: 46.738525}
+        - {x: -66.69714, y: -98.261475}
+        - {x: 67.30286, y: -98.261475}
+        - {x: 67.30286, y: 35.738525}
+        - {x: 49.302856, y: 79.738525}
+    - name: MapMenuButtons_13
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 333
+        width: 558
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -255.08505, y: 74.42352}
+        - {x: -255.08505, y: -73.57648}
+        - {x: 255.91495, y: -73.57648}
+        - {x: 255.91495, y: 74.42352}
+    - name: MapMenuButtons_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 60
+        width: 132
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60.57799, y: 71.85109}
+        - {x: -60.57799, y: -70.14891}
+        - {x: 2.4220085, y: -70.14891}
+        - {x: 61.42201, y: -11.1489105}
+        - {x: 61.42201, y: 71.85109}
+    - name: MapMenuButtons_15
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 29
+        width: 147
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.802368, y: 99.51136}
+        - {x: -19.197632, y: 99.51136}
+        - {x: -50.19763, y: 83.51136}
+        - {x: -67.19763, y: 53.51136}
+        - {x: -67.19763, y: -98.48864}
+        - {x: 64.80237, y: -98.48864}
+        - {x: 67.80237, y: -94.48864}
+        - {x: 67.80237, y: 35.51136}
+        - {x: 49.80237, y: 79.51136}
+    - name: MapMenuButtons_16
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 45
+        width: 117
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.94702, y: 75.63831}
+        - {x: -53.94702, y: 67.63831}
+        - {x: -53.94702, y: -64.36169}
+        - {x: -39.94702, y: -75.36169}
+        - {x: 54.05298, y: -75.36169}
+        - {x: 54.05298, y: 50.638313}
+        - {x: 44.05298, y: 75.63831}
+    - name: MapMenuButtons_17
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 34
+        width: 146
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.302856, y: 98.58228}
+        - {x: -29.697144, y: 98.58228}
+        - {x: -66.69714, y: 48.582283}
+        - {x: -66.69714, y: -93.41772}
+        - {x: -62.697144, y: -98.41772}
+        - {x: 64.30286, y: -98.41772}
+        - {x: 67.30286, y: -95.41772}
+        - {x: 67.30286, y: 36.582283}
+        - {x: 44.302856, y: 83.58228}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
