@@ -6,7 +6,9 @@ public class enableLineErasing : MonoBehaviour {
 	// Bool flag representing state of player's ability to erase zip line segments
 	public bool canErase; 
 	// Array of references to line GOs
-	private GameObject[] lines;
+	public GameObject[] lines;
+	// Making sure that you can only erase, if you can't draw
+	public enableLineDrawing drawEnable;
 
 	// Enables ErasePhysicsLine script for each line GO in scene
 	public void EnableErasing () {
@@ -30,18 +32,19 @@ public class enableLineErasing : MonoBehaviour {
 	public void SetEraseState(){
 		canErase = !canErase;
 		// Find all the line GOs in the scene and store in lines array
-		lines = GameObject.FindGameObjectsWithTag("Line");
+		lines = GameObject.FindGameObjectsWithTag ("Line");
 		if (canErase) {
 			EnableErasing ();
-		}  else {
+		} else {
 			DisableErasing ();
 		}
 	}
 
+
 	// Use this for initialization
 	void Start () {
 		//Initially player cannot erase lines
-		canErase = false;
+		canErase = true;
 	}
 
 }
