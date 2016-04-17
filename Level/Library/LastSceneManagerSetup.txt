@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/LevelMockUp copy.unity
-=======
 - path: Assets/Scenes/zipline_choose_gender.unity
->>>>>>> 674b556504dc6f811ceefa57efd49c8b15a6e838
   isLoaded: 1
   isActive: 1
