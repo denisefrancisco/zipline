@@ -9,11 +9,11 @@ public class enableRebuild : MonoBehaviour {
 	private Quaternion startRot;
 
 	public void ResetAvatar() {
-		/* Destroy avatar's rigidbody so avatar can't interact
-		 * with physics during build mode (rigidbody will be
-		 * reapplied after play button press*/
+		/* Set avatar's rigidbody to kinematic so avatar 
+		 * can't interact with physics during build mode
+		 * (kinematic will be disabled after play button press) */
 		rigid = avatar.GetComponent<Rigidbody2D>();
-		Destroy(rigid);
+		rigid.isKinematic = true;
 
 		// Reset avatar's position to original position
 		avatar.transform.position = startPos;
