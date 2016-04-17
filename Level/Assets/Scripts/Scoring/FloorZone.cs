@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class floorZone : MonoBehaviour {
+public class FloorZone : MonoBehaviour {
 
 	/* Trigger flag for whether avatar has fallen below
 	 * lowest snap point into the floor zone
