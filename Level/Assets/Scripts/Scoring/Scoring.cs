@@ -117,11 +117,11 @@ public class Scoring : MonoBehaviour {
 						// Update score
 						if (avatarXPos < oneStar) {
 							score = 1;
-						} else if (avatarXPos < threeStar) {
+						} else if (avatarXPos < twoStar) {
 							score = 2;
-						} /*else if (avatarXPos < threeStar) {
+						} else if (avatarXPos < threeStar) {
 							score = 3;
-						}*/
+						}
 						EndPlay (4); // Success
 					} else {
 						EndPlay (1); // Stagnant
