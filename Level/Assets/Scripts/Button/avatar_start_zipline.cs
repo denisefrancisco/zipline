@@ -10,6 +10,7 @@ public class avatar_start_zipline : MonoBehaviour {
 	public void StartAvatarPlay() {
 		// Enable scoring script 
 		landingZone.GetComponent<Scoring>().enabled = true;
+		landingZone.GetComponent<Scoring> ().playEnded = false;
 		// Apply Unity physics to avatar rigidbody
 		rigid.isKinematic = false;	
 		/*rigid.mass = 4.0f;

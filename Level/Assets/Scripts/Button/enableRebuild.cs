@@ -3,6 +3,7 @@ using System.Collections;
 
 public class enableRebuild : MonoBehaviour {
 
+	private GameObject landingZone;
 	public GameObject avatar;
 	private Rigidbody2D rigid;
 	private Vector3 startPos;
@@ -18,14 +19,22 @@ public class enableRebuild : MonoBehaviour {
 		// Reset avatar's position to original position
 		avatar.transform.position = startPos;
 		avatar.transform.rotation = startRot;
+
+		// Disable scoring script
+		landingZone.GetComponent<Scoring>().pastZone = false;
+		landingZone.GetComponent<Scoring>().enabled = false;
 	}
 
 	// Use this for initialization
 	void Start () {
 		avatar = GameObject.Find ("BoyZipping"); //initialize avatar GO
+
 		//initialize original position and rotation of avatar transform
 		startPos = avatar.transform.position;
 		startRot = avatar.transform.rotation;
+
+		// Initialize LandingZone GO
+		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
 	}
 
 }
