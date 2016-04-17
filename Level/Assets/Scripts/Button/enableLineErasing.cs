@@ -23,8 +23,8 @@ public class enableLineErasing : MonoBehaviour {
 	public void DisableErasing () {
 		foreach (GameObject line in lines) {
 			line.GetComponent<ErasePhysicsLine> ().enabled = false;
-			Debug.Log ("erasing disabled!");
 		}
+		Debug.Log ("erasing disabled!");
 	}
 
 	/* Reverses drawing state "canErase" and either enables
