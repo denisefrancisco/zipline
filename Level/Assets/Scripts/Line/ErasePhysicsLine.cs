@@ -8,15 +8,21 @@ using System.Collections;
  * line GOs are initially created) */
 public class ErasePhysicsLine : MonoBehaviour {
 
+	private GameObject enableErasing; // Reference to GO with erasing scripts attached
+
 	//when line GO is clicked during Erase Mode, delete the line
 	void OnMouseDown () {
-		Debug.Log ("we've clicked on line object ");
 		//Destroy (gameObject);
-		Debug.Log ("we've destroyed the line object");
+		if (enableErasing.GetComponent<enableLineErasing>().canErase) {
+			Destroy (gameObject);
+		}
 	}
 
-	void Start () {
-		Debug.Log ("we're inside the erasephysicsline script");
+	void Start() {
+		enableErasing = GameObject.Find ("enableLineErasing"); 
 	}
 
+	void Update() {
+	}
+				
 }
