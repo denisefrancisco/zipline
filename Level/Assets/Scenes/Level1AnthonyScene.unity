@@ -2335,6 +2335,7 @@ GameObject:
   - 4: {fileID: 1276376403}
   - 212: {fileID: 1276376402}
   - 95: {fileID: 1276376401}
+  - 61: {fileID: 1276376404}
   m_Layer: 0
   m_Name: Boy_2_2
   m_TagString: Untagged
@@ -2401,6 +2402,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!61 &1276376404
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1276376400}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -1.89}
+  serializedVersion: 2
+  m_Size: {x: 1.15, y: 0.64}
 --- !u!1 &1336737656
 GameObject:
   m_ObjectHideFlags: 0
