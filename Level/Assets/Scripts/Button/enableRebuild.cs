@@ -27,7 +27,7 @@ public class enableRebuild : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		avatar = GameObject.Find ("BoyZipping"); //initialize avatar GO
+		avatar = GameObject.FindGameObjectWithTag ("Avatar"); //initialize avatar GO
 
 		//initialize original position and rotation of avatar transform
 		startPos = avatar.transform.position;

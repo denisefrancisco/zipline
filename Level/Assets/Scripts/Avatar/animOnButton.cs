@@ -3,7 +3,6 @@ using System.Collections;
 
 public class animOnButton : MonoBehaviour {
 
-
 	/*Variable 'go' will be used later as a force added to the rb to propel 
 			*him in x position animation.
 		*The 'movement_sp' float is used as a reference to speed. If the animation
@@ -18,8 +17,6 @@ public class animOnButton : MonoBehaviour {
 			*	Then movement speed.
 		*/
 
-
-
 	public GameObject avatar;
 	public Animator anim;
 	private bool go = false;
@@ -32,7 +29,7 @@ public class animOnButton : MonoBehaviour {
 
 	private float halfSpeed = .5f;
 
-
+	private GameObject landingZone;
 
 
 // Use this for initialization
@@ -41,10 +38,17 @@ public class animOnButton : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		feet = GetComponent<BoxCollider2D> ();
 		rb = GetComponent<Rigidbody2D> ();
+		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
 	}
 
 	//Use this for what happens when the button is clicked.
 	public void OnClick() {
+
+		// Enable scoring script 
+		landingZone.GetComponent<Scoring>().enabled = true;
+		landingZone.GetComponent<Scoring> ().playEnded = false;
+		// Apply Unity physics to avatar rigidbody
+		rb.isKinematic = false;
 
 		//There is a trigger called "onClick" in the animator's parameters. 
 		anim.SetTrigger ("onClick");
