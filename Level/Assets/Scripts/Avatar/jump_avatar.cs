@@ -9,6 +9,7 @@ public class jump_avatar : MonoBehaviour {
 	public float jumpForce = 2.0f;
 	public Transform groundCheck;
 	public Rigidbody2D rigidBody;
+
 	bool grounded = false;
 	float groundRadius = .2f;
 	public LayerMask whatIsGround;
@@ -18,7 +19,8 @@ public class jump_avatar : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator>();    
 	}
-	void FixedUpdate(){
+	//Update is called once per frame.
+	void Update(){
 		//grounded below uses a transformer (groundCheck) to check if the avatar is in the air or on the ground.
 		//if the avatar is in the air, the grounded boolean will return false
 		//Thus causing the avatar's animation to go into 'jump'
@@ -27,13 +29,8 @@ public class jump_avatar : MonoBehaviour {
 		anim.SetFloat ("vSpeed", rigidBody.velocity.y);
 
 	}
-	// Update is called once per frame
-	void Update ()
-	{
-
-
-	}
 }
+		
 
 //	{
 //		//this next line assumes 
