@@ -14,6 +14,8 @@
       <File FileName="Assets/Scripts/Button/avatar_start_zipline.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Button/enableLineErasing.cs" Line="23" Column="53" />
       <File FileName="Assets/Scripts/Line/ErasePhysicsLine.cs" Line="29" Column="1" />
+      <File FileName="Assets/Scripts/Avatar/animOnButton.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Avatar/jump_avatar.cs" Line="36" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

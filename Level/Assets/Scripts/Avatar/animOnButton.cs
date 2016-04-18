@@ -12,16 +12,26 @@ public class animOnButton : MonoBehaviour {
 			*must be on the avatar.
 		*The next Collider named origin is the collider that the avatar
 			*begins on before zip lining.
+			*
+			*When screen size is 271 Movement is 2.05, when the size is 5, adjust to .5f.
+			*Also, if not moving, check gravity and mass before touching this script. 
+			*	Then movement speed.
 		*/
+
+
 
 	public GameObject avatar;
 	public Animator anim;
 	private bool go = false;
-	private float movement_sp = 2.05f;
+	private float movement_sp = .5f;
+
 	private Collider2D feet;
 	public Collider2D origin;
 	private Rigidbody2D rb;
 	private Collider2D trolley;
+
+	private float halfSpeed = .5f;
+
 
 
 
@@ -57,7 +67,8 @@ public class animOnButton : MonoBehaviour {
 
 
 			if (feet.IsTouching (origin)) { 				
-				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
+				rb.AddForce (Vector3.right * movement_sp * halfSpeed, ForceMode2D.Impulse);
+//				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
 			}
 		}
 	}

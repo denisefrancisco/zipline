@@ -1535,7 +1535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canErase: 0
   lines: []
-  drawEnable: {fileID: 0}
+  drawEnable: {fileID: 116080256}
 --- !u!4 &1005103675
 Transform:
   m_ObjectHideFlags: 0
