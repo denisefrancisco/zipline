@@ -1,0 +1,34 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class slide_camera : MonoBehaviour {
+
+	public Transform farLeft;
+	public Transform farRight;
+
+	// Use this for initialization
+	void Start () {
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		Vector3 newPosition = transform.position;
+//		newPosition.x = Input.mousePosition.x;
+//		newPosition.x = Mathf.Clamp (newPosition.x, farLeft.position.x, farRight.position.x);
+		Debug.Log (Screen.width);
+		Debug.Log (transform.position.x);
+		if (Input.mousePosition.x >= Screen.width - 20) {
+			if (transform.position.x <= farRight.position.x) {
+				newPosition.x += 0.05f;
+				transform.position = newPosition;
+			}
+		}
+		if (Input.mousePosition.x <= 0 + 20) {
+			if (transform.position.x >= farLeft.position.x) {
+				newPosition.x -= 0.05f;
+				transform.position = newPosition;
+			}
+		}
+	}
+		
+	}

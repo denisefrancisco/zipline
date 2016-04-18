@@ -9,12 +9,14 @@ using System.Collections;
 public class ErasePhysicsLine : MonoBehaviour {
 
 	private GameObject enableErasing; // Reference to GO with erasing scripts attached
-
+	public enableLineErasing lines_list;
 	//when line GO is clicked during Erase Mode, delete the line
 	void OnMouseDown () {
 		//Destroy (gameObject);
 		if (enableErasing.GetComponent<enableLineErasing>().canErase) {
 			Destroy (gameObject);
+			lines_list.lines = GameObject.FindGameObjectsWithTag("Line");
+			Debug.Log (lines_list.lines);
 		}
 	}
 
