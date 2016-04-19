@@ -9,7 +9,8 @@ public class DrawPhysicsLine : MonoBehaviour
 	private Vector3 startPos;	// Start position of line
 	private Vector3 endPos;		// End position of line
 	private int lineCount = 0;	// Counter for uniquely naming line
-	private Vector3 offset;
+	private Vector3 offsetEnd;
+	private Vector3 offsetStart;
 
 	/* State indicating player moused down on a snap point
 	 * (valid starting point of a line) or released mouse on a
@@ -29,6 +30,8 @@ public class DrawPhysicsLine : MonoBehaviour
 		// Initialize boolean flags for valid starting and ending points of a line
 		validStart = false;
 		validEnd = false;
+		offsetEnd = new Vector3(1,1,0);
+		offsetStart = new Vector3 (-0.2f, -0.2f, 0);
 	}
 
 	void Update () {
@@ -136,8 +139,7 @@ public class DrawPhysicsLine : MonoBehaviour
 		/* Add a collider component directly to the line GO
 		(instead of adding it as a child like the comented out code above*/
 		BoxCollider2D col = lineGO.AddComponent<BoxCollider2D> ();
-		offset = new Vector3(1,1,0);
-		float lineLength = Vector3.Distance (startPos, endPos+offset); // Length of line
+		float lineLength = Vector3.Distance (startPos+offsetStart, endPos+offsetEnd); // Length of line
 
 		// Size of collider is set where X is length of line, Y is width of line, Z will be set as per requirement
 		col.size = new Vector3 (lineLength, 0.15f, 1f); 
