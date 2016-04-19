@@ -27,6 +27,18 @@ public class slide_camera : MonoBehaviour {
 				transform.position = newPosition;
 			}
 		}
+		if (Input.mousePosition.y <= 0 + 20) {
+			if (transform.position.y >= farLeft.position.y) {
+				newPosition.y -= 0.05f;
+				transform.position = newPosition;
+			}
+		}
+		if (Input.mousePosition.y >= Screen.height - 20) {
+			if (transform.position.y <= farRight.position.y) {
+				newPosition.y += 0.05f;
+				transform.position = newPosition;
+			}
+		}
 	}
 		
 	}
