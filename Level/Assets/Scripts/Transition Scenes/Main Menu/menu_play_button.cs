@@ -8,6 +8,10 @@ public class menu_play_button : MonoBehaviour {
 	public void selectPage() {
 		SceneManager.LoadScene ("select_menu");
 	}
+
+	public void mapLevel() {
+		SceneManager.LoadScene ("map_level");
+	}
 		
 
 	// Use this for initialization
