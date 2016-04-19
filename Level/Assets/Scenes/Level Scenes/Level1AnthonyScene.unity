@@ -3259,6 +3259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   farLeft: {fileID: 1986915366}
   farRight: {fileID: 99981792}
+  farUp: {fileID: 0}
+  farDown: {fileID: 0}
   mainCamera: {fileID: 1379217730}
 --- !u!1 &1420722183
 GameObject:
@@ -4567,6 +4569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   farLeft: {fileID: 1986915366}
   farRight: {fileID: 99981792}
+  farUp: {fileID: 1849226071}
+  farDown: {fileID: 606602383}
   mainCamera: {fileID: 0}
 --- !u!1001 &1734882110
 Prefab:
