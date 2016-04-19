@@ -7,13 +7,13 @@ public class start_camera : MonoBehaviour {
 
 	public void returnCamera(){
 		camera.orthographicSize = 5;
-		camera.transform.position = new Vector3 (-4.5f, camera.transform.position.y, camera.transform.position.z);
+		//camera.transform.position = new Vector3 (-4.5f, camera.transform.position.y, camera.transform.position.z);
 	}
 
 	// Use this for initialization
 	void Start () {
 		camera.orthographicSize = 5;
-		camera.transform.position = new Vector3 (-4.5f, camera.transform.position.y, camera.transform.position.z);
+		//camera.transform.position = new Vector3 (-4.5f, camera.transform.position.y, camera.transform.position.z);
 	
 	}
 	
