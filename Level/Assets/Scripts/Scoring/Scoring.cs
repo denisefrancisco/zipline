@@ -72,10 +72,10 @@ public class Scoring : MonoBehaviour {
 	void Start () {
 		
 		// Initialize avatar and rigidbody component
-		avatar = GameObject.Find ("BoyZipping");
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		rigid = avatar.GetComponent<Rigidbody2D> ();
 		// Initialize reference to floorZone script
-		floorZone = GameObject.Find ("FloorZone").GetComponent<FloorZone> ();
+		floorZone = GameObject.Find("FloorZone").GetComponent<FloorZone> ();
 
 		// Initialize boolean flags to false
 		inZone = false;
