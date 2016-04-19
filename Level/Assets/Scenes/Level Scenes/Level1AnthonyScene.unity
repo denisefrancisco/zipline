@@ -856,6 +856,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!1 &452589960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 452589962}
+  - 114: {fileID: 452589961}
+  m_Layer: 0
+  m_Name: remove snap points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &452589961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 452589960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753633f7b96cc40e4806edf032eb3353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point1: {fileID: 1047971934}
+  point2: {fileID: 657193423}
+  point3: {fileID: 2082099365}
+  point4: {fileID: 382712955}
+  point5: {fileID: 1420722183}
+  point6: {fileID: 13333557}
+  point7: {fileID: 1094021446}
+  point8: {fileID: 554460652}
+  point9: {fileID: 85603694}
+  point10: {fileID: 636263031}
+  point11: {fileID: 2115230018}
+  point12: {fileID: 669022787}
+  point13: {fileID: 1165796681}
+  point14: {fileID: 1604358303}
+  point15: {fileID: 1975881200}
+  point16: {fileID: 1890732428}
+  point17: {fileID: 998520906}
+--- !u!4 &452589962
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 452589960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -156.344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 56
 --- !u!1 &460260439
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,6 +3188,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1671728208}
+        m_MethodName: applySnapPoint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1626384234
@@ -3533,6 +3600,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 452589961}
+        m_MethodName: removeSnapPoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1655057400
@@ -3568,6 +3646,62 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1655057396}
+--- !u!1 &1671728207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1671728209}
+  - 114: {fileID: 1671728208}
+  m_Layer: 0
+  m_Name: apply snap points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1671728208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671728207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753633f7b96cc40e4806edf032eb3353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point1: {fileID: 1047971934}
+  point2: {fileID: 657193423}
+  point3: {fileID: 2082099365}
+  point4: {fileID: 382712955}
+  point5: {fileID: 1420722183}
+  point6: {fileID: 13333557}
+  point7: {fileID: 1094021446}
+  point8: {fileID: 554460652}
+  point9: {fileID: 85603694}
+  point10: {fileID: 636263031}
+  point11: {fileID: 2115230018}
+  point12: {fileID: 669022787}
+  point13: {fileID: 1165796681}
+  point14: {fileID: 1604358303}
+  point15: {fileID: 1975881200}
+  point16: {fileID: 1890732428}
+  point17: {fileID: 998520906}
+--- !u!4 &1671728209
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671728207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -156.344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 57
 --- !u!1 &1689502703
 GameObject:
   m_ObjectHideFlags: 0

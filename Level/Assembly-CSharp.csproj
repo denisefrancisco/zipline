@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Line\snap_point.cs" />
      <Compile Include="Assets\Scripts\Scoring\FloorZone.cs" />
      <Compile Include="Assets\Scripts\Scoring\Scoring.cs" />
+     <Compile Include="Assets\Scripts\Snap Points\remove_snap_points.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\exit_game.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\menu_play_button.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\start_game.cs" />
