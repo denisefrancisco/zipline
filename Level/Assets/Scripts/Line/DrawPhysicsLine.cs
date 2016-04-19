@@ -31,7 +31,7 @@ public class DrawPhysicsLine : MonoBehaviour
 		validStart = false;
 		validEnd = false;
 		offsetEnd = new Vector3(1,1,0);
-		offsetStart = new Vector3 (-0.2f, -0.2f, 0);
+		offsetStart = new Vector3 (-0.1f, -0.1f, 0);
 	}
 
 	void Update () {
