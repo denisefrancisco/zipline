@@ -9,6 +9,7 @@ public class DrawPhysicsLine : MonoBehaviour
 	private Vector3 startPos;	// Start position of line
 	private Vector3 endPos;		// End position of line
 	private int lineCount = 0;	// Counter for uniquely naming line
+	//these offset variables are for making sure there are no gaps on the line.
 	private Vector3 offsetEnd;
 	private Vector3 offsetStart;
 
