@@ -80,6 +80,7 @@
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
 -define:UNITY_PRO_LICENSE
+'Assets/Scripts/Avatar/animOnButton.cs'
 'Assets/Scripts/Avatar/avatar_control.cs'
 'Assets/Scripts/Avatar/avatar_jump.cs'
 'Assets/Scripts/Avatar/customization/boy/boy_button_disappear.cs'
