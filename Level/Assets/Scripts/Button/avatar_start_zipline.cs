@@ -21,7 +21,7 @@ public class avatar_start_zipline : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		// Initialize avatar GO and rigidbody component
-		boyZipping = GameObject.Find ("BoyZipping");
+		boyZipping = GameObject.FindGameObjectWithTag ("Avatar");
 		rigid = boyZipping.GetComponent<Rigidbody2D> ();
 		// Initialize LandingZone GO
 		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
