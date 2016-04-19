@@ -26,9 +26,7 @@ public class animOnButton : MonoBehaviour {
 	public Collider2D origin;
 	private Rigidbody2D rb;
 	private Collider2D trolley;
-
-	private float halfSpeed = .5f;
-
+	private float quarter = .25f;
 	private GameObject landingZone;
 
 
@@ -71,7 +69,7 @@ public class animOnButton : MonoBehaviour {
 
 
 			if (feet.IsTouching (origin)) { 				
-				rb.AddForce (Vector3.right * movement_sp * halfSpeed, ForceMode2D.Impulse);
+				rb.AddForce (Vector3.right * movement_sp * quarter, ForceMode2D.Impulse);
 //				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
 			}
 		}
