@@ -5,9 +5,11 @@ public class slide_camera : MonoBehaviour {
 
 	public Transform farLeft;
 	public Transform farRight;
+	public Camera mainCamera;
 
 	// Use this for initialization
 	void Start () {
+		mainCamera.transform.position = new Vector3(-3.8f,mainCamera.transform.position.y,mainCamera.transform.position.z);
 	}
 	
 	// Update is called once per frame
