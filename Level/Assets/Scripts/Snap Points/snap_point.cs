@@ -11,6 +11,9 @@ public class snap_point : MonoBehaviour {
 	/* State that checks if user ends drawing a valid line i.e.
 	 * if user clicks mouse up on a snap point GO */
 	public bool validLineEndPoint;
+	/* Count indicating how many existing lines this snap point is
+	 * currently attached to */
+	public int usedCounter;
 
 	void OnMouseDown () { 
 		/* When a user mouses down on a snap point, that point becomes
@@ -41,8 +44,10 @@ public class snap_point : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		renderer = gameObject.GetComponent<SpriteRenderer>();
+		//snap point hasn't been used in line creation yet, so all flags set to false
 		validLineStartPoint = false;
 		validLineEndPoint = false;
+		usedCounter = 0;
 	}
 }
 

@@ -1,9 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Line/snap_point.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Camera/playZip_camera_mode.cs">
     <Files>
-      <File FileName="Assets/Scripts/Line/DrawPhysicsLine.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/Line/snap_point.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Snap Points/snap_point.cs" Line="15" Column="5" />
+      <File FileName="Assets/Scripts/Snap Points/changeSnapPointsOnPlay.cs" Line="17" Column="23" />
+      <File FileName="Assets/Scripts/Line/DrawPhysicsLine.cs" Line="95" Column="62" />
+      <File FileName="Assets/Scripts/Line/ErasePhysicsLine.cs" Line="17" Column="60" />
+      <File FileName="Assets/Scripts/Button/enableLineErasing.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Camera/playZip_camera_mode.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/Button/enableLineDrawing.cs" Line="33" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
