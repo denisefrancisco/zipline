@@ -45,3 +45,4 @@ public class snap_point : MonoBehaviour {
 		validLineEndPoint = false;
 	}
 }
+
