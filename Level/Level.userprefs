@@ -11,6 +11,7 @@
       <File FileName="Assets/Scripts/Camera/playZip_camera_mode.cs" Line="18" Column="41" />
       <File FileName="Assets/Scripts/Scoring/FloorZone.cs" Line="13" Column="29" />
       <File FileName="Assets/Scripts/Scoring/level_success.cs" Line="21" Column="24" />
+      <File FileName="Assets/Scripts/StopWatch/myTimer.cs" Line="8" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
