@@ -7,7 +7,8 @@ public class Scoring : MonoBehaviour {
 	public bool pastZone;	// Flag indicating avatar has passed the landing zone
 	/* Flag indicating when to calculate score (i.e. when play mode is ended);
 	 * set to true in EndPlay() method here and set to false in enableRebuild script */
-	public bool playEnded; 
+	public bool playEnded;
+	public GameObject lose_panel;
 
 	private float speed;	// Avatar's speed (technically velocity magnitude)
 	private int frameCounter; // Counts number of frames after avatar's speed reaches 0
@@ -48,9 +49,11 @@ public class Scoring : MonoBehaviour {
 		// Print outcome
 		if (outcomeID == 1) {
 			// Stagnation
+			lose_panel.SetActive(true);
 			Debug.Log ("Failure: You slowed down at " + avatarXPos + " before reaching the table.");
 		}  else if (outcomeID == 2) {
 			// Fell off
+			lose_panel.SetActive(true);
 			Debug.Log ("Failure: You fell off at " + avatarXPos +" before reaching the table.");
 		}  else if (outcomeID == 3) {
 			// Flew past
@@ -103,6 +106,7 @@ public class Scoring : MonoBehaviour {
 	void FixedUpdate ()	 {
 		//if the avatar hits the wall...
 		if (avatar.transform.position.x <= -6.7 || avatar.transform.position.x >= 6.7) {
+			lose_panel.SetActive (true);
 			Debug.Log ("Avatar that hit the wall! You lose!");
 		}
 
