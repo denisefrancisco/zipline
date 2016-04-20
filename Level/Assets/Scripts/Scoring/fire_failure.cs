@@ -19,6 +19,7 @@ public class fire_failure : MonoBehaviour {
 	void Update () {
 		if (circle.IsTouching (ec)) {
 			lose_panel.SetActive (true);
+			Time.timeScale = 0.0f;
 			Debug.Log ("You touched the fire! You lose!");
 		}
 	}

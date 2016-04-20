@@ -8,7 +8,9 @@ public class Scoring : MonoBehaviour {
 	/* Flag indicating when to calculate score (i.e. when play mode is ended);
 	 * set to true in EndPlay() method here and set to false in enableRebuild script */
 	public bool playEnded;
-	public GameObject lose_panel;
+	public GameObject lose_panel; //lose modal when the avatar encounters one of the failure conditions
+	public GameObject leftWall;
+	public GameObject rightWall;
 
 	private float speed;	// Avatar's speed (technically velocity magnitude)
 	private int frameCounter; // Counts number of frames after avatar's speed reaches 0
@@ -53,10 +55,12 @@ public class Scoring : MonoBehaviour {
 //			lose_panel.SetActive(true);
 //			Debug.Log ("Failure: You slowed down at " + avatarXPos + " before reaching the table.");
 //		}  
-//		if (outcomeID == 2) {
-//			// Fell off
-//			Debug.Log ("Failure: You fell off at " + avatarXPos +" before reaching the table.");
-//		}  
+		if (outcomeID == 2) {
+			// Fell off
+			lose_panel.SetActive(true);
+			Time.timeScale = 0.0f;
+			Debug.Log ("Failure: You fell off at " + avatarXPos +" before reaching the table.");
+		}  
 		if (outcomeID == 4) {
 			// Success
 			Debug.Log ("Success: You earned a score of " + score + ".");
@@ -77,7 +81,7 @@ public class Scoring : MonoBehaviour {
 		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		rigid = avatar.GetComponent<Rigidbody2D> ();
 		// Initialize reference to floorZone script
-		floorZone = GameObject.Find("FloorZone").GetComponent<FloorZone> ();
+//		floorZone = GameObject.Find("FloorZone").GetComponent<FloorZone> ();
 
 		//Initialize reference to EdgeCollider of avatar;
 		ec = avatar.GetComponent<EdgeCollider2D>();
@@ -106,8 +110,9 @@ public class Scoring : MonoBehaviour {
 
 	void FixedUpdate ()	 {
 		//if the avatar hits the wall...
-		if (avatar.transform.position.x <= -6.7 || avatar.transform.position.x >= 6.7) {
+		if (ec.IsTouching(leftWall.GetComponent<BoxCollider2D>()) || ec.IsTouching(rightWall.GetComponent<BoxCollider2D>())) {
 			lose_panel.SetActive (true);
+			Time.timeScale = 0.0f;
 			Debug.Log ("Avatar that hit the wall! You lose!");
 		}
 
@@ -144,9 +149,9 @@ public class Scoring : MonoBehaviour {
 				if (pastZone) {
 					EndPlay (3); // Flew past zipline
 				}
-				if (floorZone.inFloorZone) {
-					EndPlay (2); // Fell off zipline
-				}
+//				if (floorZone.inFloorZone) {
+//					EndPlay (2); // Fell off zipline
+//				}
 			}
 		}
 	}

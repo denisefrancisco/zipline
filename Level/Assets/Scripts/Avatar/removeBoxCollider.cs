@@ -17,6 +17,7 @@ public class removeBoxCollider : MonoBehaviour {
 	}
 
 	public void resetBoxCollider() {
+		Time.timeScale = 0.6f;
 		bc.isTrigger = false;
 	}
 	//this is to remove the rigid body during game start

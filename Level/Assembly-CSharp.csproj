@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\Scoring\FloorZone.cs" />
      <Compile Include="Assets\Scripts\Scoring\Scoring.cs" />
      <Compile Include="Assets\Scripts\Scoring\fire_failure.cs" />
+     <Compile Include="Assets\Scripts\Scoring\ground_failure.cs" />
      <Compile Include="Assets\Scripts\Scoring\level_success.cs" />
      <Compile Include="Assets\Scripts\Snap Points\remove_snap_points.cs" />
      <Compile Include="Assets\Scripts\StopWatch\myTimer.cs" />
