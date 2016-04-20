@@ -369,7 +369,6 @@ GameObject:
   - 4: {fileID: 33714315}
   - 212: {fileID: 33714314}
   - 61: {fileID: 33714317}
-  - 114: {fileID: 33714316}
   - 114: {fileID: 33714318}
   m_Layer: 0
   m_Name: Screen Shot 2016-04-19 at 7.49.20 PM (2)
@@ -420,18 +419,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 58
---- !u!114 &33714316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 33714313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7812cbd9ec6bc4bfea234b03b801fcb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inFloorZone: 0
 --- !u!61 &33714317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1737,7 +1724,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 605287675}
   - 61: {fileID: 605287677}
-  - 114: {fileID: 605287676}
   - 114: {fileID: 605287678}
   m_Layer: 0
   m_Name: Landing Zone
@@ -1758,23 +1744,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1331872893}
   m_RootOrder: 0
---- !u!114 &605287676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 605287674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ebcab86b06a46d9a5fb75800313f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pastZone: 0
-  playEnded: 0
-  lose_panel: {fileID: 1467267571}
-  leftWall: {fileID: 0}
-  rightWall: {fileID: 0}
-  avatar: {fileID: 1276376400}
 --- !u!61 &605287677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4398,7 +4367,6 @@ GameObject:
   - 4: {fileID: 1478353708}
   - 212: {fileID: 1478353707}
   - 61: {fileID: 1478353710}
-  - 114: {fileID: 1478353709}
   - 114: {fileID: 1478353711}
   m_Layer: 0
   m_Name: Screen Shot 2016-04-19 at 7.49.20 PM
@@ -4449,18 +4417,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 56
---- !u!114 &1478353709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1478353706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7812cbd9ec6bc4bfea234b03b801fcb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inFloorZone: 0
 --- !u!61 &1478353710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6103,7 +6059,6 @@ GameObject:
   - 4: {fileID: 1989881560}
   - 212: {fileID: 1989881559}
   - 61: {fileID: 1989881562}
-  - 114: {fileID: 1989881561}
   - 114: {fileID: 1989881563}
   m_Layer: 0
   m_Name: Screen Shot 2016-04-19 at 7.49.20 PM (1)
@@ -6154,18 +6109,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 57
---- !u!114 &1989881561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1989881558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7812cbd9ec6bc4bfea234b03b801fcb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inFloorZone: 0
 --- !u!61 &1989881562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6175,7 +6118,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
