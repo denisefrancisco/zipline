@@ -1710,8 +1710,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 561955882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.25, y: 2.05, z: 7.59}
-  m_LocalScale: {x: 2.836601, y: 2.836601, z: 2.836601}
+  m_LocalPosition: {x: 5.37, y: 2.06, z: 7.59}
+  m_LocalScale: {x: 2.4941025, y: 2.4941025, z: 2.4941025}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 61
@@ -1724,6 +1724,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 605287675}
   - 61: {fileID: 605287677}
+  - 114: {fileID: 605287676}
   - 114: {fileID: 605287678}
   m_Layer: 0
   m_Name: Landing Zone
@@ -1744,6 +1745,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1331872893}
   m_RootOrder: 0
+--- !u!114 &605287676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605287674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ebcab86b06a46d9a5fb75800313f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pastZone: 0
+  playEnded: 0
+  lose_panel: {fileID: 1467267571}
+  leftWall: {fileID: 145000375}
+  rightWall: {fileID: 1582981707}
+  avatar: {fileID: 1276376400}
 --- !u!61 &605287677
 BoxCollider2D:
   m_ObjectHideFlags: 0
