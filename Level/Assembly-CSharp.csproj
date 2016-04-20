@@ -76,6 +76,8 @@
      <Compile Include="Assets\Scripts\Line\snap_point.cs" />
      <Compile Include="Assets\Scripts\Scoring\FloorZone.cs" />
      <Compile Include="Assets\Scripts\Scoring\Scoring.cs" />
+     <Compile Include="Assets\Scripts\Scoring\fire_failure.cs" />
+     <Compile Include="Assets\Scripts\Scoring\level_success.cs" />
      <Compile Include="Assets\Scripts\Snap Points\remove_snap_points.cs" />
      <Compile Include="Assets\Scripts\StopWatch\myTimer.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\exit_game.cs" />
@@ -85,12 +87,19 @@
      <Compile Include="Assets\Toon_fire\scripts\fire_wiggle.cs" />
      <Compile Include="Assets\Toon_fire\scripts\flickering.cs" />
      <Compile Include="Assets\start_play_camera.cs" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>/Users/Amuraco/Desktop/DeniseZipline/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6FE2CDF2-5D81-A8A1-9A62-60A243F9BEFB}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

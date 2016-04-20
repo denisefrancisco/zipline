@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-public class DrawPhysicsLine : MonoBehaviour
-{
+
+public class DrawPhysicsLine : MonoBehaviour {
+
 	private GameObject lineGO; // Reference to line game object
 	private LineRenderer line;	// Reference to LineRenderer
 	private Transform lineTrans; // Transform of line
@@ -19,11 +20,14 @@ public class DrawPhysicsLine : MonoBehaviour
 	private bool validStart;
 	private bool validEnd;
 
-	// Array of references to snap point game objects
-	public GameObject[] points;
-	// Array for storing the GO that becomes the starting snap point of a new line
-	public GameObject[] startSnapPoint;
-
+	// Array of references to snap point game objects tagged "SnapPoint"
+	private GameObject[] points;
+	/* Array for storing the GO that the user has selected as either
+	the starting or ending snap point of a new line */
+	private GameObject[] selectedSnapPoints;
+	// References to starting and ending snap point game objects of currently drawn line
+	private GameObject startSnapPoint;
+	private GameObject endSnapPoint;
 
 	void Start () {
 		// Initialize snap point GOs
@@ -31,61 +35,56 @@ public class DrawPhysicsLine : MonoBehaviour
 		// Initialize boolean flags for valid starting and ending points of a line
 		validStart = false;
 		validEnd = false;
-		offsetEnd = new Vector3(1,1,0);
-		offsetStart = new Vector3 (-0.1f, -0.1f, 0);
 	}
 
 	void Update () {
-
 		// Create new line on mouse down if location is valid (i.e. on a snap point)
 		if (Input.GetMouseButtonDown(0)) {
-			startSnapPoint = GameObject.FindGameObjectsWithTag ("SelectedSnapPoint");
-
+			selectedSnapPoints = GameObject.FindGameObjectsWithTag ("SelectedSnapPoint");
 			// If a snap point has been selected as a starting point for a line, flag validStart
-			if (startSnapPoint.Length == 1) {
+			if (selectedSnapPoints.Length == 1) {
 				validStart = true;
-				//reset tag of selected snap point
-				startSnapPoint [0].tag = "SnapPoint";
-			} else {
-				validStart = false;
+				// Save reference to starting snap point
+				startSnapPoint = selectedSnapPoints[0];
+				startSnapPoint.tag = "SnapPoint"; //reset tag to normal snap point
+			}  else {
+				validStart = false;	//invalid starting point for line
 			}
 
 			// If mouse down on a snap point, start drawing line
 			if (validStart) {
-				// Check if there's no line renderer created yet
+				// Check if there's no line renderer created yet, create a new line
 				if (line == null) {
 					lineCount++;
-					createLine ();	// Create line
+					createLine ();
 				}
-				// Get mouse position
-				mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-				// Set z coordinate to 0 (only consider x-y axes in 2D)
-				mousePos.z = 0;
-				// Set the start point
-				line.SetPosition (0, mousePos);
-				startPos = mousePos;
+				// Get center position of starting snap point (SSP) to set as line's start point
+				Vector3 centerSSP = startSnapPoint.transform.position;
+				centerSSP.z = 0;
+				line.SetPosition (0, centerSSP);
+				startPos = centerSSP;
 			}
 		}
 		// End a new line on mouse up if location is valid (i.e on a snap point)
 		else if (Input.GetMouseButtonUp(0)) {
-			// Check if mouse up location is valid for currently drawn line
 			foreach (GameObject snappoint in points) {
-				validEnd = validEnd || (snappoint.GetComponent<snap_point>().validLineEndPoint);
+				if (snappoint.GetComponent<snap_point>().validLineEndPoint) {
+					endSnapPoint = snappoint;
+				}
 			}
 
 			if (line) {
-				mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-				mousePos.z = 0;
-				// Set the end point of line renderer to current mouse position
-				line.SetPosition(1,mousePos);
-				endPos = mousePos;
-
 				/* Destroy line GO if line's end point is not a snap point,
 				 * otherwise add a collider to the line */
-				if (validEnd) {
+				if (endSnapPoint != null) {
+					// Get center position of ending snap point (ESP) to set as line's end point
+					Vector3 centerESP = endSnapPoint.transform.position;
+					centerESP.z = 0;
+					line.SetPosition (1, centerESP);
+					endPos = centerESP;
 					//add collider to line so avatar GO can interact w/it
 					addColliderToLine();
-				} else {
+				}  else {
 					Destroy(GameObject.Find("Line"+lineCount));
 					lineCount--; //decrement the current number of lines bc we just destroyed a line
 				}
@@ -93,9 +92,11 @@ public class DrawPhysicsLine : MonoBehaviour
 				line = null;
 			}
 
-			// Reset flags
+			// Reset flags for valid line points and references to those points
 			validStart = false;
 			validEnd = false;
+			startSnapPoint = null;
+			endSnapPoint = null;
 		}
 		/* If mouse button is held clicked and line exists, enact "rubber-banding" effect
 		 * that is, let the line stretch and rotate as it follows mouse location */
@@ -119,8 +120,8 @@ public class DrawPhysicsLine : MonoBehaviour
 		/* Attach ErasePhysicsLine script to lineGO and disable the script bc
 		 * we don't want to give the player the ability to erase lines yet
 		* (only available in Erase Mode activated by EraseButton) */
-		ErasePhysicsLine lineScript = lineGO.AddComponent<ErasePhysicsLine>();
-		lineScript.enabled = false;
+		ErasePhysicsLine lineEraseScript = lineGO.AddComponent<ErasePhysicsLine>();
+		lineEraseScript.enabled = false;
 		lineGO.tag = "Line"; // Add the tag "Line" to the line GO
 
 		// Assign the material to the line
@@ -134,13 +135,10 @@ public class DrawPhysicsLine : MonoBehaviour
 
 	// Adds collider to created line
 	private void addColliderToLine () {
-		/*BoxCollider2D col = new GameObject("Collider"+lineCount).AddComponent<BoxCollider2D> ();
-		col.transform.parent = line.transform; // Collider is added as child object of line */
-
 		/* Add a collider component directly to the line GO
 		(instead of adding it as a child like the comented out code above*/
 		BoxCollider2D col = lineGO.AddComponent<BoxCollider2D> ();
-		float lineLength = Vector3.Distance (startPos+offsetStart, endPos+offsetEnd); // Length of line
+		float lineLength = Vector3.Distance (startPos, endPos); // Length of line
 
 		// Size of collider is set where X is length of line, Y is width of line, Z will be set as per requirement
 		col.size = new Vector3 (lineLength, 0.15f, 1f); 
@@ -160,5 +158,6 @@ public class DrawPhysicsLine : MonoBehaviour
 		angle = Mathf.Rad2Deg * Mathf.Atan (angle);
 		col.transform.Rotate (0, 0, angle);
 	}
-	 
+
 }
+
