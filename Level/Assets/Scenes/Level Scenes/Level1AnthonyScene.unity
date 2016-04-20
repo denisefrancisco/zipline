@@ -4106,6 +4106,7 @@ MonoBehaviour:
   allcameraData: {fileID: 1379217730}
   lose_panel: {fileID: 1467267571}
   success_panel: {fileID: 228594681}
+  timer: {fileID: 532192483}
 --- !u!81 &1379217727
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7191,6 +7192,7 @@ MonoBehaviour:
   allcameraData: {fileID: 0}
   lose_panel: {fileID: 0}
   success_panel: {fileID: 0}
+  timer: {fileID: 0}
 --- !u!1 &2146989141
 GameObject:
   m_ObjectHideFlags: 0

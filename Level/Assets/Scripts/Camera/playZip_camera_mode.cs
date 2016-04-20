@@ -7,6 +7,7 @@ public class playZip_camera_mode : MonoBehaviour {
 	public Camera allcameraData;
 	public GameObject lose_panel;
 	public GameObject success_panel;
+	public GameObject timer;
 	private Vector3 offset = new Vector3 (0,0,-157);
 
 	// Use this for initialization
@@ -19,6 +20,7 @@ public class playZip_camera_mode : MonoBehaviour {
 	public void resetModal(){
 		lose_panel.SetActive (false);
 		success_panel.SetActive (false);
+		timer.SetActive (false);
 	}
 
 	// Update is called once per frame
@@ -27,6 +29,9 @@ public class playZip_camera_mode : MonoBehaviour {
 		Debug.Log (characterTransform);
 		Vector3 characterPosition = characterTransform.position;
 		allcameraData.transform.position = characterPosition + offset;
+		if (player.transform.position.x >= -3.2f) {
+			timer.SetActive (true);
+		}
 	}
 }
 //using UnityEngine;
