@@ -1,16 +1,15 @@
 -debug
 -target:library
 -nowarn:0169
--out:'Temp/Assembly-CSharp.dll'
+-out:'Temp/Assembly-CSharp-firstpass.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
--r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
--r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
--r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
--r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
--define:UNITY_5_3_3
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_3_4
 -define:UNITY_5_3
 -define:UNITY_5
 -define:ENABLE_NEW_BUGREPORTER
@@ -82,48 +81,6 @@
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
 -define:UNITY_PRO_LICENSE
-'Assets/Scripts/Avatar/animOnButton.cs'
-'Assets/Scripts/Avatar/avatar_control.cs'
-'Assets/Scripts/Avatar/avatar_jump.cs'
-'Assets/Scripts/Avatar/customization/boy/boy_button_disappear.cs'
-'Assets/Scripts/Avatar/customization/boy/left_button_customize.cs'
-'Assets/Scripts/Avatar/customization/boy/right_button_customize.cs'
-'Assets/Scripts/Avatar/customization/girl/button2_for_customizing.cs'
-'Assets/Scripts/Avatar/customization/girl/button_disappear.cs'
-'Assets/Scripts/Avatar/customization/girl/button_for_customizing.cs'
-'Assets/Scripts/Avatar/gender pick intro/loadBoy.cs'
-'Assets/Scripts/Avatar/gender pick intro/loadGirl.cs'
-'Assets/Scripts/Avatar/jump_avatar.cs'
-'Assets/Scripts/Avatar/removeBoxCollider.cs'
-'Assets/Scripts/Button/avatar_start_zipline.cs'
-'Assets/Scripts/Button/enableLineDrawing.cs'
-'Assets/Scripts/Button/enableLineDrawingTestLvl.cs'
-'Assets/Scripts/Button/enableLineErasing.cs'
-'Assets/Scripts/Button/enableRebuild.cs'
-'Assets/Scripts/Button/loadLevel.cs'
-'Assets/Scripts/Camera/change_camera.cs'
-'Assets/Scripts/Camera/escape_to_build.cs'
-'Assets/Scripts/Camera/playZip_camera_mode.cs'
-'Assets/Scripts/Camera/slide_camera.cs'
-'Assets/Scripts/Camera/start_camera.cs'
-'Assets/Scripts/Line/DrawPhysicsLine.cs'
-'Assets/Scripts/Line/DrawPhysicsLineTestLvl.cs'
-'Assets/Scripts/Line/ErasePhysicsLine.cs'
-'Assets/Scripts/Line/line_create.cs'
-'Assets/Scripts/Line/snap_point.cs'
-'Assets/Scripts/Scoring/FloorZone.cs'
-'Assets/Scripts/Scoring/Scoring.cs'
-'Assets/Scripts/Scoring/fire_failure.cs'
-'Assets/Scripts/Scoring/ground_failure.cs'
-'Assets/Scripts/Scoring/level_success.cs'
-'Assets/Scripts/Snap Points/remove_snap_points.cs'
-'Assets/Scripts/StopWatch/myTimer.cs'
-'Assets/Scripts/Transition Scenes/Main Menu/exit_game.cs'
-'Assets/Scripts/Transition Scenes/Main Menu/menu_play_button.cs'
-'Assets/Scripts/Transition Scenes/start_game.cs'
-'Assets/Toon_fire/scripts/demo_scene_control.cs'
-'Assets/Toon_fire/scripts/fire_wiggle.cs'
-'Assets/Toon_fire/scripts/flickering.cs'
-'Assets/start_play_camera.cs'
+'Assets/Standard Assets/Character Controllers/Sources/Scripts/MouseLook.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
