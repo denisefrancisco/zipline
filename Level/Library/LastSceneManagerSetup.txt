@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Level Scenes/LevelTutorialAnthonyScene.unity
+- path: Assets/Timer_Implementation.unity
   isLoaded: 1
   isActive: 1
