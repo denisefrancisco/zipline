@@ -101,6 +101,10 @@ public class Scoring : MonoBehaviour {
 
 
 	void FixedUpdate ()	 {
+		if (avatar.transform.position.x <= -6.7 || avatar.transform.position.x >= 6.7) {
+			Debug.Log ("Avatar that hit the wall! You lose!");
+		}
+
 		if (!playEnded) {
 			// Grab avatar current speed and x position
 			speed = rigid.velocity.magnitude;
