@@ -78,8 +78,8 @@
      <Compile Include="Assets\Scripts\Scoring\fire_failure.cs" />
      <Compile Include="Assets\Scripts\Scoring\ground_failure.cs" />
      <Compile Include="Assets\Scripts\Scoring\level_success.cs" />
+     <Compile Include="Assets\Scripts\Snap Points\ApplySnapPoints.cs" />
      <Compile Include="Assets\Scripts\Snap Points\changeSnapPointsOnPlay.cs" />
-     <Compile Include="Assets\Scripts\Snap Points\remove_snap_points.cs" />
      <Compile Include="Assets\Scripts\Snap Points\snap_point.cs" />
      <Compile Include="Assets\Scripts\StopWatch\myTimer.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\exit_game.cs" />
