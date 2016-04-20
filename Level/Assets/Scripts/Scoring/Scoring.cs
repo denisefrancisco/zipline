@@ -8,7 +8,7 @@ public class Scoring : MonoBehaviour {
 	/* Flag indicating when to calculate score (i.e. when play mode is ended);
 	 * set to true in EndPlay() method here and set to false in enableRebuild script */
 	public bool playEnded;
-	public GameObject lose_panel;
+	public GameObject lose_panel; //lose modal when the avatar encounters one of the failure conditions
 
 	private float speed;	// Avatar's speed (technically velocity magnitude)
 	private int frameCounter; // Counts number of frames after avatar's speed reaches 0
@@ -108,6 +108,7 @@ public class Scoring : MonoBehaviour {
 		//if the avatar hits the wall...
 		if (avatar.transform.position.x <= -6.7 || avatar.transform.position.x >= 6.7) {
 			lose_panel.SetActive (true);
+			Time.timeScale = 0.0f;
 			Debug.Log ("Avatar that hit the wall! You lose!");
 		}
 
