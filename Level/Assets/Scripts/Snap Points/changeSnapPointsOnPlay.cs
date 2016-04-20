@@ -6,12 +6,9 @@ public class changeSnapPointsOnPlay : MonoBehaviour {
 	private GameObject[] points;
 
 	public void changeSnapPoints () {
-		Debug.Log ("change dem snap points");
 		foreach (GameObject p in points) {
 			int count = p.GetComponent<snap_point> ().usedCounter;
 			CircleCollider2D col = p.GetComponent<CircleCollider2D> ();
-			Debug.Log (p.name +" used "+ count + " times"); 
-
 			//snap point p has been used as part of an existing line
 			if (count > 0) {
 				col.radius = 0.38f;	//make collider radius same size as line width
