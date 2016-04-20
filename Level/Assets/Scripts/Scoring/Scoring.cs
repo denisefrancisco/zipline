@@ -101,6 +101,7 @@ public class Scoring : MonoBehaviour {
 
 
 	void FixedUpdate ()	 {
+		//if the avatar hits the wall...
 		if (avatar.transform.position.x <= -6.7 || avatar.transform.position.x >= 6.7) {
 			Debug.Log ("Avatar that hit the wall! You lose!");
 		}
