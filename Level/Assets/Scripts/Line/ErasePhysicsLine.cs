@@ -9,22 +9,22 @@ using System.Collections;
 public class ErasePhysicsLine : MonoBehaviour {
 
 	private GameObject enableErasing; // Reference to GO with erasing scripts attached
-	public enableLineErasing lines_list;
-	//when line GO is clicked during Erase Mode, delete the line
+	public GameObject[] points;	// Array of snap point GOs that serve as vertices of line renderer
+
 	void OnMouseDown () {
-		//Destroy (gameObject);
-		if (enableErasing.GetComponent<enableLineErasing>().canErase) {
+		if (enableErasing.GetComponent<enableLineErasing> ().canErase) {
+			if (points.Length > 0) {
+				foreach (GameObject p in points) {
+					p.GetComponent<snap_point> ().usedCounter--;
+				}
+			}
+			//when line GO is clicked during Erase Mode, delete the line
 			Destroy (gameObject);
-			lines_list.lines = GameObject.FindGameObjectsWithTag("Line");
-			Debug.Log (lines_list.lines);
 		}
 	}
 
 	void Start() {
 		enableErasing = GameObject.Find ("enableLineErasing"); 
-	}
-
-	void Update() {
 	}
 				
 }

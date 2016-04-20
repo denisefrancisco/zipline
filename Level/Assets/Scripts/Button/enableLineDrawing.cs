@@ -30,7 +30,6 @@ public class enableLineDrawing : MonoBehaviour {
 		canDraw = false;
 		disableErase.canErase = false;
 		Debug.Log ("disableDrawandErase");
-		Debug.Log (disableErase.canErase);
 	}
 	//This Function is for the enabling the draw and erase functions through reset button
 	public void enableDrawAndErase() {
