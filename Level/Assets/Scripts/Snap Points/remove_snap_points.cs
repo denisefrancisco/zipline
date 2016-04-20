@@ -65,7 +65,7 @@ public class remove_snap_points : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		Debug.Log (point3.transform.position);
 	}
 
 
