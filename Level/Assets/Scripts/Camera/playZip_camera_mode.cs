@@ -24,7 +24,6 @@ public class playZip_camera_mode : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Transform characterTransform = player.transform;
-		Debug.Log (characterTransform);
 		Vector3 characterPosition = characterTransform.position;
 		allcameraData.transform.position = characterPosition + offset;
 	}

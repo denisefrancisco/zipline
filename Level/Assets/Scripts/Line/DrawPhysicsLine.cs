@@ -46,6 +46,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 				validStart = true;
 				// Save reference to starting snap point
 				startSnapPoint = selectedSnapPoints[0];
+				startSnapPoint.GetComponent<snap_point> ().usedCounter++; // increase usedCounter
 				startSnapPoint.tag = "SnapPoint"; //reset tag to normal snap point
 			}  else {
 				validStart = false;	//invalid starting point for line
@@ -82,9 +83,16 @@ public class DrawPhysicsLine : MonoBehaviour {
 					centerESP.z = 0;
 					line.SetPosition (1, centerESP);
 					endPos = centerESP;
+					//add start and end snap points to points array in ErasePhysicsLine script attached to line GO
+					GameObject[] startAndEnd = {startSnapPoint, endSnapPoint};
+					lineGO.GetComponent<ErasePhysicsLine> ().points = startAndEnd;
+					//flag snap point as used 
+					endSnapPoint.GetComponent<snap_point> ().usedCounter++;
 					//add collider to line so avatar GO can interact w/it
 					addColliderToLine();
 				}  else {
+					//reset usedCounter to false for start snap point
+					startSnapPoint.GetComponent<snap_point> ().usedCounter--;
 					Destroy(GameObject.Find("Line"+lineCount));
 					lineCount--; //decrement the current number of lines bc we just destroyed a line
 				}

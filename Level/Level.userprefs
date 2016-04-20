@@ -1,17 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scoring/fire_failure.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Camera/playZip_camera_mode.cs">
     <Files>
-      <File FileName="Assets/Scripts/Snap Points/remove_snap_points.cs" Line="27" Column="8" />
-      <File FileName="Assets/Scripts/Line/DrawPhysicsLine.cs" Line="85" Column="20" />
-      <File FileName="Assets/Scripts/Avatar/animOnButton.cs" Line="46" Column="43" />
-      <File FileName="Assets/Scripts/Avatar/removeBoxCollider.cs" Line="21" Column="3" />
-      <File FileName="Assets/Scripts/Scoring/fire_failure.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/Scoring/Scoring.cs" Line="59" Column="8" />
-      <File FileName="Assets/Scripts/Camera/playZip_camera_mode.cs" Line="18" Column="41" />
-      <File FileName="Assets/Scripts/Scoring/FloorZone.cs" Line="13" Column="29" />
-      <File FileName="Assets/Scripts/Scoring/level_success.cs" Line="21" Column="24" />
-      <File FileName="Assets/Scripts/StopWatch/myTimer.cs" Line="8" Column="9" />
+      <File FileName="Assets/Scripts/Snap Points/snap_point.cs" Line="15" Column="5" />
+      <File FileName="Assets/Scripts/Snap Points/changeSnapPointsOnPlay.cs" Line="17" Column="23" />
+      <File FileName="Assets/Scripts/Line/DrawPhysicsLine.cs" Line="95" Column="62" />
+      <File FileName="Assets/Scripts/Line/ErasePhysicsLine.cs" Line="17" Column="60" />
+      <File FileName="Assets/Scripts/Button/enableLineErasing.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Camera/playZip_camera_mode.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/Button/enableLineDrawing.cs" Line="33" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
