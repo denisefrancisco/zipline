@@ -24,9 +24,10 @@ public class Scoring : MonoBehaviour {
 	private Rigidbody2D rigid;	// Reference to avatar GO's rigidbody2d component
 	private float avatarXPos; 	// Avatar transform's x position
 	private FloorZone floorZone;	// Reference to floorZone script
+	private EdgeCollider2D ec; // edge collider of avatar
 
 
-	void OnTriggerEnter2D (Collider2D other) {
+	void OnTriggerEnter2D (Collider2D ec) {
 		inZone = true;	// Avatar in landing zone
 	}
 
@@ -47,18 +48,16 @@ public class Scoring : MonoBehaviour {
 		playEnded = true;
 
 		// Print outcome
-		if (outcomeID == 1) {
-			// Stagnation
-			lose_panel.SetActive(true);
-			Debug.Log ("Failure: You slowed down at " + avatarXPos + " before reaching the table.");
-		}  else if (outcomeID == 2) {
-			// Fell off
-			lose_panel.SetActive(true);
-			Debug.Log ("Failure: You fell off at " + avatarXPos +" before reaching the table.");
-		}  else if (outcomeID == 3) {
-			// Flew past
-			Debug.Log ("Failure: You flew past the table.");
-		}  else if (outcomeID == 4) {
+//		if (outcomeID == 1) {
+//			// Stagnation
+//			lose_panel.SetActive(true);
+//			Debug.Log ("Failure: You slowed down at " + avatarXPos + " before reaching the table.");
+//		}  
+//		if (outcomeID == 2) {
+//			// Fell off
+//			Debug.Log ("Failure: You fell off at " + avatarXPos +" before reaching the table.");
+//		}  
+		if (outcomeID == 4) {
 			// Success
 			Debug.Log ("Success: You earned a score of " + score + ".");
 		}
@@ -80,6 +79,8 @@ public class Scoring : MonoBehaviour {
 		// Initialize reference to floorZone script
 		floorZone = GameObject.Find("FloorZone").GetComponent<FloorZone> ();
 
+		//Initialize reference to EdgeCollider of avatar;
+		ec = avatar.GetComponent<EdgeCollider2D>();
 		// Initialize boolean flags to false
 		inZone = false;
 		pastZone = false;
