@@ -181,10 +181,10 @@ public class DrawPhysicsLine : MonoBehaviour {
 		/* Add a collider component directly to the line GO
 		(instead of adding it as a child like the comented out code above*/
 		BoxCollider2D col = lineGO.AddComponent<BoxCollider2D> ();
-		float lineLength = Vector3.Distance (startPos, endPos); // Length of line
+		currentLineLength = Vector3.Distance (startPos, endPos); // final length of line
 
 		// Size of collider is set where X is length of line, Y is width of line, Z will be set as per requirement
-		col.size = new Vector3 (lineLength, 0.15f, 1f); 
+		col.size = new Vector3 (currentLineLength, 0.15f, 1f); 
 
 		// Set position of collider object
 		Vector3 midPoint = (startPos + endPos)/2;
