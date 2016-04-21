@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Button\enableLineDrawingTestLvl.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineErasing.cs" />
      <Compile Include="Assets\Scripts\Button\enableRebuild.cs" />
+     <Compile Include="Assets\Scripts\Button\enableReset.cs" />
      <Compile Include="Assets\Scripts\Button\loadLevel.cs" />
      <Compile Include="Assets\Scripts\Camera\change_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\escape_to_build.cs" />

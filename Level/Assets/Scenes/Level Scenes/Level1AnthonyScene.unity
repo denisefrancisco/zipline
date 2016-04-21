@@ -159,7 +159,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &13333561
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -533,7 +532,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &85603698
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -849,7 +847,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &163709782
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -938,7 +935,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &177023380
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1223,7 +1219,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &243230966
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1385,7 +1380,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &320857665
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1520,7 +1514,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &337394955
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1621,7 +1614,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &345792322
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1812,6 +1804,7 @@ RectTransform:
   - {fileID: 1626384231}
   - {fileID: 1243043810}
   - {fileID: 1636241940}
+  - {fileID: 1266163916}
   m_Father: {fileID: 1691744064}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -1893,7 +1886,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &382712959
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1992,7 +1984,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &448137773
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2200,7 +2191,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &490389441
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2289,7 +2279,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &498243970
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2378,7 +2367,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &507216847
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2467,7 +2455,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &522762993
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2814,7 +2801,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &554460656
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3093,7 +3079,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &626361155
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3224,7 +3209,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &636263035
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3313,7 +3297,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &657193427
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3402,7 +3385,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &669022791
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3534,7 +3516,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &707610000
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3628,7 +3609,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &792385207
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3717,7 +3697,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &800745478
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3937,7 +3916,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &987344173
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4141,7 +4119,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &998520910
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4376,7 +4353,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1047971938
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4454,7 +4430,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1068925708
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4884,7 +4859,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1094021450
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4931,7 +4905,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1095602838
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5020,7 +4993,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1108085613
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5326,7 +5298,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1165796685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5840,6 +5811,126 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 36
+--- !u!1 &1266163915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1266163916}
+  - 222: {fileID: 1266163919}
+  - 114: {fileID: 1266163918}
+  - 114: {fileID: 1266163917}
+  m_Layer: 5
+  m_Name: ResetButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1266163916
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266163915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5.0000916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 376607964}
+  m_RootOrder: 4
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -210, y: 56.9}
+  m_SizeDelta: {x: 71.1, y: 66.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1266163917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266163915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.7843138, g: 0.7843138, b: 0.7843138, a: 1}
+    m_PressedColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    m_DisabledColor: {r: 0.9921569, g: 0.29411766, b: 0.29411766, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1266163918}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2000457823}
+        m_MethodName: resetLayout
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1266163918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266163915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300004, guid: f9d4a81d6a17347aea7ad0b16fc7bb04, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1266163919
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266163915}
 --- !u!1 &1276376400
 GameObject:
   m_ObjectHideFlags: 0
@@ -6089,7 +6180,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1276688159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6498,7 +6588,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1420722187
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6925,7 +7014,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1520264096
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7254,7 +7342,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1603994978
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7385,7 +7472,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1604358307
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7490,7 +7576,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1625524471
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8488,7 +8573,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1711430947
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8631,7 +8715,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1739023756
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8720,7 +8803,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1748179788
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8965,7 +9047,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1785267609
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9069,7 +9150,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1849634713
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9252,7 +9332,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1878779883
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9383,7 +9462,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1890732432
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9430,7 +9508,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1947953364
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9561,7 +9638,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &1975881204
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9756,6 +9832,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2000457822}
+  - 114: {fileID: 2000457823}
   m_Layer: 0
   m_Name: enableReset
   m_TagString: Untagged
@@ -9775,6 +9852,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
+--- !u!114 &2000457823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000457821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f0340fc90904977a836d8f517b1593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2019209932
 GameObject:
   m_ObjectHideFlags: 0
@@ -10142,7 +10230,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &2082099369
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10305,7 +10392,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &2111681181
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10436,7 +10522,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &2115230022
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10770,7 +10855,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &2129007011
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10981,7 +11065,6 @@ MonoBehaviour:
   validLineStartPoint: 0
   validLineEndPoint: 0
   usedCounter: 0
-  initRadius: 0.625
 --- !u!58 &2146244953
 CircleCollider2D:
   m_ObjectHideFlags: 0

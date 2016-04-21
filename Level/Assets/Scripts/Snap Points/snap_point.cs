@@ -14,7 +14,7 @@ public class snap_point : MonoBehaviour {
 	/* Count indicating how many existing lines this snap point is
 	 * currently attached to */
 	public int usedCounter;
-	public float initRadius = 0.625f;	// radius of 2D circle collider
+	private float initRadius = 0.625f;	// radius of 2D circle collider
 
 	void OnMouseDown () { 
 		/* When a user mouses down on a snap point, that point becomes
