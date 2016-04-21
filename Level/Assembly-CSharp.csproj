@@ -75,7 +75,6 @@
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLineTestLvl.cs" />
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\line_create.cs" />
-     <Compile Include="Assets\Scripts\Scoring\FloorZone.cs" />
      <Compile Include="Assets\Scripts\Scoring\Scoring.cs" />
      <Compile Include="Assets\Scripts\Scoring\fire_failure.cs" />
      <Compile Include="Assets\Scripts\Scoring\ground_failure.cs" />
