@@ -25,7 +25,7 @@ public class Scoring : MonoBehaviour {
 	public GameObject avatar;	// Reference to avatar GO
 	private Rigidbody2D rigid;	// Reference to avatar GO's rigidbody2d component
 	private float avatarXPos; 	// Avatar transform's x position
-	private FloorZone floorZone;	// Reference to floorZone script
+//	private FloorZone floorZone;	// Reference to floorZone script
 	private EdgeCollider2D ec; // edge collider of avatar
 
 
@@ -68,7 +68,7 @@ public class Scoring : MonoBehaviour {
 
 		// Reset flags, score, and outcome
 		inZone = false;
-		floorZone.inFloorZone = false;
+//		floorZone.inFloorZone = false;
 		score = 0;
 		outcomeID = 0;
 	}
@@ -109,12 +109,12 @@ public class Scoring : MonoBehaviour {
 
 
 	void FixedUpdate ()	 {
-		//if the avatar hits the wall...
-		if (ec.IsTouching(leftWall.GetComponent<BoxCollider2D>()) || ec.IsTouching(rightWall.GetComponent<BoxCollider2D>())) {
-			lose_panel.SetActive (true);
-			Time.timeScale = 0.0f;
-			Debug.Log ("Avatar that hit the wall! You lose!");
-		}
+//		if the avatar hits the wall...
+//		if (ec.IsTouching(leftWall.GetComponent<BoxCollider2D>()) || ec.IsTouching(rightWall.GetComponent<BoxCollider2D>())) {
+//			lose_panel.SetActive (true);
+//			Time.timeScale = 0.0f;
+//			Debug.Log ("Avatar that hit the wall! You lose!");
+//		}
 
 		if (!playEnded) {
 			// Grab avatar current speed and x position
