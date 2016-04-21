@@ -5,12 +5,13 @@
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
 -r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
 -r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
--r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
--r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
--define:UNITY_5_3_3
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_3_4
 -define:UNITY_5_3
 -define:UNITY_5
 -define:ENABLE_NEW_BUGREPORTER
@@ -82,7 +83,7 @@
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
 -define:UNITY_PRO_LICENSE
-'Assets/ApplySnapPoints.cs'
+'Assets/Mobile Cartoon FX/Scripts/Rotatearound.cs'
 'Assets/Scripts/Avatar/animOnButton.cs'
 'Assets/Scripts/Avatar/avatar_control.cs'
 'Assets/Scripts/Avatar/avatar_jump.cs'
@@ -116,6 +117,7 @@
 'Assets/Scripts/Scoring/fire_failure.cs'
 'Assets/Scripts/Scoring/ground_failure.cs'
 'Assets/Scripts/Scoring/level_success.cs'
+'Assets/Scripts/Snap Points/ApplySnapPoints.cs'
 'Assets/Scripts/Snap Points/changeSnapPointsOnPlay.cs'
 'Assets/Scripts/Snap Points/snap_point.cs'
 'Assets/Scripts/StopWatch/myTimer.cs'
@@ -125,6 +127,13 @@
 'Assets/Toon_fire/scripts/demo_scene_control.cs'
 'Assets/Toon_fire/scripts/fire_wiggle.cs'
 'Assets/Toon_fire/scripts/flickering.cs'
+'Assets/Zippy Water 2D/Scripts/Demo Scripts/ClickForNextScene.cs'
+'Assets/Zippy Water 2D/Scripts/Demo Scripts/TextMeshFPS.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2D.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2DAnimateColors.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2DBeachBall.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2DCenterOfMass.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2DCollider.cs'
 'Assets/start_play_camera.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
