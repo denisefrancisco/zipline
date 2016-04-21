@@ -180,17 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851fedf6d26b0c64d931010f42a65c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableColors: 1
-  topColor:
-    r: 1
-    g: 0.8448276
-    b: 0.33823532
-    a: 1
-  bottomColor:
-    r: 1
-    g: 0.43448272
-    b: 0
-    a: 1
+  topColor: {r: 1, g: 0.8448276, b: 0.33823532, a: 1}
+  bottomColor: {r: 1, g: 0.43448272, b: 0, a: 1}
   resolution: 10
   width: 26.87
   height: 4.7
@@ -231,7 +222,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7534d8b72737e714d9557becb6f9429b, type: 3}
   splashSoundVolume: 0.21
   splashSoundDelay: 0.21
+  cacheTransform: {fileID: 0}
+  cacheParticleTransform: {fileID: 0}
+  cacheMeshFilter: {fileID: 0}
   cacheMeshRenderer: {fileID: 0}
+  cacheCollider: {fileID: 0}
   forced:
   - {fileID: 0}
   - {fileID: 0}
