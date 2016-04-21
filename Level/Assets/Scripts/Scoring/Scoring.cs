@@ -25,7 +25,7 @@ public class Scoring : MonoBehaviour {
 	public GameObject avatar;	// Reference to avatar GO
 	private Rigidbody2D rigid;	// Reference to avatar GO's rigidbody2d component
 	private float avatarXPos; 	// Avatar transform's x position
-	private FloorZone floorZone;	// Reference to floorZone script
+//	private FloorZone floorZone;	// Reference to floorZone script
 	private EdgeCollider2D ec; // edge collider of avatar
 
 
@@ -68,7 +68,7 @@ public class Scoring : MonoBehaviour {
 
 		// Reset flags, score, and outcome
 		inZone = false;
-		floorZone.inFloorZone = false;
+//		floorZone.inFloorZone = false;
 		score = 0;
 		outcomeID = 0;
 	}
