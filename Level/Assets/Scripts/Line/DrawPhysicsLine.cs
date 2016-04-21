@@ -89,6 +89,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 				Vector3 centerSSP = startSnapPoint.transform.position;
 				centerSSP.z = 0;
 				line.SetPosition (0, centerSSP);
+				line.SetPosition (1, centerSSP); //temporarily set position of second line vertex to centerSSP
 				startPos = centerSSP;
 			}
 		}
