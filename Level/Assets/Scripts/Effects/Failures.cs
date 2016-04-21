@@ -13,7 +13,6 @@ public class Failures : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = avatar.GetComponent<Rigidbody2D>();
-	
 	}
 	
 	// Update is called once per frame
@@ -23,7 +22,9 @@ public class Failures : MonoBehaviour {
 		if (speed == 0f){
 			frameCounter++;
 			if (frameCounter > 5){
+				Debug.Log ("you lose!");
 				lose_panel.SetActive(true);
+				frameCounter = 0;
 			}
 		}
 	
