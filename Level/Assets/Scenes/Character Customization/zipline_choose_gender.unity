@@ -148,7 +148,7 @@ Canvas:
   m_GameObject: {fileID: 251258928}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 970189822}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -165,8 +165,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 251258928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.018281536, y: 0.018281536, z: 0.018281536}
   m_Children:
   - {fileID: 385070283}
   - {fileID: 1229614975}
@@ -176,8 +176,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 729, y: 547}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &385070282
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,8 +212,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: -13}
-  m_SizeDelta: {x: 56, y: 149}
+  m_AnchoredPosition: {x: -99, y: -18}
+  m_SizeDelta: {x: 132, y: 351}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &385070284
 Animator:
@@ -448,8 +448,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42, y: -13}
-  m_SizeDelta: {x: 53, y: 149}
+  m_AnchoredPosition: {x: 94, y: -18}
+  m_SizeDelta: {x: 125, y: 351}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1229614976
 MonoBehaviour:
@@ -694,6 +694,7 @@ GameObject:
   - 222: {fileID: 1914442935}
   - 114: {fileID: 1914442934}
   - 114: {fileID: 1914442933}
+  - 114: {fileID: 1914442936}
   m_Layer: 5
   m_Name: main menu
   m_TagString: Untagged
@@ -715,8 +716,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 84, y: 84}
-  m_SizeDelta: {x: 85, y: 16}
+  m_AnchoredPosition: {x: 226, y: 224}
+  m_SizeDelta: {x: 243, y: 46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914442933
 MonoBehaviour:
@@ -756,7 +757,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1914442934}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1914442936}
+        m_MethodName: selectPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1914442934
@@ -792,3 +804,14 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1914442931}
+--- !u!114 &1914442936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914442931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b167650bdd804bb298d99bc53222e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

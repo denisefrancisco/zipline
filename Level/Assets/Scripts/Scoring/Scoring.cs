@@ -109,12 +109,12 @@ public class Scoring : MonoBehaviour {
 
 
 	void FixedUpdate ()	 {
-		//if the avatar hits the wall...
-		if (ec.IsTouching(leftWall.GetComponent<BoxCollider2D>()) || ec.IsTouching(rightWall.GetComponent<BoxCollider2D>())) {
-			lose_panel.SetActive (true);
-			Time.timeScale = 0.0f;
-			Debug.Log ("Avatar that hit the wall! You lose!");
-		}
+//		if the avatar hits the wall...
+//		if (ec.IsTouching(leftWall.GetComponent<BoxCollider2D>()) || ec.IsTouching(rightWall.GetComponent<BoxCollider2D>())) {
+//			lose_panel.SetActive (true);
+//			Time.timeScale = 0.0f;
+//			Debug.Log ("Avatar that hit the wall! You lose!");
+//		}
 
 		if (!playEnded) {
 			// Grab avatar current speed and x position
