@@ -4,6 +4,7 @@ using System.Collections;
 public class changeSnapPointsOnPlay : MonoBehaviour {
 
 	private GameObject[] points;
+	private float newRadius = 0.38f;
 
 	public void changeSnapPoints () {
 		foreach (GameObject p in points) {
@@ -11,7 +12,7 @@ public class changeSnapPointsOnPlay : MonoBehaviour {
 			CircleCollider2D col = p.GetComponent<CircleCollider2D> ();
 			//snap point p has been used as part of an existing line
 			if (count > 0) {
-				col.radius = 0.38f;	//make collider radius same size as line width
+				col.radius = newRadius;	//make collider radius same size as line width
 			} else { //snap point p hasn't been used
 				p.SetActive(false); //disable collider so avatar doesn't run into it
 			}

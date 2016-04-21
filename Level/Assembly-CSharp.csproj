@@ -64,12 +64,14 @@
      <Compile Include="Assets\Scripts\Button\enableLineDrawingTestLvl.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineErasing.cs" />
      <Compile Include="Assets\Scripts\Button\enableRebuild.cs" />
+     <Compile Include="Assets\Scripts\Button\enableReset.cs" />
      <Compile Include="Assets\Scripts\Button\loadLevel.cs" />
      <Compile Include="Assets\Scripts\Camera\change_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\escape_to_build.cs" />
      <Compile Include="Assets\Scripts\Camera\playZip_camera_mode.cs" />
      <Compile Include="Assets\Scripts\Camera\slide_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\start_camera.cs" />
+     <Compile Include="Assets\Scripts\Effects\DestroyByLava.cs" />
      <Compile Include="Assets\Scripts\Effects\DestroyByWall.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLineTestLvl.cs" />
@@ -100,13 +102,13 @@
      <None Include="Assets\Zippy Water 2D\Shaders\ZippyWater2DMobile.shader" />
      <None Include="Assets\Zippy Water 2D\Scripts\Demo Scripts\_Demo scripts can be deleted.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/Amuraco/Desktop/DeniseZipline/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>/Users/LiliBorlandMacBook/zipline/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
