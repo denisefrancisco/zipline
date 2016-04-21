@@ -12,6 +12,10 @@ public class playZip_2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+	}
+
+	public void resetWinAndLose(){
+		Debug.Log ("reset!");
 		lose_panel.SetActive (false);
 		win_panel.SetActive (false);
 	}

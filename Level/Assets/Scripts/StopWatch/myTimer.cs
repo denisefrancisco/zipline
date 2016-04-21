@@ -17,6 +17,5 @@ public class myTimer : MonoBehaviour {
 	void Update () {
 		myCoolTimer += Time.deltaTime;
 		timerText.text = myCoolTimer.ToString ("f2");
-		print (myCoolTimer);
 	}
 }
