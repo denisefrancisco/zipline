@@ -17,7 +17,7 @@ GameObject:
   - 114: {fileID: 11421260}
   - 61: {fileID: 6156424}
   m_Layer: 0
-  m_Name: Default Girl
+  m_Name: Girl_1_2
   m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
