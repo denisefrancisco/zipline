@@ -7,10 +7,17 @@ public class playZip_2 : MonoBehaviour {
 	public Transform farLeft;
 	public Transform farRight;
 	public GameObject timer;
+	public GameObject lose_panel;
+	public GameObject win_panel;
 
 	// Use this for initialization
 	void Start () {
-	
+	}
+
+	public void resetWinAndLose(){
+		Debug.Log ("reset!");
+		lose_panel.SetActive (false);
+		win_panel.SetActive (false);
 	}
 	
 	// Update is called once per frame
