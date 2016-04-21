@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\Button\loadLevel.cs" />
      <Compile Include="Assets\Scripts\Camera\change_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\escape_to_build.cs" />
+     <Compile Include="Assets\Scripts\Camera\playZip_2.cs" />
      <Compile Include="Assets\Scripts\Camera\playZip_camera_mode.cs" />
      <Compile Include="Assets\Scripts\Camera\slide_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\start_camera.cs" />
