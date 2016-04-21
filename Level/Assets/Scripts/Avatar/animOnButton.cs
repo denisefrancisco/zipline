@@ -20,7 +20,7 @@ public class animOnButton : MonoBehaviour {
 	public GameObject avatar;
 	public Animator anim;
 	private bool go = false;
-	private float movement_sp = .5f;
+	private float movement_sp = 1.75f;
 
 	private Collider2D feet;
 	public Collider2D origin;
@@ -58,7 +58,7 @@ public class animOnButton : MonoBehaviour {
 //			}
 //	
 	//Update is called once per frame.
-	void Update ()
+	void FixedUpdate ()
 	{
 		if (go) {
 
@@ -69,7 +69,7 @@ public class animOnButton : MonoBehaviour {
 
 
 			if (feet.IsTouching (origin)) { 				
-				rb.AddForce (Vector3.right * movement_sp * quarter, ForceMode2D.Impulse);
+				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
 //				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
 			}
 		}
