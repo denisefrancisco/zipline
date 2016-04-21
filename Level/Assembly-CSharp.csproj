@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Mobile Cartoon FX\Scripts\Rotatearound.cs" />
      <Compile Include="Assets\Music\button_click.cs" />
+     <Compile Include="Assets\Music\failure_build.cs" />
      <Compile Include="Assets\Scripts\Avatar\animOnButton.cs" />
      <Compile Include="Assets\Scripts\Avatar\avatar_control.cs" />
      <Compile Include="Assets\Scripts\Avatar\avatar_jump.cs" />
