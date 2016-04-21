@@ -336,8 +336,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2000457823}
-        m_MethodName: resetLayout
+      - m_Target: {fileID: 1379217733}
+        m_MethodName: resetWinAndLose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 33714313}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f93919336bd84783ae2dc28bb901690, type: 3}
   m_Name: 
@@ -6514,9 +6514,9 @@ GameObject:
   - 124: {fileID: 1379217729}
   - 92: {fileID: 1379217728}
   - 81: {fileID: 1379217727}
-  - 114: {fileID: 1379217726}
   - 114: {fileID: 1379217732}
   - 114: {fileID: 1379217733}
+  - 114: {fileID: 1379217734}
   m_Layer: 0
   m_Name: Play Camera
   m_TagString: Untagged
@@ -6524,22 +6524,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1379217726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1379217725}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dce17bad4d5c1418688c2492fe4d1a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1276376400}
-  allcameraData: {fileID: 1379217730}
-  lose_panel: {fileID: 1467267571}
-  success_panel: {fileID: 228594681}
-  timer: {fileID: 532192483}
 --- !u!81 &1379217727
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6640,6 +6624,21 @@ MonoBehaviour:
   farLeft: {fileID: 142279064}
   farRight: {fileID: 1135706297}
   timer: {fileID: 532192483}
+  lose_panel: {fileID: 1467267571}
+  win_panel: {fileID: 228594681}
+--- !u!114 &1379217734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1379217725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3864bf1c6bd84a989532a0d7f01cc0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatar: {fileID: 1276376400}
+  lose_panel: {fileID: 1467267571}
 --- !u!1 &1420722183
 GameObject:
   m_ObjectHideFlags: 0
@@ -7031,7 +7030,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1478353706}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f93919336bd84783ae2dc28bb901690, type: 3}
   m_Name: 
@@ -7258,7 +7257,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1569148802}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f93919336bd84783ae2dc28bb901690, type: 3}
   m_Name: 
@@ -8082,17 +8081,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1379217725}
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1379217726}
-        m_MethodName: resetModal
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9793,7 +9781,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989881558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f93919336bd84783ae2dc28bb901690, type: 3}
   m_Name: 

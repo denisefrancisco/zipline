@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\Camera\start_camera.cs" />
      <Compile Include="Assets\Scripts\Effects\DestroyByLava.cs" />
      <Compile Include="Assets\Scripts\Effects\DestroyByWall.cs" />
+     <Compile Include="Assets\Scripts\Effects\Failures.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLineTestLvl.cs" />
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />
