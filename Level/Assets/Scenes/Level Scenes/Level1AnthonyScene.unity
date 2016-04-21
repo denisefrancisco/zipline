@@ -814,6 +814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100000, guid: 27cbfb4fffb99c147bb8ef81fc40f0f0, type: 2}
   player: {fileID: 1276376400}
+  lose_panel: {fileID: 1467267571}
 --- !u!1 &201688255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,6 +2452,10 @@ Prefab:
     - target: {fileID: 400004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
       propertyPath: m_LocalScale.x
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
@@ -5262,6 +5267,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
   m_IsPrefabParent: 0
@@ -5321,6 +5330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100000, guid: 27cbfb4fffb99c147bb8ef81fc40f0f0, type: 2}
   player: {fileID: 1276376400}
+  lose_panel: {fileID: 1467267571}
 --- !u!1 &1588496475
 GameObject:
   m_ObjectHideFlags: 0
@@ -6130,6 +6140,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1655057396}
+--- !u!1 &1684311350 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
+  m_PrefabInternal: {fileID: 556499643}
+--- !u!114 &1684311356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1684311350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170860bfd46c94c28ab39bcdd9ee0a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100000, guid: 753d4e97c38fb844589f1494f896e0a5, type: 2}
+  player: {fileID: 1276376400}
+  lose_panel: {fileID: 0}
 --- !u!1 &1691744059
 GameObject:
   m_ObjectHideFlags: 0

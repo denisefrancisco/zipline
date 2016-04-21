@@ -5,6 +5,7 @@ public class DestroyByWall : MonoBehaviour {
 
 	public GameObject explosion;
 	public GameObject player;
+	public GameObject lose_panel;
 	private EdgeCollider2D bc;
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,7 @@ public class DestroyByWall : MonoBehaviour {
 			Debug.Log("TRIGGERED");
 			Instantiate (explosion, player.transform.position, player.transform.rotation);
 			Destroy (player);
+			lose_panel.SetActive (true);
 		}
 	}
 }
