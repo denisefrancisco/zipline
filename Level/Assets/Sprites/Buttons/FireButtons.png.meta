@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b14624c2a32e74341be17f0d384cff34
-timeCreated: 1461275519
+timeCreated: 1461276354
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -13,7 +13,7 @@ TextureImporter:
     21300012: HelpDark
     21300014: HelpLite
     21300016: DrawDark
-    21300018: DrawLIte
+    21300018: DrawLite
     21300020: OptionsDark
     21300022: OptionsLite
     21300024: EraseDark
@@ -283,7 +283,7 @@ TextureImporter:
         width: 361
         height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 118.03873, y: -112.44751}
@@ -443,7 +443,7 @@ TextureImporter:
         - {x: 31.5, y: -159.32959}
         - {x: 63.5, y: -149.32959}
         - {x: 86.5, y: -137.32959}
-    - name: DrawLIte
+    - name: DrawLite
       rect:
         serializedVersion: 2
         x: 468
@@ -659,7 +659,7 @@ TextureImporter:
         width: 360
         height: 361
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 103.13251, y: -125.424286}
@@ -700,7 +700,7 @@ TextureImporter:
         width: 361
         height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 124.10925, y: -106.83649}
