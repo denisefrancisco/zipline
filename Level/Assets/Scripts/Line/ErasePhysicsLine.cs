@@ -16,6 +16,7 @@ public class ErasePhysicsLine : MonoBehaviour {
 		if (points.Length > 0) {
 			foreach (GameObject p in points) {
 				p.GetComponent<snap_point> ().usedCounter--;
+				p.GetComponent<CircleCollider2D>().radius = 0.625f; //reset snap point radius
 			}
 		}
 		// When line GO is clicked during Erase Mode, delete the line
