@@ -2250,7 +2250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
       propertyPath: m_RootOrder
-      value: 63
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
       propertyPath: m_Name
@@ -4707,7 +4707,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
       propertyPath: m_LocalScale.x
@@ -5530,7 +5530,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.27022058, g: 0.2782961, b: 0.3602941, a: 0.019607844}
+  m_BackGroundColor: {r: 0.9485294, g: 0.8071158, b: 0.6556012, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -5764,7 +5764,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_LocalScale.x
@@ -5818,7 +5818,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_RootOrder
-      value: 67
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_LocalScale.x

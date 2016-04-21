@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Mobile Cartoon FX\Scripts\Rotatearound.cs" />
      <Compile Include="Assets\Scripts\Avatar\animOnButton.cs" />
      <Compile Include="Assets\Scripts\Avatar\avatar_control.cs" />
      <Compile Include="Assets\Scripts\Avatar\avatar_jump.cs" />
@@ -88,7 +89,16 @@
      <Compile Include="Assets\Toon_fire\scripts\demo_scene_control.cs" />
      <Compile Include="Assets\Toon_fire\scripts\fire_wiggle.cs" />
      <Compile Include="Assets\Toon_fire\scripts\flickering.cs" />
+     <Compile Include="Assets\Zippy Water 2D\Scripts\Demo Scripts\ClickForNextScene.cs" />
+     <Compile Include="Assets\Zippy Water 2D\Scripts\Demo Scripts\TextMeshFPS.cs" />
+     <Compile Include="Assets\Zippy Water 2D\Scripts\ZippyWater2D.cs" />
+     <Compile Include="Assets\Zippy Water 2D\Scripts\ZippyWater2DAnimateColors.cs" />
+     <Compile Include="Assets\Zippy Water 2D\Scripts\ZippyWater2DBeachBall.cs" />
+     <Compile Include="Assets\Zippy Water 2D\Scripts\ZippyWater2DCenterOfMass.cs" />
+     <Compile Include="Assets\Zippy Water 2D\Scripts\ZippyWater2DCollider.cs" />
      <Compile Include="Assets\start_play_camera.cs" />
+     <None Include="Assets\Zippy Water 2D\Shaders\ZippyWater2DMobile.shader" />
+     <None Include="Assets\Zippy Water 2D\Scripts\Demo Scripts\_Demo scripts can be deleted.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
