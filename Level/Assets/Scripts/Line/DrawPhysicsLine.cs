@@ -11,11 +11,19 @@ public class DrawPhysicsLine : MonoBehaviour {
 	private Vector3 endPos;		// End position of line
 	private int lineCount = 0;	// Counter for uniquely naming line
 
+	// Vars for keeping track of line length
+	private float maxLineLength = 6f;
+	private float currentLineLength;
+
 	/* State indicating player moused down on a snap point
 	 * (valid starting point of a line) or released mouse on a
 	 * snap point (valid ending point of a line) */
 	private bool validStart;
 	private bool validEnd;
+	// Flag indicating line length is valid or not
+	private bool validLength;
+	// Flag indicating if line is red or not red (specifically black)
+	private bool lineIsRed;
 
 	// Array of references to snap point game objects tagged "SnapPoint"
 	private GameObject[] points;
@@ -29,12 +37,35 @@ public class DrawPhysicsLine : MonoBehaviour {
 	void Start () {
 		// Initialize snap point GOs
 		points = GameObject.FindGameObjectsWithTag ("SnapPoint");
-		// Initialize boolean flags for valid starting and ending points of a line
+		// Initialize snap point flags
 		validStart = false;
 		validEnd = false;
+		/* Initialize line length flags to false and vars to true
+		 * because we don't initially start with a line GO */
+		currentLineLength = 0f;
+		lineIsRed = false;
+		validLength = false;
 	}
 
 	void Update () {
+
+		//if a line exists, calculate its current length
+		if (line) {
+			//get current mouse position
+			mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			mousePos.z = 0;
+			//calculate current line length
+			currentLineLength = Vector3.Distance(startPos, mousePos);
+			if (currentLineLength > maxLineLength) {
+				validLength = false;
+				Debug.Log("INVALID line length of " + currentLineLength);
+			} else {
+				validLength = true;
+				Debug.Log("valid line length of " + currentLineLength);
+
+			}
+		}
+
 		// Create new line on mouse down if location is valid (i.e. on a snap point)
 		if (Input.GetMouseButtonDown(0)) {
 			selectedSnapPoints = GameObject.FindGameObjectsWithTag ("SelectedSnapPoint");
@@ -95,20 +126,23 @@ public class DrawPhysicsLine : MonoBehaviour {
 				}
 				// Set line as null once valid line is created or invalid line is destroyed
 				line = null;
-			}
 
-			// Reset flags for valid line points and references to those points
-			validStart = false;
-			validEnd = false;
-			startSnapPoint = null;
-			endSnapPoint = null;
+				// Reset snap point references and related flags
+				validStart = false;
+				validEnd = false;
+				startSnapPoint = null;
+				endSnapPoint = null;
+
+				// Reset line length vars and flags
+				currentLineLength = 0f;
+				lineIsRed = false;
+				validLength = false;
+			}
 		}
 		/* If mouse button is held clicked and line exists, enact "rubber-banding" effect
 		 * that is, let the line stretch and rotate as it follows mouse location */
 		else if (Input.GetMouseButton(0)) {
 			if (line) {
-				mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-				mousePos.z = 0;
 				/* Set the end point of line renderer as current position
 				 * but don't set line as null as the user hasn't yet moused up */
 				line.SetPosition(1,mousePos);
