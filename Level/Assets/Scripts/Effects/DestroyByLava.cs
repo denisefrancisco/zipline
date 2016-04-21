@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestroyByWall : MonoBehaviour {
+public class DestroyByLava : MonoBehaviour {
 
 	public GameObject explosion;
 	public GameObject player;
@@ -13,11 +13,11 @@ public class DestroyByWall : MonoBehaviour {
 
 	}
 
-//	void OnTriggerEnter2D(Collider2D other) {
-//		Debug.Log ("TRIGGERED!");
-//		Instantiate(explosion, transform.position, transform.rotation);
-//		Destroy (gameObject);
-//	}
+	//	void OnTriggerEnter2D(Collider2D other) {
+	//		Debug.Log ("TRIGGERED!");
+	//		Instantiate(explosion, transform.position, transform.rotation);
+	//		Destroy (gameObject);
+	//	}
 	void lose() {
 		lose_panel.SetActive (true);
 	}
@@ -32,7 +32,7 @@ public class DestroyByWall : MonoBehaviour {
 		Instantiate (explosion, player.transform.position, player.transform.rotation);
 		player.SetActive (false);
 	}
-	
+
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (bc.IsTouching(gameObject.GetComponent<BoxCollider2D>())) {
