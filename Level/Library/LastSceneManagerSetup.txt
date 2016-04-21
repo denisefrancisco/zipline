@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Level Scenes/GirlDefaultAnimation.unity
+- path: Assets/Scenes/Level Scenes/LevelMockUp.unity
   isLoaded: 1
   isActive: 1
