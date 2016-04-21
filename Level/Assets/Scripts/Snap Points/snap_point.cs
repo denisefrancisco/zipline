@@ -14,6 +14,7 @@ public class snap_point : MonoBehaviour {
 	/* Count indicating how many existing lines this snap point is
 	 * currently attached to */
 	public int usedCounter;
+	public float radius = 0.625f;	// radius of 2D circle collider
 
 	void OnMouseDown () { 
 		/* When a user mouses down on a snap point, that point becomes
@@ -43,7 +44,10 @@ public class snap_point : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// Initialize reference to snap point sprite renderer
 		renderer = gameObject.GetComponent<SpriteRenderer>();
+		// Set initial radius of snap point GO
+		gameObject.GetComponent<CircleCollider2D> ().radius = radius;
 		//snap point hasn't been used in line creation yet, so all flags set to false
 		validLineStartPoint = false;
 		validLineEndPoint = false;
