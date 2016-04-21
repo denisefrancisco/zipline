@@ -103,19 +103,23 @@ public class DrawPhysicsLine : MonoBehaviour {
 			}
 
 			if (line) {
-				/* Destroy line GO if line's end point is not a snap point,
-				 * otherwise add a collider to the line */
-				if (endSnapPoint != null) {
+				/* Only create a line and add a collider to it if the line's
+				 * ending position is valid (i.e. on a snap point) AND the line's
+				 * length is valid (i.e. less than maxLineLength);
+				 * otherwise line is invalid so destroy it */
+				if ((endSnapPoint != null) && validLength) {
 					// Get center position of ending snap point (ESP) to set as line's end point
 					Vector3 centerESP = endSnapPoint.transform.position;
 					centerESP.z = 0;
 					line.SetPosition (1, centerESP);
 					endPos = centerESP;
+
 					//add start and end snap points to points array in ErasePhysicsLine script attached to line GO
 					GameObject[] startAndEnd = {startSnapPoint, endSnapPoint};
 					lineGO.GetComponent<ErasePhysicsLine> ().points = startAndEnd;
 					//flag snap point as used 
 					endSnapPoint.GetComponent<snap_point> ().usedCounter++;
+
 					//add collider to line so avatar GO can interact w/it
 					addColliderToLine();
 				}  else {
