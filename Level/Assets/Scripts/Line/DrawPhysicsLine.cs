@@ -12,6 +12,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 	private int lineCount = 0;	// Counter for uniquely naming line
 
 	// Vars for keeping track of line length
+	private float lineWidth = 0.15f;
 	private float maxLineLength = 6f;
 	private float currentLineLength;
 
@@ -58,11 +59,8 @@ public class DrawPhysicsLine : MonoBehaviour {
 			currentLineLength = Vector3.Distance(startPos, mousePos);
 			if (currentLineLength > maxLineLength) {
 				validLength = false;
-				Debug.Log("INVALID line length of " + currentLineLength);
 			} else {
 				validLength = true;
-				Debug.Log("valid line length of " + currentLineLength);
-
 			}
 		}
 
@@ -150,6 +148,21 @@ public class DrawPhysicsLine : MonoBehaviour {
 				/* Set the end point of line renderer as current position
 				 * but don't set line as null as the user hasn't yet moused up */
 				line.SetPosition(1,mousePos);
+
+				//Change line color depending on whether line length is valid or invalid
+				if (!validLength) { //line is too long
+					// if line color isnt' red yet, change it to red
+					if (!lineIsRed) {
+						line.SetColors(Color.red, Color.red); 
+						lineIsRed = true;
+					}
+				} else {	//line is not too long
+					//if the line color is already red, change it to black
+					if (lineIsRed) {
+						line.SetColors(Color.black, Color.black); 
+						lineIsRed = false;
+					}
+				}
 			}
 		}
 	}
@@ -168,9 +181,10 @@ public class DrawPhysicsLine : MonoBehaviour {
 		lineGO.tag = "Line"; // Add the tag "Line" to the line GO
 
 		// Assign the material to the line
-		line.material = new Material(Shader.Find("Diffuse"));
+		line.material = new Material(Shader.Find("Particles/Alpha Blended"));
+		//line.material.color = Color.black;
 		line.SetVertexCount(2); // Set number of points to the line
-		line.SetWidth(0.15f,0.15f); // Set width
+		line.SetWidth(lineWidth,lineWidth); // Set width
 		line.SetColors(Color.black, Color.black); //Set color
 		// Render line to the world origin and not to the object's position
 		line.useWorldSpace = true;
@@ -183,13 +197,11 @@ public class DrawPhysicsLine : MonoBehaviour {
 		BoxCollider2D col = lineGO.AddComponent<BoxCollider2D> ();
 		currentLineLength = Vector3.Distance (startPos, endPos); // final length of line
 
-		// Size of collider is set where X is length of line, Y is width of line, Z will be set as per requirement
-		col.size = new Vector3 (currentLineLength, 0.15f, 1f); 
-
+		// Collider size: X is line length, Y is line width, Z set as per requirement
+		col.size = new Vector3 (currentLineLength, lineWidth, 1f); 
 		// Set position of collider object
 		Vector3 midPoint = (startPos + endPos)/2;
 		col.transform.position = midPoint; 
-
 		// Set offset of collider to (0,0)
 		col.offset = Vector2.zero;
 
