@@ -19,10 +19,9 @@ public class Failures : MonoBehaviour {
 	void FixedUpdate () {
 		// Grab avatar current speed
 		speed = rb.velocity.magnitude;
-		if (speed == 0f){
+		if (speed < 0.5f && avatar.transform.position.x >= -2.8f){
 			frameCounter++;
-			if (frameCounter > 5){
-				Debug.Log ("you lose!");
+			if (frameCounter > 100){
 				lose_panel.SetActive(true);
 				frameCounter = 0;
 			}
