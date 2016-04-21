@@ -107,6 +107,7 @@
 'Assets/Scripts/Camera/playZip_camera_mode.cs'
 'Assets/Scripts/Camera/slide_camera.cs'
 'Assets/Scripts/Camera/start_camera.cs'
+'Assets/Scripts/Effects/DestroyByLava.cs'
 'Assets/Scripts/Effects/DestroyByWall.cs'
 'Assets/Scripts/Line/DrawPhysicsLine.cs'
 'Assets/Scripts/Line/DrawPhysicsLineTestLvl.cs'
