@@ -248,6 +248,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1276376400}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 441108954}
         m_MethodName: ResetAvatar
         m_Mode: 1
@@ -265,17 +276,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -800,7 +800,7 @@ Transform:
   m_LocalScale: {x: 0.91, y: 19.22, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 52
 --- !u!114 &145000378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,7 +1786,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -7237,7 +7236,7 @@ Transform:
   m_LocalScale: {x: 1.3, y: 19.52, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 54
 --- !u!114 &1582981710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7486,6 +7485,42 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.625
+--- !u!1 &1605374287 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
+  m_PrefabInternal: {fileID: 1711118901}
+--- !u!114 &1605374288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1605374287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b9c3526fa1f4657a3cf37d5a2f9d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100000, guid: 753d4e97c38fb844589f1494f896e0a5, type: 2}
+  player: {fileID: 1276376400}
+  lose_panel: {fileID: 1467267571}
+--- !u!1 &1609989569 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
+  m_PrefabInternal: {fileID: 1080668945}
+--- !u!114 &1609989570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609989569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b9c3526fa1f4657a3cf37d5a2f9d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100000, guid: 753d4e97c38fb844589f1494f896e0a5, type: 2}
+  player: {fileID: 1276376400}
+  lose_panel: {fileID: 1467267571}
 --- !u!1 &1614462128
 GameObject:
   m_ObjectHideFlags: 0
@@ -8153,6 +8188,20 @@ CanvasRenderer:
 GameObject:
   m_PrefabParentObject: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
   m_PrefabInternal: {fileID: 556499643}
+--- !u!114 &1684311351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1684311350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b9c3526fa1f4657a3cf37d5a2f9d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100000, guid: 753d4e97c38fb844589f1494f896e0a5, type: 2}
+  player: {fileID: 1276376400}
+  lose_panel: {fileID: 1467267571}
 --- !u!114 &1684311356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9296,7 +9345,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
