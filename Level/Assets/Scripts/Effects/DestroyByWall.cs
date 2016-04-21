@@ -29,9 +29,8 @@ public class DestroyByWall : MonoBehaviour {
 	}
 
 	void destroyObject () {
-		Debug.Log("TRIGGERED");
 		Instantiate (explosion, player.transform.position, player.transform.rotation);
-		Destroy (player);
+		player.SetActive (false);
 	}
 	
 	// Update is called once per frame
