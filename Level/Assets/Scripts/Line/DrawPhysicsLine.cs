@@ -3,6 +3,9 @@ using System.Collections;
 
 public class DrawPhysicsLine : MonoBehaviour {
 
+	public AudioClip lineTooLongSound;
+	private AudioSource audioSource; 
+
 	private GameObject lineGO; // Reference to line game object
 	private LineRenderer line;	// Reference to LineRenderer
 	private Transform lineTrans; // Transform of line
@@ -46,6 +49,8 @@ public class DrawPhysicsLine : MonoBehaviour {
 		currentLineLength = 0f;
 		lineIsRed = false;
 		validLength = false;
+		//initialize audio source
+		audioSource = gameObject.GetComponent<AudioSource>();
 	}
 
 	void Update () {
@@ -124,6 +129,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 				}  else {
 					//reset usedCounter to false for start snap point
 					startSnapPoint.GetComponent<snap_point> ().usedCounter--;
+					audioSource.PlayOneShot (lineTooLongSound, 1.0f);
 					Destroy(GameObject.Find("Line"+lineCount));
 					lineCount--; //decrement the current number of lines bc we just destroyed a line
 				}
@@ -154,7 +160,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 				if (!validLength) { //line is too long
 					// if line color isnt' red yet, change it to red
 					if (!lineIsRed) {
-						line.SetColors(Color.red, Color.red); 
+						line.SetColors(Color.red, Color.red);
 						lineIsRed = true;
 					}
 				} else {	//line is not too long
