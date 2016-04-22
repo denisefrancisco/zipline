@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Level Scenes/LevelMockUp.unity
-=======
-- path: Assets/Scenes/Level Scenes/Level1AnthonyScene.unity
->>>>>>> master
+- path: Assets/Scenes/Character Customization/male_character_customization.unity
   isLoaded: 1
   isActive: 1
