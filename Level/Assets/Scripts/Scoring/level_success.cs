@@ -12,12 +12,15 @@ public class level_success : MonoBehaviour {
 	private EdgeCollider2D ec;
 	//the box collider of the current success door
 	private BoxCollider2D bc;
+	//get rigid body of the avatar
+	private Rigidbody2D rb;
 	//these offsets are for the placement of the confetti prefab so that it fills up the screen
 	private Vector3 offset;
 	private Vector3 offset1;
 
 	// Use this for initialization
 	void Start () {
+		rb = avatar.GetComponent<Rigidbody2D> ();
 		bc = gameObject.GetComponent<BoxCollider2D> ();
 		ec = avatar.GetComponent<EdgeCollider2D> ();
 		offset = new Vector3(-1,4,0);
@@ -28,12 +31,14 @@ public class level_success : MonoBehaviour {
 	void Update () {
 		//if the box collider comes into contact with the avatar...
 		if (bc.IsTouching(ec)) {
+			//set rigid body to isKinematic to pause the avatar
+			rb.isKinematic = true;
 			//success modal pops up
 			success_modal.SetActive(true);
 			//instantiate confetti!
 			Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);
 			Instantiate (confetti, success_modal.transform.position+offset1,success_modal.transform.rotation);
-			avatar.SetActive (false);
+//			avatar.SetActive (false);
 		}
 	
 	}
