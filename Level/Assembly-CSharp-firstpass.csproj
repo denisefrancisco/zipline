@@ -48,6 +48,7 @@
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <None Include="Assets\Zippy Water 2D\Shaders\ZippyWater2DMobile.shader" />
      <None Include="Assets\Zippy Water 2D\Scripts\Demo Scripts\_Demo scripts can be deleted.txt" />
+     <None Include="Assets\Confetti Particles 2\Confetti 2 - Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

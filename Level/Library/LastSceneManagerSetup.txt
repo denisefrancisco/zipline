@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Level Scenes/LevelMockUp.unity
+=======
+- path: Assets/Scenes/Level Scenes/Level1AnthonyScene.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1

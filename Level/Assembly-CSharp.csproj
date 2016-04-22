@@ -62,6 +62,8 @@
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadGirl.cs" />
      <Compile Include="Assets\Scripts\Avatar\jump_avatar.cs" />
      <Compile Include="Assets\Scripts\Avatar\removeBoxCollider.cs" />
+     <Compile Include="Assets\Scripts\Button\SpriteSwapDraw.cs" />
+     <Compile Include="Assets\Scripts\Button\SpriteSwapErase.cs" />
      <Compile Include="Assets\Scripts\Button\avatar_start_zipline.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawing.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawingTestLvl.cs" />
@@ -106,6 +108,7 @@
      <Compile Include="Assets\start_play_camera.cs" />
      <None Include="Assets\Zippy Water 2D\Shaders\ZippyWater2DMobile.shader" />
      <None Include="Assets\Zippy Water 2D\Scripts\Demo Scripts\_Demo scripts can be deleted.txt" />
+     <None Include="Assets\Confetti Particles 2\Confetti 2 - Readme.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
