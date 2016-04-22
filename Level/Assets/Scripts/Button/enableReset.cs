@@ -8,16 +8,18 @@ public class enableReset : MonoBehaviour {
 	private GameObject[] snapPoints;
 	private snap_point snapPointScript;
 
-	/* Resets the layout of the level (reset snap points
-	 * and delete all previously made lines)*/
-	public void resetLayout () {
-		lines = GameObject.FindGameObjectsWithTag("Line"); //initialize lines array
+	// Delete all previously made lines
+	public void resetLines () {
+		lines = GameObject.FindGameObjectsWithTag ("Line"); //initialize lines array
 		// Destroy line and material (destroying material prevents memory leak)
 		foreach (GameObject l in lines) {
-			Destroy(l);
-			Destroy(l.GetComponent<Renderer>().material);
+			Destroy (l);
+			Destroy (l.GetComponent<Renderer> ().material);
 		}
+	}
 
+	// Delete all previously made lines
+	public void resetPoints () {
 		// Reset all snap points
 		foreach (GameObject p in snapPoints) {
 			snapPointScript = p.GetComponent<snap_point>(); //grab snap point script
