@@ -5,7 +5,6 @@ public class level_success : MonoBehaviour {
 
 	public GameObject avatar;
 	public GameObject success_modal;
-	public GameObject lose_modal;
 	public GameObject confetti;
 	private EdgeCollider2D ec;
 	private BoxCollider2D bc;
@@ -22,7 +21,7 @@ public class level_success : MonoBehaviour {
 			Debug.Log ("YAYYYY");
 			success_modal.SetActive(true);
 			Instantiate (confetti, success_modal.transform.position, success_modal.transform.rotation);
-			Time.timeScale = 0.0f;
+			avatar.SetActive (false);
 		}
 	
 	}
