@@ -2,12 +2,17 @@
 using System.Collections;
 
 public class level_success : MonoBehaviour {
-
+	//this file is for everything that happens during a successful level completion
 	public GameObject avatar;
+	//the success popup
 	public GameObject success_modal;
+	//the confetti prefab that is instantiated when the win function is active
 	public GameObject confetti;
+	//edge collider of the ziplining avatar
 	private EdgeCollider2D ec;
+	//the box collider of the current success door
 	private BoxCollider2D bc;
+	//these offsets are for the placement of the confetti prefab so that it fills up the screen
 	private Vector3 offset;
 	private Vector3 offset1;
 
@@ -21,9 +26,11 @@ public class level_success : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//if the box collider comes into contact with the avatar...
 		if (bc.IsTouching(ec)) {
-			Debug.Log ("YAYYYY");
+			//success modal pops up
 			success_modal.SetActive(true);
+			//instantiate confetti!
 			Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);
 			Instantiate (confetti, success_modal.transform.position+offset1,success_modal.transform.rotation);
 			avatar.SetActive (false);
