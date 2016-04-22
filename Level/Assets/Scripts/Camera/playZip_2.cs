@@ -12,6 +12,7 @@ public class playZip_2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		timer.SetActive (false);
 	}
 
 	public void resetWinAndLose(){
