@@ -15,7 +15,11 @@ public class Failures : MonoBehaviour {
 	void Start () {
 		rb = avatar.GetComponent<Rigidbody2D>();
 	}
-	
+
+	public void resetFrameCounter() {
+		frameCounter = 0;
+	}
+
 	// Update is called once per frame
 	void FixedUpdate () {
 		// Grab avatar current speed
@@ -23,7 +27,7 @@ public class Failures : MonoBehaviour {
 		if (speed < 0.5f && avatar.transform.position.x >= -2.8f){
 			frameCounter++;
 			if (frameCounter > 100 && win_panel.activeSelf == false){
-//				lose_panel.SetActive(true);
+				lose_panel.SetActive(true);
 				frameCounter = 0;
 			}
 		}
