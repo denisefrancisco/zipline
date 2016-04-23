@@ -17,6 +17,8 @@ public class level_success : MonoBehaviour {
 	//these offsets are for the placement of the confetti prefab so that it fills up the screen
 	private Vector3 offset;
 	private Vector3 offset1;
+	private GameObject confetti1;
+	private GameObject confetti2;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +27,7 @@ public class level_success : MonoBehaviour {
 		ec = avatar.GetComponent<EdgeCollider2D> ();
 		offset = new Vector3(-1,4,0);
 		offset1 = new Vector3(1,4,0);
+
 	}
 	
 	// Update is called once per frame
@@ -36,10 +39,15 @@ public class level_success : MonoBehaviour {
 			//success modal pops up
 			success_modal.SetActive(true);
 			//instantiate confetti!
-			Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);
-			Instantiate (confetti, success_modal.transform.position+offset1,success_modal.transform.rotation);
+			confetti1 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);
+			confetti2 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset1,success_modal.transform.rotation);
 //			avatar.SetActive (false);
 		}
 	
+	}
+
+	public void deleteConfetti() {
+		Destroy (confetti1);
+		Destroy (confetti2);
 	}
 }
