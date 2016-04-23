@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class button2_for_customizing : MonoBehaviour {
-	
+	//this file is basically for the left arrow button in the clothing scene.
 	public GameObject click_button;
 	private GameObject character_script;
 	private button_for_customizing button;

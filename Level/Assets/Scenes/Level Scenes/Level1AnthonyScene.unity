@@ -3324,7 +3324,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 605287674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.86, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0.86, y: 0.88, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 1331872893}
@@ -11748,6 +11748,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1379217733}
         m_MethodName: resetWinAndLose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 605287678}
+        m_MethodName: deleteConfetti
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
