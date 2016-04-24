@@ -8,9 +8,8 @@
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
--r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
--r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
--define:UNITY_5_3_3
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_3_4
 -define:UNITY_5_3
 -define:UNITY_5
 -define:ENABLE_NEW_BUGREPORTER
@@ -88,6 +87,7 @@
 'Assets/Scripts/Avatar/animOnButton.cs'
 'Assets/Scripts/Avatar/avatar_control.cs'
 'Assets/Scripts/Avatar/avatar_jump.cs'
+'Assets/Scripts/Avatar/customization/Selected Player.cs'
 'Assets/Scripts/Avatar/customization/boy/boy_button_disappear.cs'
 'Assets/Scripts/Avatar/customization/boy/left_button_customize.cs'
 'Assets/Scripts/Avatar/customization/boy/right_button_customize.cs'
