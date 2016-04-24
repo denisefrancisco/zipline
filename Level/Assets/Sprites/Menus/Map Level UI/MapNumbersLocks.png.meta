@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: a6e601810bf1f4f6486f428ee7c988df
+timeCreated: 1461521939
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: numb1
+    21300002: play
+    21300004: numb2
+    21300006: MapNumbersLocks_3
+    21300008: medals1
+    21300010: numb3
+    21300012: lock
+    21300014: numb4
+    21300016: MapNumbersLocks_8
+    21300018: numb5
+    21300020: MapNumbersLocks_10
+    21300022: numb6
+    21300024: MapNumbersLocks_12
+    21300026: MapNumbersLocks_13
+    21300028: numb7
+    21300030: MapNumbersLocks_15
+    21300032: numb8
+    21300034: MapNumbersLocks_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: numb1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1726
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118, y: 36.366943}
+        - {x: 104, y: 66.36694}
+        - {x: 74, y: 99.36694}
+        - {x: 44, y: 114.36694}
+        - {x: 31, y: 118.36694}
+        - {x: -37, y: 118.36694}
+        - {x: -78, y: 101.36694}
+        - {x: -112, y: 57.366943}
+        - {x: -118, y: 35.366943}
+        - {x: -118, y: -35.633057}
+        - {x: -104, y: -73.63306}
+        - {x: -52, y: -112.63306}
+        - {x: -27, y: -117.63306}
+        - {x: 36, y: -117.63306}
+        - {x: 83, y: -90.63306}
+        - {x: 105, y: -61.633057}
+        - {x: 118, y: -34.633057}
+    - name: play
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1744
+        width: 211
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 85.47583, y: 64.80652}
+        - {x: 57.47583, y: 88.80652}
+        - {x: 26.47583, y: 97.80652}
+        - {x: -54.52417, y: 97.80652}
+        - {x: -96.52417, y: 43.80652}
+        - {x: -96.52417, y: -40.19348}
+        - {x: -83.52417, y: -82.19348}
+        - {x: -40.52417, y: -96.19348}
+        - {x: 46.47583, y: -96.19348}
+        - {x: 66.47583, y: -84.19348}
+        - {x: 97.47583, y: -36.19348}
+        - {x: 97.47583, y: 28.806519}
+    - name: numb2
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1769
+        width: 130
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.554443, y: -29.36084}
+        - {x: 60.554443, y: 49.63916}
+        - {x: 37.554443, y: 75.63916}
+        - {x: -31.445557, y: 75.63916}
+        - {x: -55.445557, y: 45.63916}
+        - {x: -57.445557, y: 15.63916}
+        - {x: -55.445557, y: -2.3608398}
+        - {x: -59.445557, y: -33.36084}
+        - {x: -59.445557, y: -74.36084}
+        - {x: 60.554443, y: -74.36084}
+        - {x: 60.554443, y: -36.36084}
+        - {x: 59.554443, y: -35.36084}
+    - name: MapNumbersLocks_3
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1764
+        width: 147
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.963745, y: 98.57263}
+        - {x: -32.036255, y: 98.57263}
+        - {x: -67.036255, y: 39.57263}
+        - {x: -67.036255, y: -95.42737}
+        - {x: -65.036255, y: -98.42737}
+        - {x: 67.963745, y: -98.42737}
+        - {x: 67.963745, y: 48.57263}
+        - {x: 45.963745, y: 81.57263}
+    - name: medals1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1519
+        width: 479
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -218.85887, y: 64.8125}
+        - {x: -218.85887, y: -64.1875}
+        - {x: 219.14113, y: -64.1875}
+        - {x: 219.14113, y: 64.8125}
+    - name: numb3
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1135
+        width: 128
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58.288303, y: 78.102905}
+        - {x: -58.288303, y: -62.897095}
+        - {x: -36.288303, y: -73.897095}
+        - {x: -25.288303, y: -76.897095}
+        - {x: 32.711697, y: -76.897095}
+        - {x: 59.711697, y: -55.897095}
+        - {x: 59.711697, y: 71.102905}
+        - {x: 40.711697, y: 78.102905}
+    - name: lock
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1135
+        width: 151
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.375, y: 100.102905}
+        - {x: -29.625, y: 100.102905}
+        - {x: -68.625, y: 48.102905}
+        - {x: -68.625, y: -92.897095}
+        - {x: -61.625, y: -98.897095}
+        - {x: 68.375, y: -98.897095}
+        - {x: 70.375, y: -93.897095}
+        - {x: 70.375, y: 37.102905}
+        - {x: 50.375, y: 77.102905}
+    - name: numb4
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1148
+        width: 135
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.358887, y: 72.47583}
+        - {x: -61.358887, y: -11.52417}
+        - {x: -61.358887, y: -58.52417}
+        - {x: -19.358887, y: -71.52417}
+        - {x: 61.641113, y: -71.52417}
+        - {x: 62.641113, y: -67.52417}
+        - {x: 62.641113, y: 21.47583}
+        - {x: 46.641113, y: 72.47583}
+    - name: MapNumbersLocks_8
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 1152
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.637085, y: 100.12903}
+        - {x: -19.362915, y: 100.12903}
+        - {x: -52.362915, y: 74.12903}
+        - {x: -68.362915, y: 38.12903}
+        - {x: -68.362915, y: -95.87097}
+        - {x: -63.362915, y: -99.87097}
+        - {x: 66.637085, y: -99.87097}
+        - {x: 69.637085, y: -97.87097}
+        - {x: 69.637085, y: 40.12903}
+        - {x: 37.637085, y: 98.12903}
+    - name: numb5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 553
+        width: 258
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118, y: 28.558472}
+        - {x: 110, y: 60.55847}
+        - {x: 62, y: 108.55847}
+        - {x: 34, y: 117.55847}
+        - {x: 27, y: 118.55847}
+        - {x: -38, y: 118.55847}
+        - {x: -43, y: 117.55847}
+        - {x: -96, y: 86.55847}
+        - {x: -118, y: 37.55847}
+        - {x: -118, y: -33.44153}
+        - {x: -115, y: -43.44153}
+        - {x: -101, y: -76.44153}
+        - {x: -55, y: -114.44153}
+        - {x: -33, y: -118.44153}
+        - {x: 32, y: -118.44153}
+        - {x: 73, y: -103.44153}
+        - {x: 108, y: -65.44153}
+        - {x: 118, y: -28.441528}
+    - name: MapNumbersLocks_10
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 574
+        width: 211
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.47583, y: 96.737915}
+        - {x: -30.52417, y: 96.737915}
+        - {x: -64.52417, y: 77.737915}
+        - {x: -96.52417, y: 44.737915}
+        - {x: -96.52417, y: -48.262085}
+        - {x: -55.52417, y: -90.262085}
+        - {x: -35.52417, y: -96.262085}
+        - {x: 45.47583, y: -96.262085}
+        - {x: 97.47583, y: -60.262085}
+        - {x: 97.47583, y: 51.737915}
+        - {x: 51.47583, y: 92.737915}
+    - name: numb6
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 589
+        width: 135
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.445557, y: 75.9375}
+        - {x: -61.445557, y: 16.9375}
+        - {x: -61.445557, y: -53.0625}
+        - {x: -31.445557, y: -74.0625}
+        - {x: 52.554443, y: -74.0625}
+        - {x: 62.554443, y: -54.0625}
+        - {x: 62.554443, y: 48.9375}
+        - {x: 44.554443, y: 75.9375}
+    - name: MapNumbersLocks_12
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 610
+        width: 150
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.637085, y: 99.61694}
+        - {x: -33.362915, y: 99.61694}
+        - {x: -36.362915, y: 98.61694}
+        - {x: -68.362915, y: 37.616943}
+        - {x: -68.362915, y: -93.38306}
+        - {x: -65.362915, y: -99.38306}
+        - {x: 65.637085, y: -99.38306}
+        - {x: 69.637085, y: -95.38306}
+        - {x: 69.637085, y: 37.616943}
+        - {x: 64.637085, y: 62.616943}
+    - name: MapNumbersLocks_13
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 373
+        width: 479
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -218.85887, y: 65.16333}
+        - {x: -218.85887, y: -63.83667}
+        - {x: 219.14113, y: -63.83667}
+        - {x: 219.14113, y: 65.16333}
+    - name: numb7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 61
+        width: 139
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.375, y: 73.7117}
+        - {x: -63.375, y: -72.2883}
+        - {x: -8.375, y: -72.2883}
+        - {x: 64.625, y: 64.7117}
+        - {x: 64.625, y: 73.7117}
+    - name: MapNumbersLocks_15
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 30
+        width: 151
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.375, y: 99.89919}
+        - {x: -30.625, y: 99.89919}
+        - {x: -68.625, y: 39.899193}
+        - {x: -68.625, y: -95.10081}
+        - {x: -63.625, y: -99.10081}
+        - {x: 66.375, y: -99.10081}
+        - {x: 70.375, y: -94.10081}
+        - {x: 70.375, y: 34.899193}
+        - {x: 54.375, y: 77.89919}
+    - name: numb8
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 46
+        width: 121
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.947632, y: 77.5121}
+        - {x: -30.052368, y: 77.5121}
+        - {x: -46.05237, y: 62.5121}
+        - {x: -51.05237, y: 43.5121}
+        - {x: -55.05237, y: 33.5121}
+        - {x: -55.05237, y: -68.4879}
+        - {x: -52.05237, y: -77.4879}
+        - {x: 31.947632, y: -77.4879}
+        - {x: 56.94763, y: -69.4879}
+        - {x: 56.94763, y: 67.5121}
+        - {x: 55.94763, y: 70.5121}
+    - name: MapNumbersLocks_17
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 35
+        width: 150
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.637085, y: 100.96573}
+        - {x: -27.362915, y: 100.96573}
+        - {x: -68.362915, y: 42.96573}
+        - {x: -68.362915, y: -97.03427}
+        - {x: -67.362915, y: -99.03427}
+        - {x: 68.637085, y: -99.03427}
+        - {x: 69.637085, y: -96.03427}
+        - {x: 69.637085, y: 43.96573}
+        - {x: 35.637085, y: 98.96573}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
