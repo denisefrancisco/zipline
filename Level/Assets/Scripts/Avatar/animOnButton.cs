@@ -22,7 +22,9 @@ public class animOnButton : MonoBehaviour {
 	public Animator anim;
 	private bool go = false;
 	private float movement_sp = 1.75f;
-	private bool facingRight; // flag indicating direction avatar is facing
+	/* Flag indicating direction avatar is facing; must be public
+	 * so flag can be reset to true when level is reset */
+	public bool facingRight; 
 	private float direction; // horizontal direction of avatar's movement
 
 	private Collider2D feet;
@@ -65,7 +67,7 @@ public class animOnButton : MonoBehaviour {
 	//Update is called once per frame.
 	void FixedUpdate () {
 		float direction = rb.velocity.x;
-		if ((direction >= 1) && !facingRight) {
+		if ((direction > 1) && !facingRight) {
 			sprite.flipX = false;
 			facingRight = !facingRight;
 			Debug.Log ("Sprite flipped, facingRight? "+facingRight);

@@ -8,6 +8,7 @@ public class enableRebuild : MonoBehaviour {
 	private Rigidbody2D rigid;
 	private Vector3 startPos;
 	private Quaternion startRot;
+	private animOnButton animScript; //animation script attached to avatar
 
 	public void ResetAvatar() {
 		/* Set avatar's rigidbody to kinematic so avatar 
@@ -20,9 +21,13 @@ public class enableRebuild : MonoBehaviour {
 		avatar.transform.position = startPos;
 		avatar.transform.rotation = startRot;
 
+		// Reset flag for avatar's direction (from animScript)
+		animScript.facingRight = true;
+
 		// Disable scoring script
 		landingZone.GetComponent<Scoring>().pastZone = false;
 		landingZone.GetComponent<Scoring>().enabled = false;
+
 	}
 
 	// Use this for initialization
@@ -35,6 +40,9 @@ public class enableRebuild : MonoBehaviour {
 
 		// Initialize LandingZone GO
 		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
+
+		// Save reference to animation script
+		animScript = avatar.GetComponent<animOnButton> ();
 	}
 
 }
