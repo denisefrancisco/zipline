@@ -18,7 +18,7 @@ public class animOnButton : MonoBehaviour {
 		*/
 
 	public GameObject avatar;
-	public SpriteRenderer sprite; // avatar's sprite
+	private SpriteRenderer sprite; // avatar's sprite
 	public Animator anim;
 	private bool go = false;
 	private float movement_sp = 1.75f;
