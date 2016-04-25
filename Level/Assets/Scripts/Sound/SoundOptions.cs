@@ -3,19 +3,21 @@ using System.Collections;
 
 public class SoundOptions : MonoBehaviour {
 
+	// Flag indicating whether sound is on
+	public bool soundIsOn;
 	// Reference to last sound volume level before turned off
 	private float sVolume;
 
 	public void SoundOn() {
+		soundIsOn = true;
 		AudioListener.volume = sVolume;
-		Debug.Log ("turned on sound to " + sVolume);
 	}
 
 	public void SoundOff() {
+		soundIsOn = false;
 		// Save current sound volume level before turning sound off
 		sVolume = AudioListener.volume;
 		AudioListener.volume = 0.0f;
-		Debug.Log ("turned off sound");
 	}
 
 	// TODO: Implement Music controls once we implement music
@@ -28,7 +30,11 @@ public class SoundOptions : MonoBehaviour {
 	void Start () {
 		// Initially sound is on
 		sVolume = AudioListener.volume;
-		Debug.Log ("current volume" + sVolume);
+		if (sVolume > 0f) {
+			soundIsOn = true;
+		} else {
+			soundIsOn = false;
+		}
 	}
 
 }
