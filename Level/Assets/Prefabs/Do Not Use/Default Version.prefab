@@ -186,6 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatar: {fileID: 114918}
   anim: {fileID: 9573668}
+  facingRight: 0
   origin: {fileID: 0}
 --- !u!212 &21206700
 SpriteRenderer:
