@@ -18,9 +18,14 @@ public class animOnButton : MonoBehaviour {
 		*/
 
 	public GameObject avatar;
+	private SpriteRenderer sprite; // avatar's sprite
 	public Animator anim;
 	private bool go = false;
 	private float movement_sp = 1.75f;
+	/* Flag indicating direction avatar is facing; must be public
+	 * so flag can be reset to true when level is reset */
+	public bool facingRight; 
+	private float direction; // horizontal direction of avatar's movement
 
 	private Collider2D feet;
 	public Collider2D origin;
@@ -37,6 +42,8 @@ public class animOnButton : MonoBehaviour {
 		feet = GetComponent<BoxCollider2D> ();
 		rb = GetComponent<Rigidbody2D> ();
 		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
+		sprite = avatar.GetComponent<SpriteRenderer> ();
+		facingRight = true;
 	}
 
 	//Use this for what happens when the button is clicked.
@@ -58,19 +65,24 @@ public class animOnButton : MonoBehaviour {
 //			}
 //	
 	//Update is called once per frame.
-	void FixedUpdate ()
-	{
-		if (go) {
+	void FixedUpdate () {
+		float direction = rb.velocity.x;
+		if ((direction > 1) && !facingRight) {
+			sprite.flipX = false;
+			facingRight = !facingRight;
+			Debug.Log ("Sprite flipped, facingRight? "+facingRight);
+		} else if ((direction < -1) && facingRight) {
+			sprite.flipX = true;
+			facingRight = !facingRight;
+			Debug.Log ("Sprite flipped, facingRight? "+facingRight);
+		}
 
+		if (go) {
 			/* The 'if' statement checks to see if the player is currently on the piece of furniture.
 			*  if he is, he will keep moving forward, if not he will recieve a force to
-			*  push him on the zip line initially.
-			*/
-
-
+			*  push him on the zip line initially.*/
 			if (feet.IsTouching (origin)) { 				
 				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
-//				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
 			}
 		}
 	}
