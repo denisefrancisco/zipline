@@ -43,7 +43,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197886}
   m_UseAutoMass: 0
-  m_Mass: 8
+  m_Mass: 10
   m_LinearDrag: 0.4
   m_AngularDrag: 0.17
   m_GravityScale: 1
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avatar: {fileID: 197886}
   anim: {fileID: 9523972}
+  facingRight: 0
   origin: {fileID: 0}
 --- !u!114 &11478422
 MonoBehaviour:
