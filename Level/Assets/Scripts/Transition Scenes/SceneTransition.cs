@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 // Script of public functions that load various scenes
-public class LoadScene : MonoBehaviour {
+public class SceneTransition : MonoBehaviour {
 
 	// Load main menu scene
 	public void MainMenu() {
