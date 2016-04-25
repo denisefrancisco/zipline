@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\Snap Points\changeSnapPointsOnPlay.cs" />
      <Compile Include="Assets\Scripts\Snap Points\snap_point.cs" />
      <Compile Include="Assets\Scripts\StopWatch\myTimer.cs" />
+     <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\TransitionScenes.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\exit_game.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\menu_play_button.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\start_game.cs" />
