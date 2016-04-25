@@ -4,12 +4,15 @@ using System.Collections;
 public class DestroyByWall : MonoBehaviour {
 
 	public GameObject explosion;
+	public AudioClip explosionSound;
+	private AudioSource explosion_source;
 	public GameObject player;
 	public GameObject lose_panel;
 	private EdgeCollider2D bc;
 	// Use this for initialization
 	void Start () {
 		bc = player.GetComponent<EdgeCollider2D> ();
+		explosion_source = gameObject.GetComponent<AudioSource> ();
 
 	}
 
@@ -23,8 +26,9 @@ public class DestroyByWall : MonoBehaviour {
 	}
 
 	IEnumerator wait() {
+		explosion_source.PlayOneShot (explosionSound, 1);
 		destroyObject ();
-		yield return new WaitForSeconds (0.85f);
+		yield return new WaitForSeconds (1.0f);
 		lose ();
 	}
 
