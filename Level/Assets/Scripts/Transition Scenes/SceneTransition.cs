@@ -9,6 +9,7 @@ public class SceneTransition : MonoBehaviour {
 	 * to be loaded, so that the options menu back button can
 	 * take the player back to that previous scene */
 	private string previousScene;
+	private string saved;
 
 	// Load main menu scene
 	public void MainMenu() {
@@ -24,11 +25,13 @@ public class SceneTransition : MonoBehaviour {
 
 	// Load options menu scene
 	public void OptionsMenu() {
-		previousScene = SceneManager.GetActiveScene().name;
+		//previousScene = SceneManager.GetActiveScene().name;
+		//saved = previousScene;
 		SceneManager.LoadScene ("options_menu");
 	}
-		
-	public void OptionsBack() {
+
+	//function for loading last scene before options was clicked, doesn't work
+	/*public void OptionsBack() {
 		if (previousScene == "start_menu") {
 			MainMenu();
 		} else if (previousScene == "Level1AnthonyScene") {
@@ -36,7 +39,7 @@ public class SceneTransition : MonoBehaviour {
 		} else {
 			Debug.Log("can't go back, previous scene was not registered");
 		}
-	}
+	}*/
 
 	// Load first avatar customization scene
 	public void ChooseGender() {
@@ -58,10 +61,5 @@ public class SceneTransition : MonoBehaviour {
 	// Quit game
 	public void quitGame() {
 		Application.Quit();
-	}
-
-	void Start() {
-		//Initially previous scene for options back function is the main menu
-		previousScene = "start_menu";
 	}
 }
