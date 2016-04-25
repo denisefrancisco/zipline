@@ -91,10 +91,11 @@
      <Compile Include="Assets\Scripts\Snap Points\ApplySnapPoints.cs" />
      <Compile Include="Assets\Scripts\Snap Points\changeSnapPointsOnPlay.cs" />
      <Compile Include="Assets\Scripts\Snap Points\snap_point.cs" />
+     <Compile Include="Assets\Scripts\Sound\SoundOptions.cs" />
      <Compile Include="Assets\Scripts\StopWatch\myTimer.cs" />
-     <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\exit_game.cs" />
-     <Compile Include="Assets\Scripts\Transition Scenes\Main Menu\menu_play_button.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\SceneTransition.cs" />
+     <Compile Include="Assets\Scripts\Transition Scenes\exit_game.cs" />
+     <Compile Include="Assets\Scripts\Transition Scenes\menu_play_button.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\start_game.cs" />
      <Compile Include="Assets\Toon_fire\scripts\demo_scene_control.cs" />
      <Compile Include="Assets\Toon_fire\scripts\fire_wiggle.cs" />
