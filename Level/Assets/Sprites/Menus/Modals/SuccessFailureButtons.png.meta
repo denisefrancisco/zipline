@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 0cec61679b42f4c1f81e98aebae93786
+timeCreated: 1461626133
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SuccessFailureButtons_0
+    21300002: SuccessFailureButtons_1
+    21300004: SuccessFailureButtons_2
+    21300006: SuccessFailureButtons_3
+    21300008: SuccessFailureButtons_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SuccessFailureButtons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 375
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -150, y: 49.791016}
+        - {x: -150, y: -48.208984}
+        - {x: -149, y: -49.208984}
+        - {x: 150, y: -49.208984}
+        - {x: 150, y: 49.791016}
+    - name: SuccessFailureButtons_1
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 370
+        width: 375
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -148.18188, y: 49.19284}
+        - {x: -149.18188, y: 47.19284}
+        - {x: -149.18188, y: -45.80716}
+        - {x: -147.18188, y: -48.80716}
+        - {x: 150.81812, y: -48.80716}
+        - {x: 150.81812, y: 49.19284}
+    - name: SuccessFailureButtons_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 375
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -150, y: 49.55532}
+        - {x: -150, y: -48.44468}
+        - {x: -149, y: -49.44468}
+        - {x: 148, y: -49.44468}
+        - {x: 150, y: -48.44468}
+        - {x: 150, y: 48.55532}
+        - {x: 149, y: 49.55532}
+    - name: SuccessFailureButtons_3
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 203
+        width: 375
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -146.18188, y: 51.957153}
+        - {x: -149.18188, y: 48.957153}
+        - {x: -149.18188, y: -47.042847}
+        - {x: -144.18188, y: -50.042847}
+        - {x: 148.81812, y: -50.042847}
+        - {x: 150.81812, y: -48.042847}
+        - {x: 150.81812, y: 51.957153}
+    - name: SuccessFailureButtons_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 375
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -149, y: 49}
+        - {x: -150, y: 48}
+        - {x: -150, y: -49}
+        - {x: 150, y: -49}
+        - {x: 150, y: 48}
+        - {x: 148, y: 49}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
