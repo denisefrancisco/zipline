@@ -9,6 +9,7 @@ public class enableRebuild : MonoBehaviour {
 	private Vector3 startPos;
 	private Quaternion startRot;
 	private animOnButton animScript; //animation script attached to avatar
+	private SpriteRenderer sprite;
 
 	public void ResetAvatar() {
 		/* Set avatar's rigidbody to kinematic so avatar 
@@ -28,6 +29,9 @@ public class enableRebuild : MonoBehaviour {
 		landingZone.GetComponent<Scoring>().pastZone = false;
 		landingZone.GetComponent<Scoring>().enabled = false;
 
+		//resetting the avatar's flip components in the sprite renderer
+		sprite.flipX = false;
+
 	}
 
 	// Use this for initialization
@@ -43,6 +47,9 @@ public class enableRebuild : MonoBehaviour {
 
 		// Save reference to animation script
 		animScript = avatar.GetComponent<animOnButton> ();
+
+		//getting the sprite renderer component of the avatar to turn off his flip x
+		sprite = avatar.GetComponent<SpriteRenderer>();
 	}
 
 }
