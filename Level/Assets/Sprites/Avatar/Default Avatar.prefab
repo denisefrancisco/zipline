@@ -18,7 +18,7 @@ GameObject:
   - 114: {fileID: 11470904}
   - 61: {fileID: 6122438}
   m_Layer: 8
-  m_Name: Default AvatarAnim
+  m_Name: Default Avatar
   m_TagString: Avatar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

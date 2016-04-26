@@ -38,6 +38,8 @@ public class level_success : MonoBehaviour {
 			rb.isKinematic = true;
 			//success modal pops up
 			success_modal.SetActive(true);
+			//set avatar active to false;
+			avatar.SetActive(false);
 			//instantiate confetti!
 			confetti1 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);
 			confetti2 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset1,success_modal.transform.rotation);
