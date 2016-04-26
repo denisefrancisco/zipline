@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu Scenes/start_menu.unity
+  - enabled: 1
     path: Assets/Scenes/Character Customization/zipline_choose_gender.unity
   - enabled: 1
     path: Assets/Scenes/Character Customization/zipline_avatar_customization.unity
@@ -17,8 +19,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Character Customization/male_character_customization.unity
   - enabled: 1
     path: Assets/Scenes/Menu Scenes/select_menu.unity
-  - enabled: 1
-    path: Assets/Scenes/Menu Scenes/start_menu.unity
   - enabled: 1
     path: Assets/Scenes/Character Customization/zipline_avatar_customization.unity
   - enabled: 1
