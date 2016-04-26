@@ -37,6 +37,7 @@ public class Failures : MonoBehaviour {
 			//activated, we know the player is "stuck"
 			if (frameCounter > 100 && win_panel.activeSelf == false){
 				lose_panel.SetActive(true);
+				avatar.SetActive (false);
 				frameCounter = 0;
 			}
 		}
