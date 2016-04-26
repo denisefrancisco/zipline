@@ -114,13 +114,13 @@
      <None Include="Assets\Zippy Water 2D\Scripts\Demo Scripts\_Demo scripts can be deleted.txt" />
      <None Include="Assets\Confetti Particles 2\Confetti 2 - Readme.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/LiliBorlandMacBook/zipline/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/Amuraco/Desktop/ZiplineGame/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
