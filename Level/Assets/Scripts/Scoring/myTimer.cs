@@ -12,7 +12,7 @@ public class myTimer : MonoBehaviour {
 
 	public void StartTimer() {
 		// Reset time counter to 0
-		myCoolTimer = 0f;
+		myCoolTimer = 0.0f;
 		// Start tracking time
 		trackingTime = true;
 		Debug.Log ("starting timer "+trackingTime+" at time " + myCoolTimer);
@@ -21,37 +21,45 @@ public class myTimer : MonoBehaviour {
 	public void StopTimer() {
 		// No longer tracking time
 		trackingTime = false;
-		// Save current time count as totalTraversal 
+		Debug.Log ("LOST: stopping timer at time " + myCoolTimer);
+	}
+
+	public void StopTimerWon() {
+		// No longer tracking time
+		trackingTime = false;
+
+		// Save current time count as totalTraversalTime
 		totalTraversalTime = myCoolTimer; 
-		Debug.Log ("stopping timer "+trackingTime+" at time " + totalTraversalTime);
-	}
 
-	public void DisplayTimer() {
-		timerText.enabled = true;
-		Debug.Log ("DISPLAY timer");
-	}
-
-	public void HideTimer () {
-		timerText.enabled = false;
-		Debug.Log ("HIDE timer");
+		// Calculate best traversal time
+		if (bestTraversalTime == 0f) {
+			// first time you play, best traversal time is just your first total traversal time
+			bestTraversalTime = totalTraversalTime;
+		}
+		if (totalTraversalTime < bestTraversalTime) {
+			bestTraversalTime = totalTraversalTime;
+			Debug.Log ("new best time of :" + totalTraversalTime);
+		}
+		Debug.Log ("WON: stopping timer at time " + totalTraversalTime);
 	}
 
 	// Use this for initialization
 	void Start () {
 		timerText = GetComponent<Text>();
-		timerText.enabled = false; // Initially timer text shouldn't be visible
 		myCoolTimer = 0f;
+		totalTraversalTime = 0f;
+		bestTraversalTime = 0f;
 		trackingTime = false;
 	}
 
 	// Update is called once per frame
 	void Update () {
-		myCoolTimer += Time.deltaTime;
-		timerText.text = myCoolTimer.ToString ("f2");
+		//myCoolTimer += Time.deltaTime;
+		//timerText.text = myCoolTimer.ToString ("f2");
 		// If we're tracking time, update myCoolTimer counter
-		/*if (trackingTime) {
+		timerText.text = myCoolTimer.ToString ("f2");
+		if (trackingTime) {
 			myCoolTimer += Time.deltaTime;
-			timerText.text = myCoolTimer.ToString ("f2");
-		}*/
+		}
 	}
 }

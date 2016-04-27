@@ -1,0 +1,17 @@
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/LiliBorlandMacBook/zipline/Level/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/LiliBorlandMacBook/zipline/Level/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/UnityEngine.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/UnityEditor.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Mono.Cecil.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Unity.DataContract.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Mono.Cecil.Mdb.dll

@@ -40,6 +40,10 @@ public class DestroyByWall : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (bc.IsTouching(gameObject.GetComponent<BoxCollider2D>())) {
+			Debug.Log ("RAN INTO WALL " + gameObject.name + " - You lose!");
+			// Stop timer
+			GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>().StopTimer();
+			// Destroy avatar and activate lose panel
 			StartCoroutine (wait ());
 		}
 	}
