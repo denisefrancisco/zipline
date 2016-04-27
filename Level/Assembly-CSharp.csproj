@@ -77,12 +77,12 @@
      <Compile Include="Assets\Scripts\Camera\playZip_camera_mode.cs" />
      <Compile Include="Assets\Scripts\Camera\slide_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\start_camera.cs" />
-     <Compile Include="Assets\Scripts\Effects\DestroyByLava.cs" />
-     <Compile Include="Assets\Scripts\Effects\DestroyByWall.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLineTestLvl.cs" />
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\line_create.cs" />
+     <Compile Include="Assets\Scripts\Scoring\DestroyByLava.cs" />
+     <Compile Include="Assets\Scripts\Scoring\DestroyByWall.cs" />
      <Compile Include="Assets\Scripts\Scoring\Failures.cs" />
      <Compile Include="Assets\Scripts\Scoring\Scoring.cs" />
      <Compile Include="Assets\Scripts\Scoring\fire_failure.cs" />

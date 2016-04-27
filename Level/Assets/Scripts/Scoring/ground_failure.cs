@@ -32,11 +32,11 @@ public class ground_failure : MonoBehaviour {
 		if (bc.IsTouching(ec) && !failed) {
 			Debug.Log ("TOUCHED GROUND "+ gameObject.name + " - You lose!");
 			failed = true;	// Flag true (so we only do these functions once)
+			avatar.SetActive (false);	// Deactivate avatar GO
 			timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>();
 			timerScript.StopTimer();	// Stop timer
 			lose_modal.SetActive(true);	// Activate lose modal
-			avatar.SetActive (false);	// Deactivate avatar GO
-			Time.timeScale = 0.0f;
+			Time.timeScale = 0f;
 		}
 	}
 	
