@@ -6,7 +6,6 @@ public class start_camera : MonoBehaviour {
 	public GameObject brownBoy;
 	public GameObject blueBoy;
 	public GameObject lightBlueBoy;
-	public GameObject buttonInfo;
 	public Camera camera;
 	//get avatar's initial position for resetting
 	private GameObject avatar;
@@ -38,18 +37,20 @@ public class start_camera : MonoBehaviour {
 		camera.orthographicSize = 5.5f;
 		saved_data = GameObject.Find("Saved Data");
 		big_boy = GameObject.Find ("Boy");
+//		Destroy(big_boy);
 		big_boy.transform.position = new Vector3 (0, 0, 1000);
 		clothing = saved_data.GetComponent<SelectedPlayer>();
 		Debug.Log (clothing.chosen_outfit);
 		if (clothing.chosen_outfit == "blue") {
-			blueBoy.SetActive (true);
+			
 			avatar = blueBoy;
+			avatar.SetActive (true);
 		} else if (clothing.chosen_outfit == "lightBlue") {
-			lightBlueBoy.SetActive (true);
 			avatar = lightBlueBoy;
+			avatar.SetActive (true);
 		} else {
-			brownBoy.SetActive (true);
 			avatar = brownBoy;
+			avatar.SetActive (true);
 		}
 		Debug.Log (avatar.name);
 		avatarPos = avatar.transform.position;

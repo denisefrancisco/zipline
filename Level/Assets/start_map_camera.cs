@@ -7,6 +7,7 @@ public class start_map_camera : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		boy = GameObject.Find ("Boy");
+//		boy.SetActive (false);
 		boy.transform.position = new Vector3 (0, 0, 100);
 	}
 	

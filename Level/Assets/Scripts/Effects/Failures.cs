@@ -4,7 +4,7 @@ using System.Collections;
 public class Failures : MonoBehaviour {
 	//this failure document is only particularly for the stagnation failure, when the avatar gets 
 	//stuck on a zipline
-	public GameObject avatar;
+	private GameObject avatar;
 	public GameObject lose_panel;
 	public GameObject win_panel;
 	//the rigid body of the player
@@ -17,6 +17,7 @@ public class Failures : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		rb = avatar.GetComponent<Rigidbody2D>();
 	}
 	//reset the frame counter after every game is restarted...

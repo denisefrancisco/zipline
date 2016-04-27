@@ -6,11 +6,14 @@ public class DestroyByWall : MonoBehaviour {
 	public GameObject explosion;
 	public AudioClip explosionSound;
 	private AudioSource explosion_source;
-	public GameObject player;
+	private GameObject player;
 	public GameObject lose_panel;
 	private EdgeCollider2D bc;
 	// Use this for initialization
 	void Start () {
+		Debug.Log ("NAME OF AVATAR BELOW");
+		player = GameObject.FindGameObjectWithTag ("Avatar");
+		Debug.Log (player.name);
 		bc = player.GetComponent<EdgeCollider2D> ();
 		explosion_source = gameObject.GetComponent<AudioSource> ();
 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class playZip_2 : MonoBehaviour {
 
-	public Transform player;
+	private Transform player;
 	//these Transforms are for indicating how far the camera will go width-wise to follow the player
 	public Transform farLeft;
 	public Transform farRight;
@@ -14,6 +14,7 @@ public class playZip_2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Avatar").GetComponent<Transform> ();
 		timer.SetActive (false);
 	}
 

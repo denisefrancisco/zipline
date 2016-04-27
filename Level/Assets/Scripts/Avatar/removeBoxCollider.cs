@@ -5,12 +5,13 @@ public class removeBoxCollider : MonoBehaviour {
 
 	//this is for getting the public variable timerCount in order to reset the timer.
 	public myTimer timer;
-	public GameObject player;
+	private GameObject player;
 	//box collider of the box collider that allows the avatar to walk onto the zipline
 	private BoxCollider2D bc;
 
 	// Use this for initialization
 	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Avatar");
 		bc = player.GetComponent<BoxCollider2D>();
 	}
 	

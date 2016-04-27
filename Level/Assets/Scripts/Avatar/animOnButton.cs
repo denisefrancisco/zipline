@@ -17,9 +17,9 @@ public class animOnButton : MonoBehaviour {
 			*	Then movement speed.
 		*/
 
-	public GameObject avatar;
+	private GameObject avatar;
 	private SpriteRenderer sprite; // avatar's sprite
-	public Animator anim;
+	private Animator anim;
 	private bool go = false;
 	private float movement_sp = 1.75f;
 	/* Flag indicating direction avatar is facing; must be public
@@ -37,10 +37,12 @@ public class animOnButton : MonoBehaviour {
 
 // Use this for initialization
 	void Start () {
-		trolley = GetComponent<EdgeCollider2D> ();
-		anim = GetComponent<Animator> ();
-		feet = GetComponent<BoxCollider2D> ();
-		rb = GetComponent<Rigidbody2D> ();
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
+		trolley = avatar.GetComponent<EdgeCollider2D> ();
+		anim = avatar.GetComponent<Animator> ();
+		Debug.Log (anim.name);
+		feet = avatar.GetComponent<BoxCollider2D> ();
+		rb = avatar.GetComponent<Rigidbody2D> ();
 		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
 		sprite = avatar.GetComponent<SpriteRenderer> ();
 		facingRight = true;
@@ -48,7 +50,6 @@ public class animOnButton : MonoBehaviour {
 
 	//Use this for what happens when the button is clicked.
 	public void OnClick() {
-
 		// Enable scoring script 
 		landingZone.GetComponent<Scoring>().enabled = true;
 		landingZone.GetComponent<Scoring> ().playEnded = false;
