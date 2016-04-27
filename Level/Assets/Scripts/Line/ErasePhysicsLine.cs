@@ -8,12 +8,12 @@ using System.Collections;
  * line GOs are initially created) */
 public class ErasePhysicsLine : MonoBehaviour {
 
-	private GameObject enableErasing; // Reference to GO with erasing scripts attached
+	private enableLineErasing enableErasing; // Reference to erasing script
 	public GameObject[] points;	// Array of snap point GOs that serve as vertices of line renderer
 
 	void OnMouseDown () {
 		// Decrement usedCounter for each snap point connected to this line
-		if (points.Length > 0) {
+		if (enableErasing.canErase && points.Length > 0) {
 			foreach (GameObject p in points) {
 				p.GetComponent<snap_point> ().usedCounter--;
 				p.GetComponent<CircleCollider2D>().radius = 0.625f; //reset snap point radius
@@ -24,7 +24,7 @@ public class ErasePhysicsLine : MonoBehaviour {
 	}
 
 	void Start() {
-		enableErasing = GameObject.Find ("enableLineErasing"); 
+		enableErasing = GameObject.Find("enableLineErasing").GetComponent<enableLineErasing>(); 
 	}
 				
 }

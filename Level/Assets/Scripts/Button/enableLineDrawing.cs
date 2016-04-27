@@ -25,7 +25,9 @@ public class enableLineDrawing : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		drawingComponent = gameObject.GetComponent<DrawPhysicsLine> ();
-		canDraw = false;
+		// Initially give the player the ability to draw
+		canDraw = true;
+		drawingComponent.enabled = true;
 	}
 
 }
