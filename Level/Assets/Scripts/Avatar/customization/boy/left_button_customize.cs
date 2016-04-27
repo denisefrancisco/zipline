@@ -14,6 +14,7 @@ public class left_button_customize : MonoBehaviour {
 		character_script = GameObject.Find ("Boy");
 		click_button = GameObject.Find ("Left Button");
 		button= character_script.GetComponent<right_button_customize> ();
+		transform.Find (button.clothes [0]).gameObject.SetActive (true);
 	}
 
 	public void previous_clothing()
