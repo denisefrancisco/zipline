@@ -14,12 +14,13 @@ public class Failures : MonoBehaviour {
 	private myTimer timerScript; 	// Reference to timer GO script component
 	//in order to make sure the modal doesn't pop up after the 4th/5th restart play, I need to reset 
 	//the counter every time the player restarts the game
-	private int frameCounter;
+	public int frameCounter;
 	private float speed;	// Avatar's speed
 
 
 	// Use this for initialization
 	void Start () {
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		// Set references to collider and script components
 		rb = avatar.GetComponent<Rigidbody2D>();
 		failed = false;
@@ -28,29 +29,37 @@ public class Failures : MonoBehaviour {
 	//reset the frame counter after every game is restarted...
 	public void resetFrameCounter() {
 		frameCounter = 0;
-		Debug.Log("Frame counter reset");
 	}
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		speed = rb.velocity.magnitude;	// Grab avatar current speed
+		// Reset failed state when lose modal is disabled
+		if (!avatar.activeSelf && failed) {
+			failed = false;
+			frameCounter = 0;
+		}
 
-		/* As long as avatar's speed is slow enough (less than 0.5f) and 
-		the avatar is past the first point of the level...*/
-		if (speed < 0.5f && avatar.transform.position.x >= -2.8f){
-			frameCounter++;	// Increment frame counter
+		// If avatar GO exists
+		if (avatar != null) {
+			// Grab avatar current speed
+			speed = rb.velocity.magnitude;
 
-			/* When we've waited long enough (more than 100 frames) and neither
-			 modal has been activated yet, the player must be "stuck"*/
-			if (frameCounter > 150 && !win_panel.activeSelf && !lose_panel.activeSelf) {
-				Debug.Log ("STAGNATION - You lose!");
-				timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>();
-				timerScript.StopTimer();	// Stop timer
-				lose_panel.SetActive(true);		// Activate lose modal
-				avatar.SetActive (false);	// Deactivate avatar GO
-				frameCounter = 0;	// Reset frame counter
+			/* As long as avatar's speed is slow enough (less than 0.5f) and 
+			the avatar is past the first point of the level...*/
+			if (speed < 0.5f && avatar.transform.position.x >= -2.8f) {
+				frameCounter++;	// Increment frame counter
+				/* When we've waited long enough (more than 100 frames) and neither
+				 modal has been activated yet, the player must be "stuck"*/
+				if (frameCounter > 125 && !win_panel.activeSelf && !lose_panel.activeSelf && !failed) {
+					failed = true; // Flag true (so we only do these functions once)
+					frameCounter = 0;	// Reset frame counter
+					avatar.SetActive (false);	// Deactivate avatar GO
+					Debug.Log ("STAGNATION - You lose!");
+					timerScript = GameObject.FindGameObjectWithTag ("Timer").GetComponent<myTimer> ();
+					timerScript.StopTimer ();	// Stop timer
+					lose_panel.SetActive (true);		// Activate lose modal
+				}
 			}
 		}
-	
 	}
 }

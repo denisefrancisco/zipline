@@ -41,21 +41,20 @@ public class level_success : MonoBehaviour {
 		// Reset failed state when success modal is disabled
 		if (!playCamera.activeSelf && succeeded) {
 			succeeded = false;
-			Debug.Log ("reset SUCCESS state");
 		}
 
 		//if the box collider comes into contact with the avatar's edge collider...
 		if (bc.IsTouching(ec) && !succeeded) {
+			Debug.Log ("success!");
 			succeeded = true; // Flag true (so we only do these functions once)
 
 			//Set rigid body to isKinematic to freeze avatar movement
 			rb.isKinematic = true;
+			avatar.SetActive(false);	// Deactivate avatar
+			success_modal.SetActive(true);	// Activate success modal
 
 			timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>();
 			timerScript.StopTimerWon();	// Stop timer and record time to calculate score
-
-			success_modal.SetActive(true);	// Activate success modal
-			avatar.SetActive(false);	// Deactivate avatar
 
 			//instantiate confetti!
 			confetti1 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);

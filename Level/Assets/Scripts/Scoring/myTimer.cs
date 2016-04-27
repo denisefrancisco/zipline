@@ -10,17 +10,17 @@ public class myTimer : MonoBehaviour {
 	public float bestTraversalTime;	// Var to save player's best traversal time
 	private bool trackingTime; // Flag indicating whether we're keeping track of time or not
 
+	public GameObject success_modal;	// Reference to win modal
 	public int score;	// Var to save player's score from successful zipline traversal
 	// Traversal times that generate the following star scores
-	private float threeStarTime = 5f;
-	private float twoStarTime = 7f;
+	private float threeStarTime = 6f;
+	private float twoStarTime = 8f;
 
 	public void StartTimer() {
 		// Reset time counter to 0
 		myCoolTimer = 0.0f;
 		// Start tracking time
 		trackingTime = true;
-		Debug.Log ("starting timer");
 	}
 
 	public void StopTimer() {
@@ -34,13 +34,18 @@ public class myTimer : MonoBehaviour {
 		trackingTime = false;
 		// Save current time count as totalTraversalTime
 		totalTraversalTime = myCoolTimer; 
-		//Calculate score
+		//Calculate score and make corresponding stars visible to display score in modal
 		if (totalTraversalTime < threeStarTime) {
 			score = 3;
+			GameObject.Find ("Star3.1").GetComponent<Image> ().enabled = true;
+			GameObject.Find ("Star1").GetComponent<Image> ().enabled = true;
+			GameObject.Find ("Star3.3").GetComponent<Image> ().enabled = true;
 		} else if (totalTraversalTime < twoStarTime) {
 			score = 2;
+			GameObject.Find ("Star2x").GetComponent<Image> ().enabled = true;
 		} else {
 			score = 1;
+			GameObject.Find ("Star1").GetComponent<Image> ().enabled = true;
 		}
 		// Calculate best traversal time
 		if (bestTraversalTime == 0f) {

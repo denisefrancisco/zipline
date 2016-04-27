@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// OLD SCORING SCRIPT NOT USED ANYWHERE
 public class Scoring : MonoBehaviour {
 
 	private bool inZone;	// Flag indicating avatar is in the landing zone
