@@ -34,7 +34,7 @@ public class Failures : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		// Reset failed state when lose modal is disabled
-		if (!lose_panel.activeSelf && failed) {
+		if (!avatar.activeSelf && failed) {
 			failed = false;
 			frameCounter = 0;
 		}
@@ -50,14 +50,14 @@ public class Failures : MonoBehaviour {
 				frameCounter++;	// Increment frame counter
 				/* When we've waited long enough (more than 100 frames) and neither
 				 modal has been activated yet, the player must be "stuck"*/
-				if (frameCounter > 150 && !win_panel.activeSelf && !lose_panel.activeSelf && !failed) {
+				if (frameCounter > 125 && !win_panel.activeSelf && !lose_panel.activeSelf && !failed) {
 					failed = true; // Flag true (so we only do these functions once)
 					frameCounter = 0;	// Reset frame counter
+					avatar.SetActive (false);	// Deactivate avatar GO
 					Debug.Log ("STAGNATION - You lose!");
 					timerScript = GameObject.FindGameObjectWithTag ("Timer").GetComponent<myTimer> ();
 					timerScript.StopTimer ();	// Stop timer
 					lose_panel.SetActive (true);		// Activate lose modal
-					avatar.SetActive (false);	// Deactivate avatar GO
 				}
 			}
 		}

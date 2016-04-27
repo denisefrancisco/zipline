@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scoring/myTimer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Avatar/animOnButton.cs">
     <Files>
-      <File FileName="Assets/Scripts/Scoring/Scoring.cs" Line="4" Column="40" />
+      <File FileName="Assets/Scripts/Avatar/animOnButton.cs" Line="35" Column="1" />
+      <File FileName="Assets/Scripts/Scoring/Scoring.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Scoring/myTimer.cs" Line="16" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
