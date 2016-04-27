@@ -10,6 +10,7 @@ public class myTimer : MonoBehaviour {
 	public float bestTraversalTime;	// Var to save player's best traversal time
 	private bool trackingTime; // Flag indicating whether we're keeping track of time or not
 
+	public GameObject success_modal;	// Reference to win modal
 	public int score;	// Var to save player's score from successful zipline traversal
 	// Traversal times that generate the following star scores
 	private float threeStarTime = 5f;
