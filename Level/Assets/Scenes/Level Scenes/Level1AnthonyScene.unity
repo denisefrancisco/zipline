@@ -3030,7 +3030,7 @@ GameObject:
   - 114: {fileID: 532192486}
   - 114: {fileID: 532192485}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TextTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
