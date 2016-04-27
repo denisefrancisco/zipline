@@ -23,10 +23,9 @@ public class fire_failure : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// Reset failed state when lose modal is disabled
+		// Reset failed state when play camera is disabled
 		if (!playCamera.activeSelf && failed) {
 			failed = false;
-			Debug.Log ("reset failed state for FIREFAILURE");
 		}
 
 		// If the avatar's collider and fire's collider are touching eachother, player has failed

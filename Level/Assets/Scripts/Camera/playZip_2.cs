@@ -24,11 +24,9 @@ public class playZip_2 : MonoBehaviour {
 	public void resetWinAndLose(){
 		timer.SetActive (false);	// Disable timer bc we're returning to build mode
 		startedTimer = false;	// Reset startedTimer state
-		Debug.Log("playZip2: reset startedTimer state to false");
 
 		// Reset failed state in stagnation Failures script
 		gameObject.GetComponent<Failures>().failed = false;	
-		Debug.Log ("reset failed state for STAGNATION");
 
 		// Deactivate star GOs representing score in success modal
 		GameObject[] stars = GameObject.FindGameObjectsWithTag("Star");
@@ -38,7 +36,6 @@ public class playZip_2 : MonoBehaviour {
 		// Deactivate modals
 		lose_panel.SetActive (false);
 		win_panel.SetActive (false);
-		Debug.Log("playZip2: win and lose modals DEACTIVATED");
 	}
 	
 	// Update is called once per frame

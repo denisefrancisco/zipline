@@ -22,10 +22,9 @@ public class ground_failure : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// Reset failed state when lose modal is disabled
+		// Reset failed state when play camera is disabled
 		if (!playCamera.activeSelf && failed) {
 			failed = false;
-			Debug.Log ("reset failed state for GROUND FAILURE");
 		}
 
 		// If the avatar's collider and floor's collider are touching eachother, player has failed
