@@ -19,7 +19,7 @@ public class DestroyByLava : MonoBehaviour {
 	//		Destroy (gameObject);
 	//	}
 	void lose() {
-		lose_panel.SetActive (true);
+		lose_panel.SetActive (true);	// Activate lose modal
 	}
 
 	IEnumerator wait() {
@@ -36,6 +36,10 @@ public class DestroyByLava : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (bc.IsTouching(gameObject.GetComponent<BoxCollider2D>())) {
+			Debug.Log ("FELL INTO LAVA " + gameObject.name + " - You lose!");
+			// Stop timer
+			GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>().StopTimer();
+			// Destroy avatar and activate lose panel
 			StartCoroutine (wait ());
 		}
 	}

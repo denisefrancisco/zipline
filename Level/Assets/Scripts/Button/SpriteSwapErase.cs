@@ -24,11 +24,9 @@ public class SpriteSwapErase : MonoBehaviour {
 		 * If you can't erase and have already swapped sprites,  set lite sprite */
 		if (enableErase.canErase && !spriteSwap) {
 			eraseButton.image.overrideSprite = dark;
-			Debug.Log ("erase button dark");
 			spriteSwap = true;
 		} else if (!enableErase.canErase && spriteSwap){
 			eraseButton.image.overrideSprite = lite;
-			Debug.Log ("erase button lite");
 			spriteSwap = false;
 		}
 	}

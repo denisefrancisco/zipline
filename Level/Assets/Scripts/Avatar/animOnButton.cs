@@ -70,11 +70,9 @@ public class animOnButton : MonoBehaviour {
 		if ((direction > 1) && !facingRight) {
 			sprite.flipX = false;
 			facingRight = !facingRight;
-			Debug.Log ("Sprite flipped, facingRight? "+facingRight);
 		} else if ((direction < -1) && facingRight) {
 			sprite.flipX = true;
 			facingRight = !facingRight;
-			Debug.Log ("Sprite flipped, facingRight? "+facingRight);
 		}
 
 		if (go) {

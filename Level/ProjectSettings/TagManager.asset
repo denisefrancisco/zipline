@@ -12,6 +12,7 @@ TagManager:
   - LineCollider
   - LandingZone
   - Avatar
+  - Timer
   layers:
   - Default
   - TransparentFX

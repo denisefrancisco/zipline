@@ -598,6 +598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f93919336bd84783ae2dc28bb901690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playCamera: {fileID: 1379217725}
   avatar: {fileID: 1276376400}
   lose_modal: {fileID: 1467267571}
 --- !u!1 &85603694
@@ -3030,12 +3031,12 @@ GameObject:
   - 114: {fileID: 532192486}
   - 114: {fileID: 532192485}
   m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: TextTimer
+  m_TagString: Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &532192484
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3065,6 +3066,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCoolTimer: 0
+  totalTraversalTime: 0
+  bestTraversalTime: 0
+  score: 0
 --- !u!114 &532192486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3141,7 +3145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 477146, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 446540, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.x
@@ -3515,7 +3519,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 605287675}
   - 61: {fileID: 605287677}
-  - 114: {fileID: 605287676}
   - 114: {fileID: 605287678}
   m_Layer: 0
   m_Name: Landing Zone
@@ -3536,23 +3539,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1331872893}
   m_RootOrder: 0
---- !u!114 &605287676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 605287674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ebcab86b06a46d9a5fb75800313f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pastZone: 0
-  playEnded: 0
-  lose_panel: {fileID: 1467267571}
-  leftWall: {fileID: 145000375}
-  rightWall: {fileID: 1582981707}
-  avatar: {fileID: 1276376400}
 --- !u!61 &605287677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3578,6 +3564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ead2ff689644d2b9de7efe7e54e3d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playCamera: {fileID: 1379217725}
   avatar: {fileID: 1276376400}
   success_modal: {fileID: 228594681}
   confetti: {fileID: 100000, guid: 04450da9b86766e469a514d11be9f0fd, type: 2}
@@ -3975,6 +3962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916b00422bcf440a3affc58edf66faca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playCamera: {fileID: 1379217725}
   player: {fileID: 1276376400}
   lose_panel: {fileID: 1467267571}
 --- !u!58 &675580945
@@ -4020,12 +4008,12 @@ Transform:
   m_LocalPosition: {x: 0.61395746, y: -0.05276667, z: -56.34375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1766056552}
   - {fileID: 1067283370}
   - {fileID: 675580949}
   - {fileID: 1605374293}
   - {fileID: 471180957}
   - {fileID: 1609989575}
-  - {fileID: 1766056552}
   - {fileID: 1684311357}
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -4066,7 +4054,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 869047035f475344db95ee6b2cc4c35d, type: 2}
       propertyPath: m_Name
@@ -4816,6 +4804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916b00422bcf440a3affc58edf66faca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playCamera: {fileID: 1379217725}
   player: {fileID: 1276376400}
   lose_panel: {fileID: 1467267571}
 --- !u!58 &1067283369
@@ -4961,7 +4950,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 477146, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 446540, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6492,7 +6481,6 @@ GameObject:
   - 124: {fileID: 1379217729}
   - 92: {fileID: 1379217728}
   - 81: {fileID: 1379217727}
-  - 114: {fileID: 1379217732}
   - 114: {fileID: 1379217733}
   - 114: {fileID: 1379217734}
   m_Layer: 0
@@ -6570,23 +6558,6 @@ Transform:
   - {fileID: 1861927288}
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &1379217732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1379217725}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ebcab86b06a46d9a5fb75800313f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pastZone: 0
-  playEnded: 0
-  lose_panel: {fileID: 1467267571}
-  leftWall: {fileID: 145000375}
-  rightWall: {fileID: 1582981707}
-  avatar: {fileID: 1276376400}
 --- !u!114 &1379217733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6618,6 +6589,7 @@ MonoBehaviour:
   avatar: {fileID: 1276376400}
   lose_panel: {fileID: 1467267571}
   win_panel: {fileID: 228594681}
+  failed: 0
 --- !u!1 &1420722183
 GameObject:
   m_ObjectHideFlags: 0
@@ -7090,6 +7062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f93919336bd84783ae2dc28bb901690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playCamera: {fileID: 1379217725}
   avatar: {fileID: 1276376400}
   lose_modal: {fileID: 1467267571}
 --- !u!1 &1485028078
@@ -7498,6 +7471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f93919336bd84783ae2dc28bb901690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playCamera: {fileID: 1379217725}
   avatar: {fileID: 1276376400}
   lose_modal: {fileID: 1467267571}
 --- !u!61 &1569148804
@@ -9012,7 +8986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 477146, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_Name
@@ -9202,11 +9176,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.9539576
+      value: -4.2
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.6572333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9230,7 +9204,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_LocalScale.x
@@ -9465,7 +9439,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 678dd6c0ff3a03348abeca91be2cc55a, type: 2}
       propertyPath: m_LocalScale.x
@@ -9493,6 +9467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 916b00422bcf440a3affc58edf66faca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playCamera: {fileID: 1379217725}
   player: {fileID: 1276376400}
   lose_panel: {fileID: 1467267571}
 --- !u!58 &1766056548
@@ -10332,6 +10307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f93919336bd84783ae2dc28bb901690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playCamera: {fileID: 1379217725}
   avatar: {fileID: 1276376400}
   lose_modal: {fileID: 1467267571}
 --- !u!1 &1995734792

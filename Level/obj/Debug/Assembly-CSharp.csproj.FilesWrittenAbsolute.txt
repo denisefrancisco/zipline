@@ -47,3 +47,6 @@
 /Users/Elli/Desktop/ZipLines/zipline/Level/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/Elli/Desktop/ZipLines/zipline/Level/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/Elli/Desktop/ZipLines/zipline/Level/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Assembly-UnityScript-firstpass.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
