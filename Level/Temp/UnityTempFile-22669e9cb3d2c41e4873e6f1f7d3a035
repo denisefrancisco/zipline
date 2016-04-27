@@ -1,0 +1,151 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
+-define:UNITY_5_3_3
+-define:UNITY_5_3
+-define:UNITY_5
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_SPRITE_POLYGON
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:ENABLE_EDITOR_TESTS_RUNNER
+-define:UNITY_STANDALONE_OSX
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GAMECENTER
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_LOG_MIXED_STACKTRACE
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_OSX
+-define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
+'Assets/Mobile Cartoon FX/Scripts/Rotatearound.cs'
+'Assets/Music/button_click.cs'
+'Assets/Music/failure_build.cs'
+'Assets/Scripts/Avatar/animOnButton.cs'
+'Assets/Scripts/Avatar/avatar_control.cs'
+'Assets/Scripts/Avatar/avatar_jump.cs'
+'Assets/Scripts/Avatar/customization/SelectedPlayer.cs'
+'Assets/Scripts/Avatar/customization/boy/boy_button_disappear.cs'
+'Assets/Scripts/Avatar/customization/boy/left_button_customize.cs'
+'Assets/Scripts/Avatar/customization/boy/right_button_customize.cs'
+'Assets/Scripts/Avatar/customization/girl/button2_for_customizing.cs'
+'Assets/Scripts/Avatar/customization/girl/button_disappear.cs'
+'Assets/Scripts/Avatar/customization/girl/button_for_customizing.cs'
+'Assets/Scripts/Avatar/gender pick intro/loadBoy.cs'
+'Assets/Scripts/Avatar/gender pick intro/loadGirl.cs'
+'Assets/Scripts/Avatar/jump_avatar.cs'
+'Assets/Scripts/Avatar/removeBoxCollider.cs'
+'Assets/Scripts/Button/SpriteSwapDraw.cs'
+'Assets/Scripts/Button/SpriteSwapErase.cs'
+'Assets/Scripts/Button/avatar_start_zipline.cs'
+'Assets/Scripts/Button/enableLineDrawing.cs'
+'Assets/Scripts/Button/enableLineDrawingTestLvl.cs'
+'Assets/Scripts/Button/enableLineErasing.cs'
+'Assets/Scripts/Button/enableRebuild.cs'
+'Assets/Scripts/Button/enableReset.cs'
+'Assets/Scripts/Button/loadLevel.cs'
+'Assets/Scripts/Camera/change_camera.cs'
+'Assets/Scripts/Camera/escape_to_build.cs'
+'Assets/Scripts/Camera/playZip_2.cs'
+'Assets/Scripts/Camera/playZip_camera_mode.cs'
+'Assets/Scripts/Camera/slide_camera.cs'
+'Assets/Scripts/Camera/start_camera.cs'
+'Assets/Scripts/Effects/DestroyByLava.cs'
+'Assets/Scripts/Effects/DestroyByWall.cs'
+'Assets/Scripts/Effects/Failures.cs'
+'Assets/Scripts/Line/DrawPhysicsLine.cs'
+'Assets/Scripts/Line/DrawPhysicsLineTestLvl.cs'
+'Assets/Scripts/Line/ErasePhysicsLine.cs'
+'Assets/Scripts/Line/line_create.cs'
+'Assets/Scripts/Scoring/Scoring.cs'
+'Assets/Scripts/Scoring/fire_failure.cs'
+'Assets/Scripts/Scoring/ground_failure.cs'
+'Assets/Scripts/Scoring/level_success.cs'
+'Assets/Scripts/Snap Points/ApplySnapPoints.cs'
+'Assets/Scripts/Snap Points/changeSnapPointsOnPlay.cs'
+'Assets/Scripts/Snap Points/snap_point.cs'
+'Assets/Scripts/Sound/SoundOptions.cs'
+'Assets/Scripts/Sound/ToggleSoundOffBorder.cs'
+'Assets/Scripts/Sound/ToggleSoundOnBorder.cs'
+'Assets/Scripts/StopWatch/myTimer.cs'
+'Assets/Scripts/Transition Scenes/SceneTransition.cs'
+'Assets/Scripts/Transition Scenes/exit_game.cs'
+'Assets/Scripts/Transition Scenes/menu_play_button.cs'
+'Assets/Scripts/Transition Scenes/start_game.cs'
+'Assets/Toon_fire/scripts/demo_scene_control.cs'
+'Assets/Toon_fire/scripts/fire_wiggle.cs'
+'Assets/Toon_fire/scripts/flickering.cs'
+'Assets/Zippy Water 2D/Scripts/Demo Scripts/ClickForNextScene.cs'
+'Assets/Zippy Water 2D/Scripts/Demo Scripts/TextMeshFPS.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2D.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2DAnimateColors.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2DBeachBall.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2DCenterOfMass.cs'
+'Assets/Zippy Water 2D/Scripts/ZippyWater2DCollider.cs'
+'Assets/start_play_camera.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

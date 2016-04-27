@@ -3,14 +3,21 @@ using System.Collections;
 
 public class start_camera : MonoBehaviour {
 
+	public GameObject brownBoy;
+	public GameObject blueBoy;
+	public GameObject lightBlueBoy;
+	public GameObject buttonInfo;
 	public Camera camera;
 	//get avatar's initial position for resetting
-	public GameObject avatar;
+	private GameObject avatar;
 	//this variable is to indicate where the camera initializes to when the game is started
 	private Vector3 resetCameraPosition;
 	//set avatar's initial position to a variable
 	private Vector3 avatarPos;
 	private Quaternion avatarRot;
+	private GameObject saved_data;
+	private GameObject big_boy;
+	private SelectedPlayer clothing;
 
 	public void returnCamera(){
 		camera.orthographicSize = 5.5f;
@@ -29,8 +36,25 @@ public class start_camera : MonoBehaviour {
 		//saving the starting position for the camera 
 		resetCameraPosition = gameObject.transform.position;
 		camera.orthographicSize = 5.5f;
+		saved_data = GameObject.Find("Saved Data");
+		big_boy = GameObject.Find ("Boy");
+		big_boy.transform.position = new Vector3 (0, 0, 1000);
+		clothing = saved_data.GetComponent<SelectedPlayer>();
+		Debug.Log (clothing.chosen_outfit);
+		if (clothing.chosen_outfit == "blue") {
+			blueBoy.SetActive (true);
+			avatar = blueBoy;
+		} else if (clothing.chosen_outfit == "lightBlue") {
+			lightBlueBoy.SetActive (true);
+			avatar = lightBlueBoy;
+		} else {
+			brownBoy.SetActive (true);
+			avatar = brownBoy;
+		}
+		Debug.Log (avatar.name);
 		avatarPos = avatar.transform.position;
 		avatarRot = avatar.transform.rotation;
+
 	}
 	
 	// Update is called once per frame
