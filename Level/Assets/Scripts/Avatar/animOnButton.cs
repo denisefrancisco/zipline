@@ -32,7 +32,6 @@ public class animOnButton : MonoBehaviour {
 	private Rigidbody2D rb;
 	private Collider2D trolley;
 	private float quarter = .25f;
-	private GameObject landingZone;
 
 
 // Use this for initialization
@@ -41,20 +40,14 @@ public class animOnButton : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		feet = GetComponent<BoxCollider2D> ();
 		rb = GetComponent<Rigidbody2D> ();
-		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
 		sprite = avatar.GetComponent<SpriteRenderer> ();
 		facingRight = true;
 	}
 
 	//Use this for what happens when the button is clicked.
 	public void OnClick() {
-
-		// Enable scoring script 
-		landingZone.GetComponent<Scoring>().enabled = true;
-		landingZone.GetComponent<Scoring> ().playEnded = false;
 		// Apply Unity physics to avatar rigidbody
 		rb.isKinematic = false;
-
 		//There is a trigger called "onClick" in the animator's parameters. 
 		anim.SetTrigger ("onClick");
 		go = true;
