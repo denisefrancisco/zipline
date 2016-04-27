@@ -9,6 +9,7 @@ public class right_button_customize : MonoBehaviour {
 	private GameObject obj;
 	private GameObject previous_obj;
 	private Transform first_cloth;
+	private left_button_customize clothing;
 
 
 	// Use this for initialization
@@ -25,15 +26,15 @@ public class right_button_customize : MonoBehaviour {
 	}
 
 	public void next_clothing(){
-
-		if (index == 0) {
-			transform.Find(clothes[index]).gameObject.SetActive(true);
-		}
-		else if (index != 0) {
+		index++;
+		Debug.Log (index);
+		if (index > 0) {
 			transform.Find(clothes[index]).gameObject.SetActive(true);
 			transform.Find(clothes[index-1]).gameObject.SetActive(false);
+			clothing.chosen_clothing = clothes [index];
 		}
-		index++;
+
+
 
 
 	}

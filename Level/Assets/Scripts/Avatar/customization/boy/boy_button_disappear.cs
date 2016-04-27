@@ -23,13 +23,13 @@ public class boy_button_disappear : MonoBehaviour {
 	}
 
 	public void remove_button(){
-		if (script.index < 0 | script.index-1 == 0) {
+		if (script.index == 0) {
 			left_button.transform.position = new Vector3 (x1, y1, 10000);
 		}
-		if (script.index == script.clothes.Length) {
+		if (script.index == script.clothes.Length-1) {
 			right_button.transform.position = new Vector3 (x2, y2, 10000);
 			left_button.transform.position = new Vector3 (x1, y1, 10);
-		} else if (script.index > 0 && script.index-1 != 0 && script.index != script.clothes.Length) {
+		} else if (script.index > 0 && script.index != script.clothes.Length) {
 			left_button.transform.position = new Vector3 (x1, y1, 10);
 			right_button.transform.position = new Vector3 (x2, y2, 10);
 		}
