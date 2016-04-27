@@ -28,6 +28,7 @@ public class Failures : MonoBehaviour {
 	//reset the frame counter after every game is restarted...
 	public void resetFrameCounter() {
 		frameCounter = 0;
+		Debug.Log("Frame counter reset");
 	}
 
 	// Update is called once per frame

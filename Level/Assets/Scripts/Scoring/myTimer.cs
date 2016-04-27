@@ -10,12 +10,17 @@ public class myTimer : MonoBehaviour {
 	public float bestTraversalTime;	// Var to save player's best traversal time
 	private bool trackingTime; // Flag indicating whether we're keeping track of time or not
 
+	public int score;	// Var to save player's score from successful zipline traversal
+	// Traversal times that generate the following star scores
+	private float threeStarTime = 5f;
+	private float twoStarTime = 7f;
+
 	public void StartTimer() {
 		// Reset time counter to 0
 		myCoolTimer = 0.0f;
 		// Start tracking time
 		trackingTime = true;
-		Debug.Log ("starting timer "+trackingTime+" at time " + myCoolTimer);
+		Debug.Log ("starting timer");
 	}
 
 	public void StopTimer() {
@@ -27,10 +32,16 @@ public class myTimer : MonoBehaviour {
 	public void StopTimerWon() {
 		// No longer tracking time
 		trackingTime = false;
-
 		// Save current time count as totalTraversalTime
 		totalTraversalTime = myCoolTimer; 
-
+		//Calculate score
+		if (totalTraversalTime < threeStarTime) {
+			score = 3;
+		} else if (totalTraversalTime < twoStarTime) {
+			score = 2;
+		} else {
+			score = 1;
+		}
 		// Calculate best traversal time
 		if (bestTraversalTime == 0f) {
 			// first time you play, best traversal time is just your first total traversal time
@@ -40,7 +51,7 @@ public class myTimer : MonoBehaviour {
 			bestTraversalTime = totalTraversalTime;
 			Debug.Log ("new best time of :" + totalTraversalTime);
 		}
-		Debug.Log ("WON: stopping timer at time " + totalTraversalTime);
+		Debug.Log ("WON " + score+ " stars at time " + totalTraversalTime);
 	}
 
 	// Use this for initialization
@@ -49,6 +60,7 @@ public class myTimer : MonoBehaviour {
 		myCoolTimer = 0f;
 		totalTraversalTime = 0f;
 		bestTraversalTime = 0f;
+		score = 0;
 		trackingTime = false;
 	}
 
