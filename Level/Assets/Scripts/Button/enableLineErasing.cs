@@ -14,9 +14,8 @@ public class enableLineErasing : MonoBehaviour {
 		lines = GameObject.FindGameObjectsWithTag ("Line");
 		foreach (GameObject line in lines) {
 			line.GetComponent<ErasePhysicsLine> ().enabled = true;
-			Debug.Log ("erasing enabled!");
 		}
-
+		Debug.Log ("erasing enabled!");
 	}
 
 	// Disables ErasePhysicsLine script for each line GO in scene
