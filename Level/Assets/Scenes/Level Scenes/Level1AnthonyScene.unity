@@ -6492,7 +6492,6 @@ GameObject:
   - 124: {fileID: 1379217729}
   - 92: {fileID: 1379217728}
   - 81: {fileID: 1379217727}
-  - 114: {fileID: 1379217732}
   - 114: {fileID: 1379217733}
   - 114: {fileID: 1379217734}
   m_Layer: 0
@@ -6570,23 +6569,6 @@ Transform:
   - {fileID: 1861927288}
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &1379217732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1379217725}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ebcab86b06a46d9a5fb75800313f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pastZone: 0
-  playEnded: 0
-  lose_panel: {fileID: 1467267571}
-  leftWall: {fileID: 145000375}
-  rightWall: {fileID: 1582981707}
-  avatar: {fileID: 1276376400}
 --- !u!114 &1379217733
 MonoBehaviour:
   m_ObjectHideFlags: 0

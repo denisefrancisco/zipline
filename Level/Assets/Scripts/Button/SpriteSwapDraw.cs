@@ -24,11 +24,9 @@ public class SpriteSwapDraw : MonoBehaviour {
 		 * If you can't draw and have already swapped sprites,  set lite sprite */
 		if (enableDraw.canDraw && !spriteSwap) {
 			drawButton.image.overrideSprite = dark;
-			Debug.Log ("draw button dark");
 			spriteSwap = true;
 		} else if (!enableDraw.canDraw && spriteSwap) {
 			drawButton.image.overrideSprite = lite;
-			Debug.Log ("draw button lite");
 			spriteSwap = false;
 		}
 	}
