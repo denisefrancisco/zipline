@@ -3,12 +3,14 @@ using System.Collections;
 
 public class playZip_2 : MonoBehaviour {
 
+	// Avatar GO's transform component
 	public Transform player;
-	//these Transforms are for indicating how far the camera will go width-wise to follow the player
+	// These indicate how far the camera will go width-wise to follow the avatar's movement
 	public Transform farLeft;
 	public Transform farRight;
-	//the clock that has been set in order to complete the level (within certain time)
+	// Reference to timer GO displaying zipline traversal time
 	public GameObject timer;
+	// Reference to win and lose modal GOs
 	public GameObject lose_panel;
 	public GameObject win_panel;
 
