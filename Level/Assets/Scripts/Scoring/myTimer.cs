@@ -35,13 +35,18 @@ public class myTimer : MonoBehaviour {
 		trackingTime = false;
 		// Save current time count as totalTraversalTime
 		totalTraversalTime = myCoolTimer; 
-		//Calculate score
+		//Calculate score and make corresponding stars visible to display score in modal
 		if (totalTraversalTime < threeStarTime) {
 			score = 3;
+			GameObject.Find ("Star3.1").GetComponent<Image> ().enabled = true;
+			GameObject.Find ("Star1").GetComponent<Image> ().enabled = true;
+			GameObject.Find ("Star3.3").GetComponent<Image> ().enabled = true;
 		} else if (totalTraversalTime < twoStarTime) {
 			score = 2;
+			GameObject.Find ("Star2").GetComponent<Image> ().enabled = true;
 		} else {
 			score = 1;
+			GameObject.Find ("Star1").GetComponent<Image> ().enabled = true;
 		}
 		// Calculate best traversal time
 		if (bestTraversalTime == 0f) {

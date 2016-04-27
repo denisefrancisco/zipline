@@ -30,6 +30,11 @@ public class playZip_2 : MonoBehaviour {
 		gameObject.GetComponent<Failures>().failed = false;	
 		Debug.Log ("reset failed state for STAGNATION");
 
+		// Deactivate star GOs representing score in success modal
+		GameObject[] stars = GameObject.FindGameObjectsWithTag("Star");
+		foreach (GameObject s in stars) {
+			s.GetComponent<Image>().enabled = false;
+		}
 		// Deactivate modals
 		lose_panel.SetActive (false);
 		win_panel.SetActive (false);

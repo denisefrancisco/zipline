@@ -3,7 +3,6 @@ using System.Collections;
 
 public class enableRebuild : MonoBehaviour {
 
-	private GameObject landingZone;
 	public GameObject avatar;
 	private Rigidbody2D rigid;
 	private Vector3 startPos;
@@ -25,10 +24,6 @@ public class enableRebuild : MonoBehaviour {
 		// Reset flag for avatar's direction (from animScript)
 		animScript.facingRight = true;
 
-		// Disable scoring script
-		landingZone.GetComponent<Scoring>().pastZone = false;
-		landingZone.GetComponent<Scoring>().enabled = false;
-
 		//resetting the avatar's flip components in the sprite renderer
 		sprite.flipX = false;
 
@@ -41,9 +36,6 @@ public class enableRebuild : MonoBehaviour {
 		//initialize original position and rotation of avatar transform
 		startPos = avatar.transform.position;
 		startRot = avatar.transform.rotation;
-
-		// Initialize LandingZone GO
-		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
 
 		// Save reference to animation script
 		animScript = avatar.GetComponent<animOnButton> ();
