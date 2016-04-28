@@ -38,6 +38,10 @@ public class DrawPhysicsLine : MonoBehaviour {
 	private GameObject startSnapPoint;
 	private GameObject endSnapPoint;
 
+	//sound for drawing a successful zipline
+	public AudioClip ziplineDrawSound;
+	private AudioSource ziplineSource;
+
 	void Start () {
 		// Initialize snap point GOs
 		points = GameObject.FindGameObjectsWithTag ("SnapPoint");
@@ -51,6 +55,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 		validLength = false;
 		//initialize audio source
 		audioSource = gameObject.GetComponent<AudioSource>();
+		ziplineSource = gameObject.GetComponent<AudioSource> ();
 	}
 
 	void Update () {
@@ -117,7 +122,8 @@ public class DrawPhysicsLine : MonoBehaviour {
 					centerESP.z = 0;
 					line.SetPosition (1, centerESP);
 					endPos = centerESP;
-
+					//play the draw button music sound here for successful zipline drawn.
+					ziplineSource.PlayOneShot(ziplineDrawSound,1);
 					//add start and end snap points to points array in ErasePhysicsLine script attached to line GO
 					GameObject[] startAndEnd = {startSnapPoint, endSnapPoint};
 					lineGO.GetComponent<ErasePhysicsLine> ().points = startAndEnd;
