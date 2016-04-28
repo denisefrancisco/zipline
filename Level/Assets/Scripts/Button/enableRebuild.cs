@@ -3,7 +3,8 @@ using System.Collections;
 
 public class enableRebuild : MonoBehaviour {
 
-	public GameObject avatar;
+	private GameObject landingZone;
+	private GameObject avatar;
 	private Rigidbody2D rigid;
 	private Vector3 startPos;
 	private Quaternion startRot;
@@ -11,6 +12,7 @@ public class enableRebuild : MonoBehaviour {
 	private SpriteRenderer sprite;
 
 	public void ResetAvatar() {
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		/* Set avatar's rigidbody to kinematic so avatar 
 		 * can't interact with physics during build mode
 		 * (kinematic will be disabled after play button press) */

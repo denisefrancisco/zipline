@@ -140,6 +140,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 4.071732
       objectReference: {fileID: 0}
+    - target: {fileID: 183590, guid: 4c8e9fea7b52a4f4b85fd6ba6d90b908, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c8e9fea7b52a4f4b85fd6ba6d90b908, type: 2}
   m_IsPrefabParent: 0
@@ -664,6 +668,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 4.071732
       objectReference: {fileID: 0}
+    - target: {fileID: 144586, guid: 26d4b0b881398404793c3fc88030b443, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26d4b0b881398404793c3fc88030b443, type: 2}
   m_IsPrefabParent: 0
@@ -924,6 +932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   click_button: {fileID: 0}
+  chosen_clothing: 
 --- !u!114 &1671013486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,6 +996,10 @@ Prefab:
     - target: {fileID: 427222, guid: a3c3ac22a7f954fb4ae674a1de7b14c1, type: 2}
       propertyPath: m_LocalScale.z
       value: 4.071732
+      objectReference: {fileID: 0}
+    - target: {fileID: 197380, guid: a3c3ac22a7f954fb4ae674a1de7b14c1, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3c3ac22a7f954fb4ae674a1de7b14c1, type: 2}
@@ -1250,7 +1263,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -1275,3 +1287,44 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 385, y: 289}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2114059435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2114059437}
+  - 114: {fileID: 2114059436}
+  m_Layer: 0
+  m_Name: Saved Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2114059436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114059435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82072674adf4da899a590d7c08afad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chosen_outfit: 
+  avatar: {fileID: 1671013481}
+--- !u!4 &2114059437
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114059435}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2920399, y: 0.91787815, z: 1.3085938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5

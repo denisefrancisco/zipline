@@ -9,7 +9,7 @@ public class right_button_customize : MonoBehaviour {
 	private GameObject obj;
 	private GameObject previous_obj;
 	private Transform first_cloth;
-
+	private left_button_customize clothing;
 
 	// Use this for initialization
 	void Start () {
@@ -21,21 +21,19 @@ public class right_button_customize : MonoBehaviour {
 		//		first_cloth = transform.Find (clothes [0]);
 		//		first_cloth.gameObject.SetActive(true);
 		lButton.transform.position = new Vector3 (lButton.transform.position.x, lButton.transform.position.y, 10000);
+		obj = GameObject.Find ("Boy");
+		clothing = obj.GetComponent<left_button_customize> ();
 		index = 0;
 	}
 
 	public void next_clothing(){
-
-		if (index == 0) {
-			transform.Find(clothes[index]).gameObject.SetActive(true);
-		}
-		else if (index != 0) {
+		index++;
+		Debug.Log (index);
+		if (index > 0) {
 			transform.Find(clothes[index]).gameObject.SetActive(true);
 			transform.Find(clothes[index-1]).gameObject.SetActive(false);
+			clothing.chosen_clothing = clothes [index];
 		}
-		index++;
-
-
 	}
 
 	// Update is called once per frame

@@ -17,9 +17,9 @@ public class animOnButton : MonoBehaviour {
 			*	Then movement speed.
 		*/
 
-	public GameObject avatar;
+	private GameObject avatar;
 	private SpriteRenderer sprite; // avatar's sprite
-	public Animator anim;
+	private Animator anim;
 	private bool go = false;
 	private float movement_sp = 1.75f;
 	/* Flag indicating direction avatar is facing; must be public
@@ -32,25 +32,35 @@ public class animOnButton : MonoBehaviour {
 	private Rigidbody2D rb;
 	private Collider2D trolley;
 	private float quarter = .25f;
+	public GameObject landingZone;
 
 
 // Use this for initialization
 	void Start () {
-		trolley = GetComponent<EdgeCollider2D> ();
-		anim = GetComponent<Animator> ();
-		feet = GetComponent<BoxCollider2D> ();
-		rb = GetComponent<Rigidbody2D> ();
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
+		trolley = avatar.GetComponent<EdgeCollider2D> ();
+		anim = avatar.GetComponent<Animator> ();
+		Debug.Log (anim.name);
+		feet = avatar.GetComponent<BoxCollider2D> ();
+		rb = avatar.GetComponent<Rigidbody2D> ();
+		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
 		sprite = avatar.GetComponent<SpriteRenderer> ();
 		facingRight = true;
 	}
 
 	//Use this for what happens when the button is clicked.
 	public void OnClick() {
-		// Apply Unity physics to avatar rigidbody
-		rb.isKinematic = false;
-		//There is a trigger called "onClick" in the animator's parameters. 
-		anim.SetTrigger ("onClick");
-		go = true;
+		if (gameObject.activeSelf == true) {
+			// Enable scoring script 
+			landingZone.GetComponent<Scoring> ().enabled = true;
+			landingZone.GetComponent<Scoring> ().playEnded = false;
+			// Apply Unity physics to avatar rigidbody
+			rb.isKinematic = false;
+
+			//There is a trigger called "onClick" in the animator's parameters. 
+			anim.SetTrigger ("onClick");
+			go = true;
+		}
 	}
 
 	//Update is called once per frame.

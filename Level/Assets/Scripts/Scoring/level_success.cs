@@ -6,7 +6,8 @@ using System.Collections;
 public class level_success : MonoBehaviour {
 
 	public GameObject playCamera; 	// play camera GO
-	public GameObject avatar;	// avatar GO
+	//this file is for everything that happens during a successful level completion
+	private GameObject avatar;
 	//the success popup
 	public GameObject success_modal;
 	//the confetti prefab that is instantiated when the win function is active
@@ -28,6 +29,7 @@ public class level_success : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		rb = avatar.GetComponent<Rigidbody2D> ();
 		bc = gameObject.GetComponent<BoxCollider2D> ();
 		ec = avatar.GetComponent<EdgeCollider2D> ();

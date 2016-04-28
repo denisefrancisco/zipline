@@ -19,8 +19,10 @@ public class playZip_2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		startedTimer = false;
+		player = GameObject.FindGameObjectWithTag ("Avatar").GetComponent<Transform> ();
+		timer.SetActive (false);
 	}
-
+		
 	public void resetWinAndLose(){
 		timer.SetActive (false);	// Disable timer bc we're returning to build mode
 		startedTimer = false;	// Reset startedTimer state

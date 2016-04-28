@@ -23,7 +23,7 @@ public class Scoring : MonoBehaviour {
 	private float twoStar;
 	private float threeStar;
 
-	public GameObject avatar;	// Reference to avatar GO
+	private GameObject avatar;	// Reference to avatar GO
 	private Rigidbody2D rigid;	// Reference to avatar GO's rigidbody2d component
 	private float avatarXPos; 	// Avatar transform's x position
 //	private FloorZone floorZone;	// Reference to floorZone script
@@ -80,6 +80,8 @@ public class Scoring : MonoBehaviour {
 		
 		// Initialize avatar and rigidbody component
 		avatar = GameObject.FindGameObjectWithTag ("Avatar");
+		Debug.Log ("Scoring page");
+		Debug.Log (avatar.name);
 		rigid = avatar.GetComponent<Rigidbody2D> ();
 		// Initialize reference to floorZone script
 //		floorZone = GameObject.Find("FloorZone").GetComponent<FloorZone> ();
