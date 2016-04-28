@@ -57,27 +57,26 @@ public class start_camera : MonoBehaviour {
 		} else {
 			big_boy.transform.position = new Vector3 (0, 0, 1000);
 		}
-		if (clothing != null) {
-			clothing = saved_data.GetComponent<SelectedPlayer> ();
-			if (clothing.chosen_outfit == "blue") {
-				blueBoy.SetActive (true);
-				avatar = blueBoy;
-			} else if (clothing.chosen_outfit == "lightBlue") {
-				lightBlueBoy.SetActive (true);
-				avatar = lightBlueBoy;
-			} else if (clothing.chosen_outfit == "girl_pink") {
-				girl_pink.SetActive (true);
-				avatar = girl_pink;
-			} else if (clothing.chosen_outfit == "girl_white") {
-				girl_white.SetActive (true);
-				avatar = girl_white;
-			} else if (clothing.chosen_outfit == "girl_blue") {
-				girl_blue.SetActive (true);
-				avatar = girl_blue;
-			} else if (clothing.chosen_outfit == "brown") {
-				brownBoy.SetActive (true);
-				avatar = brownBoy;
-			}
+		clothing = saved_data.GetComponent<SelectedPlayer> ();
+		if (clothing.chosen_outfit == "blue") {
+			blueBoy.SetActive (true);
+			avatar = blueBoy;
+		} else if (clothing.chosen_outfit == "lightBlue") {
+			Debug.Log("we are light blue!");
+			lightBlueBoy.SetActive (true);
+			avatar = lightBlueBoy;
+		} else if (clothing.chosen_outfit == "girl_pink") {
+			girl_pink.SetActive (true);
+			avatar = girl_pink;
+		} else if (clothing.chosen_outfit == "girl_white") {
+			girl_white.SetActive (true);
+			avatar = girl_white;
+		} else if (clothing.chosen_outfit == "girl_blue") {
+			girl_blue.SetActive (true);
+			avatar = girl_blue;
+		} else if (clothing.chosen_outfit == "brown") {
+			brownBoy.SetActive (true);
+			avatar = brownBoy;
 		}
 		Debug.Log (avatar.name);
 
