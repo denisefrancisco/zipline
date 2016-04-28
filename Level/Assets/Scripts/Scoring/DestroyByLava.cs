@@ -4,6 +4,8 @@ using System.Collections;
 public class DestroyByLava : MonoBehaviour {
 
 	public GameObject explosion;
+	public AudioClip lavaSound;
+	private AudioSource lavaSoundSource;
 	private GameObject player;
 	public GameObject lose_panel;
 	private EdgeCollider2D bc;
@@ -11,6 +13,7 @@ public class DestroyByLava : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Avatar");
 		bc = player.GetComponent<EdgeCollider2D> ();
+		lavaSoundSource = gameObject.GetComponent<AudioSource> ();
 
 	}
 
@@ -24,6 +27,7 @@ public class DestroyByLava : MonoBehaviour {
 	}
 
 	IEnumerator wait() {
+		lavaSoundSource.PlayOneShot (lavaSound, 1);
 		destroyObject ();
 		yield return new WaitForSeconds (0.85f);
 		lose ();
