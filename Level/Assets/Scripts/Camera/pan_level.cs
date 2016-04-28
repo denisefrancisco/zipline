@@ -20,7 +20,7 @@ public class pan_level : MonoBehaviour {
 		canvas.SetActive (false);
 	}
 
-	void panUp() {
+	void panDown() {
 		current_pos = GetComponent<Camera> ().transform.position;
 		current_pos.y -= 0.05f;
 		GetComponent<Camera> ().transform.position = current_pos;
@@ -28,10 +28,10 @@ public class pan_level : MonoBehaviour {
 
 	IEnumerator wait() {
 		yield return new WaitForSeconds (2);
-		panUp ();
+		panDown ();
 	}
 
-	void panDown() {
+	void panUp() {
 		isDown = true;
 		current_pos = GetComponent<Camera> ().transform.position;
 		current_pos.y += 0.05f;
@@ -43,7 +43,7 @@ public class pan_level : MonoBehaviour {
 		if (GetComponent<Camera> ().transform.position.y - 0.2f >= lowerBoundary.position.y && isDown == false) {
 			StartCoroutine (wait ());
 		} else if (GetComponent<Camera> ().transform.position.y + 0.2f <= upperBoundary.position.y) {
-			panDown ();
+			panUp ();
 		} else {
 			gameObject.transform.position = initial_pos;
 			canvas.SetActive (true);
