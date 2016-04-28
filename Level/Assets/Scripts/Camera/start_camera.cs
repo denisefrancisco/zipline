@@ -42,18 +42,17 @@ public class start_camera : MonoBehaviour {
 		camera.orthographicSize = 5.5f;
 		saved_data = GameObject.Find("Saved Data");
 		big_boy = GameObject.Find ("Boy");
-		if (big_boy == null) {
-			big_girl = GameObject.Find ("girl");
+		big_girl = GameObject.Find ("girl");
+		if (big_boy == null && big_girl == null) {
+			blueBoy.SetActive (true);
+			avatar = blueBoy;
+		} else if (big_boy == null) {
 			big_girl.transform.position = new Vector3 (0, 0, 1000);
 		} else {
-			//		Destroy(big_boy);
 			big_boy.transform.position = new Vector3 (0, 0, 1000);
 		}
 		clothing = saved_data.GetComponent<SelectedPlayer>();
-		Debug.Log ("THIS IS THE CHOSEN OUTFIT");
-		Debug.Log (clothing.chosen_outfit);
 		if (clothing.chosen_outfit == "blue") {
-			Debug.Log ("we chose blue!");
 			blueBoy.SetActive (true);
 			avatar = blueBoy;
 		} else if (clothing.chosen_outfit == "lightBlue") {
@@ -68,7 +67,7 @@ public class start_camera : MonoBehaviour {
 		} else if (clothing.chosen_outfit == "girl_blue") {
 			girl_blue.SetActive (true);
 			avatar = girl_blue;
-		} else {
+		} else if (clothing.chosen_outfit == "brown") {
 			brownBoy.SetActive (true);
 			avatar = brownBoy;
 		}

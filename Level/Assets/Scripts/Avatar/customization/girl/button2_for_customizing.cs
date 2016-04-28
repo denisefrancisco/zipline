@@ -5,7 +5,7 @@ public class button2_for_customizing : MonoBehaviour {
 
 	//this script is entirely made for looking through the outfits with the left button
 	//click_button  is to find the game object left button
-	public GameObject click_button;
+//	public GameObject click_button;
 	//this string is VERY IMPORTANT!! This basically determines which outfit the avatar will wear during the game.
 	public string chosen_clothing;
 	//character_script is to get the index from the right_button file. The index is to track which outfit is currently being
@@ -19,7 +19,7 @@ public class button2_for_customizing : MonoBehaviour {
 	void Start () {
 
 		character_script = GameObject.Find ("girl");
-		click_button = GameObject.Find ("Button2");
+//		click_button = GameObject.Find ("Button2");
 
 		button = character_script.GetComponent<button_for_customizing> ();
 		transform.Find (button.clothes [0]).gameObject.SetActive (true);
