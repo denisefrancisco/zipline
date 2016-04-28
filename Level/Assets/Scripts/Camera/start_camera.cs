@@ -3,6 +3,11 @@ using System.Collections;
 
 public class start_camera : MonoBehaviour {
 
+	//panning the level, we need to use the upper and lower boundaries of the main camera.
+	public Transform upperBoundary;
+	public Transform lowerBoundary;
+	private Vector3 current_pos;
+	//the list of gameobjects below represent the different combinations of outfits that are available to the player.
 	public GameObject brownBoy;
 	public GameObject blueBoy;
 	public GameObject lightBlueBoy;
@@ -17,7 +22,9 @@ public class start_camera : MonoBehaviour {
 	//set avatar's initial position to a variable
 	private Vector3 avatarPos;
 	private Quaternion avatarRot;
+	//this saved_data variable represents the saved information regarding the player's outfit choice
 	private GameObject saved_data;
+	//the next 3 variables are part of the saved_data Gameobject and therefore have to be saved as well. 
 	private GameObject big_boy;
 	private GameObject big_girl;
 	private SelectedPlayer clothing;
@@ -40,9 +47,13 @@ public class start_camera : MonoBehaviour {
 		//saving the starting position for the camera 
 		resetCameraPosition = gameObject.transform.position;
 		camera.orthographicSize = 5.5f;
+//		camera.transform.position = lowerBoundary.position - new Vector3(0,0,0.2f);
+		//find the game object with the saved data
 		saved_data = GameObject.Find("Saved Data");
 		big_boy = GameObject.Find ("Boy");
 		big_girl = GameObject.Find ("girl");
+		//these conditions are determined by whether or not a player has gone through character select, or level select.
+		//if straight to level select, there is a default avatar. If character select, the chosen avatar will pop up.
 		if (big_boy == null && big_girl == null) {
 			blueBoy.SetActive (true);
 			avatar = blueBoy;
@@ -78,6 +89,14 @@ public class start_camera : MonoBehaviour {
 		avatarPos = avatar.transform.position;
 		avatarRot = avatar.transform.rotation;
 
+	}
+
+	void panLevel(){
+		while (camera.transform.position.y != upperBoundary.position.y + 0.2f) {
+			current_pos = camera.transform.position;
+			current_pos.y += 0.1f;
+			camera.transform.position = current_pos;
+		}
 	}
 	
 	// Update is called once per frame
