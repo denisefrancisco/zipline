@@ -19,18 +19,31 @@ public class pan_level : MonoBehaviour {
 		script = gameObject.GetComponent<pan_level>();
 		canvas.SetActive (false);
 	}
+
+	void panUp() {
+		current_pos = GetComponent<Camera> ().transform.position;
+		current_pos.y -= 0.05f;
+		GetComponent<Camera> ().transform.position = current_pos;
+	}
+
+	IEnumerator wait() {
+		yield return new WaitForSeconds (2);
+		panUp ();
+	}
+
+	void panDown() {
+		isDown = true;
+		current_pos = GetComponent<Camera> ().transform.position;
+		current_pos.y += 0.05f;
+		GetComponent<Camera> ().transform.position = current_pos;
+	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (GetComponent<Camera> ().transform.position.y - 0.2f >= lowerBoundary.position.y && isDown == false) {
-			current_pos = GetComponent<Camera> ().transform.position;
-			current_pos.y -= 0.05f;
-			GetComponent<Camera> ().transform.position = current_pos;
+			StartCoroutine (wait ());
 		} else if (GetComponent<Camera> ().transform.position.y + 0.2f <= upperBoundary.position.y) {
-			isDown = true;
-			current_pos = GetComponent<Camera> ().transform.position;
-			current_pos.y += 0.05f;
-			GetComponent<Camera> ().transform.position = current_pos;
+			panDown ();
 		} else {
 			gameObject.transform.position = initial_pos;
 			canvas.SetActive (true);
