@@ -30,29 +30,35 @@ public class start_camera : MonoBehaviour {
 
 	}
 
-	// Use this for initialization
-	void Start () {
+
+	//use this before initialization
+	void Awake() {
 		//saving the starting position for the camera 
 		resetCameraPosition = gameObject.transform.position;
 		camera.orthographicSize = 5.5f;
 		saved_data = GameObject.Find("Saved Data");
 		big_boy = GameObject.Find ("Boy");
-//		Destroy(big_boy);
+		//		Destroy(big_boy);
 		big_boy.transform.position = new Vector3 (0, 0, 1000);
 		clothing = saved_data.GetComponent<SelectedPlayer>();
+		Debug.Log ("THIS IS THE CHOSEN OUTFIT");
 		Debug.Log (clothing.chosen_outfit);
 		if (clothing.chosen_outfit == "blue") {
-			
+			Debug.Log ("we chose blue!");
+			blueBoy.SetActive (true);
 			avatar = blueBoy;
-			avatar.SetActive (true);
+
 		} else if (clothing.chosen_outfit == "lightBlue") {
+			lightBlueBoy.SetActive (true);
 			avatar = lightBlueBoy;
-			avatar.SetActive (true);
 		} else {
+			brownBoy.SetActive (true);
 			avatar = brownBoy;
-			avatar.SetActive (true);
 		}
 		Debug.Log (avatar.name);
+	}
+	// Use this for initialization
+	void Start () {
 		avatarPos = avatar.transform.position;
 		avatarRot = avatar.transform.rotation;
 

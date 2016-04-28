@@ -50,15 +50,17 @@ public class animOnButton : MonoBehaviour {
 
 	//Use this for what happens when the button is clicked.
 	public void OnClick() {
-		// Enable scoring script 
-		landingZone.GetComponent<Scoring>().enabled = true;
-		landingZone.GetComponent<Scoring> ().playEnded = false;
-		// Apply Unity physics to avatar rigidbody
-		rb.isKinematic = false;
+		if (gameObject.activeSelf == true) {
+			// Enable scoring script 
+			landingZone.GetComponent<Scoring> ().enabled = true;
+			landingZone.GetComponent<Scoring> ().playEnded = false;
+			// Apply Unity physics to avatar rigidbody
+			rb.isKinematic = false;
 
-		//There is a trigger called "onClick" in the animator's parameters. 
-		anim.SetTrigger ("onClick");
-		go = true;
+			//There is a trigger called "onClick" in the animator's parameters. 
+			anim.SetTrigger ("onClick");
+			go = true;
+		}
 	}
 	//The avatar progresses to jump animation.
 //	void OnTriggerEnter2D (Collider2D other) {

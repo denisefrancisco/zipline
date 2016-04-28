@@ -22,9 +22,11 @@ public class removeBoxCollider : MonoBehaviour {
 	}
 
 	public void resetBoxCollider() {
-		Time.timeScale = 0.6f;
-		timer.myCoolTimer = 0.0f;
-		bc.isTrigger = false;
+		if (gameObject.activeSelf == true) {
+			Time.timeScale = 0.6f;
+			timer.myCoolTimer = 0.0f;
+			bc.isTrigger = false;
+		}
 	}
 	//this is to remove the rigid body during game start
 	void FixedUpdate() {

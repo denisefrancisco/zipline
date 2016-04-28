@@ -10,6 +10,7 @@ public class SelectedPlayer : MonoBehaviour {
 
 	void Awake() {
 		DontDestroyOnLoad (gameObject);
+		DontDestroyOnLoad (avatar);
 	}
 
 	// Use this for initialization

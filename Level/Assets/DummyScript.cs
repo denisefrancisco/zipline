@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class start_map_camera : MonoBehaviour {
-
-	private GameObject boy;
+public class DummyScript : MonoBehaviour {
+//	private Selectable button_events;
 	// Use this for initialization
 	void Start () {
-		boy = GameObject.Find ("Boy");
-		boy.transform.position = new Vector3 (0, 0, 100);
+//		button_events = gameObject.GetComponent<Selectable> ();
+	
 	}
 	
 	// Update is called once per frame

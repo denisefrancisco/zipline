@@ -11,10 +11,6 @@ public class right_button_customize : MonoBehaviour {
 	private Transform first_cloth;
 	private left_button_customize clothing;
 
-	void Awake() {
-		DontDestroyOnLoad (transform.gameObject);
-	}
-
 	// Use this for initialization
 	void Start () {
 		clothes = new string[3];

@@ -17,7 +17,7 @@ public class playZip_2 : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Avatar").GetComponent<Transform> ();
 		timer.SetActive (false);
 	}
-
+		
 	public void resetWinAndLose(){
 		lose_panel.SetActive (false);
 		win_panel.SetActive (false);

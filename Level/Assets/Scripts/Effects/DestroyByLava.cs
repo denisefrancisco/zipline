@@ -4,11 +4,12 @@ using System.Collections;
 public class DestroyByLava : MonoBehaviour {
 
 	public GameObject explosion;
-	public GameObject player;
+	private GameObject player;
 	public GameObject lose_panel;
 	private EdgeCollider2D bc;
 	// Use this for initialization
 	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Avatar");
 		bc = player.GetComponent<EdgeCollider2D> ();
 
 	}

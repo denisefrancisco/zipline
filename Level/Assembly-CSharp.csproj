@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DummyScript.cs" />
      <Compile Include="Assets\Mobile Cartoon FX\Scripts\Rotatearound.cs" />
      <Compile Include="Assets\Music\button_click.cs" />
      <Compile Include="Assets\Music\failure_build.cs" />
