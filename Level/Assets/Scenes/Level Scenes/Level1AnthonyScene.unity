@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100000, guid: 27cbfb4fffb99c147bb8ef81fc40f0f0, type: 2}
-  explosionSound: {fileID: 8300000, guid: 0a8e183cb4b414b97a8c90c31a5ef034, type: 3}
+  explosionSound: {fileID: 8300000, guid: 5f5172a0f357d4d2d8731b3dc6bf44ae, type: 3}
   lose_panel: {fileID: 1467267571}
 --- !u!82 &145000379
 AudioSource:
@@ -1273,7 +1273,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0a8e183cb4b414b97a8c90c31a5ef034, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5f5172a0f357d4d2d8731b3dc6bf44ae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4402,7 +4402,7 @@ Prefab:
       objectReference: {fileID: 532192485}
     - target: {fileID: 160558, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 160558, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
       propertyPath: m_Name
@@ -8297,7 +8297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100000, guid: 27cbfb4fffb99c147bb8ef81fc40f0f0, type: 2}
-  explosionSound: {fileID: 8300000, guid: 0a8e183cb4b414b97a8c90c31a5ef034, type: 3}
+  explosionSound: {fileID: 8300000, guid: 5f5172a0f357d4d2d8731b3dc6bf44ae, type: 3}
   lose_panel: {fileID: 1467267571}
 --- !u!82 &1582981711
 AudioSource:
@@ -8308,7 +8308,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0a8e183cb4b414b97a8c90c31a5ef034, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5f5172a0f357d4d2d8731b3dc6bf44ae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
