@@ -3,11 +3,17 @@ using System.Collections;
 
 public class start_map_camera : MonoBehaviour {
 
-	private GameObject boy;
+	private GameObject player;
 	// Use this for initialization
 	void Start () {
-		boy = GameObject.Find ("Boy");
-		boy.transform.position = new Vector3 (0, 0, 100);
+		player = GameObject.Find ("Boy");
+
+		if (player == null) {
+			player = GameObject.Find ("girl");
+			player.transform.position = new Vector3 (0, 0, 100);
+		} else {
+			player.transform.position = new Vector3 (0, 0, 100);
+		}
 	}
 	
 	// Update is called once per frame
