@@ -453,6 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   click_button: {fileID: 0}
+  chosen_clothing: 
 --- !u!114 &225732682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +508,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 157142, guid: f6d25de37039f4042b71586e5a3478c6, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 445340, guid: f6d25de37039f4042b71586e5a3478c6, type: 2}
       propertyPath: m_LocalScale.x
@@ -967,6 +968,10 @@ Prefab:
     - target: {fileID: 454026, guid: 3ea90022feba74c8480e1c85e876e0df, type: 2}
       propertyPath: m_LocalScale.x
       value: 0.21606502
+      objectReference: {fileID: 0}
+    - target: {fileID: 143962, guid: 3ea90022feba74c8480e1c85e876e0df, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ea90022feba74c8480e1c85e876e0df, type: 2}
@@ -1461,6 +1466,14 @@ Prefab:
     - target: {fileID: 409060, guid: 5cc850eb3327e40129d9ec6c9f163e75, type: 2}
       propertyPath: m_LocalPosition.y
       value: -277.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 169496, guid: 5cc850eb3327e40129d9ec6c9f163e75, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169496, guid: 5cc850eb3327e40129d9ec6c9f163e75, type: 2}
+      propertyPath: m_Name
+      value: girl_white
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cc850eb3327e40129d9ec6c9f163e75, type: 2}
