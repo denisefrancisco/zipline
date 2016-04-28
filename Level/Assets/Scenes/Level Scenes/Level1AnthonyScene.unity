@@ -1011,7 +1011,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 185848, guid: 204f39003c72e4da5a3e7d56987f4cb3, type: 2}
       propertyPath: m_Name
-      value: girl_blue
+      value: girl_pink
       objectReference: {fileID: 0}
     - target: {fileID: 11478732, guid: 204f39003c72e4da5a3e7d56987f4cb3, type: 2}
       propertyPath: origin
@@ -1031,6 +1031,10 @@ Prefab:
 --- !u!4 &93786410 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411274, guid: 204f39003c72e4da5a3e7d56987f4cb3, type: 2}
+  m_PrefabInternal: {fileID: 93786409}
+--- !u!1 &93786411 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 185848, guid: 204f39003c72e4da5a3e7d56987f4cb3, type: 2}
   m_PrefabInternal: {fileID: 93786409}
 --- !u!1 &99981791
 GameObject:
@@ -1967,7 +1971,7 @@ Transform:
   - {fileID: 2000457822}
   - {fileID: 1473287616}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1 &320857662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4487,6 +4491,10 @@ Prefab:
 --- !u!4 &759995243 stripped
 Transform:
   m_PrefabParentObject: {fileID: 448896, guid: a4c1a960ca8704f3e9452ce40e59b961, type: 2}
+  m_PrefabInternal: {fileID: 759995242}
+--- !u!1 &759995244 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 197886, guid: a4c1a960ca8704f3e9452ce40e59b961, type: 2}
   m_PrefabInternal: {fileID: 759995242}
 --- !u!1001 &784612594
 Prefab:
@@ -9686,6 +9694,9 @@ MonoBehaviour:
   brownBoy: {fileID: 1700872296}
   blueBoy: {fileID: 1276376400}
   lightBlueBoy: {fileID: 724104799}
+  girl_pink: {fileID: 93786411}
+  girl_white: {fileID: 759995244}
+  girl_blue: {fileID: 1736292831}
   camera: {fileID: 1691744063}
 --- !u!114 &1691744066
 MonoBehaviour:
@@ -9742,7 +9753,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 164450, guid: 81aca084986ea430980a3586994e026c, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 164450, guid: 81aca084986ea430980a3586994e026c, type: 2}
       propertyPath: m_Name
@@ -10252,7 +10263,7 @@ Prefab:
       objectReference: {fileID: 532192485}
     - target: {fileID: 125884, guid: a7c9f5fa7e9da44daaee7c8bfae64182, type: 2}
       propertyPath: m_Name
-      value: girl_purple
+      value: girl_blue
       objectReference: {fileID: 0}
     - target: {fileID: 125884, guid: a7c9f5fa7e9da44daaee7c8bfae64182, type: 2}
       propertyPath: m_IsActive
@@ -10261,6 +10272,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a7c9f5fa7e9da44daaee7c8bfae64182, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1736292831 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 125884, guid: a7c9f5fa7e9da44daaee7c8bfae64182, type: 2}
+  m_PrefabInternal: {fileID: 1736292830}
 --- !u!1 &1739023754
 GameObject:
   m_ObjectHideFlags: 0

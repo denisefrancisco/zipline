@@ -6,6 +6,9 @@ public class start_camera : MonoBehaviour {
 	public GameObject brownBoy;
 	public GameObject blueBoy;
 	public GameObject lightBlueBoy;
+	public GameObject girl_pink;
+	public GameObject girl_white;
+	public GameObject girl_blue;
 	public Camera camera;
 	//get avatar's initial position for resetting
 	private GameObject avatar;
@@ -16,6 +19,7 @@ public class start_camera : MonoBehaviour {
 	private Quaternion avatarRot;
 	private GameObject saved_data;
 	private GameObject big_boy;
+	private GameObject big_girl;
 	private SelectedPlayer clothing;
 
 	public void returnCamera(){
@@ -38,8 +42,13 @@ public class start_camera : MonoBehaviour {
 		camera.orthographicSize = 5.5f;
 		saved_data = GameObject.Find("Saved Data");
 		big_boy = GameObject.Find ("Boy");
-		//		Destroy(big_boy);
-		big_boy.transform.position = new Vector3 (0, 0, 1000);
+		if (big_boy == null) {
+			big_girl = GameObject.Find ("girl");
+			big_girl.transform.position = new Vector3 (0, 0, 1000);
+		} else {
+			//		Destroy(big_boy);
+			big_boy.transform.position = new Vector3 (0, 0, 1000);
+		}
 		clothing = saved_data.GetComponent<SelectedPlayer>();
 		Debug.Log ("THIS IS THE CHOSEN OUTFIT");
 		Debug.Log (clothing.chosen_outfit);
@@ -47,10 +56,18 @@ public class start_camera : MonoBehaviour {
 			Debug.Log ("we chose blue!");
 			blueBoy.SetActive (true);
 			avatar = blueBoy;
-
 		} else if (clothing.chosen_outfit == "lightBlue") {
 			lightBlueBoy.SetActive (true);
 			avatar = lightBlueBoy;
+		} else if (clothing.chosen_outfit == "girl_pink") {
+			girl_pink.SetActive (true);
+			avatar = girl_pink;
+		} else if (clothing.chosen_outfit == "girl_white") {
+			girl_white.SetActive (true);
+			avatar = girl_white;
+		} else if (clothing.chosen_outfit == "girl_blue") {
+			girl_blue.SetActive (true);
+			avatar = girl_blue;
 		} else {
 			brownBoy.SetActive (true);
 			avatar = brownBoy;
