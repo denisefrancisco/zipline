@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class animOnButton : MonoBehaviour {
@@ -32,8 +33,6 @@ public class animOnButton : MonoBehaviour {
 	private Rigidbody2D rb;
 	private Collider2D trolley;
 	private float quarter = .25f;
-	public GameObject landingZone;
-
 
 // Use this for initialization
 	void Start () {
@@ -43,7 +42,6 @@ public class animOnButton : MonoBehaviour {
 		Debug.Log (anim.name);
 		feet = avatar.GetComponent<BoxCollider2D> ();
 		rb = avatar.GetComponent<Rigidbody2D> ();
-		landingZone = GameObject.FindGameObjectWithTag("LandingZone");
 		sprite = avatar.GetComponent<SpriteRenderer> ();
 		facingRight = true;
 	}
@@ -51,9 +49,6 @@ public class animOnButton : MonoBehaviour {
 	//Use this for what happens when the button is clicked.
 	public void OnClick() {
 		if (gameObject.activeSelf == true) {
-			// Enable scoring script 
-			landingZone.GetComponent<Scoring> ().enabled = true;
-			landingZone.GetComponent<Scoring> ().playEnded = false;
 			// Apply Unity physics to avatar rigidbody
 			rb.isKinematic = false;
 
@@ -78,7 +73,11 @@ public class animOnButton : MonoBehaviour {
 			/* The 'if' statement checks to see if the player is currently on the piece of furniture.
 			*  if he is, he will keep moving forward, if not he will recieve a force to
 			*  push him on the zip line initially.*/
-			if (feet.IsTouching (origin)) { 				
+			if (SceneManager.GetActiveScene().name == "LabLevel1") {
+				movement_sp = 1.25f;
+			}
+			if (feet.IsTouching (origin)) { 	
+				Debug.Log("pushingforward");
 				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
 			}
 		}
