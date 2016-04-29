@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class animOnButton : MonoBehaviour {
@@ -72,7 +73,11 @@ public class animOnButton : MonoBehaviour {
 			/* The 'if' statement checks to see if the player is currently on the piece of furniture.
 			*  if he is, he will keep moving forward, if not he will recieve a force to
 			*  push him on the zip line initially.*/
-			if (feet.IsTouching (origin)) { 				
+			if (SceneManager.GetActiveScene().name == "LabLevel1") {
+				movement_sp = 1.25f;
+			}
+			if (feet.IsTouching (origin)) { 	
+				Debug.Log("pushingforward");
 				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);
 			}
 		}
