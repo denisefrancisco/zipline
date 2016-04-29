@@ -10093,7 +10093,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1655057398}
+      - m_Target: {fileID: 1494664982}
         m_MethodName: click_button
         m_Mode: 1
         m_Arguments:
@@ -10226,7 +10226,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 0
   origin: {fileID: 0}
-  landingZone: {fileID: 0}
 --- !u!1 &1684311350 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
