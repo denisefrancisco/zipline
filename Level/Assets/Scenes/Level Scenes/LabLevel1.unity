@@ -2996,7 +2996,7 @@ GameObject:
   - 61: {fileID: 661730449}
   m_Layer: 0
   m_Name: StartingPlatform
-  m_TagString: Untagged
+  m_TagString: StartingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

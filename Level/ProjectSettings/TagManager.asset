@@ -8,7 +8,6 @@ TagManager:
   - SnapPoint
   - SelectedSnapPoint
   - Line
-  - Furniture
   - LineCollider
   - LandingZone
   - Avatar
