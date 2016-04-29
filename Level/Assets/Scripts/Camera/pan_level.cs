@@ -11,13 +11,33 @@ public class pan_level : MonoBehaviour {
 	private Vector3 initial_pos;
 	private bool isDown = false;
 	public GameObject canvas;
+	public 
 
 	// Use this for initialization
 	void Start () {
 //		GetComponent<Camera>().transform.position = lowerBoundary.position - new Vector3(0,0,0.2f);
 		initial_pos = gameObject.transform.position;
 		script = gameObject.GetComponent<pan_level>();
-		canvas.SetActive (false);
+		removeCanvas ();
+
+	}
+
+	void removeCanvas(){
+		foreach (Transform button in canvas.transform) {
+			if (button.name != "Play Level Button") {
+				button.gameObject.SetActive (false);
+			}
+		}
+	}
+
+	void applyCanvas(){
+		foreach (Transform button in canvas.transform) {
+			if (button.name != "Play Level Button") {
+				button.gameObject.SetActive (true);
+			} else {
+				button.gameObject.SetActive (false);
+			}
+		}
 	}
 
 	void panDown() {
@@ -29,6 +49,11 @@ public class pan_level : MonoBehaviour {
 	IEnumerator wait() {
 		yield return new WaitForSeconds (2);
 		panDown ();
+	}
+
+	public void DestroyPanLevel(){
+		applyCanvas ();
+		Destroy (script);
 	}
 
 	void panUp() {
@@ -46,7 +71,7 @@ public class pan_level : MonoBehaviour {
 			panUp ();
 		} else {
 			gameObject.transform.position = initial_pos;
-			canvas.SetActive (true);
+			applyCanvas ();
 			script.enabled = false;
 		}
 	
