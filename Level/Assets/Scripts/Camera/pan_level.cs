@@ -53,7 +53,7 @@ public class pan_level : MonoBehaviour {
 
 	public void DestroyPanLevel(){
 		applyCanvas ();
-		script.enabled = false;
+		Destroy (script);
 	}
 
 	void panUp() {
