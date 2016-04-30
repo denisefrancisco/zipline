@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadGirl.cs" />
      <Compile Include="Assets\Scripts\Avatar\jump_avatar.cs" />
      <Compile Include="Assets\Scripts\Avatar\removeBoxCollider.cs" />
+     <Compile Include="Assets\Scripts\Button\Level 3 Specialized Scripts\enableRebuild_3.cs" />
      <Compile Include="Assets\Scripts\Button\SpriteSwapDraw.cs" />
      <Compile Include="Assets\Scripts\Button\SpriteSwapErase.cs" />
      <Compile Include="Assets\Scripts\Button\avatar_start_zipline.cs" />
