@@ -12,11 +12,11 @@ public class MenuMusic : MonoBehaviour {
 
 	void Awake(){
 		musicSource = gameObject.GetComponent<AudioSource> ();
-		if (!audioBegin) {
-			musicSource.Play ();
-			DontDestroyOnLoad (gameObject);
-			audioBegin = true;
-		}
+//		if (!audioBegin) {
+		musicSource.Play ();
+		DontDestroyOnLoad (gameObject);
+//			audioBegin = true;
+//		}
 	}
 
 	// Use this for initialization
@@ -29,7 +29,7 @@ public class MenuMusic : MonoBehaviour {
 	void Update () {
 		if (SceneManager.GetActiveScene().name == "map_level") {
 			musicSource.Stop ();
-			audioBegin = false;
+//			audioBegin = false;
 		}
 	}
 }
