@@ -14,6 +14,7 @@ public class start_camera : MonoBehaviour {
 	public Camera camera;
 	//get avatar's initial position for resetting
 	private GameObject avatar;
+	private GameObject avatar1;
 	//this variable is to indicate where the camera initializes to when the game is started
 	private Vector3 resetCameraPosition;
 	//set avatar's initial position to a variable
@@ -36,6 +37,15 @@ public class start_camera : MonoBehaviour {
 		avatar = (GameObject) Instantiate(avatar,avatarPos,avatarRot);
 		Destroy (avatar);
 
+	}
+
+	public void respawnAvatarForButton(){
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
+		avatar1 = (GameObject) Instantiate(avatar,avatarPos,avatarRot);
+		Destroy (avatar);
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
+//		avatar.transform.position = avatarPos;
+//		avatar.transform.rotation = avatarRot;
 	}
 
 	//use this before initialization

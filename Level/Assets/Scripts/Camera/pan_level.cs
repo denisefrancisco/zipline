@@ -32,7 +32,7 @@ public class pan_level : MonoBehaviour {
 
 	void applyCanvas(){
 		foreach (Transform button in canvas.transform) {
-			if (button.name != "Play Level Button") {
+			if (button.name != "Play Level Button" && button.name != "OptionsModal") {
 				button.gameObject.SetActive (true);
 			} else {
 				button.gameObject.SetActive (false);
