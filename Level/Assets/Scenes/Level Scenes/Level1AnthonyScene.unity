@@ -2667,6 +2667,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -4099,6 +4100,7 @@ Transform:
   - {fileID: 108412804}
   - {fileID: 1147124009}
   - {fileID: 1995734794}
+  - {fileID: 1501646221}
   m_Father: {fileID: 0}
   m_RootOrder: 8
 --- !u!1001 &556499643
@@ -9054,11 +9056,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1501646219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.12, y: -22.22, z: -1.14}
+  m_LocalPosition: {x: 5.5060425, y: -22.167233, z: 55.20375}
   m_LocalScale: {x: 1.7458081, y: 1.7458081, z: 1.7458081}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 554473381}
+  m_RootOrder: 27
 --- !u!1 &1520264093
 GameObject:
   m_ObjectHideFlags: 0
@@ -12916,6 +12918,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
