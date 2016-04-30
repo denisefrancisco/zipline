@@ -20,7 +20,7 @@ public class enableRebuild : MonoBehaviour {
 		rigid.isKinematic = true;
 
 		// Reset avatar's position to original position
-		avatar.transform.position = startPos;
+		avatar.transform.position = startPos-new Vector3 (0,1.2f,0);
 		avatar.transform.rotation = startRot;
 
 		// Reset flag for avatar's direction (from animScript)
