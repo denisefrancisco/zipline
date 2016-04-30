@@ -73,8 +73,9 @@ public class animOnButton : MonoBehaviour {
 			/* The 'if' statement checks to see if the player is currently on the piece of furniture.
 			*  if he is, he will keep moving forward, if not he will recieve a force to
 			*  push him on the zip line initially.*/
-			if (SceneManager.GetActiveScene().name == "LabLevel1") {
-				movement_sp = 1.25f;
+			string sceneName = SceneManager.GetActiveScene ().name;
+			if ((sceneName == "LabLevel1") | (sceneName == "LabLevel2") | (sceneName == "LabLevel3") | (sceneName == "LabLevel4")) {
+				movement_sp = 1f;
 			}
 			if (feet.IsTouching (origin)) { 	
 				Debug.Log("pushingforward");
