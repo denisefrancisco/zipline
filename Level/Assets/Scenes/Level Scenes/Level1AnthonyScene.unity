@@ -1139,7 +1139,7 @@ GameObject:
   - 212: {fileID: 108412803}
   m_Layer: 0
   m_Name: Stool1
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1885,7 +1885,7 @@ GameObject:
   - 212: {fileID: 234536976}
   m_Layer: 0
   m_Name: SmallDresser
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2212,7 +2212,7 @@ GameObject:
   - 212: {fileID: 323659179}
   m_Layer: 0
   m_Name: TableDarkShort
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2446,7 +2446,7 @@ GameObject:
   - 212: {fileID: 347629488}
   m_Layer: 0
   m_Name: RedChair
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2563,6 +2563,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2818,7 +2819,7 @@ GameObject:
   - 212: {fileID: 460260440}
   m_Layer: 0
   m_Name: BrownChairFacingRight
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4957,7 +4958,7 @@ GameObject:
   - 212: {fileID: 845724564}
   m_Layer: 0
   m_Name: GreenPlant1
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6520,7 +6521,7 @@ GameObject:
   - 212: {fileID: 1147124008}
   m_Layer: 0
   m_Name: Stool2
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6671,7 +6672,7 @@ GameObject:
   - 212: {fileID: 1198828371}
   m_Layer: 0
   m_Name: Sofa
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6729,7 +6730,7 @@ GameObject:
   - 212: {fileID: 1230174289}
   m_Layer: 0
   m_Name: Piano
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7031,7 +7032,7 @@ GameObject:
   - 212: {fileID: 1255379673}
   m_Layer: 0
   m_Name: GreenPlant2
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7089,7 +7090,7 @@ GameObject:
   - 212: {fileID: 1255737501}
   m_Layer: 0
   m_Name: Chandelier
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7147,7 +7148,7 @@ GameObject:
   - 212: {fileID: 1256188260}
   m_Layer: 0
   m_Name: PhotoDad
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7370,7 +7371,7 @@ GameObject:
   - 212: {fileID: 1336737657}
   m_Layer: 0
   m_Name: CoffeeTable
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7866,7 +7867,7 @@ GameObject:
   - 212: {fileID: 1468470254}
   m_Layer: 0
   m_Name: BrownWindowWithPurple
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7924,7 +7925,7 @@ GameObject:
   - 212: {fileID: 1472422933}
   m_Layer: 0
   m_Name: TanLamp
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8109,7 +8110,7 @@ GameObject:
   - 212: {fileID: 1485028079}
   m_Layer: 0
   m_Name: 3GrayLights
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8961,7 +8962,7 @@ GameObject:
   - 212: {fileID: 1588496476}
   m_Layer: 0
   m_Name: DresserFlowers
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9387,7 +9388,7 @@ GameObject:
   - 212: {fileID: 1614462129}
   m_Layer: 0
   m_Name: BrownWindow
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9835,7 +9836,7 @@ GameObject:
   - 212: {fileID: 1652912854}
   m_Layer: 0
   m_Name: LargeBrownTable
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10093,7 +10094,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1655057398}
+      - m_Target: {fileID: 1494664982}
         m_MethodName: click_button
         m_Mode: 1
         m_Arguments:
@@ -10226,7 +10227,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 0
   origin: {fileID: 0}
-  landingZone: {fileID: 0}
 --- !u!1 &1684311350 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
@@ -11913,7 +11913,7 @@ GameObject:
   - 212: {fileID: 1783159947}
   m_Layer: 0
   m_Name: WhiteWindow
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12253,6 +12253,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -12774,7 +12775,7 @@ GameObject:
   - 212: {fileID: 1995734793}
   m_Layer: 0
   m_Name: BrownChairFacingLeft
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12871,7 +12872,7 @@ GameObject:
   - 212: {fileID: 2019209933}
   m_Layer: 0
   m_Name: BlueChair
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12930,7 +12931,7 @@ GameObject:
   - 61: {fileID: 2026944498}
   m_Layer: 0
   m_Name: Bookcase
-  m_TagString: Furniture
+  m_TagString: StartingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13031,7 +13032,7 @@ GameObject:
   - 212: {fileID: 2067695317}
   m_Layer: 0
   m_Name: EntertainmentSystem
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13206,7 +13207,7 @@ GameObject:
   - 212: {fileID: 2088706346}
   m_Layer: 0
   m_Name: PhotoMom
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13264,7 +13265,7 @@ GameObject:
   - 212: {fileID: 2090463956}
   m_Layer: 0
   m_Name: PhotoParents
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14355,7 +14356,7 @@ GameObject:
   - 212: {fileID: 2146989142}
   m_Layer: 0
   m_Name: Cabinet
-  m_TagString: Furniture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
