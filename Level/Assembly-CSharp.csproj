@@ -87,6 +87,7 @@
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLineTestLvl.cs" />
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\line_create.cs" />
+     <Compile Include="Assets\Scripts\Music\MenuMusic.cs" />
      <Compile Include="Assets\Scripts\Scoring\DestroyByLava.cs" />
      <Compile Include="Assets\Scripts\Scoring\DestroyByWall.cs" />
      <Compile Include="Assets\Scripts\Scoring\Failures.cs" />
