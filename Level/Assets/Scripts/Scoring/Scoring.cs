@@ -80,8 +80,6 @@ public class Scoring : MonoBehaviour {
 		
 		// Initialize avatar and rigidbody component
 		avatar = GameObject.FindGameObjectWithTag ("Avatar");
-		Debug.Log ("Scoring page");
-		Debug.Log (avatar.name);
 		rigid = avatar.GetComponent<Rigidbody2D> ();
 		// Initialize reference to floorZone script
 //		floorZone = GameObject.Find("FloorZone").GetComponent<FloorZone> ();
