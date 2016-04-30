@@ -39,7 +39,6 @@ public class animOnButton : MonoBehaviour {
 		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		trolley = avatar.GetComponent<EdgeCollider2D> ();
 		anim = avatar.GetComponent<Animator> ();
-		Debug.Log (anim.name);
 		feet = avatar.GetComponent<BoxCollider2D> ();
 		rb = avatar.GetComponent<Rigidbody2D> ();
 		sprite = avatar.GetComponent<SpriteRenderer> ();
