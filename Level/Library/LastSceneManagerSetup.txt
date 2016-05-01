@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Level Scenes/LivingRoomLevel2.unity
+- path: Assets/Scenes/Level Scenes/LabLevel2.unity
   isLoaded: 1
   isActive: 1
