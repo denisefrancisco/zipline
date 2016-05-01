@@ -2212,9 +2212,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.06173566, y: -0.094656944}
+  m_Offset: {x: 0.06173566, y: -0.02369388}
   serializedVersion: 2
-  m_Size: {x: 0.8765294, y: 0.81068355}
+  m_Size: {x: 0.8765294, y: 0.66875935}
 --- !u!114 &605287678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5238,6 +5238,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1577351904}
   - 212: {fileID: 1577351903}
+  - 61: {fileID: 1577351905}
   m_Layer: 0
   m_Name: GroundFloor1.2
   m_TagString: Untagged
@@ -5287,6 +5288,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 961477638}
   m_RootOrder: 0
+--- !u!61 &1577351905
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577351902}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.0000019073486}
+  serializedVersion: 2
+  m_Size: {x: 10.38, y: 3.9}
 --- !u!1 &1582981707
 GameObject:
   m_ObjectHideFlags: 0
@@ -7827,6 +7842,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2031438805}
   - 212: {fileID: 2031438806}
+  - 61: {fileID: 2031438807}
   m_Layer: 0
   m_Name: GroundFloor1.1
   m_TagString: Untagged
@@ -7876,6 +7892,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &2031438807
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031438804}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.00000047683716, y: -0.0000019073486}
+  serializedVersion: 2
+  m_Size: {x: 10.38, y: 3.9}
 --- !u!1 &2031607868
 GameObject:
   m_ObjectHideFlags: 0
