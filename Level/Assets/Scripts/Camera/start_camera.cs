@@ -40,11 +40,11 @@ public class start_camera : MonoBehaviour {
 	}
 
 	public void respawnAvatarForButton(){
-		avatar = GameObject.FindGameObjectWithTag ("Avatar");
-		avatar1 = (GameObject) Instantiate(avatar,avatarPos,avatarRot);
+//		avatar = GameObject.FindGameObjectWithTag ("Avatar");
+		avatar = (GameObject) Instantiate(avatar,avatarPos,avatarRot);
 		Destroy (avatar);
 		avatar = GameObject.FindGameObjectWithTag ("Avatar");
-//		avatar.transform.position = avatarPos;
+		avatar.transform.position = avatarPos;
 //		avatar.transform.rotation = avatarRot;
 	}
 
@@ -93,6 +93,7 @@ public class start_camera : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		avatarPos = avatar.transform.position;
 		avatarRot = avatar.transform.rotation;
 
