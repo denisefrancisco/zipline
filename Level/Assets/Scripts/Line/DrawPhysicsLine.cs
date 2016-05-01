@@ -13,6 +13,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 	private Vector3 startPos;	// Start position of line
 	private Vector3 endPos;		// End position of line
 	private int lineCount = 0;	// Counter for uniquely naming line
+	private Color lineColor = new Color (0.427f, 0.431f, 0.443f, 1f);
 
 	// Vars for keeping track of line length
 	private float lineWidth = 0.15f;
@@ -172,7 +173,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 				} else {	//line is not too long
 					//if the line color is already red, change it to black
 					if (lineIsRed) {
-						line.SetColors(Color.black, Color.black); 
+						line.SetColors(lineColor, lineColor); 
 						lineIsRed = false;
 					}
 				}
@@ -198,7 +199,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 		//line.material.color = Color.black;
 		line.SetVertexCount(2); // Set number of points to the line
 		line.SetWidth(lineWidth,lineWidth); // Set width
-		line.SetColors(Color.black, Color.black); //Set color
+		line.SetColors(lineColor, lineColor); //Set color
 		// Render line to the world origin and not to the object's position
 		line.useWorldSpace = true;
 	}
