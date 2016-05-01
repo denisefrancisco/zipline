@@ -102,6 +102,7 @@
      <Compile Include="Assets\Scripts\Sound\SoundOptions.cs" />
      <Compile Include="Assets\Scripts\Sound\ToggleSoundOffBorder.cs" />
      <Compile Include="Assets\Scripts\Sound\ToggleSoundOnBorder.cs" />
+     <Compile Include="Assets\Scripts\Transition Scenes\SceneLoader.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\SceneTransition.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\exit_game.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\menu_play_button.cs" />
