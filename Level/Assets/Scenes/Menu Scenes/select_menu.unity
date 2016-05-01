@@ -149,9 +149,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300002, guid: e722dfe308adf4f06a6f10df449d2d4f,
+    m_HighlightedSprite: {fileID: 21300000, guid: e722dfe308adf4f06a6f10df449d2d4f,
       type: 3}
-    m_PressedSprite: {fileID: 21300002, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -206,7 +206,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
+  m_Sprite: {fileID: 21300002, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -437,9 +437,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300006, guid: e722dfe308adf4f06a6f10df449d2d4f,
+    m_HighlightedSprite: {fileID: 21300004, guid: e722dfe308adf4f06a6f10df449d2d4f,
       type: 3}
-    m_PressedSprite: {fileID: 21300006, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
+    m_PressedSprite: {fileID: 21300004, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -494,7 +494,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300004, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
+  m_Sprite: {fileID: 21300006, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -589,6 +589,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -896,9 +897,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300010, guid: e722dfe308adf4f06a6f10df449d2d4f,
+    m_HighlightedSprite: {fileID: 21300008, guid: e722dfe308adf4f06a6f10df449d2d4f,
       type: 3}
-    m_PressedSprite: {fileID: 21300010, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
+    m_PressedSprite: {fileID: 21300008, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -953,7 +954,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300008, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
+  m_Sprite: {fileID: 21300010, guid: e722dfe308adf4f06a6f10df449d2d4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
