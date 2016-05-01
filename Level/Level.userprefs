@@ -1,8 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Avatar/animOnButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Music/MenuMusic.cs">
     <Files>
-      <File FileName="Assets/Scripts/Avatar/animOnButton.cs" Line="86" Column="2" />
+      <File FileName="Assets/Scripts/Button/enableRebuild.cs" Line="27" Column="26" />
+      <File FileName="Assets/Scripts/Avatar/animOnButton.cs" Line="1" Column="19" />
+      <File FileName="Assets/Scripts/Button/Level 3 Specialized Scripts/enableRebuild_3.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Camera/pan_level.cs" Line="1" Column="1" />
+      <File FileName="Assets/start_play_camera.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Camera/start_camera.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Avatar/removeBoxCollider.cs" Line="33" Column="1" />
+      <File FileName="Assets/Scripts/Music/MenuMusic.cs" Line="31" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
