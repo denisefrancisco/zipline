@@ -56,6 +56,36 @@ public class SceneTransition : MonoBehaviour {
 		SceneManager.LoadScene ("Level1AnthonyScene");
 	}
 
+	// Load lab level 1 scene with one room
+	public void LabRoom1() {
+		SceneManager.LoadScene ("LabLevel1");
+	}
+
+	// Load lab level 2 scene with one room
+	public void LabRoom2() {
+		SceneManager.LoadScene ("LabLevel2");
+	}
+
+	// Load lab level 3 scene with two rooms
+	public void LabRoom3() {
+		SceneManager.LoadScene ("LabLevel3");
+	}
+
+	// Load lab level 4 scene with two rooms
+	public void LabRoom4() {
+		SceneManager.LoadScene ("LabLevel4");
+	}
+
+	// Load living room level 5 scene with two rooms
+	public void LivingRoom5() {
+		SceneManager.LoadScene ("LivingRoomLevel5");
+	}
+
+	// Load living room level 6 scene with two rooms
+	public void LivingRoom6() {
+		SceneManager.LoadScene ("LivingRoomLevel6");
+	}
+
 	// TODO: load lab scene
 
 	// Quit game
