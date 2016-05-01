@@ -29,3 +29,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Scenes/map_level.unity
   - enabled: 1
     path: Assets/Scenes/Menu Scenes/options_menu.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/LabLevel1.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/LabLevel2.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/LabLevel3.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/LabLevel4.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/LivingRoomLevel5.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Scenes/LivingRoomLevel6.unity
