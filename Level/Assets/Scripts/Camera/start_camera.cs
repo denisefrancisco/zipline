@@ -48,6 +48,9 @@ public class start_camera : MonoBehaviour {
 //		avatar.transform.rotation = avatarRot;
 	}
 
+	public void avatarInactive(){
+		GameObject.FindGameObjectWithTag ("Avatar").SetActive (false);
+	}
 	//use this before initialization
 	void Awake() {
 		//saving the starting position for the camera 
