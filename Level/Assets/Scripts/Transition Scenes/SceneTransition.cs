@@ -11,9 +11,18 @@ public class SceneTransition : MonoBehaviour {
 	private string previousScene;
 	private string saved;
 
+
+	void Start(){
+	}
+
 	// Load main menu scene
 	public void MainMenu() {
 		SceneManager.LoadScene ("start_menu");
+	}
+
+	//loading page between levels
+	public void loadingPage(){
+		SceneManager.LoadScene ("loading_page");
 	}
 
 	// Load select menu scene

@@ -50,3 +50,6 @@
 /Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Assembly-UnityScript-firstpass.dll
 /Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
 /Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Assembly-UnityScript-firstpass.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb

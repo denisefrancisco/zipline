@@ -5,57 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
-	private bool loadScene = false;
+//	public GameObject loadScene;
+	private AsyncOperation load;
+	private save_scene_number loadingPage;
 
-	[SerializeField]
-	private int scene;
-	[SerializeField]
-	private Text loadingText;
+	void Start() {
+		loadingPage = GameObject.FindGameObjectWithTag ("Level").GetComponent<save_scene_number>();
+		Debug.Log(loadingPage.level);
+		load = SceneManager.LoadSceneAsync (loadingPage.level);
+		load.allowSceneActivation = false;
+		GameObject.FindGameObjectWithTag ("Level").SetActive (false);
+	}
 
+	IEnumerator wait() {
+		yield return new WaitForSeconds (3);
+		load.allowSceneActivation = true;
+	}
 
-	// Updates once per frame
 	void Update() {
-
-		// If the player has pressed the space bar and a new scene is not loading yet...
-		if (Input.GetKeyUp(KeyCode.Space) && loadScene == false) {
-
-			// ...set the loadScene boolean to true to prevent loading a new scene more than once...
-			loadScene = true;
-
-			// ...change the instruction text to read "Loading..."
-			loadingText.text = "Loading...";
-
-			// ...and start a coroutine that will load the desired scene.
-			StartCoroutine(LoadNewScene());
-
+		Debug.Log (load.progress);
+		if (load.progress == 0.9f && load.allowSceneActivation == false) {
+			StartCoroutine (wait ());		
 		}
-
-		// If the new scene has started loading...
-		if (loadScene == true) {
-
-			// ...then pulse the transparency of the loading text to let the player know that the computer is still working.
-			loadingText.color = new Color(loadingText.color.r, loadingText.color.g, loadingText.color.b, Mathf.PingPong(Time.time, 1));
-
-		}
-
 	}
 
-
-	// The coroutine runs on its own at the same time as Update() and takes an integer indicating which scene to load.
-	IEnumerator LoadNewScene() {
-
-		// This line waits for 3 seconds before executing the next line in the coroutine.
-		// This line is only necessary for this demo. The scenes are so simple that they load too fast to read the "Loading..." text.
-		yield return new WaitForSeconds(3);
-
-		// Start an asynchronous operation to load the scene that was passed to the LoadNewScene coroutine.
-		AsyncOperation async = Application.LoadLevelAsync(scene);
-
-		// While the asynchronous operation to load the new scene is not yet complete, continue waiting until it's done.
-		while (!async.isDone) {
-			yield return null;
-		}
-
-	}
-
+//	public void LoadSceneNum(int num) {
+//		if (num < 0 || num >= SceneManager.sceneCountInBuildSettings){
+//			Debug.LogWarning("Can't load scene num " + num + ", SceneManager only has" + SceneManager.sceneCountInBuildSettings + "scenes in Build Seetings!");
+//			return;
+//		}
+//		LoadingScreenManager.LoadScene (num);
+//
+//	}
 }
