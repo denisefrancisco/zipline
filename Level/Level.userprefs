@@ -2,9 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Snap Points/snap_point.cs">
     <Files>
-      <File FileName="Assets/Scripts/Music/MenuMusic.cs" Line="27" Column="2" />
-      <File FileName="Assets/Scripts/Camera/start_camera.cs" Line="73" Column="1" />
-      <File FileName="Assets/Scripts/Snap Points/snap_point.cs" Line="37" Column="40" />
+      <File FileName="Assets/Scripts/Snap Points/changeSnapPointsOnPlay.cs" Line="20" Column="3" />
+      <File FileName="Assets/Scripts/Snap Points/snap_point.cs" Line="28" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
