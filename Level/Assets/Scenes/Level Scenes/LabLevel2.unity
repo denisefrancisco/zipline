@@ -5998,7 +5998,7 @@ GameObject:
   - 114: {fileID: 1705355387}
   m_Layer: 5
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7004,7 +7004,7 @@ GameObject:
   - 114: {fileID: 2124711414}
   m_Layer: 5
   m_Name: Retry
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7434,7 +7434,7 @@ GameObject:
   - 114: {fileID: 2141833563}
   m_Layer: 5
   m_Name: Next Level
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
