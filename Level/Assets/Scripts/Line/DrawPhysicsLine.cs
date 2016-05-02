@@ -108,7 +108,11 @@ public class DrawPhysicsLine : MonoBehaviour {
 		else if (Input.GetMouseButtonUp(0)) {
 			foreach (GameObject snappoint in points) {
 				if (snappoint.GetComponent<snap_point>().validLineEndPoint) {
+
+
+
 					endSnapPoint = snappoint;
+					Debug.Log ("moused up on " + endSnapPoint.name);
 				}
 			}
 
