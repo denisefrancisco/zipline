@@ -23,10 +23,29 @@ public class snap_point : MonoBehaviour {
 		gameObject.tag = "SelectedSnapPoint";
 		validLineStartPoint = true;
 	}
-		
+
+	void OnMouseEnter () {
+		startcolor = renderer.color;	//Save initial color of snap point
+		//Change snap point color to black when mouse hovers over it
+		renderer.color = Color.black;
+
+		/* When a user mouses over a snap point, that point becomes a
+		 * valid ending point for the latest drawn line segment */
+		validLineEndPoint = true;
+	}
+
+	void OnMouseExit () {
+		//Change snap point color back to initial color when mouse exits it
+		renderer.color = startcolor;
+
+		/* When a user mouse exits a snap point, that point becomes an
+		 * invalid ending point for the latest drawn line segment */
+		validLineEndPoint = false;
+	}
+
 	/* When a user mouses up, use raycasting to see if the current mouse
 	 * position is on another snap point, which will be a valid line ending point*/
-	void OnMouseUp () { 
+	/*void OnMouseUp () { 
 		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 		if (hit != null) {
@@ -37,7 +56,7 @@ public class snap_point : MonoBehaviour {
 				objectHit.GetComponent<snap_point>().validLineEndPoint = true;
 			}
 		}
-	}
+	}*/
 
 	// Use this for initialization
 	void Start () {
