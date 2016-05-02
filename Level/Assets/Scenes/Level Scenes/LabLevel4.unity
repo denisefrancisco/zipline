@@ -101,7 +101,7 @@ GameObject:
   - 114: {fileID: 23006268}
   m_Layer: 0
   m_Name: Restart Level
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -878,7 +878,7 @@ GameObject:
   - 82: {fileID: 116080259}
   m_Layer: 0
   m_Name: enableLineDrawing
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1108,7 +1108,7 @@ GameObject:
   - 82: {fileID: 145000379}
   m_Layer: 0
   m_Name: Left Wall
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1240,7 +1240,7 @@ GameObject:
   - 82: {fileID: 228594685}
   m_Layer: 5
   m_Name: Background of Success Panel
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1743,7 +1743,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -3285,6 +3284,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
+      propertyPath: m_TagString
+      value: SFX
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
   m_IsPrefabParent: 0
@@ -3305,7 +3308,7 @@ GameObject:
   - 114: {fileID: 1088504674}
   m_Layer: 5
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4687,6 +4690,10 @@ Prefab:
       propertyPath: splashSoundVolume
       value: 0.63
       objectReference: {fileID: 0}
+    - target: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
+      propertyPath: m_TagString
+      value: SFX
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
   m_IsPrefabParent: 0
@@ -4804,7 +4811,7 @@ GameObject:
   - 82: {fileID: 1467267575}
   m_Layer: 5
   m_Name: Background of Failure Panel
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5315,7 +5322,7 @@ GameObject:
   - 82: {fileID: 1582981711}
   m_Layer: 0
   m_Name: Right Wall
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6551,7 +6558,7 @@ GameObject:
   - 82: {fileID: 1691744067}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6899,7 +6906,7 @@ GameObject:
   - 114: {fileID: 1705355387}
   m_Layer: 5
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7262,6 +7269,10 @@ Prefab:
     - target: {fileID: 11491020, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: noise
       value: 0.0116
+      objectReference: {fileID: 0}
+    - target: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
+      propertyPath: m_TagString
+      value: SFX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
@@ -7635,7 +7646,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
