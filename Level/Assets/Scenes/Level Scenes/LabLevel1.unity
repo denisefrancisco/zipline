@@ -2100,7 +2100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  point2: {fileID: 438721364}
+  point2: {fileID: 0}
 --- !u!212 &456290621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6985,7 +6985,7 @@ GameObject:
   - 114: {fileID: 2124711414}
   m_Layer: 5
   m_Name: Retry
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

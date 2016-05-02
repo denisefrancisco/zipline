@@ -788,7 +788,7 @@ GameObject:
   - 82: {fileID: 1922129133}
   - 114: {fileID: 1922129135}
   m_Layer: 0
-  m_Name: Music For All Scenes
+  m_Name: Music for Menu Scenes
   m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
