@@ -12,11 +12,11 @@ public class MenuMusic : MonoBehaviour {
 
 	void Awake(){
 		musicSource = gameObject.GetComponent<AudioSource> ();
-//		if (!audioBegin) {
 		musicSource.Play ();
 		DontDestroyOnLoad (gameObject);
-//			audioBegin = true;
-//		}
+		if (GameObject.FindGameObjectsWithTag("Music").Length > 1){
+			Destroy (gameObject);
+		}
 	}
 
 	// Use this for initialization
