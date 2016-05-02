@@ -166,7 +166,7 @@ GameObject:
   - 82: {fileID: 338856817}
   m_Layer: 5
   m_Name: Left Button
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -648,7 +648,7 @@ GameObject:
   - 82: {fileID: 907052166}
   m_Layer: 5
   m_Name: BackButton
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1436,7 +1436,7 @@ GameObject:
   - 82: {fileID: 1931168143}
   m_Layer: 5
   m_Name: Right Button
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
