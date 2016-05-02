@@ -901,6 +901,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1937719793}
   - 212: {fileID: 1937719792}
+  - 95: {fileID: 1937719794}
   m_Layer: 0
   m_Name: ZippingBoy
   m_TagString: Untagged
@@ -950,6 +951,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!95 &1937719794
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937719791}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8be958945b45b4a89901c9f99b60a3a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2080079331
 GameObject:
   m_ObjectHideFlags: 0
