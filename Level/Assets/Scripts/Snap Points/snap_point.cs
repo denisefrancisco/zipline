@@ -28,11 +28,9 @@ public class snap_point : MonoBehaviour {
 	 * position is on another snap point, which will be a valid line ending point*/
 	void OnMouseUp () { 
 		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		Debug.Log ("moused up on " + mousePos);
 		RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 		if (hit != null) {
 			GameObject objectHit = hit.transform.gameObject;
-			Debug.Log ("raycast game object is called" + objectHit.gameObject.name);
 			// If player has touched up on a snap point
 			if (objectHit.tag == "SnapPoint") {
 				// This snap point GO becomes a valid ending point for a new line
