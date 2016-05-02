@@ -159,7 +159,7 @@ GameObject:
   - 114: {fileID: 23006268}
   m_Layer: 0
   m_Name: Restart Level
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -642,7 +642,7 @@ GameObject:
   - 114: {fileID: 93287379}
   m_Layer: 5
   m_Name: OptionsButton
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -954,7 +954,7 @@ GameObject:
   - 82: {fileID: 116080259}
   m_Layer: 0
   m_Name: enableLineDrawing
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1184,7 +1184,7 @@ GameObject:
   - 82: {fileID: 145000379}
   m_Layer: 0
   m_Name: Left Wall
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,7 +1432,7 @@ GameObject:
   - 82: {fileID: 228594685}
   m_Layer: 5
   m_Name: Background of Success Panel
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2099,8 +2099,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1532be6ecaa3c4b7bbb3fb102cf64278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  point2: {fileID: 438721364}
 --- !u!212 &456290621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3529,6 +3527,10 @@ Prefab:
       propertyPath: m_Name
       value: Lava1
       objectReference: {fileID: 0}
+    - target: {fileID: 194262, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
+      propertyPath: m_TagString
+      value: SFX
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
   m_IsPrefabParent: 0
@@ -3549,7 +3551,7 @@ GameObject:
   - 114: {fileID: 1088504674}
   m_Layer: 5
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4080,7 +4082,7 @@ GameObject:
   - 114: {fileID: 1243043816}
   m_Layer: 5
   m_Name: DrawButton
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4836,7 +4838,7 @@ GameObject:
   - 82: {fileID: 1467267575}
   m_Layer: 5
   m_Name: Background of Failure Panel
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5019,7 +5021,7 @@ GameObject:
   - 82: {fileID: 1582981711}
   m_Layer: 0
   m_Name: Right Wall
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5250,7 +5252,7 @@ GameObject:
   - 114: {fileID: 1636241946}
   m_Layer: 5
   m_Name: EraseButton
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5552,7 +5554,7 @@ GameObject:
   - 114: {fileID: 1655057403}
   m_Layer: 5
   m_Name: PlayButton
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5897,7 +5899,7 @@ GameObject:
   - 114: {fileID: 1691744066}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
