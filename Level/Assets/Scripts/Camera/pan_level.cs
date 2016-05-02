@@ -47,7 +47,7 @@ public class pan_level : MonoBehaviour {
 	//this wait feature is to hold the camera for 2 seconds at the top of the map, and then pan down
 	IEnumerator wait() {
 		yield return new WaitForSeconds (2);
-			panDown ();
+		panDown ();
 	}
 
 	public void DestroyPanLevel(){

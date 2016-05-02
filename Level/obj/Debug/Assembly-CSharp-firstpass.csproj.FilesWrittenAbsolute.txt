@@ -15,3 +15,20 @@
 /Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/LiliBorlandMacBook/zipline/Level/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/UnityEngine.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/UnityEditor.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Mono.Cecil.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Unity.DataContract.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Temp/bin/Debug/Mono.Cecil.Mdb.dll
