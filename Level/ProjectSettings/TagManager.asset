@@ -16,6 +16,7 @@ TagManager:
   - FxTemporaire
   - StartingPlatform
   - Level
+  - Music
   layers:
   - Default
   - TransparentFX
