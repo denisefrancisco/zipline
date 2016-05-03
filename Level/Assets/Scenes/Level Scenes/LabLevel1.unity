@@ -3407,7 +3407,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 477146, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.94
+      value: -7.8
       objectReference: {fileID: 0}
     - target: {fileID: 477146, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3439,7 +3439,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 446540, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.4135923
+      value: 4.3367543
       objectReference: {fileID: 0}
     - target: {fileID: 446540, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3467,23 +3467,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491020, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: width
-      value: 14.73
+      value: 11.8
       objectReference: {fileID: 0}
     - target: {fileID: 19830326, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: EmissionModule.rate.scalar
-      value: 132.56999
+      value: 106.200005
       objectReference: {fileID: 0}
     - target: {fileID: 6152798, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_Offset.x
-      value: 7.365
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 6152798, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_Size.x
-      value: 14.73
+      value: 11.8
       objectReference: {fileID: 0}
     - target: {fileID: 446540, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalScale.x
-      value: 14.73
+      value: 11.8
       objectReference: {fileID: 0}
     - target: {fileID: 11491020, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: noise

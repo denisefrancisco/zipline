@@ -3260,7 +3260,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 477146, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.93
+      value: -7.9
       objectReference: {fileID: 0}
     - target: {fileID: 477146, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3292,7 +3292,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 446540, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.4135923
+      value: 4.344105
       objectReference: {fileID: 0}
     - target: {fileID: 446540, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3320,23 +3320,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491020, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: width
-      value: 14.73
+      value: 11.82
       objectReference: {fileID: 0}
     - target: {fileID: 19830326, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: EmissionModule.rate.scalar
-      value: 132.56999
+      value: 106.38
       objectReference: {fileID: 0}
     - target: {fileID: 6152798, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_Offset.x
-      value: 7.365
+      value: 5.91
       objectReference: {fileID: 0}
     - target: {fileID: 6152798, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_Size.x
-      value: 14.73
+      value: 11.82
       objectReference: {fileID: 0}
     - target: {fileID: 446540, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: m_LocalScale.x
-      value: 14.73
+      value: 11.82
       objectReference: {fileID: 0}
     - target: {fileID: 11491020, guid: 3accc55a5442f24448e13cb538bba3b1, type: 2}
       propertyPath: noise
@@ -4189,7 +4189,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 15c50ca956e3146e1bf978a3c1f1fc17, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2032f52c411b4442b8b03533a24c9d97, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
