@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 54873502}
   - 212: {fileID: 54873501}
+  - 95: {fileID: 54873503}
   m_Layer: 0
   m_Name: ZippingGirl
   m_TagString: Untagged
@@ -143,6 +144,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!95 &54873503
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 54873500}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2f6a1855fcffe4d7996747102ffc9ca4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &312472688
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +379,7 @@ GameObject:
   - 82: {fileID: 1353414613}
   m_Layer: 5
   m_Name: Play
-  m_TagString: Untagged
+  m_TagString: SFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -380,8 +398,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.9, y: -18.7}
-  m_SizeDelta: {x: 159, y: 29}
+  m_AnchoredPosition: {x: -5.9, y: -37.5}
+  m_SizeDelta: {x: 180.3, y: 32.889}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353414609
 MonoBehaviour:
@@ -770,7 +788,7 @@ GameObject:
   - 82: {fileID: 1922129133}
   - 114: {fileID: 1922129135}
   m_Layer: 0
-  m_Name: Music For All Scenes
+  m_Name: Music for Menu Scenes
   m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,6 +901,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1937719793}
   - 212: {fileID: 1937719792}
+  - 95: {fileID: 1937719794}
   m_Layer: 0
   m_Name: ZippingBoy
   m_TagString: Untagged
@@ -926,12 +945,29 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1937719791}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.72, y: 0.65, z: -1}
-  m_LocalScale: {x: 0.3653184, y: 0.3653184, z: 0.3653184}
+  m_LocalRotation: {x: 0, y: 0, z: 0.20434627, w: 0.97889876}
+  m_LocalPosition: {x: 3.78, y: 1.04, z: -1}
+  m_LocalScale: {x: -0.3181739, y: 0.3653184, z: 0.3653184}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!95 &1937719794
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937719791}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8be958945b45b4a89901c9f99b60a3a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2080079331
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +1001,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.9, y: -53.7}
+  m_AnchoredPosition: {x: -5.9, y: -74.8}
   m_SizeDelta: {x: 159, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2080079333

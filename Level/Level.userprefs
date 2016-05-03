@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Snap Points/snap_point.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Button/SpriteSwapDraw.cs">
     <Files>
-      <File FileName="Assets/Scripts/Snap Points/snap_point.cs" Line="34" Column="1" />
-      <File FileName="Assets/Scripts/Line/DrawPhysicsLine.cs" Line="113" Column="6" />
+      <File FileName="Assets/Scripts/Button/SpriteSwapDraw.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Snap Points/changeSnapPointsOnPlay.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Snap Points/snap_point.cs" Line="28" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
