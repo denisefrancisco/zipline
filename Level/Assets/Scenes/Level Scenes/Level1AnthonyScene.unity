@@ -2516,6 +2516,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 349177384}
   - 82: {fileID: 349177383}
+  - 114: {fileID: 349177385}
   m_Layer: 0
   m_Name: Background Music
   m_TagString: Music

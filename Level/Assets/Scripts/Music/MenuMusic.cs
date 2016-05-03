@@ -31,7 +31,6 @@ public class MenuMusic : MonoBehaviour {
 		levelList [5] = "LivingRoomLevel6";
 		Debug.Log (SceneManager.GetActiveScene().name);
 	}
-	
 	// Update is called once per frame
 	void Update () {
 //		if (SceneManager.GetActiveScene().name == "map_level") {
@@ -40,7 +39,8 @@ public class MenuMusic : MonoBehaviour {
 //		}
 		foreach (string x in levelList) {
 			if (SceneManager.GetActiveScene().name == x) {
-				musicSource.Stop ();
+//				musicSource.Stop ();
+				Destroy(gameObject);
 			}
 		}
 	}
