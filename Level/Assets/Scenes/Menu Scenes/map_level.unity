@@ -275,6 +275,7 @@ GameObject:
   - 114: {fileID: 157880321}
   - 114: {fileID: 157880320}
   - 114: {fileID: 157880324}
+  - 114: {fileID: 157880325}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -366,6 +367,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb1b4e86ec55e40349866f0bf2473a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &157880325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157880319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f7824fcde58c429fb23acb54cbd521a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &277560620
@@ -1187,7 +1199,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 15c50ca956e3146e1bf978a3c1f1fc17, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.335
   m_Pitch: 1
   Loop: 0
@@ -1583,7 +1595,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1313536479}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2032f52c411b4442b8b03533a24c9d97, type: 3}
