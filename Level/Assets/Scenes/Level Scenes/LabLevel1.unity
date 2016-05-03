@@ -3217,7 +3217,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1088504674}
-        m_MethodName: DeleteSavedData
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5990,7 +5990,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1705355387}
-        m_MethodName: DeleteSavedData
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6524,8 +6524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b120268228e2448958d0dbff8fd6060d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  success_modal: {fileID: 228594681}
-  failure_modal: {fileID: 1467267571}
 --- !u!1 &2069726109
 GameObject:
   m_ObjectHideFlags: 0

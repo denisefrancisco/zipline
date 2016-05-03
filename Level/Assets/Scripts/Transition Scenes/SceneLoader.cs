@@ -14,7 +14,7 @@ public class SceneLoader : MonoBehaviour {
 		Debug.Log(loadingPage.level);
 		load = SceneManager.LoadSceneAsync (loadingPage.level);
 		load.allowSceneActivation = false;
-		GameObject.FindGameObjectWithTag ("Level").SetActive (false);
+		GameObject.FindGameObjectWithTag ("Level").transform.position = new Vector3 (0,0,500);
 	}
 
 	IEnumerator wait() {
@@ -28,7 +28,7 @@ public class SceneLoader : MonoBehaviour {
 			StartCoroutine (wait ());		
 		}
 	}
-
+		
 //	public void LoadSceneNum(int num) {
 //		if (num < 0 || num >= SceneManager.sceneCountInBuildSettings){
 //			Debug.LogWarning("Can't load scene num " + num + ", SceneManager only has" + SceneManager.sceneCountInBuildSettings + "scenes in Build Seetings!");
