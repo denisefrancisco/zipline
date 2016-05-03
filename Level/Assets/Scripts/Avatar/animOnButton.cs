@@ -76,6 +76,9 @@ public class animOnButton : MonoBehaviour {
 			if ((sceneName == "LabLevel1") | (sceneName == "LabLevel2") | (sceneName == "LabLevel3") | (sceneName == "LabLevel4")) {
 				movement_sp = 1f;
 			}
+			if (sceneName == "LivingRoomLevel5") {
+				movement_sp = 2f;
+			}
 			if (feet.IsTouching (origin)) { 	
 				Debug.Log("pushingforward");
 				rb.AddForce (Vector3.right * movement_sp, ForceMode2D.Impulse);

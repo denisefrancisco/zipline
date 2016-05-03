@@ -39,7 +39,7 @@ public class level_success : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		// Reset failed state when success modal is disabled
 		if (!playCamera.activeSelf && succeeded) {
 			succeeded = false;
