@@ -36,7 +36,6 @@
 -define:ENABLE_RAKNET
 -define:ENABLE_UNET
 -define:ENABLE_UNITYEVENTS
--define:ENABLE_VR
 -define:ENABLE_WEBCAM
 -define:ENABLE_WWW
 -define:ENABLE_CLOUD_SERVICES
@@ -59,19 +58,14 @@
 -define:ENABLE_LOCALIZATION
 -define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
 -define:ENABLE_EDITOR_TESTS_RUNNER
--define:UNITY_STANDALONE_OSX
--define:UNITY_STANDALONE
+-define:UNITY_WEBPLAYER
 -define:ENABLE_SUBSTANCE
--define:ENABLE_GAMECENTER
+-define:WEBPLUG
 -define:ENABLE_TEXTUREID_MAP
 -define:ENABLE_RUNTIME_GI
 -define:ENABLE_MOVIES
 -define:ENABLE_NETWORK
 -define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
--define:ENABLE_LOG_MIXED_STACKTRACE
--define:ENABLE_UNITYWEBREQUEST
--define:ENABLE_CLUSTERINPUT
--define:ENABLE_WEBSOCKET_HOST
 -define:ENABLE_MONO
 -define:ENABLE_PROFILER
 -define:DEBUG
@@ -161,5 +155,3 @@
 'Assets/Zippy Water 2D/Scripts/ZippyWater2DCollider.cs'
 'Assets/start_map_camera.cs'
 'Assets/start_play_camera.cs'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
