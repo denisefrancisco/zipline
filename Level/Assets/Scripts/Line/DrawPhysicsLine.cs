@@ -80,6 +80,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 			selectedSnapPoints = GameObject.FindGameObjectsWithTag ("SelectedSnapPoint");
 			// If a snap point has been selected as a starting point for a line, flag validStart
 			if (selectedSnapPoints.Length == 1) {
+				Debug.Log ("moused DOWN on " + selectedSnapPoints[0].name);
 				validStart = true;
 				// Save reference to starting snap point
 				startSnapPoint = selectedSnapPoints[0];

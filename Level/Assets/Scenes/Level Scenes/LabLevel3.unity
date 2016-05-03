@@ -4972,7 +4972,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.054901965, g: 0.1137255, b: 0.25882354, a: 0.019607844}
+  m_BackGroundColor: {r: 0.0627451, g: 0.21568629, b: 0.2627451, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -7108,7 +7108,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.054901965, g: 0.1137255, b: 0.25882354, a: 0.019607844}
+  m_BackGroundColor: {r: 0.0627451, g: 0.21568628, b: 0.2627451, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
