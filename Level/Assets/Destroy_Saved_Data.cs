@@ -22,7 +22,7 @@ public class Destroy_Saved_Data : MonoBehaviour {
 		}
 		Destroy (saved_data);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	
