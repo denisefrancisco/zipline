@@ -10183,6 +10183,7 @@ GameObject:
   - 222: {fileID: 2141833565}
   - 114: {fileID: 2141833564}
   - 114: {fileID: 2141833563}
+  - 114: {fileID: 2141833566}
   m_Layer: 5
   m_Name: Next Level
   m_TagString: Untagged
@@ -10245,7 +10246,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2141833564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2141833566}
+        m_MethodName: LivingRoom6
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2141833564
@@ -10281,3 +10293,14 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2141833561}
+--- !u!114 &2141833566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2141833561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1b4e86ec55e40349866f0bf2473a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
