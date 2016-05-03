@@ -13,8 +13,8 @@ public class myTimer : MonoBehaviour {
 	public GameObject success_modal;	// Reference to win modal
 	public int score;	// Var to save player's score from successful zipline traversal
 	// Traversal times that generate the following star scores
-	private float threeStarTime = 6f;
-	private float twoStarTime = 8f;
+	private float threeStarTime = 4.5f;
+	private float twoStarTime = 7f;
 
 	public void StartTimer() {
 		// Reset time counter to 0
