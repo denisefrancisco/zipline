@@ -631,6 +631,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 23006268}
+        m_MethodName: setBackButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &23006264
@@ -760,9 +771,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 23006261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0c2d6209ef54b9894173f35740d50a, type: 3}
+  m_Script: {fileID: 11500000, guid: 85617ce3065ac4187a96c97267307101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backButton: {fileID: 462503340}
 --- !u!1 &85603694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,6 +3557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0c2d6209ef54b9894173f35740d50a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  success_modal: {fileID: 228594681}
+  failure_modal: {fileID: 1467267571}
 --- !u!82 &462503343
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9258,6 +9272,7 @@ GameObject:
   - 222: {fileID: 1467267574}
   - 114: {fileID: 1467267573}
   - 82: {fileID: 1467267575}
+  - 114: {fileID: 1467267576}
   m_Layer: 5
   m_Name: Background of Failure Panel
   m_TagString: SFX
@@ -9391,6 +9406,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1467267576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467267571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85617ce3065ac4187a96c97267307101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backButton: {fileID: 0}
 --- !u!1 &1473287614
 GameObject:
   m_ObjectHideFlags: 0
@@ -11467,6 +11494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0c2d6209ef54b9894173f35740d50a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  success_modal: {fileID: 0}
+  failure_modal: {fileID: 0}
 --- !u!82 &1703444201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14145,6 +14174,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1088504672}
         m_MethodName: click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: setBackButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
