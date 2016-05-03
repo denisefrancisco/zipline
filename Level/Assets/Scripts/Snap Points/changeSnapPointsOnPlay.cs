@@ -4,7 +4,7 @@ using System.Collections;
 public class changeSnapPointsOnPlay : MonoBehaviour {
 
 	private GameObject[] points;
-	private float newRadius = 0.38f;
+	private float newRadius = 0.22f;
 
 	public void changeSnapPoints () {
 		foreach (GameObject p in points) {
