@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class save_scene_number : MonoBehaviour {
 
@@ -15,7 +16,7 @@ public class save_scene_number : MonoBehaviour {
 		}
 		if (GameObject.FindGameObjectsWithTag ("Level").Length > 1) {
 			foreach (GameObject x in GameObject.FindGameObjectsWithTag("Level")) {
-				if (x.transform.position.z == 500) {
+				if (x.transform.position.z == 500 && SceneManager.GetActiveScene().name == "map_level") {
 					Destroy (x);
 				}
 			}
