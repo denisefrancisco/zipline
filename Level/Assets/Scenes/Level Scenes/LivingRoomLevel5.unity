@@ -2035,7 +2035,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -4216,10 +4215,10 @@ GameObject:
   - 222: {fileID: 1088504670}
   - 114: {fileID: 1088504669}
   - 114: {fileID: 1088504668}
-  - 114: {fileID: 1088504671}
   - 82: {fileID: 1088504673}
   - 114: {fileID: 1088504672}
   - 114: {fileID: 1088504674}
+  - 114: {fileID: 1088504671}
   m_Layer: 5
   m_Name: Exit
   m_TagString: SFX
@@ -4284,7 +4283,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1088504671}
-        m_MethodName: MainMenu
+        m_MethodName: MapMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4359,7 +4358,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1088504666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aee276021cd804dd1a0deb6d16bba223, type: 3}
+  m_Script: {fileID: 11500000, guid: eb1b4e86ec55e40349866f0bf2473a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1088504672
@@ -7914,8 +7913,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1705355383}
-        m_MethodName: MainMenu
+      - m_Target: {fileID: 1088504671}
+        m_MethodName: MapMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9021,7 +9020,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
