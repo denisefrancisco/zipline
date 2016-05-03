@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Avatar\customization\girl\button2_for_customizing.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\girl\button_disappear.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\girl\button_for_customizing.cs" />
+     <Compile Include="Assets\Scripts\Avatar\customization\hoverActivation.cs" />
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadBoy.cs" />
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadGirl.cs" />
      <Compile Include="Assets\Scripts\Avatar\jump_avatar.cs" />
