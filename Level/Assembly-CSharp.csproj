@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Button\SpriteSwapDraw.cs" />
      <Compile Include="Assets\Scripts\Button\SpriteSwapErase.cs" />
      <Compile Include="Assets\Scripts\Button\avatar_start_zipline.cs" />
+     <Compile Include="Assets\Scripts\Button\disableAnimation.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawing.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawingTestLvl.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineErasing.cs" />
@@ -90,6 +91,7 @@
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\line_create.cs" />
      <Compile Include="Assets\Scripts\Music\MenuMusic.cs" />
+     <Compile Include="Assets\Scripts\Music\deactivateLevelMusic.cs" />
      <Compile Include="Assets\Scripts\Scoring\DestroyByLava.cs" />
      <Compile Include="Assets\Scripts\Scoring\DestroyByWall.cs" />
      <Compile Include="Assets\Scripts\Scoring\Failures.cs" />
