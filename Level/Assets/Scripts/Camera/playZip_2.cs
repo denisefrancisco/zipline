@@ -24,6 +24,7 @@ public class playZip_2 : MonoBehaviour {
 	}
 		
 	public void resetWinAndLose(){
+		Debug.Log ("RESETTING WIN AND LOSE");
 		timer.SetActive (false);	// Disable timer bc we're returning to build mode
 		startedTimer = false;	// Reset startedTimer state
 
@@ -34,6 +35,7 @@ public class playZip_2 : MonoBehaviour {
 		GameObject[] stars = GameObject.FindGameObjectsWithTag("Star");
 		foreach (GameObject s in stars) {
 			s.GetComponent<Image>().enabled = false;
+			Debug.Log ("WE RESET THIS STAR GAME OBJECT CALLED star " + s.name);
 		}
 		// Deactivate modals
 		lose_panel.SetActive (false);
