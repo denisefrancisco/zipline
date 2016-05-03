@@ -35,6 +35,10 @@ public class save_scene_number : MonoBehaviour {
 		Debug.Log ("THIS IS THE LEVEL");
 		Debug.Log (level);
 	}
+
+	public void destroySceneLoader() {
+		Destroy (GameObject.FindGameObjectWithTag ("Level"));
+	}
 	
 	// Update is called once per frame
 	void Update () {
