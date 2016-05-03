@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Menu Scenes/start_menu.unity
-=======
-- path: Assets/Scenes/Level Scenes/LabLevel4.unity
->>>>>>> master
+- path: Assets/Scenes/Level Scenes/LivingRoomLevelHard.unity
   isLoaded: 1
   isActive: 1
