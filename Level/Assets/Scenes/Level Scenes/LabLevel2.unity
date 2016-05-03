@@ -3639,6 +3639,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1246430429}
   - 82: {fileID: 1246430428}
+  - 114: {fileID: 1246430430}
   m_Layer: 0
   m_Name: Background Music
   m_TagString: Music
@@ -3732,6 +3733,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
+--- !u!114 &1246430430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246430427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231056325f1254acab85bf2c5bc3a521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success_modal: {fileID: 228594681}
+  failure_modal: {fileID: 1467267571}
 --- !u!1 &1276376400 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 160558, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
