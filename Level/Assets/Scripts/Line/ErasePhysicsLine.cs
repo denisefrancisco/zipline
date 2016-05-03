@@ -11,7 +11,7 @@ public class ErasePhysicsLine : MonoBehaviour {
 	private enableLineErasing enableErasing; // Reference to erasing script
 	public GameObject[] points;	// Array of snap point GOs that serve as vertices of line renderer
 
-	void OnMouseDown () {
+	void OnMouseDown () {			
 		// Decrement usedCounter for each snap point connected to this line
 		if (enableErasing.canErase && points.Length > 0) {
 			foreach (GameObject p in points) {
