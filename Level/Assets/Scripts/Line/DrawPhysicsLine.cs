@@ -16,7 +16,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 	private Color lineColor = new Color (0.427f, 0.431f, 0.443f, 1f);
 
 	// Vars for keeping track of line length
-	private float lineWidth = 0.15f;
+	private float lineWidth = 0.2f;
 	private float maxLineLength = 6f;
 	private float currentLineLength;
 
