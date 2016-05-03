@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class hoverActivation : MonoBehaviour {
 
@@ -10,11 +11,20 @@ public class hoverActivation : MonoBehaviour {
 	void Start () {
 		girl = GameObject.Find("female");
 		boy = GameObject.Find("male");
-		if(SystemInfo.deviceModel.Contains("iPad")){
-			girl.GetComponent<Animator>().enabled = false;
-			boy.GetComponent<Animator>().enabled = false;
+		if (SystemInfo.deviceModel.Contains ("iPad")) {
+			if (SceneManager.GetActiveScene ().name == "zipline_choose_gender") {
+				
+					girl.GetComponent<Animator> ().enabled = false;
+					boy.GetComponent<Animator> ().enabled = false;
+				
+			} else {
+				foreach (Transform x in gameObject.transform) {
+					if (x.name != "BackButton") {
+						x.GetComponent<Animator> ().enabled = false;
+					}
+				}
+			}
 		}
-	
 	}
 	
 	// Update is called once per frame
