@@ -27,7 +27,7 @@ public class save_scene_number : MonoBehaviour {
 		levelList [2] = "LabLevel3";
 		levelList [3] = "LabLevel4";
 		levelList [4] = "LivingRoomLevel5";
-		levelList [5] = "Level1AnthonyScene";
+		levelList [5] = "LivingRoomLevel6";
 	}
 
 	public void LoadLevelNum(int num) {
