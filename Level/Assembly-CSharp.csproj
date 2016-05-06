@@ -51,7 +51,6 @@
      <Compile Include="Assets\Music\button_click.cs" />
      <Compile Include="Assets\Music\failure_build.cs" />
      <Compile Include="Assets\Scripts\Avatar\animOnButton.cs" />
-     <Compile Include="Assets\Scripts\Avatar\avatar_control.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\SelectedPlayer.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\boy\boy_button_disappear.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\boy\left_button_customize.cs" />
