@@ -2566,7 +2566,6 @@ GameObject:
   - 4: {fileID: 605287675}
   - 61: {fileID: 605287677}
   - 114: {fileID: 605287678}
-  - 114: {fileID: 605287676}
   m_Layer: 0
   m_Name: Landing Zone
   m_TagString: LandingZone
@@ -2586,22 +2585,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1331872893}
   m_RootOrder: 0
---- !u!114 &605287676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 605287674}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ebcab86b06a46d9a5fb75800313f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pastZone: 0
-  playEnded: 0
-  lose_panel: {fileID: 1467267571}
-  leftWall: {fileID: 145000375}
-  rightWall: {fileID: 1582981707}
 --- !u!61 &605287677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4833,7 +4816,6 @@ GameObject:
   - 81: {fileID: 1379217727}
   - 114: {fileID: 1379217733}
   - 114: {fileID: 1379217734}
-  - 114: {fileID: 1379217732}
   m_Layer: 0
   m_Name: Play Camera
   m_TagString: Untagged
@@ -4909,22 +4891,6 @@ Transform:
   - {fileID: 1861927288}
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &1379217732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1379217725}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ebcab86b06a46d9a5fb75800313f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pastZone: 0
-  playEnded: 0
-  lose_panel: {fileID: 1467267571}
-  leftWall: {fileID: 145000375}
-  rightWall: {fileID: 1582981707}
 --- !u!114 &1379217733
 MonoBehaviour:
   m_ObjectHideFlags: 0

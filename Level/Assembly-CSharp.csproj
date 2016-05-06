@@ -89,7 +89,6 @@
      <Compile Include="Assets\Scripts\Scoring\DestroyByLava.cs" />
      <Compile Include="Assets\Scripts\Scoring\DestroyByWall.cs" />
      <Compile Include="Assets\Scripts\Scoring\Failures.cs" />
-     <Compile Include="Assets\Scripts\Scoring\Scoring.cs" />
      <Compile Include="Assets\Scripts\Scoring\fire_failure.cs" />
      <Compile Include="Assets\Scripts\Scoring\level_success.cs" />
      <Compile Include="Assets\Scripts\Scoring\myTimer.cs" />
