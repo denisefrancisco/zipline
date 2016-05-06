@@ -83,9 +83,7 @@
      <Compile Include="Assets\Scripts\Cursor (Gesture Assistance)\cursor_animate.cs" />
      <Compile Include="Assets\Scripts\Cursor (Gesture Assistance)\tutorial_assistance_flow.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLine.cs" />
-     <Compile Include="Assets\Scripts\Line\DrawPhysicsLineTestLvl.cs" />
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />
-     <Compile Include="Assets\Scripts\Line\line_create.cs" />
      <Compile Include="Assets\Scripts\Music\MenuMusic.cs" />
      <Compile Include="Assets\Scripts\Music\deactivateLevelMusic.cs" />
      <Compile Include="Assets\Scripts\Scoring\DestroyByLava.cs" />
