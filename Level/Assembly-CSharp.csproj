@@ -74,7 +74,6 @@
      <Compile Include="Assets\Scripts\Button\enableReset.cs" />
      <Compile Include="Assets\Scripts\Camera\change_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\down_scroll_camera.cs" />
-     <Compile Include="Assets\Scripts\Camera\escape_to_build.cs" />
      <Compile Include="Assets\Scripts\Camera\pan_level.cs" />
      <Compile Include="Assets\Scripts\Camera\playZip_2.cs" />
      <Compile Include="Assets\Scripts\Camera\start_camera.cs" />
