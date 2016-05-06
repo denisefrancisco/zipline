@@ -68,7 +68,6 @@
      <Compile Include="Assets\Scripts\Button\Level 3 Specialized Scripts\enableRebuild_3.cs" />
      <Compile Include="Assets\Scripts\Button\SpriteSwapDraw.cs" />
      <Compile Include="Assets\Scripts\Button\SpriteSwapErase.cs" />
-     <Compile Include="Assets\Scripts\Button\disableAnimation.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawing.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawingTestLvl.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineErasing.cs" />
