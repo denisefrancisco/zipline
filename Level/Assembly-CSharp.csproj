@@ -69,7 +69,6 @@
      <Compile Include="Assets\Scripts\Button\SpriteSwapDraw.cs" />
      <Compile Include="Assets\Scripts\Button\SpriteSwapErase.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawing.cs" />
-     <Compile Include="Assets\Scripts\Button\enableLineDrawingTestLvl.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineErasing.cs" />
      <Compile Include="Assets\Scripts\Button\enableRebuild.cs" />
      <Compile Include="Assets\Scripts\Button\enableReset.cs" />
