@@ -15,9 +15,9 @@ public class DrawPhysicsLine : MonoBehaviour {
 	private int lineCount = 0;	// Counter for uniquely naming line
 	private Color lineColor = new Color (0.427f, 0.431f, 0.443f, 1f);
 
-	// Vars for keeping track of line length
+	// Vars for keeping track of line dimensions
 	private float lineWidth = 0.2f;
-	private float maxLineLength = 6f;
+	private float maxLineLength = 6f;	//
 	private float currentLineLength;
 
 	/* State indicating player moused down on a snap point
