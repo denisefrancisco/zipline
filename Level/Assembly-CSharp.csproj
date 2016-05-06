@@ -52,7 +52,6 @@
      <Compile Include="Assets\Music\failure_build.cs" />
      <Compile Include="Assets\Scripts\Avatar\animOnButton.cs" />
      <Compile Include="Assets\Scripts\Avatar\avatar_control.cs" />
-     <Compile Include="Assets\Scripts\Avatar\avatar_jump.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\SelectedPlayer.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\boy\boy_button_disappear.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\boy\left_button_customize.cs" />
@@ -63,7 +62,6 @@
      <Compile Include="Assets\Scripts\Avatar\customization\hoverActivation.cs" />
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadBoy.cs" />
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadGirl.cs" />
-     <Compile Include="Assets\Scripts\Avatar\jump_avatar.cs" />
      <Compile Include="Assets\Scripts\Avatar\removeBoxCollider.cs" />
      <Compile Include="Assets\Scripts\Button\Level 3 Specialized Scripts\enableRebuild_3.cs" />
      <Compile Include="Assets\Scripts\Button\SpriteSwapDraw.cs" />
