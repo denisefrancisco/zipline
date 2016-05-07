@@ -2,11 +2,12 @@
 using System.Collections;
 
 public class cursor_animate : MonoBehaviour {
-
+	#if UNITY_STANDALONE_OSX
 	public float speed;
 	private Vector3 cursor;
 	public Transform buttonClick;
-	public TrailRenderer drawLine;
+	private TrailRenderer drawLine;
+	public GameObject playArrow;
 	public Transform point2;
 	private Vector3 end_point = new Vector3 (1.7f,-1.13f,1);
 	private float time;
@@ -31,11 +32,19 @@ public class cursor_animate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (transform.position.x >= end_point.x) {
+		if (Input.GetMouseButton (0) == false) {
+			if (transform.position.x >= end_point.x) {
 //			transform.position = point2.transform.position;
-			StartCoroutine (wait ());
+				StartCoroutine (wait ());
+			} else {
+				transform.Translate (end_point * Time.deltaTime, Space.World);
+			}
 		} else {
-			transform.Translate ( end_point * Time.deltaTime, Space.World);
+			playArrow.SetActive (true);
+			gameObject.SetActive (false);
 		}
 	}
+
+	#endif
 }
+
