@@ -4,22 +4,29 @@ using System.Collections;
 public class cursor_animate : MonoBehaviour {
 
 	public float speed;
-	private Vector3 point1;
+	private Vector3 cursor;
+	public Transform buttonClick;
+	public TrailRenderer drawLine;
 	public Transform point2;
-	private Vector3 end_point = new Vector3 (1,-0.65f,1);
+	private Vector3 end_point = new Vector3 (1.7f,-1.13f,1);
 	private float time;
 	// Use this for initialization
 	void Start () {
-		point1 = gameObject.transform.position;
-//		gameObject.transform.position = point1.transform.position;
+		drawLine = GameObject.Find ("trailRendererStart").GetComponent<TrailRenderer> ();
+		cursor = gameObject.transform.position;
 		end_point = Vector3.Scale (point2.position, end_point);
-	
+		buttonClick.position = new Vector3(buttonClick.position.x,buttonClick.position.y,-5);
+		
 	}
 
 	IEnumerator wait(){
 		yield return new WaitForSeconds (1);
 		Debug.Log ("load");
-		transform.position = point1;
+		buttonClick.position = new Vector3(buttonClick.position.x,buttonClick.position.y,2);
+		yield return new WaitForSeconds (1);
+		transform.position = cursor;
+		buttonClick.position = new Vector3(buttonClick.position.x,buttonClick.position.y,-5);
+		drawLine.Clear ();
 	}
 	
 	// Update is called once per frame
