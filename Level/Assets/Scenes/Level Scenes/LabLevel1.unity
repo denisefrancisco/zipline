@@ -2193,7 +2193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   buttonClick: {fileID: 0}
-  drawLine: {fileID: 0}
+  playArrow: {fileID: 0}
   point2: {fileID: 0}
 --- !u!212 &456290621
 SpriteRenderer:
@@ -4720,7 +4720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   buttonClick: {fileID: 1594463869}
-  drawLine: {fileID: 0}
+  playArrow: {fileID: 43227975}
   point2: {fileID: 438721364}
 --- !u!1 &1636241939
 GameObject:
@@ -5179,6 +5179,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1655057398}
         m_MethodName: click_button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1613913360}
+        m_MethodName: playArrowOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

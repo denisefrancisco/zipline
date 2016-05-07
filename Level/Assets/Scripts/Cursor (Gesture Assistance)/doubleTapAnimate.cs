@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class cursor_animate : MonoBehaviour {
+public class doubleTapAnimate : MonoBehaviour {
 	#if UNITY_STANDALONE_OSX
 	public float speed;
 	private Vector3 cursor;
 	public Transform buttonClick;
 	private TrailRenderer drawLine;
-	public GameObject playArrow;
 	public Transform point2;
-	private Vector3 end_point = new Vector3 (1.7f,-1.13f,1);
+	private Vector3 end_point = new Vector3 (2.4f,0,1);
 	private float time;
 	// Use this for initialization
 	void Start () {
@@ -17,7 +16,7 @@ public class cursor_animate : MonoBehaviour {
 		cursor = gameObject.transform.position;
 		end_point = Vector3.Scale (point2.position, end_point);
 		buttonClick.position = new Vector3(buttonClick.position.x,buttonClick.position.y,-5);
-		
+
 	}
 
 	IEnumerator wait(){
@@ -30,10 +29,6 @@ public class cursor_animate : MonoBehaviour {
 		drawLine.Clear ();
 	}
 
-	public void playArrowOff() {
-		playArrow.SetActive (false);
-	}
-
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButton (0) == false) {
@@ -43,7 +38,6 @@ public class cursor_animate : MonoBehaviour {
 				transform.Translate (end_point * Time.deltaTime, Space.World);
 			}
 		} else {
-			playArrow.SetActive (true);
 			gameObject.SetActive (false);
 		}
 	}
