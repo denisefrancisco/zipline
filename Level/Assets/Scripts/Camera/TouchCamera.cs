@@ -3,7 +3,7 @@
 using UnityEngine;
 
 public class TouchCamera : MonoBehaviour {
-	Vector2?[] oldTouchPositions = {
+	Vector2[] oldTouchPositions = {
 		null,
 		null
 	};
