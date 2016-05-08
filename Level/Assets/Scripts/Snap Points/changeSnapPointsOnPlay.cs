@@ -5,10 +5,12 @@ public class changeSnapPointsOnPlay : MonoBehaviour {
 
 	private GameObject[] points;	// List of all snap points in the scene
 	private float newRadius = 0.22f;	// Smaller radius for snap point during play mode
+	public Sprite redSprite;	// Dark red snap point sprite reference
 
 	// For each snap point, change its radius if attached to a line, otherwise deactivate it
 	public void changeSnapPoints () {
 		foreach (GameObject p in points) {
+			p.GetComponent<SpriteRenderer> ().sprite = redSprite;
 			int count = p.GetComponent<snap_point> ().usedCounter;
 			CircleCollider2D col = p.GetComponent<CircleCollider2D> ();
 			// If snap point has been used as part of an existing line...
