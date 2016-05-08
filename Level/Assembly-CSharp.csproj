@@ -71,6 +71,9 @@
      <Compile Include="Assets\Scripts\Camera\up_scroll_camera.cs" />
      <Compile Include="Assets\Scripts\Cursor (Gesture Assistance)\cursor_animate.cs" />
      <Compile Include="Assets\Scripts\Cursor (Gesture Assistance)\doubleTapAnimate.cs" />
+     <Compile Include="Assets\Scripts\Hints\HintLevel2.cs" />
+     <Compile Include="Assets\Scripts\Hints\HintLevel3.cs" />
+     <Compile Include="Assets\Scripts\Hints\HintLevel4.cs" />
      <Compile Include="Assets\Scripts\Hints\HintLevel5.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />

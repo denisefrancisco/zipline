@@ -495,6 +495,7 @@ GameObject:
   - 82: {fileID: 93287381}
   - 114: {fileID: 93287380}
   - 114: {fileID: 93287379}
+  - 114: {fileID: 93287385}
   m_Layer: 5
   m_Name: HintButton
   m_TagString: SFX
@@ -667,8 +668,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 93287379}
-        m_MethodName: OptionsMenu
+      - m_Target: {fileID: 93287385}
+        m_MethodName: hint2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -713,6 +714,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 93287377}
+--- !u!114 &93287385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93287377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00b1d4dde499498bba8a5122336b2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenPt: {fileID: 21300004, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
 --- !u!1001 &93786409
 Prefab:
   m_ObjectHideFlags: 0
@@ -4506,6 +4519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cb12913e68e4584a849bbe415aded8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  redSprite: {fileID: 21300012, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
 --- !u!4 &1473287616
 Transform:
   m_ObjectHideFlags: 0
