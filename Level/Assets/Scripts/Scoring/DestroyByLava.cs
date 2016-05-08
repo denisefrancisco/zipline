@@ -21,6 +21,7 @@ public class DestroyByLava : MonoBehaviour {
 
 	public GameObject main_camera;
 	public GameObject play_camera;
+	public GameObject failure_music;
 
 	//end of block
 
@@ -46,13 +47,7 @@ public class DestroyByLava : MonoBehaviour {
 
 	}
 
-	//	void OnTriggerEnter2D(Collider2D other) {
-	//		Debug.Log ("TRIGGERED!");
-	//		Instantiate(explosion, transform.position, transform.rotation);
-	//		Destroy (gameObject);
-	//	}
 	void lose() {
-//		lose_panel.SetActive (true);	// Activate lose modal
 		setAvatar.setAvatarActive();
 		reset.ResetAvatar ();
 		main_camera.SetActive (true);
@@ -63,12 +58,15 @@ public class DestroyByLava : MonoBehaviour {
 		actions.EnableBuilding ();
 		resetFrames.resetFrameCounter ();
 		respawn.respawnAvatar ();
+		failure_music.SetActive (false);
 	}
 
 	IEnumerator wait() {
 		lavaSoundSource.PlayOneShot (lavaSound, 1);
 		destroyObject ();
 		yield return new WaitForSeconds (0.85f);
+		failure_music.SetActive (true);
+//		yield return new WaitForSeconds (0.85f);
 		lose ();
 	}
 
