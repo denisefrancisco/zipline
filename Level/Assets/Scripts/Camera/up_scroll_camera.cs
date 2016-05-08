@@ -27,9 +27,11 @@ public class up_scroll_camera : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.UpArrow) == true) {
-			current_pos = mainCamera.transform.position;
-			current_pos.y += 0.1f;
-			mainCamera.transform.position = current_pos;	
+			if (mainCamera.transform.position.y + 0.2f <= farUp.position.y) {
+				current_pos = mainCamera.transform.position;
+				current_pos.y += 0.1f;
+				mainCamera.transform.position = current_pos;
+			}
 		}
 	}
 
