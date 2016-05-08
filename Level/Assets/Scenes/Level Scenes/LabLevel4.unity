@@ -1571,7 +1571,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -7632,7 +7631,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -8005,7 +8003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb52b34faffb146d48d62b2b92901604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenPt: {fileID: 0}
+  greenPt: {fileID: 21300004, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
 --- !u!1 &1932642609
 GameObject:
   m_ObjectHideFlags: 0
