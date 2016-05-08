@@ -63,8 +63,6 @@
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadGirl.cs" />
      <Compile Include="Assets\Scripts\Avatar\removeBoxCollider.cs" />
      <Compile Include="Assets\Scripts\Button\enableDrawAndErase.cs" />
-     <Compile Include="Assets\Scripts\Button\enableLineDrawing.cs" />
-     <Compile Include="Assets\Scripts\Button\enableLineErasing.cs" />
      <Compile Include="Assets\Scripts\Button\enableRebuild.cs" />
      <Compile Include="Assets\Scripts\Camera\down_scroll_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\pan_level.cs" />
