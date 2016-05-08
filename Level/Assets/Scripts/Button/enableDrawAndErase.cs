@@ -12,34 +12,43 @@ public class enableDrawAndErase : MonoBehaviour {
 	public void EnableBuilding () {
 		canBuild = true;
 
+		// Enable drawing ability
 		drawingComponent.enabled = true;
 
+		// Enable erasing ability
 		lines = GameObject.FindGameObjectsWithTag ("Line");
 		foreach (GameObject line in lines) {
 			line.GetComponent<ErasePhysicsLine> ().enabled = true;
 		}
-		Debug.Log ("building enabled!");
+		Debug.Log ("building ENABLED!");
 	}
 
 	// Disables DrawPhysicsLine and ErasePhysicsLine scripts
 	public void DisableBuilding () {
 		canBuild = false;
 
+		// Disable drawing ability
 		drawingComponent.enabled = false;
 
+		// Disable erasing ability
 		lines = GameObject.FindGameObjectsWithTag ("Line");
 		foreach (GameObject line in lines) {
 			line.GetComponent<ErasePhysicsLine> ().enabled = false;
 		}
-		Debug.Log ("building disabled!");
+		Debug.Log ("building DISABLED!");
 	}
 
 	// Use this for initialization
 	void Start () {
-		drawingComponent = gameObject.GetComponent<DrawPhysicsLine> ();
-		// Initially give the player the ability to draw
+		// Initially give the player the ability to draw and erase
 		canBuild = true;
+		drawingComponent = gameObject.GetComponent<DrawPhysicsLine> ();
 		drawingComponent.enabled = true;
+		lines = GameObject.FindGameObjectsWithTag ("Line");
+		foreach (GameObject line in lines) {
+			line.GetComponent<ErasePhysicsLine> ().enabled = true;
+		}
+		Debug.Log ("STARTED ENABLE DRAW AND ERASE SCRIPT!");
 	}
 
 }
