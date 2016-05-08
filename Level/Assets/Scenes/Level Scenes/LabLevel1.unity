@@ -4247,7 +4247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playArrow: {fileID: 43227975}
-  tutorialText: {fileID: 0}
+  tutorialText: {fileID: 1140831841}
   buttonClick: {fileID: 384237827}
   point2: {fileID: 438721364}
 --- !u!1 &1582981707
