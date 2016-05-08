@@ -5,6 +5,7 @@ public class doubleTapAnimate : MonoBehaviour {
 	#if UNITY_STANDALONE_OSX
 	public Transform buttonClick;
 	public GameObject drawLine;
+	public GameObject tutorialText;
 
 	void Awake(){
 		StartCoroutine("SetGuard");
@@ -36,6 +37,7 @@ public class doubleTapAnimate : MonoBehaviour {
 		if (Input.GetMouseButton (0) == true) {
 			gameObject.SetActive (false);
 			drawLine.SetActive (false);
+			tutorialText.SetActive(false);
 		}
 
 	}
