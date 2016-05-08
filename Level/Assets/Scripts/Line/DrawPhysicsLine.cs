@@ -109,11 +109,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 		else if (Input.GetMouseButtonUp(0)) {
 			foreach (GameObject snappoint in points) {
 				if (snappoint.GetComponent<snap_point>().validLineEndPoint) {
-
-
-
 					endSnapPoint = snappoint;
-					Debug.Log ("moused up on " + endSnapPoint.name);
 				}
 			}
 
@@ -196,7 +192,7 @@ public class DrawPhysicsLine : MonoBehaviour {
 		 * we don't want to give the player the ability to erase lines yet
 		* (only available in Erase Mode activated by EraseButton) */
 		ErasePhysicsLine lineEraseScript = lineGO.AddComponent<ErasePhysicsLine>();
-		lineEraseScript.enabled = false;
+		//lineEraseScript.enabled = true;
 		lineGO.tag = "Line"; // Add the tag "Line" to the line GO
 
 		// Assign the material to the line

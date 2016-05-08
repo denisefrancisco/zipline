@@ -4,7 +4,7 @@ using System.Collections;
 
 public class SpriteSwapErase : MonoBehaviour {
 
-	private Button eraseButton;	// Button reference
+	/*private Button eraseButton;	// Button reference
 	private enableLineErasing enableErase; // EnableErasing script reference
 	private bool spriteSwap;	// Flag for swaping sprite
 	// References to light and dark versions of erase button sprite
@@ -22,12 +22,12 @@ public class SpriteSwapErase : MonoBehaviour {
 	void Update () {
 		/* If you can erase and haven't sprite swapped yet, set dark sprite
 		 * If you can't erase and have already swapped sprites,  set lite sprite */
-		if (enableErase.canErase && !spriteSwap) {
+		/*if (enableErase.canErase && !spriteSwap) {
 			eraseButton.image.overrideSprite = dark;
 			spriteSwap = true;
 		} else if (!enableErase.canErase && spriteSwap){
 			eraseButton.image.overrideSprite = lite;
 			spriteSwap = false;
 		}
-	}
+	}*/
 }

@@ -5,7 +5,7 @@ using System.Collections;
 public class enableLineDrawing : MonoBehaviour {
 
 	// Reference to the GO's DrawPhysicsLine script component
-	private DrawPhysicsLine drawingComponent;
+	/*private DrawPhysicsLine drawingComponent;
 	public bool canDraw;	// Flag player's ability to draw
 
 	// Enables DrawPhysicsLine script
@@ -28,6 +28,6 @@ public class enableLineDrawing : MonoBehaviour {
 		// Initially give the player the ability to draw
 		canDraw = true;
 		drawingComponent.enabled = true;
-	}
+	}*/
 
 }
