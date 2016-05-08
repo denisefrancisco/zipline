@@ -50,7 +50,7 @@ public class Failures : MonoBehaviour {
 				frameCounter++;	// Increment frame counter
 				/* When we've waited long enough (more than 100 frames) and neither
 				 modal has been activated yet, the player must be "stuck"*/
-				if (frameCounter > 125 && !win_panel.activeSelf && !lose_panel.activeSelf && !failed) {
+				if (frameCounter > 125 && !win_panel.activeSelf && !failed && avatar.activeSelf != false) {
 					failed = true; // Flag true (so we only do these functions once)
 					frameCounter = 0;	// Reset frame counter
 					avatar.SetActive (false);	// Deactivate avatar GO

@@ -64,9 +64,9 @@ public class DestroyByLava : MonoBehaviour {
 	IEnumerator wait() {
 		lavaSoundSource.PlayOneShot (lavaSound, 1);
 		destroyObject ();
-		yield return new WaitForSeconds (0.85f);
+		yield return new WaitForSeconds (0.75f);
 		failure_music.SetActive (true);
-//		yield return new WaitForSeconds (0.85f);
+		yield return new WaitForSeconds (0.85f);
 		lose ();
 	}
 
