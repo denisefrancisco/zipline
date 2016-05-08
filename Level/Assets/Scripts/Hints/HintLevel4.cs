@@ -3,13 +3,14 @@ using System.Collections;
 
 public class HintLevel4 : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	// All other snap point sprites (dark versions)
+	public Sprite greenPt;
+
+	// Swaps original red snap point sprite for hint-colored snap point sprite
+	public void hint4() {
+		GameObject.Find ("Point3").GetComponent<SpriteRenderer> ().sprite = greenPt;
+		GameObject.Find ("Point4").GetComponent<SpriteRenderer> ().sprite = greenPt;
+		GameObject.Find ("Point5").GetComponent<SpriteRenderer> ().sprite = greenPt;
+		GameObject.Find ("Point6").GetComponent<SpriteRenderer> ().sprite = greenPt;
 	}
 }

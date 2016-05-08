@@ -1682,7 +1682,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2456,7 +2456,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3748,7 +3748,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4868,6 +4868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cb12913e68e4584a849bbe415aded8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  redSprite: {fileID: 21300012, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
 --- !u!4 &1473287616
 Transform:
   m_ObjectHideFlags: 0
@@ -7715,6 +7716,7 @@ GameObject:
   - 82: {fileID: 1927240520}
   - 114: {fileID: 1927240519}
   - 114: {fileID: 1927240518}
+  - 114: {fileID: 1927240524}
   m_Layer: 5
   m_Name: HintButton
   m_TagString: SFX
@@ -7887,8 +7889,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1927240518}
-        m_MethodName: OptionsMenu
+      - m_Target: {fileID: 1927240524}
+        m_MethodName: hint4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7933,6 +7935,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1927240516}
+--- !u!114 &1927240524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927240516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb52b34faffb146d48d62b2b92901604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenPt: {fileID: 0}
 --- !u!1 &1932642609
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,7 +8049,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
