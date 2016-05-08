@@ -84,7 +84,6 @@
 -define:UNITY_TEAM_LICENSE
 -define:UNITY_PRO_LICENSE
 'Assets/Destroy_Saved_Data.cs'
-'Assets/DummyScript.cs'
 'Assets/Mobile Cartoon FX/Scripts/Rotatearound.cs'
 'Assets/Music/button_click.cs'
 'Assets/Music/failure_build.cs'
@@ -113,7 +112,7 @@
 'Assets/Scripts/Camera/start_camera.cs'
 'Assets/Scripts/Camera/up_scroll_camera.cs'
 'Assets/Scripts/Cursor (Gesture Assistance)/cursor_animate.cs'
-'Assets/Scripts/Cursor (Gesture Assistance)/tutorial_assistance_flow.cs'
+'Assets/Scripts/Cursor (Gesture Assistance)/doubleTapAnimate.cs'
 'Assets/Scripts/Line/DrawPhysicsLine.cs'
 'Assets/Scripts/Line/ErasePhysicsLine.cs'
 'Assets/Scripts/Music/MenuMusic.cs'

@@ -12,15 +12,20 @@ public class pan_level : MonoBehaviour {
 	private bool isDown = false;
 	public GameObject canvas;
 
+//	void Awake(){
+//		StartCoroutine ("SetGuard");
+//	}
+
 	// Use this for initialization
 	void Start () {
 //		GetComponent<Camera>().transform.position = lowerBoundary.position - new Vector3(0,0,0.2f);
 		initial_pos = gameObject.transform.position;
+		Camera.main.transform.position = new Vector3(lowerBoundary.position.x,lowerBoundary.position.y,-156.34f);
 		script = gameObject.GetComponent<pan_level>();
 		removeCanvas ();
 
 	}
-
+	//set all canvas buttons except the "Play Level Button", inactive.
 	void removeCanvas(){
 		foreach (Transform button in canvas.transform) {
 			if (button.name != "Play Level Button") {
@@ -29,6 +34,7 @@ public class pan_level : MonoBehaviour {
 		}
 	}
 
+	//set all canvas buttons except the "Play Level Button", inactive.
 	void applyCanvas(){
 		foreach (Transform button in canvas.transform) {
 			if (button.name != "Play Level Button" && button.name != "OptionsModal") {
@@ -39,15 +45,16 @@ public class pan_level : MonoBehaviour {
 		}
 	}
 
-	void panDown() {
-		current_pos = GetComponent<Camera> ().transform.position;
-		current_pos.y -= 0.05f;
-		GetComponent<Camera> ().transform.position = current_pos;
-	}
+//	void panDown() {
+//		current_pos = GetComponent<Camera> ().transform.position;
+//		current_pos.y -= 0.05f;
+//		GetComponent<Camera> ().transform.position = current_pos;
+//	}
 	//this wait feature is to hold the camera for 2 seconds at the top of the map, and then pan down
 	IEnumerator wait() {
-		yield return new WaitForSeconds (2);
-		panDown ();
+		yield return new WaitForSeconds (1);
+		panUp ();
+		yield return new WaitForSeconds (1);
 	}
 
 	public void DestroyPanLevel(){
@@ -64,14 +71,19 @@ public class pan_level : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (GetComponent<Camera> ().transform.position.y >= lowerBoundary.position.y && isDown == false) {
-			StartCoroutine (wait ());
-		} else if (GetComponent<Camera> ().transform.position.y <= upperBoundary.position.y) {
-			panUp();
-		} else {
+//		if (GetComponent<Camera> ().transform.position.y >= lowerBoundary.position.y && isDown == false) {
+//			StartCoroutine (wait ());
+//		} else 
+		if (GetComponent<Camera> ().transform.position.y >= upperBoundary.position.y) {
+//			panUp();
+//		} else {
+			StopAllCoroutines();
 			gameObject.transform.position = initial_pos;
 			applyCanvas ();
 			script.enabled = false;
+		} 
+		else {
+			StartCoroutine (wait());
 		}
 	
 	}

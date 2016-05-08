@@ -101,6 +101,7 @@
 'Assets/Scripts/Avatar/removeBoxCollider.cs'
 'Assets/Scripts/Button/SpriteSwapDraw.cs'
 'Assets/Scripts/Button/SpriteSwapErase.cs'
+'Assets/Scripts/Button/enableDrawAndErase.cs'
 'Assets/Scripts/Button/enableLineDrawing.cs'
 'Assets/Scripts/Button/enableLineErasing.cs'
 'Assets/Scripts/Button/enableRebuild.cs'
