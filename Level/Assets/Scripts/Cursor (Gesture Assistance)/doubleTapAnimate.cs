@@ -2,9 +2,16 @@
 using System.Collections;
 
 public class doubleTapAnimate : MonoBehaviour {
+	/* DESCRIPTION: This script is used for the purposes of having double tap animation used as a "tutorial"
+	 * during Level 2 (the erasing line action)
+	 * MODIFIED: May 8th, 2016
+	*/
 	#if UNITY_STANDALONE_OSX
+	//The buttonClick refers to the sprite that has the blue button left click
 	public Transform buttonClick;
+	//The drawLine gameObject refers to the line renderer that is used as a demo-zipline
 	public GameObject drawLine;
+	//The tutorialText refers to the text written above drawLine
 	public GameObject tutorialText;
 
 	void Awake(){
@@ -16,6 +23,7 @@ public class doubleTapAnimate : MonoBehaviour {
 		drawLine = GameObject.Find ("Quad");
 	}
 
+	//SetGuard is a special function which is used to loop the tutorial, animated gestures..
 	IEnumerator SetGuard() {
 		while (true)
 		{
@@ -34,6 +42,7 @@ public class doubleTapAnimate : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
+		//Once the player starts experiment with the UI, remove tutorial GameObjects
 		if (Input.GetMouseButton (0) == true) {
 			gameObject.SetActive (false);
 			drawLine.SetActive (false);
