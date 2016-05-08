@@ -11,6 +11,10 @@ public class cursor_animate : MonoBehaviour {
 	public Transform point2;
 	private Vector3 end_point = new Vector3 (1.7f,-1.13f,1);
 	private float time;
+
+	void Awake() {
+	}
+
 	// Use this for initialization
 	void Start () {
 		drawLine = GameObject.Find ("trailRendererStart").GetComponent<TrailRenderer> ();
