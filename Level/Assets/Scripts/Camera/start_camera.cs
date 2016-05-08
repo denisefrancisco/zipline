@@ -91,7 +91,6 @@ public class start_camera : MonoBehaviour {
 			brownBoy.SetActive (true);
 			avatar = brownBoy;
 		}
-		Debug.Log (avatar.name);
 
 	}
 	// Use this for initialization
