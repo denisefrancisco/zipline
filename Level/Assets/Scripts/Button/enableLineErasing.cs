@@ -4,7 +4,7 @@ using System.Collections;
 public class enableLineErasing : MonoBehaviour {
 
 	// Array of references to line GOs
-	public GameObject[] lines;
+	/*public GameObject[] lines;
 	public bool canErase;	// Flag player's ability to erase
 
 
@@ -26,6 +26,6 @@ public class enableLineErasing : MonoBehaviour {
 			line.GetComponent<ErasePhysicsLine> ().enabled = false;
 		}
 		Debug.Log ("erasing disabled!");
-	}
+	}*/
 
 }
