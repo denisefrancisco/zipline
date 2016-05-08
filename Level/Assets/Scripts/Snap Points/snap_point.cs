@@ -16,13 +16,14 @@ public class snap_point : MonoBehaviour {
 	 * currently attached to */
 	public int usedCounter;
 	private float initRadius = 0.625f;	// radius of 2D circle collider
-	private enableDrawAndErase enableBuilding; // Reference to building script
+	private enableLineDrawing enableDrawing; // Reference to drawing script
 
 	void OnMouseDown () { 
 		/* When a user mouses down on a snap point, that point becomes
 		 * a valid starting point for a new zip line segment */
-		if (enableBuilding.canBuild) {
+		if (enableDrawing.canDraw) {
 			gameObject.tag = "SelectedSnapPoint";
+			Debug.Log ("moused DOWN on snap point " + gameObject.name);
 			validLineStartPoint = true;
 		}
 	}
@@ -34,7 +35,7 @@ public class snap_point : MonoBehaviour {
 
 		/* When a user mouses over a snap point, that point becomes a
 		 * valid ending point for the latest drawn line segment */
-		if (enableBuilding.canBuild) {
+		if (enableDrawing.canDraw) {
 			validLineEndPoint = true;
 		}
 	}
@@ -45,7 +46,7 @@ public class snap_point : MonoBehaviour {
 
 		/* When a user mouse exits a snap point, that point becomes an
 		 * invalid ending point for the latest drawn line segment */
-		if (enableBuilding.canBuild) {
+		if (enableDrawing.canDraw) {
 			validLineEndPoint = false;
 		}
 	}
@@ -75,7 +76,7 @@ public class snap_point : MonoBehaviour {
 		validLineStartPoint = false;
 		validLineEndPoint = false;
 		usedCounter = 0;
-		enableBuilding = GameObject.Find("enableBuilding").GetComponent<enableDrawAndErase>(); 
+		enableDrawing = GameObject.Find("enableLineDrawing").GetComponent<enableLineDrawing>(); 
 	}
 	
 }
