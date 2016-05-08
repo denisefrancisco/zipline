@@ -8,23 +8,42 @@ using System.Collections;
  * line GOs are initially created) */
 public class ErasePhysicsLine : MonoBehaviour {
 
-	private enableLineErasing enableErasing; // Reference to erasing script
+	private enableDrawAndErase enableBuilding; // Reference to erasing script
 	public GameObject[] points;	// Array of snap point GOs that serve as vertices of line renderer
+	public int clickCounter;	//Counts number of clicks
+	public float delay = 1;		// Time between clicks of a double click
+	public float firstClickTime;	// Time of first click
 
-	void OnMouseDown () {			
-		// Decrement usedCounter for each snap point connected to this line
-		if (enableErasing.canErase && points.Length > 0) {
-			foreach (GameObject p in points) {
-				p.GetComponent<snap_point> ().usedCounter--;
-				p.GetComponent<CircleCollider2D>().radius = 0.625f; //reset snap point radius
+	void OnMouseDown () {		
+		// If we're in build mode...	
+		if (enableBuilding.canBuild) {
+			if (clickCounter == 0) {
+				// First click
+				clickCounter++;		// Increment counter
+				firstClickTime = Time.time;		// Save the current time
+			} else if (clickCounter == 1) {
+				// If second click occurs within the given delay time for a double click...
+				if ((Time.time - firstClickTime) <= delay) {
+					// Reset snap points attached to line
+					foreach (GameObject p in points) {
+						p.GetComponent<snap_point> ().usedCounter--;
+						p.GetComponent<CircleCollider2D> ().radius = 0.625f;
+					}
+					Destroy (gameObject);	// Then delete the line
+				} else {
+					clickCounter = 0; // We've passed the delay time
+					Debug.Log("passed delay time! reset click counter");
+				}
 			}
+		} else {
+			clickCounter = 0; // Reset clickCounter if not in build mode
 		}
-		// When line GO is clicked during Erase Mode, delete the line
-		Destroy (gameObject);
+
 	}
 
 	void Start() {
-		enableErasing = GameObject.Find("enableLineErasing").GetComponent<enableLineErasing>(); 
+		clickCounter = 0; 	// Initially we have no clicks
+		enableBuilding = GameObject.Find("enableBuilding").GetComponent<enableDrawAndErase>(); 
 	}
 				
 }
