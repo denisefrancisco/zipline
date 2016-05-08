@@ -48,6 +48,7 @@ public class DestroyByLava : MonoBehaviour {
 	}
 
 	void lose() {
+		failure_music.SetActive (false);
 		setAvatar.setAvatarActive();
 		reset.ResetAvatar ();
 		main_camera.SetActive (true);
@@ -58,7 +59,6 @@ public class DestroyByLava : MonoBehaviour {
 		actions.EnableBuilding ();
 		resetFrames.resetFrameCounter ();
 		respawn.respawnAvatar ();
-		failure_music.SetActive (false);
 	}
 
 	IEnumerator wait() {
