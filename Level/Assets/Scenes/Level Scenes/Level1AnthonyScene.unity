@@ -1332,6 +1332,9 @@ MonoBehaviour:
   explosion: {fileID: 100000, guid: 27cbfb4fffb99c147bb8ef81fc40f0f0, type: 2}
   explosionSound: {fileID: 8300000, guid: 5f5172a0f357d4d2d8731b3dc6bf44ae, type: 3}
   lose_panel: {fileID: 1467267571}
+  main_camera: {fileID: 1691744059}
+  play_camera: {fileID: 1379217725}
+  failure_music: {fileID: 1360498312}
 --- !u!82 &145000379
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6361,7 +6364,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 875522901}
   m_LocalRotation: {x: 0, y: 0, z: 0.2321993, w: -0.9726683}
-  m_LocalPosition: {x: -0.48395747, y: 0.29276666, z: 56.34375}
+  m_LocalPosition: {x: -0.48395747, y: 0.29276666, z: 60}
   m_LocalScale: {x: 0.09430344, y: 0.09430343, z: 0.09430343}
   m_Children: []
   m_Father: {fileID: 457724156}
@@ -9824,6 +9827,9 @@ MonoBehaviour:
   explosion: {fileID: 100000, guid: 27cbfb4fffb99c147bb8ef81fc40f0f0, type: 2}
   explosionSound: {fileID: 8300000, guid: 5f5172a0f357d4d2d8731b3dc6bf44ae, type: 3}
   lose_panel: {fileID: 1467267571}
+  main_camera: {fileID: 1691744059}
+  play_camera: {fileID: 1379217725}
+  failure_music: {fileID: 1360498312}
 --- !u!82 &1582981711
 AudioSource:
   m_ObjectHideFlags: 0

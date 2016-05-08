@@ -1177,6 +1177,9 @@ MonoBehaviour:
   explosion: {fileID: 100000, guid: 27cbfb4fffb99c147bb8ef81fc40f0f0, type: 2}
   explosionSound: {fileID: 8300000, guid: 5f5172a0f357d4d2d8731b3dc6bf44ae, type: 3}
   lose_panel: {fileID: 1467267571}
+  main_camera: {fileID: 1691744059}
+  play_camera: {fileID: 1379217725}
+  failure_music: {fileID: 1181180696}
 --- !u!82 &145000379
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5795,6 +5798,9 @@ MonoBehaviour:
   explosion: {fileID: 100000, guid: 27cbfb4fffb99c147bb8ef81fc40f0f0, type: 2}
   explosionSound: {fileID: 8300000, guid: 5f5172a0f357d4d2d8731b3dc6bf44ae, type: 3}
   lose_panel: {fileID: 1467267571}
+  main_camera: {fileID: 1691744059}
+  play_camera: {fileID: 1379217725}
+  failure_music: {fileID: 1181180696}
 --- !u!82 &1582981711
 AudioSource:
   m_ObjectHideFlags: 0
