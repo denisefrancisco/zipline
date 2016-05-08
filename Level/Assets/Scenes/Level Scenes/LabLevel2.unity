@@ -1648,7 +1648,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -6396,7 +6395,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -7084,7 +7082,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 484512, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 11492456, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
       propertyPath: origin
