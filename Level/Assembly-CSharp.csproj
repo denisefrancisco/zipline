@@ -62,8 +62,6 @@
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadBoy.cs" />
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadGirl.cs" />
      <Compile Include="Assets\Scripts\Avatar\removeBoxCollider.cs" />
-     <Compile Include="Assets\Scripts\Button\SpriteSwapDraw.cs" />
-     <Compile Include="Assets\Scripts\Button\SpriteSwapErase.cs" />
      <Compile Include="Assets\Scripts\Button\enableDrawAndErase.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineDrawing.cs" />
      <Compile Include="Assets\Scripts\Button\enableLineErasing.cs" />
