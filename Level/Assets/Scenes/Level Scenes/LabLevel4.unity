@@ -98,7 +98,6 @@ GameObject:
   - 114: {fileID: 23006263}
   - 114: {fileID: 23006267}
   - 82: {fileID: 23006266}
-  - 114: {fileID: 23006268}
   m_Layer: 0
   m_Name: Restart Level
   m_TagString: SFX
@@ -470,17 +469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 8300000, guid: 15c50ca956e3146e1bf978a3c1f1fc17, type: 3}
---- !u!114 &23006268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 23006261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0c2d6209ef54b9894173f35740d50a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &93287377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1559,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1827,7 +1816,6 @@ GameObject:
   - 114: {fileID: 538112835}
   - 114: {fileID: 538112834}
   - 82: {fileID: 538112833}
-  - 114: {fileID: 538112832}
   m_Layer: 0
   m_Name: Back To Level Button
   m_TagString: SFX
@@ -1852,17 +1840,6 @@ RectTransform:
   m_AnchoredPosition: {x: 225.59985, y: 189.90001}
   m_SizeDelta: {x: 147.6, y: 54.8}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &538112832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 538112830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0c2d6209ef54b9894173f35740d50a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &538112833
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6019,7 +5996,6 @@ GameObject:
   - 114: {fileID: 1682831160}
   - 114: {fileID: 1682831159}
   - 82: {fileID: 1682831158}
-  - 114: {fileID: 1682831157}
   m_Layer: 0
   m_Name: Play Level Button
   m_TagString: SFX
@@ -6044,17 +6020,6 @@ RectTransform:
   m_AnchoredPosition: {x: 23.99981, y: -192.7}
   m_SizeDelta: {x: 186, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1682831157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1682831155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0c2d6209ef54b9894173f35740d50a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1682831158
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7631,6 +7596,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -8004,6 +7970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenPt: {fileID: 21300004, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
+  bluePt: {fileID: 21300014, guid: 3738a5441889f4b52b565d7f9c12a5b5, type: 3}
 --- !u!1 &1932642609
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,6 +33,9 @@ public class DestroyByLava : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Avatar");
 
+		bc = player.GetComponent<EdgeCollider2D> ();
+		lavaSoundSource = gameObject.GetComponent<AudioSource> ();
+
 		setAvatar = GameObject.Find("Avatars").GetComponent<start_play_camera> ();
 		reset = GameObject.Find ("enableRebuild").GetComponent<enableRebuild> ();
 		snapPoints = GameObject.Find ("Snap Points").GetComponent<ApplySnapPoints> ();
@@ -41,10 +44,6 @@ public class DestroyByLava : MonoBehaviour {
 		resetFrames = play_camera.GetComponent<Failures> ();
 		respawn = main_camera.GetComponent<start_camera> ();
 		player_box = player.GetComponent<removeBoxCollider> ();
-
-		bc = player.GetComponent<EdgeCollider2D> ();
-		lavaSoundSource = gameObject.GetComponent<AudioSource> ();
-
 	}
 
 	void lose() {
