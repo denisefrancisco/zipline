@@ -98,7 +98,6 @@ GameObject:
   - 114: {fileID: 23006263}
   - 114: {fileID: 23006267}
   - 82: {fileID: 23006266}
-  - 114: {fileID: 23006268}
   m_Layer: 0
   m_Name: Restart Level
   m_TagString: SFX
@@ -470,17 +469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSound: {fileID: 8300000, guid: 15c50ca956e3146e1bf978a3c1f1fc17, type: 3}
---- !u!114 &23006268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 23006261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0c2d6209ef54b9894173f35740d50a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &93287377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,7 +2612,6 @@ GameObject:
   - 114: {fileID: 1023806071}
   - 114: {fileID: 1023806070}
   - 82: {fileID: 1023806069}
-  - 114: {fileID: 1023806068}
   m_Layer: 0
   m_Name: Back To Level Button
   m_TagString: SFX
@@ -2649,17 +2636,6 @@ RectTransform:
   m_AnchoredPosition: {x: 225.59985, y: 189.90001}
   m_SizeDelta: {x: 147.6, y: 54.8}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1023806068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1023806066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b0c2d6209ef54b9894173f35740d50a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1023806069
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5459,7 +5435,6 @@ GameObject:
   - 222: {fileID: 1705355386}
   - 114: {fileID: 1705355385}
   - 114: {fileID: 1705355384}
-  - 114: {fileID: 1705355383}
   - 114: {fileID: 1705355389}
   - 82: {fileID: 1705355388}
   - 114: {fileID: 1705355387}
@@ -5487,17 +5462,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.6, y: -93}
   m_SizeDelta: {x: 126, y: 46}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1705355383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1705355381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aee276021cd804dd1a0deb6d16bba223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1705355384
 MonoBehaviour:
   m_ObjectHideFlags: 0

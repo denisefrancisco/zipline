@@ -48,7 +48,6 @@ public class enableDrawAndErase : MonoBehaviour {
 		foreach (GameObject line in lines) {
 			line.GetComponent<ErasePhysicsLine> ().enabled = true;
 		}
-		Debug.Log ("STARTED ENABLE DRAW AND ERASE SCRIPT!");
 	}
 
 }
