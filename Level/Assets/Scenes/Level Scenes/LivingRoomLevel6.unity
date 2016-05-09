@@ -155,7 +155,7 @@ GameObject:
   - 58: {fileID: 13333561}
   - 114: {fileID: 13333560}
   m_Layer: 0
-  m_Name: Point6
+  m_Name: Point15
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,7 +202,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 4
+  m_RootOrder: 14
 --- !u!114 &13333560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   - 58: {fileID: 85603698}
   - 114: {fileID: 85603697}
   m_Layer: 0
-  m_Name: Point9
+  m_Name: Point8
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -756,7 +756,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!114 &85603697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1788,7 +1788,7 @@ GameObject:
   - 58: {fileID: 345792322}
   - 114: {fileID: 345792321}
   m_Layer: 0
-  m_Name: Point20
+  m_Name: Point11
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2048,6 +2048,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2086,7 +2087,7 @@ GameObject:
   - 58: {fileID: 382712959}
   - 114: {fileID: 382712958}
   m_Layer: 0
-  m_Name: Point4
+  m_Name: Point2
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2133,7 +2134,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!114 &382712958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2915,7 +2916,7 @@ GameObject:
   - 58: {fileID: 490389441}
   - 114: {fileID: 490389440}
   m_Layer: 0
-  m_Name: Point36
+  m_Name: Point22
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2990,7 +2991,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 17
+  m_RootOrder: 21
 --- !u!1 &498243968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3003,7 +3004,7 @@ GameObject:
   - 58: {fileID: 498243970}
   - 114: {fileID: 498243969}
   m_Layer: 0
-  m_Name: Point40
+  m_Name: Point18
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3078,7 +3079,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 19
+  m_RootOrder: 17
 --- !u!1 &524490568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3653,7 +3654,7 @@ GameObject:
   - 58: {fileID: 626361155}
   - 114: {fileID: 626361154}
   m_Layer: 0
-  m_Name: Point38
+  m_Name: Point20
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3799,7 +3800,7 @@ GameObject:
   - 58: {fileID: 636263035}
   - 114: {fileID: 636263034}
   m_Layer: 0
-  m_Name: Point10
+  m_Name: Point7
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3887,7 +3888,7 @@ GameObject:
   - 58: {fileID: 657193427}
   - 114: {fileID: 657193426}
   m_Layer: 0
-  m_Name: Point2
+  m_Name: Point5
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3934,7 +3935,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!114 &657193426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4203,7 +4204,7 @@ GameObject:
   - 58: {fileID: 707610000}
   - 114: {fileID: 707609999}
   m_Layer: 0
-  m_Name: Point48
+  m_Name: Point6
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4278,7 +4279,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 20
+  m_RootOrder: 5
 --- !u!1001 &724104798
 Prefab:
   m_ObjectHideFlags: 0
@@ -4518,7 +4519,7 @@ GameObject:
   - 58: {fileID: 800745478}
   - 114: {fileID: 800745477}
   m_Layer: 0
-  m_Name: Point18
+  m_Name: Point3
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4593,7 +4594,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 9
+  m_RootOrder: 2
 --- !u!1 &828544891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5050,7 +5051,7 @@ GameObject:
   - 58: {fileID: 987344173}
   - 114: {fileID: 987344172}
   m_Layer: 0
-  m_Name: Point26
+  m_Name: Point10
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5125,7 +5126,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 11
+  m_RootOrder: 9
 --- !u!1 &995401304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5201,7 +5202,7 @@ GameObject:
   - 58: {fileID: 1047971938}
   - 114: {fileID: 1047971937}
   m_Layer: 0
-  m_Name: Point1
+  m_Name: Point13
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5248,7 +5249,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 0
+  m_RootOrder: 12
 --- !u!114 &1047971937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6259,7 +6260,7 @@ GameObject:
   - 58: {fileID: 1362708927}
   - 114: {fileID: 1362708926}
   m_Layer: 0
-  m_Name: Point28 (1)
+  m_Name: Point9
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6276,7 +6277,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 21
+  m_RootOrder: 8
 --- !u!114 &1362708926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9584,7 +9585,7 @@ GameObject:
   - 58: {fileID: 1739023756}
   - 114: {fileID: 1739023755}
   m_Layer: 0
-  m_Name: Point29
+  m_Name: Point19
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9659,7 +9660,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 13
+  m_RootOrder: 19
 --- !u!61 &1760897297 stripped
 BoxCollider2D:
   m_PrefabParentObject: {fileID: 6152798, guid: 3accc55a5442f24448e13cb538bba3b1,
@@ -9906,7 +9907,7 @@ GameObject:
   - 58: {fileID: 1849634713}
   - 114: {fileID: 1849634712}
   m_Layer: 0
-  m_Name: Point31
+  m_Name: Point17
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9981,7 +9982,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!1 &1861927287
 GameObject:
   m_ObjectHideFlags: 0
@@ -10073,6 +10074,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -10155,7 +10157,7 @@ GameObject:
   - 58: {fileID: 1890732432}
   - 114: {fileID: 1890732431}
   m_Layer: 0
-  m_Name: Point16
+  m_Name: Point14
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10202,7 +10204,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 8
+  m_RootOrder: 13
 --- !u!114 &1890732431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10417,7 +10419,7 @@ GameObject:
   - 58: {fileID: 2082099369}
   - 114: {fileID: 2082099368}
   m_Layer: 0
-  m_Name: Point3
+  m_Name: Point1
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10464,7 +10466,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!114 &2082099368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10563,7 +10565,7 @@ GameObject:
   - 58: {fileID: 2111681181}
   - 114: {fileID: 2111681180}
   m_Layer: 0
-  m_Name: Point34
+  m_Name: Point21
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10638,7 +10640,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 16
+  m_RootOrder: 20
 --- !u!1 &2115230018
 GameObject:
   m_ObjectHideFlags: 0
@@ -10651,7 +10653,7 @@ GameObject:
   - 58: {fileID: 2115230022}
   - 114: {fileID: 2115230021}
   m_Layer: 0
-  m_Name: Point11
+  m_Name: Point4
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10698,7 +10700,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 7
+  m_RootOrder: 3
 --- !u!114 &2115230021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10764,28 +10766,28 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -156.344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1047971936}
-  - {fileID: 657193425}
   - {fileID: 2082099367}
   - {fileID: 382712957}
-  - {fileID: 13333559}
-  - {fileID: 85603696}
-  - {fileID: 636263033}
-  - {fileID: 2115230020}
-  - {fileID: 1890732430}
   - {fileID: 800745480}
-  - {fileID: 345792320}
+  - {fileID: 2115230020}
+  - {fileID: 657193425}
+  - {fileID: 707610002}
+  - {fileID: 636263033}
+  - {fileID: 85603696}
+  - {fileID: 1362708925}
   - {fileID: 987344175}
+  - {fileID: 345792320}
   - {fileID: 2146244955}
-  - {fileID: 1739023758}
+  - {fileID: 1047971936}
+  - {fileID: 1890732430}
+  - {fileID: 13333559}
   - {fileID: 2129007013}
   - {fileID: 1849634715}
+  - {fileID: 498243972}
+  - {fileID: 626361157}
+  - {fileID: 1739023758}
   - {fileID: 2111681183}
   - {fileID: 490389443}
-  - {fileID: 626361157}
-  - {fileID: 498243972}
-  - {fileID: 707610002}
-  - {fileID: 1362708925}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!1 &2121607250
@@ -11180,7 +11182,7 @@ GameObject:
   - 58: {fileID: 2129007011}
   - 114: {fileID: 2129007010}
   m_Layer: 0
-  m_Name: Point30
+  m_Name: Point16
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11255,7 +11257,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!1001 &2132293129
 Prefab:
   m_ObjectHideFlags: 0
@@ -11322,7 +11324,7 @@ GameObject:
   - 58: {fileID: 2146244953}
   - 114: {fileID: 2146244952}
   m_Layer: 0
-  m_Name: Point28
+  m_Name: Point12
   m_TagString: SnapPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11397,4 +11399,4 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2118022895}
-  m_RootOrder: 12
+  m_RootOrder: 11
