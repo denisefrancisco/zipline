@@ -6,7 +6,7 @@ public class doubleTapAnimate : MonoBehaviour {
 	 * during Level 2 (the erasing line action)
 	 * MODIFIED: May 8th, 2016
 	*/
-	#if UNITY_STANDALONE_OSX
+//	#if UNITY_STANDALONE_OSX
 	//The buttonClick refers to the sprite that has the blue button left click
 	public Transform buttonClick;
 	//The drawLine gameObject refers to the line renderer that is used as a demo-zipline
@@ -52,6 +52,6 @@ public class doubleTapAnimate : MonoBehaviour {
 	}
 
 
-	#endif
+//	#endif
 }
 
