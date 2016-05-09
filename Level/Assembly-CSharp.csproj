@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Hints\HintLevel3.cs" />
      <Compile Include="Assets\Scripts\Hints\HintLevel4.cs" />
      <Compile Include="Assets\Scripts\Hints\HintLevel5.cs" />
+     <Compile Include="Assets\Scripts\Hints\HintLevel6.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Music\MenuMusic.cs" />
