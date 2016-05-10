@@ -6549,6 +6549,9 @@ MonoBehaviour:
   win_panel: {fileID: 228594681}
   failed: 0
   frameCounter: 0
+  main_camera: {fileID: 1691744059}
+  play_camera: {fileID: 1379217725}
+  failure_music: {fileID: 180732886}
 --- !u!1 &1391535249
 GameObject:
   m_ObjectHideFlags: 0
@@ -8615,7 +8618,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1691744059}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0f6f27e7278f4a8682da02d51fbbfde, type: 3}
   m_Name: 

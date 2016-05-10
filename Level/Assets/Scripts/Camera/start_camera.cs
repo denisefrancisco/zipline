@@ -47,7 +47,6 @@ public class start_camera : MonoBehaviour {
 		avatar.transform.position = avatarPos;
 //		avatar.transform.rotation = avatarRot;
 	}
-
 	public void avatarInactive(){
 		GameObject.FindGameObjectWithTag ("Avatar").SetActive (false);
 	}

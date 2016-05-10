@@ -4680,6 +4680,9 @@ MonoBehaviour:
   win_panel: {fileID: 228594681}
   failed: 0
   frameCounter: 0
+  main_camera: {fileID: 1691744059}
+  play_camera: {fileID: 1379217725}
+  failure_music: {fileID: 1257544900}
 --- !u!1 &1398335941
 GameObject:
   m_ObjectHideFlags: 0

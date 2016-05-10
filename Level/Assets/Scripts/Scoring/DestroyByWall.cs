@@ -49,6 +49,7 @@ public class DestroyByWall : MonoBehaviour {
 		setAvatar.setAvatarActive();
 		reset.ResetAvatar ();
 		main_camera.SetActive (true);
+		respawn.returnCamera ();
 		play_camera.SetActive (false);
 		player_box.resetBoxCollider ();
 		snapPoints.applySnapPoint ();
