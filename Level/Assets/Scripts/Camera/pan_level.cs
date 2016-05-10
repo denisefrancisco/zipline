@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class pan_level : MonoBehaviour {
 
 	//panning the level, we need to use the upper and lower boundaries of the main camera.
 	public Transform upperBoundary;
 	public Transform lowerBoundary;
+	public GameObject playArrow;
+	public GameObject canvas;
+
 	private Vector3 current_pos;
 	private pan_level script;
 	private Vector3 initial_pos;
-	public GameObject canvas;
 
 	// Use this for initialization
 	void Start () {
@@ -37,9 +40,12 @@ public class pan_level : MonoBehaviour {
 				button.gameObject.SetActive (false);
 			}
 		}
+		if (SceneManager.GetActiveScene ().name == "LabLevel4") {
+			playArrow.SetActive (true);
+		}
 	}
 	//this wait feature is to hold the camera for 2 seconds at the top of the map, and then pan down
-	IEnumerator SetGuard() {
+	IEnumerator wait() {
 		yield return new WaitForSeconds (1);
 		panUp ();
 	}
@@ -64,7 +70,7 @@ public class pan_level : MonoBehaviour {
 			script.enabled = false;
 		} 
 		else {
-			StartCoroutine ("SetGuard");
+			StartCoroutine (wait());
 		}
 	
 	}

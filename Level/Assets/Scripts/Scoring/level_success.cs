@@ -41,7 +41,7 @@ public class level_success : MonoBehaviour {
 	IEnumerator wait(){
 		timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>();
 		timerScript.StopTimer ();
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (0.7f);
 		success_modal.SetActive(true);	// Activate success modal
 		timerScript.StopTimerWon();	// Stop timer and record time to calculate score
 
@@ -50,6 +50,14 @@ public class level_success : MonoBehaviour {
 		confetti1 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);
 		confetti2 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset1,success_modal.transform.rotation);
 		StopAllCoroutines();
+	}
+
+	IEnumerator play() {
+		yield return new WaitForSeconds(0.2f);
+		//Set rigid body to isKinematic to freeze avatar movement
+		rb.isKinematic = true;
+		avatar.SetActive(false);	// Deactivate avatar
+
 	}
 
 	// Update is called once per frame
@@ -63,10 +71,7 @@ public class level_success : MonoBehaviour {
 		if (bc.IsTouching(ec) && !succeeded) {
 			Debug.Log ("success!");
 			succeeded = true; // Flag true (so we only do these functions once)
-
-			//Set rigid body to isKinematic to freeze avatar movement
-			rb.isKinematic = true;
-			avatar.SetActive(false);	// Deactivate avatar
+			StartCoroutine(play());
 			StartCoroutine(wait());
 
 		}
