@@ -52,6 +52,14 @@ public class level_success : MonoBehaviour {
 		StopAllCoroutines();
 	}
 
+	IEnumerator play() {
+		yield return new WaitForSeconds(0.2f);
+		//Set rigid body to isKinematic to freeze avatar movement
+		rb.isKinematic = true;
+		avatar.SetActive(false);	// Deactivate avatar
+
+	}
+
 	// Update is called once per frame
 	void FixedUpdate () {
 		// Reset failed state when success modal is disabled
@@ -63,10 +71,7 @@ public class level_success : MonoBehaviour {
 		if (bc.IsTouching(ec) && !succeeded) {
 			Debug.Log ("success!");
 			succeeded = true; // Flag true (so we only do these functions once)
-
-			//Set rigid body to isKinematic to freeze avatar movement
-			rb.isKinematic = true;
-			avatar.SetActive(false);	// Deactivate avatar
+			StartCoroutine(play());
 			StartCoroutine(wait());
 
 		}
