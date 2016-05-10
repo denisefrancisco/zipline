@@ -38,6 +38,20 @@ public class level_success : MonoBehaviour {
 		offset1 = new Vector3(1,4,0);
 	}
 
+	IEnumerator wait(){
+		timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>();
+		timerScript.StopTimer ();
+		yield return new WaitForSeconds (1);
+		success_modal.SetActive(true);	// Activate success modal
+		timerScript.StopTimerWon();	// Stop timer and record time to calculate score
+
+
+		//instantiate confetti!
+		confetti1 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);
+		confetti2 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset1,success_modal.transform.rotation);
+		StopAllCoroutines();
+	}
+
 	// Update is called once per frame
 	void FixedUpdate () {
 		// Reset failed state when success modal is disabled
@@ -53,14 +67,8 @@ public class level_success : MonoBehaviour {
 			//Set rigid body to isKinematic to freeze avatar movement
 			rb.isKinematic = true;
 			avatar.SetActive(false);	// Deactivate avatar
-			success_modal.SetActive(true);	// Activate success modal
+			StartCoroutine(wait());
 
-			timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>();
-			timerScript.StopTimerWon();	// Stop timer and record time to calculate score
-
-			//instantiate confetti!
-			confetti1 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset, success_modal.transform.rotation);
-			confetti2 = (GameObject) Instantiate (confetti, success_modal.transform.position+offset1,success_modal.transform.rotation);
 		}
 	}
 

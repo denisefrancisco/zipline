@@ -5,7 +5,7 @@ public class cursor_animate : MonoBehaviour {
 	/*DESCRIPTION: This script is used for the click and drag tutorial, animated gesture. (creating a line action)
 	 * MODIFIED: May 7th, 2016
 	*/
-	#if UNITY_STANDALONE_OSX
+//	#if UNITY_STANDALONE_OSX
 	//The cursor gameobject refers to the big El Capitan cursor on the screen
 	private Vector3 cursor;
 	//The drawLine refers to the trail renderer component that acts as a demo zipline
@@ -72,6 +72,6 @@ public class cursor_animate : MonoBehaviour {
 		}
 	}
 
-	#endif
+//	#endif
 }
 
