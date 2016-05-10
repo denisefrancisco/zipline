@@ -34,13 +34,13 @@ public class start_camera : MonoBehaviour {
 	}
 
 	public void respawnAvatar() {
+		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		avatar = (GameObject) Instantiate(avatar,avatarPos,avatarRot);
 		Destroy (avatar);
 
 	}
 
 	public void respawnAvatarForButton(){
-//		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		avatar = (GameObject) Instantiate(avatar,avatarPos,avatarRot);
 		Destroy (avatar);
 		avatar = GameObject.FindGameObjectWithTag ("Avatar");
