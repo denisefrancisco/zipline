@@ -9,6 +9,8 @@ public class playZip_2 : MonoBehaviour {
 	// These indicate how far the camera will go width-wise to follow the avatar's movement
 	public Transform farLeft;
 	public Transform farRight;
+	public Transform farUp;
+	public Transform farDown;
 	// Reference to timer GO displaying zipline traversal time
 	public GameObject timer;
 	private bool startedTimer;	// Flag indicating when to start the timer
@@ -48,6 +50,7 @@ public class playZip_2 : MonoBehaviour {
 		newPosition.x = player.position.x;
 		newPosition.x = Mathf.Clamp (newPosition.x, farLeft.position.x, farRight.position.x);
 		newPosition.y = player.position.y;
+		newPosition.y = Mathf.Clamp(newPosition.y, farDown.position.y, farUp.position.y);
 		transform.position = newPosition;
 
 		timer.SetActive (true);	// Activate timer GO
