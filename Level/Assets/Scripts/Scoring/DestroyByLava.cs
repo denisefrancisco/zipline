@@ -76,6 +76,9 @@ public class DestroyByLava : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (Time.timeScale != 1f) {
+			Time.timeScale = 1f;
+		}
 		if (bc.IsTouching (gameObject.GetComponent<BoxCollider2D> ())) {
 			Debug.Log ("FELL INTO LAVA " + gameObject.name + " - You lose!");
 			// Stop timer
