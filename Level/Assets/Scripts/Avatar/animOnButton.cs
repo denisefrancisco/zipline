@@ -77,7 +77,7 @@ public class animOnButton : MonoBehaviour {
 				movement_sp = 1f;
 			}
 			if ((sceneName == "LivingRoomLevel5") | (sceneName == "LivingRoomLevel6")){
-				movement_sp = 1.45f;
+				movement_sp = 1.65f;
 			}
 			if (feet.IsTouching (origin)) { 	
 				Debug.Log("pushingforward");
