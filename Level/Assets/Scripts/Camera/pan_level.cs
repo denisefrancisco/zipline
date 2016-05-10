@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class pan_level : MonoBehaviour {
 
@@ -39,10 +40,12 @@ public class pan_level : MonoBehaviour {
 				button.gameObject.SetActive (false);
 			}
 		}
-		playArrow.SetActive (true);
+		if (SceneManager.GetActiveScene ().name == "LabLevel4") {
+			playArrow.SetActive (true);
+		}
 	}
 	//this wait feature is to hold the camera for 2 seconds at the top of the map, and then pan down
-	IEnumerator SetGuard() {
+	IEnumerator wait() {
 		yield return new WaitForSeconds (1);
 		panUp ();
 	}
@@ -67,7 +70,7 @@ public class pan_level : MonoBehaviour {
 			script.enabled = false;
 		} 
 		else {
-			StartCoroutine ("SetGuard");
+			StartCoroutine (wait());
 		}
 	
 	}
