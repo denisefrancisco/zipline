@@ -98,14 +98,11 @@ public class start_camera : MonoBehaviour {
 		avatar = GameObject.FindGameObjectWithTag ("Avatar");
 		avatarPos = avatar.transform.position;
 		avatarRot = avatar.transform.rotation;
-
 	}
 
 
 	
-	// Update is called once per frame
-	void Update () {
-
-	
+	// FixedUpdate is called consistently once per frame
+	void FixedUpdate () {
 	}
 }

@@ -44,6 +44,7 @@ public class DestroyByLava : MonoBehaviour {
 		resetFrames = play_camera.GetComponent<Failures> ();
 		respawn = main_camera.GetComponent<start_camera> ();
 		player_box = player.GetComponent<removeBoxCollider> ();
+		Time.timeScale = 0.75f;
 	}
 
 	void lose() {
@@ -76,8 +77,8 @@ public class DestroyByLava : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (Time.timeScale != 1f) {
-			Time.timeScale = 1f;
+		if (Time.timeScale != 0.75f) {
+			Time.timeScale = 0.75f;
 		}
 		if (bc.IsTouching (gameObject.GetComponent<BoxCollider2D> ())) {
 			Debug.Log ("FELL INTO LAVA " + gameObject.name + " - You lose!");
