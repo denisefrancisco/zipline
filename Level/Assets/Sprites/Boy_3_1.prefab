@@ -92,8 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc8de9f0d811141ed963dfed7b16ae1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avatar: {fileID: 189356}
-  anim: {fileID: 9537350}
+  facingRight: 0
+  origin: {fileID: 0}
 --- !u!212 &21269648
 SpriteRenderer:
   m_ObjectHideFlags: 1
