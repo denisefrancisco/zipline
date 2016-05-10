@@ -41,7 +41,7 @@ public class level_success : MonoBehaviour {
 	IEnumerator wait(){
 		timerScript = GameObject.FindGameObjectWithTag("Timer").GetComponent<myTimer>();
 		timerScript.StopTimer ();
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (0.7f);
 		success_modal.SetActive(true);	// Activate success modal
 		timerScript.StopTimerWon();	// Stop timer and record time to calculate score
 
