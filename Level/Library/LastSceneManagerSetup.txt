@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Menu Scenes/credits_page.unity
+- path: Assets/Scenes/Level Scenes/LivingRoomLevel5.unity
   isLoaded: 1
   isActive: 1
