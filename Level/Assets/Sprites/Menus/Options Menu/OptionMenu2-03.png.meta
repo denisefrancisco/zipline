@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: cf7b76ff17d404e3ea92a2877f14fdb8
+timeCreated: 1462949584
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: OptionMenu2-03_0
+    21300002: OptionMenu2-03_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: OptionMenu2-03_0
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1691
+        width: 298
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60.43451, y: 14.616577}
+        - {x: -71.43451, y: 1.6165771}
+        - {x: -71.43451, y: -32.383423}
+        - {x: -65.43451, y: -43.383423}
+        - {x: -18.43451, y: -43.383423}
+        - {x: -14.434509, y: -42.383423}
+        - {x: -6.4345093, y: -22.383423}
+        - {x: -6.4345093, y: -3.3834229}
+        - {x: -15.434509, y: 14.616577}
+      - - {x: 4.5654907, y: 14.616577}
+        - {x: -1.4345093, y: 13.616577}
+        - {x: -3.4345093, y: 12.616577}
+        - {x: -3.4345093, y: -42.383423}
+        - {x: 55.56549, y: -42.383423}
+        - {x: 55.56549, y: 4.616577}
+        - {x: 53.56549, y: 14.616577}
+    - name: OptionMenu2-03_1
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1691
+        width: 298
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.6154175, y: 14.616577}
+        - {x: -60.615417, y: 14.616577}
+        - {x: -71.61542, y: 8.616577}
+        - {x: -71.61542, y: -36.383423}
+        - {x: -66.61542, y: -43.383423}
+        - {x: -23.615417, y: -43.383423}
+        - {x: -6.6154175, y: -35.383423}
+        - {x: -6.6154175, y: 7.616577}
+      - - {x: 7.3845825, y: 44.616577}
+        - {x: -2.6154175, y: 38.616577}
+        - {x: -7.6154175, y: 14.616577}
+        - {x: -7.6154175, y: -21.383423}
+        - {x: -0.6154175, y: -42.383423}
+        - {x: 65.38458, y: -42.383423}
+        - {x: 72.38458, y: -18.383423}
+        - {x: 72.38458, y: 44.616577}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
