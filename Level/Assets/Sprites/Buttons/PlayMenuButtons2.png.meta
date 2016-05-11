@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: c5458538a545242dea2926433dfeea8d
+timeCreated: 1462924580
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PlayMenuButtons2_0
+    21300002: PlayMenuButtons2_1
+    21300004: PlayMenuButtons2_2
+    21300006: PlayMenuButtons2_3
+    21300008: PlayMenuButtons2_4
+    21300010: PlayMenuButtons2_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PlayMenuButtons2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1034
+        width: 2401
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 468.5, y: -70.7652}
+        - {x: 474.5, y: -68.7652}
+        - {x: 476.5, y: -65.7652}
+        - {x: 476.5, y: 68.2348}
+        - {x: 473.5, y: 71.2348}
+        - {x: 471.5, y: 71.2348}
+        - {x: 469.5, y: 72.2348}
+        - {x: -470.5, y: 72.2348}
+        - {x: -476.5, y: 69.2348}
+        - {x: -476.5, y: -66.7652}
+        - {x: -474.5, y: -68.7652}
+        - {x: -470.5, y: -69.7652}
+        - {x: -469.5, y: -70.7652}
+        - {x: -459.5, y: -71.7652}
+        - {x: 463.5, y: -71.7652}
+        - {x: 464.5, y: -70.7652}
+    - name: PlayMenuButtons2_1
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 1034
+        width: 2404
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 478.16956, y: 67.2348}
+        - {x: 477.16956, y: 69.2348}
+        - {x: 472.16956, y: 71.2348}
+        - {x: 466.16956, y: 72.2348}
+        - {x: -464.83044, y: 72.2348}
+        - {x: -470.83044, y: 71.2348}
+        - {x: -475.83044, y: 69.2348}
+        - {x: -476.83044, y: 67.2348}
+        - {x: -476.83044, y: -66.7652}
+        - {x: -475.83044, y: -68.7652}
+        - {x: -470.83044, y: -70.7652}
+        - {x: -466.83044, y: -71.7652}
+        - {x: 465.16956, y: -71.7652}
+        - {x: 472.16956, y: -70.7652}
+        - {x: 478.16956, y: -67.7652}
+    - name: PlayMenuButtons2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 493
+        width: 2401
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 471.5, y: -69.904495}
+        - {x: 476.5, y: -66.904495}
+        - {x: 476.5, y: 68.095505}
+        - {x: 473.5, y: 71.095505}
+        - {x: 471.5, y: 71.095505}
+        - {x: 467.5, y: 73.095505}
+        - {x: -468.5, y: 73.095505}
+        - {x: -469.5, y: 72.095505}
+        - {x: -474.5, y: 71.095505}
+        - {x: -476.5, y: 69.095505}
+        - {x: -476.5, y: -67.904495}
+        - {x: -473.5, y: -69.904495}
+        - {x: -470.5, y: -69.904495}
+        - {x: -466.5, y: -71.904495}
+        - {x: 465.5, y: -71.904495}
+        - {x: 466.5, y: -70.904495}
+    - name: PlayMenuButtons2_3
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 490
+        width: 2404
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 469.16956, y: -71.59473}
+        - {x: 478.16956, y: -67.59473}
+        - {x: 478.16956, y: 67.40527}
+        - {x: 477.16956, y: 69.40527}
+        - {x: 472.16956, y: 71.40527}
+        - {x: 469.16956, y: 72.40527}
+        - {x: 466.16956, y: 72.40527}
+        - {x: 465.16956, y: 73.40527}
+        - {x: -463.83044, y: 73.40527}
+        - {x: -464.83044, y: 72.40527}
+        - {x: -467.83044, y: 72.40527}
+        - {x: -468.83044, y: 71.40527}
+        - {x: -470.83044, y: 71.40527}
+        - {x: -475.83044, y: 69.40527}
+        - {x: -476.83044, y: 67.40527}
+        - {x: -476.83044, y: -66.59473}
+        - {x: -473.83044, y: -69.59473}
+        - {x: -471.83044, y: -69.59473}
+        - {x: -468.83044, y: -71.59473}
+        - {x: -456.83044, y: -72.59473}
+        - {x: 464.16956, y: -72.59473}
+        - {x: 465.16956, y: -71.59473}
+    - name: PlayMenuButtons2_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 4
+        width: 2404
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 474.05444, y: -69.91302}
+        - {x: 478.05444, y: -65.91302}
+        - {x: 478.05444, y: 67.08698}
+        - {x: 476.05444, y: 70.08698}
+        - {x: 471.05444, y: 72.08698}
+        - {x: 466.05444, y: 73.08698}
+        - {x: -460.94556, y: 73.08698}
+        - {x: -469.94556, y: 72.08698}
+        - {x: -474.94556, y: 70.08698}
+        - {x: -476.94556, y: 67.08698}
+        - {x: -476.94556, y: -65.91302}
+        - {x: -472.94556, y: -69.91302}
+        - {x: -469.94556, y: -69.91302}
+        - {x: -465.94556, y: -71.91302}
+        - {x: 467.05444, y: -71.91302}
+        - {x: 471.05444, y: -69.91302}
+    - name: PlayMenuButtons2_5
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 1
+        width: 2401
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 472.91418, y: -70.10326}
+        - {x: 476.91418, y: -67.10326}
+        - {x: 476.91418, y: 68.89674}
+        - {x: 475.91418, y: 69.89674}
+        - {x: 471.91418, y: 70.89674}
+        - {x: 470.91418, y: 71.89674}
+        - {x: 467.91418, y: 72.89674}
+        - {x: -467.08582, y: 72.89674}
+        - {x: -470.08582, y: 70.89674}
+        - {x: -474.08582, y: 69.89674}
+        - {x: -476.08582, y: 67.89674}
+        - {x: -476.08582, y: -68.10326}
+        - {x: -469.08582, y: -71.10326}
+        - {x: -459.08582, y: -72.10326}
+        - {x: 465.91418, y: -72.10326}
+        - {x: 466.91418, y: -71.10326}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

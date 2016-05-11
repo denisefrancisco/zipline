@@ -1,7 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Avatar/animOnButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MenuModal.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets/Scripts/Avatar/animOnButton.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Snap Points/ApplySnapPoints.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Snap Points/changeSnapPointsOnPlay.cs" Line="1" Column="1" />
@@ -12,6 +13,9 @@
       <File FileName="Assets/Scripts/Line/DrawPhysicsLine.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Cursor (Gesture Assistance)/cursor_animate.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Cursor (Gesture Assistance)/doubleTapAnimate.cs" Line="1" Column="1" />
+=======
+      <File FileName="Assets/Scripts/MenuModal.cs" Line="20" Column="1" />
+>>>>>>> master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

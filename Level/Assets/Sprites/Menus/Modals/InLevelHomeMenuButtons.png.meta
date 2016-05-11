@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 1bca571eced7b4aa3ab1644e332ba98b
+timeCreated: 1462943369
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ContinueWhite
+    21300002: LevelSelectWhite
+    21300004: MainWhite
+    21300006: ExitWhite
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ContinueWhite
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2137
+        width: 1825
+        height: 591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 684, y: -209.78638}
+        - {x: 684, y: -207.78638}
+        - {x: 685, y: -206.78638}
+        - {x: 685, y: 209.21362}
+        - {x: 683, y: 214.21362}
+        - {x: 676, y: 221.21362}
+        - {x: 673, y: 222.21362}
+        - {x: -673, y: 222.21362}
+        - {x: -676, y: 221.21362}
+        - {x: -683, y: 214.21362}
+        - {x: -685, y: 209.21362}
+        - {x: -685, y: -206.78638}
+        - {x: -684, y: -207.78638}
+        - {x: -684, y: -209.78638}
+        - {x: -678, y: -216.78638}
+        - {x: -675, y: -219.78638}
+        - {x: -670, y: -221.78638}
+        - {x: 670, y: -221.78638}
+        - {x: 675, y: -219.78638}
+        - {x: 681, y: -213.78638}
+        - {x: 681, y: -212.78638}
+    - name: LevelSelectWhite
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1407
+        width: 1825
+        height: 593
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 684, y: -207.78638}
+        - {x: 685, y: -206.78638}
+        - {x: 685, y: 208.21362}
+        - {x: 684, y: 209.21362}
+        - {x: 684, y: 211.21362}
+        - {x: 681, y: 215.21362}
+        - {x: 680, y: 217.21362}
+        - {x: 678, y: 217.21362}
+        - {x: 673, y: 222.21362}
+        - {x: 670, y: 223.21362}
+        - {x: -670, y: 223.21362}
+        - {x: -673, y: 222.21362}
+        - {x: -681, y: 215.21362}
+        - {x: -681, y: 214.21362}
+        - {x: -684, y: 211.21362}
+        - {x: -684, y: 209.21362}
+        - {x: -685, y: 208.21362}
+        - {x: -685, y: -206.78638}
+        - {x: -684, y: -207.78638}
+        - {x: -684, y: -209.78638}
+        - {x: -682, y: -211.78638}
+        - {x: -682, y: -212.78638}
+        - {x: -676, y: -219.78638}
+        - {x: -669, y: -222.78638}
+        - {x: 669, y: -222.78638}
+        - {x: 676, y: -219.78638}
+        - {x: 683, y: -211.78638}
+    - name: MainWhite
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 719
+        width: 1825
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 676, y: -218.25757}
+        - {x: 682, y: -212.25757}
+        - {x: 682, y: -211.25757}
+        - {x: 684, y: -210.25757}
+        - {x: 685, y: -207.25757}
+        - {x: 685, y: 208.74243}
+        - {x: 684, y: 209.74243}
+        - {x: 684, y: 211.74243}
+        - {x: 676, y: 220.74243}
+        - {x: 669, y: 223.74243}
+        - {x: -669, y: 223.74243}
+        - {x: -676, y: 220.74243}
+        - {x: -684, y: 211.74243}
+        - {x: -684, y: 209.74243}
+        - {x: -685, y: 208.74243}
+        - {x: -685, y: -207.25757}
+        - {x: -684, y: -210.25757}
+        - {x: -676, y: -218.25757}
+        - {x: -675, y: -218.25757}
+        - {x: -672, y: -221.25757}
+        - {x: -670, y: -221.25757}
+        - {x: -668, y: -222.25757}
+        - {x: 667, y: -222.25757}
+        - {x: 672, y: -221.25757}
+        - {x: 675, y: -218.25757}
+    - name: ExitWhite
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1825
+        height: 591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 685, y: 207}
+        - {x: 683, y: 212}
+        - {x: 676, y: 219}
+        - {x: 669, y: 222}
+        - {x: -669, y: 222}
+        - {x: -676, y: 219}
+        - {x: -683, y: 212}
+        - {x: -685, y: 207}
+        - {x: -685, y: -209}
+        - {x: -683, y: -214}
+        - {x: -679, y: -218}
+        - {x: -678, y: -218}
+        - {x: -673, y: -222}
+        - {x: 674, y: -222}
+        - {x: 681, y: -216}
+        - {x: 683, y: -214}
+        - {x: 685, y: -209}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
