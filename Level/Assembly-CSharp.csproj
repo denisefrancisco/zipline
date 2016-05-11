@@ -61,8 +61,8 @@
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadBoy.cs" />
      <Compile Include="Assets\Scripts\Avatar\gender pick intro\loadGirl.cs" />
      <Compile Include="Assets\Scripts\Avatar\removeBoxCollider.cs" />
-     <Compile Include="Assets\Scripts\Button\enableDrawAndErase.cs" />
-     <Compile Include="Assets\Scripts\Button\enableRebuild.cs" />
+     <Compile Include="Assets\Scripts\Buttons\enableDrawAndErase.cs" />
+     <Compile Include="Assets\Scripts\Buttons\enableRebuild.cs" />
      <Compile Include="Assets\Scripts\Camera\TouchCamera.cs" />
      <Compile Include="Assets\Scripts\Camera\down_scroll_camera.cs" />
      <Compile Include="Assets\Scripts\Camera\pan_level.cs" />
@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\Hints\HintLevel6.cs" />
      <Compile Include="Assets\Scripts\Line\DrawPhysicsLine.cs" />
      <Compile Include="Assets\Scripts\Line\ErasePhysicsLine.cs" />
+     <Compile Include="Assets\Scripts\MenuModal.cs" />
      <Compile Include="Assets\Scripts\Music\MenuMusic.cs" />
      <Compile Include="Assets\Scripts\Music\deactivateLevelMusic.cs" />
      <Compile Include="Assets\Scripts\Scoring\DestroyByLava.cs" />
