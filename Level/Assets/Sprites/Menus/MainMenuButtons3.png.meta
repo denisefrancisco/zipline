@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 8e8969747932143beb261bc5fd4a172a
+timeCreated: 1462925800
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MainMenuButtons3_0
+    21300002: MainMenuButtons3_1
+    21300004: MainMenuButtons3_2
+    21300006: MainMenuButtons3_3
+    21300008: MainMenuButtons3_4
+    21300010: MainMenuButtons3_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MainMenuButtons3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1463
+        width: 1828
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 486.5, y: -143.76001}
+        - {x: 486.5, y: 144.23999}
+        - {x: 483.5, y: 151.23999}
+        - {x: 476.5, y: 158.23999}
+        - {x: -478.5, y: 158.23999}
+        - {x: -483.5, y: 153.23999}
+        - {x: -485.5, y: 152.23999}
+        - {x: -486.5, y: 149.23999}
+        - {x: -486.5, y: -148.76001}
+        - {x: -481.5, y: -155.76001}
+        - {x: -476.5, y: -157.76001}
+        - {x: 474.5, y: -157.76001}
+        - {x: 479.5, y: -155.76001}
+        - {x: 481.5, y: -152.76001}
+        - {x: 483.5, y: -150.76001}
+    - name: MainMenuButtons3_1
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 1467
+        width: 1828
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 487.09888, y: 149.86774}
+        - {x: 486.09888, y: 150.86774}
+        - {x: 486.09888, y: 151.86774}
+        - {x: 481.09888, y: 157.86774}
+        - {x: -477.90112, y: 157.86774}
+        - {x: -480.90112, y: 153.86774}
+        - {x: -480.90112, y: 152.86774}
+        - {x: -483.90112, y: 149.86774}
+        - {x: -483.90112, y: 147.86774}
+        - {x: -485.90112, y: 145.86774}
+        - {x: -485.90112, y: -143.13226}
+        - {x: -482.90112, y: -150.13226}
+        - {x: -476.90112, y: -156.13226}
+        - {x: -473.90112, y: -157.13226}
+        - {x: 478.09888, y: -157.13226}
+        - {x: 487.09888, y: -149.13226}
+    - name: MainMenuButtons3_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 734
+        width: 1828
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 486.5, y: -143.55014}
+        - {x: 486.5, y: 144.44986}
+        - {x: 483.5, y: 151.44986}
+        - {x: 480.5, y: 154.44986}
+        - {x: 479.5, y: 156.44986}
+        - {x: 474.5, y: 158.44986}
+        - {x: -477.5, y: 158.44986}
+        - {x: -482.5, y: 154.44986}
+        - {x: -482.5, y: 153.44986}
+        - {x: -486.5, y: 150.44986}
+        - {x: -486.5, y: -149.55014}
+        - {x: -483.5, y: -152.55014}
+        - {x: -482.5, y: -152.55014}
+        - {x: -480.5, y: -156.55014}
+        - {x: -477.5, y: -157.55014}
+        - {x: 476.5, y: -157.55014}
+        - {x: 484.5, y: -148.55014}
+        - {x: 484.5, y: -146.55014}
+    - name: MainMenuButtons3_3
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 738
+        width: 1828
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 487.09888, y: 149.57764}
+        - {x: 486.09888, y: 152.57764}
+        - {x: 481.09888, y: 157.57764}
+        - {x: 478.09888, y: 158.57764}
+        - {x: -473.90112, y: 158.57764}
+        - {x: -474.90112, y: 157.57764}
+        - {x: -476.90112, y: 157.57764}
+        - {x: -481.90112, y: 153.57764}
+        - {x: -483.90112, y: 148.57764}
+        - {x: -485.90112, y: 145.57764}
+        - {x: -485.90112, y: -143.42236}
+        - {x: -482.90112, y: -150.42236}
+        - {x: -476.90112, y: -156.42236}
+        - {x: -473.90112, y: -157.42236}
+        - {x: 477.09888, y: -157.42236}
+        - {x: 480.09888, y: -156.42236}
+        - {x: 486.09888, y: -151.42236}
+        - {x: 487.09888, y: -148.42236}
+    - name: MainMenuButtons3_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1828
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 486.5, y: -144.5}
+        - {x: 486.5, y: 143.5}
+        - {x: 483.5, y: 150.5}
+        - {x: 477.5, y: 156.5}
+        - {x: 474.5, y: 157.5}
+        - {x: -477.5, y: 157.5}
+        - {x: -486.5, y: 149.5}
+        - {x: -486.5, y: -149.5}
+        - {x: -483.5, y: -153.5}
+        - {x: -482.5, y: -153.5}
+        - {x: -480.5, y: -157.5}
+        - {x: 477.5, y: -157.5}
+        - {x: 480.5, y: -154.5}
+        - {x: 480.5, y: -153.5}
+        - {x: 483.5, y: -151.5}
+    - name: MainMenuButtons3_5
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 3
+        width: 1828
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 487.09888, y: 149.59584}
+        - {x: 486.09888, y: 152.59584}
+        - {x: 481.09888, y: 157.59584}
+        - {x: 478.09888, y: 158.59584}
+        - {x: -474.90112, y: 158.59584}
+        - {x: -480.90112, y: 153.59584}
+        - {x: -482.90112, y: 151.59584}
+        - {x: -485.90112, y: 144.59584}
+        - {x: -485.90112, y: -143.40416}
+        - {x: -482.90112, y: -150.40416}
+        - {x: -476.90112, y: -156.40416}
+        - {x: -473.90112, y: -157.40416}
+        - {x: 478.09888, y: -157.40416}
+        - {x: 487.09888, y: -149.40416}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

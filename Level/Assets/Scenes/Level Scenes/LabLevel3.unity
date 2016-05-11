@@ -657,9 +657,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300022, guid: b14624c2a32e74341be17f0d384cff34,
+    m_HighlightedSprite: {fileID: 21300022, guid: 7012010b4c0114bc2a9020452c864454,
       type: 3}
-    m_PressedSprite: {fileID: 21300022, guid: b14624c2a32e74341be17f0d384cff34, type: 3}
+    m_PressedSprite: {fileID: 21300022, guid: 7012010b4c0114bc2a9020452c864454, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -714,7 +714,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300020, guid: b14624c2a32e74341be17f0d384cff34, type: 3}
+  m_Sprite: {fileID: 21300020, guid: 7012010b4c0114bc2a9020452c864454, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -737,7 +737,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 411274, guid: 204f39003c72e4da5a3e7d56987f4cb3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.04
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 411274, guid: 204f39003c72e4da5a3e7d56987f4cb3, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1862,9 +1862,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 9ce8f57792cdc4764bae2b8e06d63f03,
+    m_HighlightedSprite: {fileID: 21300000, guid: a962f5127533a4fd28b81695f7edd960,
       type: 3}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: a962f5127533a4fd28b81695f7edd960, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -2106,7 +2106,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300002, guid: 9ce8f57792cdc4764bae2b8e06d63f03, type: 3}
+  m_Sprite: {fileID: 21300002, guid: a962f5127533a4fd28b81695f7edd960, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2935,7 +2935,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 475960, guid: 3c65f2831715e4fd8bd92861f3b0936e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.04
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 475960, guid: 3c65f2831715e4fd8bd92861f3b0936e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3022,7 +3022,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 448896, guid: a4c1a960ca8704f3e9452ce40e59b961, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.04
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 448896, guid: a4c1a960ca8704f3e9452ce40e59b961, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3104,7 +3104,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 484512, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.04
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 484512, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4722,6 +4722,9 @@ MonoBehaviour:
   win_panel: {fileID: 228594681}
   failed: 0
   frameCounter: 0
+  main_camera: {fileID: 1691744059}
+  play_camera: {fileID: 1379217725}
+  failure_music: {fileID: 1181180696}
 --- !u!1 &1420198618
 GameObject:
   m_ObjectHideFlags: 0
@@ -6192,9 +6195,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300002, guid: b14624c2a32e74341be17f0d384cff34,
+    m_HighlightedSprite: {fileID: 21300002, guid: 7012010b4c0114bc2a9020452c864454,
       type: 3}
-    m_PressedSprite: {fileID: 21300002, guid: b14624c2a32e74341be17f0d384cff34, type: 3}
+    m_PressedSprite: {fileID: 21300002, guid: 7012010b4c0114bc2a9020452c864454, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -6348,7 +6351,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b14624c2a32e74341be17f0d384cff34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7012010b4c0114bc2a9020452c864454, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6638,7 +6641,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 423008, guid: 81aca084986ea430980a3586994e026c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.04
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 423008, guid: 81aca084986ea430980a3586994e026c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6974,7 +6977,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 445232, guid: a7c9f5fa7e9da44daaee7c8bfae64182, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.04
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 445232, guid: a7c9f5fa7e9da44daaee7c8bfae64182, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7741,9 +7744,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300014, guid: b14624c2a32e74341be17f0d384cff34,
+    m_HighlightedSprite: {fileID: 21300014, guid: 7012010b4c0114bc2a9020452c864454,
       type: 3}
-    m_PressedSprite: {fileID: 21300014, guid: b14624c2a32e74341be17f0d384cff34, type: 3}
+    m_PressedSprite: {fileID: 21300014, guid: 7012010b4c0114bc2a9020452c864454, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -7798,7 +7801,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300012, guid: b14624c2a32e74341be17f0d384cff34, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 7012010b4c0114bc2a9020452c864454, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8622,7 +8625,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 484512, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.76
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 484512, guid: 7b470a16902dd4ff6845241c34137ff5, type: 2}
       propertyPath: m_LocalPosition.y

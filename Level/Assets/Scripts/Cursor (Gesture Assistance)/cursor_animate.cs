@@ -21,7 +21,10 @@ public class cursor_animate : MonoBehaviour {
 	public Transform buttonClick;
 	//point 2 refers to the second snap point on the game screen (Scene: LabLevel1)
 	public Transform point2;
-
+	//Door Arrow refers to the animating red arrow on top of the door
+	public GameObject doorArrow;
+	//Escape Text above the door arrow
+	public GameObject escapeText;
 
 	void Awake() {
 		StartCoroutine ("SetGuard");
@@ -63,6 +66,8 @@ public class cursor_animate : MonoBehaviour {
 			playArrow.SetActive (true);
 			gameObject.SetActive (false);
 			tutorialText.SetActive(false);
+			doorArrow.SetActive (false);
+			escapeText.SetActive (false);
 		}
 		else
 		{
