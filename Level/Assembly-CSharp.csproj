@@ -45,10 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Destroy_Saved_Data.cs" />
      <Compile Include="Assets\Mobile Cartoon FX\Scripts\Rotatearound.cs" />
      <Compile Include="Assets\Music\button_click.cs" />
      <Compile Include="Assets\Music\failure_build.cs" />
+     <Compile Include="Assets\Scenes\Menu Scenes\Cutscene Video\PlayCutscene.cs" />
      <Compile Include="Assets\Scripts\Avatar\animOnButton.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\SelectedPlayer.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\boy\boy_button_disappear.cs" />
@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\Camera\up_scroll_camera.cs" />
      <Compile Include="Assets\Scripts\Cursor (Gesture Assistance)\cursor_animate.cs" />
      <Compile Include="Assets\Scripts\Cursor (Gesture Assistance)\doubleTapAnimate.cs" />
+     <Compile Include="Assets\Scripts\Destroy_Saved_Data.cs" />
      <Compile Include="Assets\Scripts\Hints\HintLevel2.cs" />
      <Compile Include="Assets\Scripts\Hints\HintLevel3.cs" />
      <Compile Include="Assets\Scripts\Hints\HintLevel4.cs" />
@@ -97,6 +98,9 @@
      <Compile Include="Assets\Scripts\Transition Scenes\exit_game.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\menu_play_button.cs" />
      <Compile Include="Assets\Scripts\Transition Scenes\save_scene_number.cs" />
+     <Compile Include="Assets\Scripts\backButtonOn.cs" />
+     <Compile Include="Assets\Scripts\start_map_camera.cs" />
+     <Compile Include="Assets\Scripts\start_play_camera.cs" />
      <Compile Include="Assets\Toon_fire\scripts\demo_scene_control.cs" />
      <Compile Include="Assets\Toon_fire\scripts\fire_wiggle.cs" />
      <Compile Include="Assets\Toon_fire\scripts\flickering.cs" />
@@ -107,14 +111,11 @@
      <Compile Include="Assets\Zippy Water 2D\Scripts\ZippyWater2DBeachBall.cs" />
      <Compile Include="Assets\Zippy Water 2D\Scripts\ZippyWater2DCenterOfMass.cs" />
      <Compile Include="Assets\Zippy Water 2D\Scripts\ZippyWater2DCollider.cs" />
-     <Compile Include="Assets\backButtonOn.cs" />
-     <Compile Include="Assets\start_map_camera.cs" />
-     <Compile Include="Assets\start_play_camera.cs" />
      <None Include="Assets\Zippy Water 2D\Shaders\ZippyWater2DMobile.shader" />
      <None Include="Assets\Zippy Water 2D\Scripts\Demo Scripts\_Demo scripts can be deleted.txt" />
      <None Include="Assets\Confetti Particles 2\Confetti 2 - Readme.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/Elli/Desktop/ZipLines/zipline/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Users/DeniseFrancisco/Documents/Senior Year/Game Design/zipline_unity/zipline/Level/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
