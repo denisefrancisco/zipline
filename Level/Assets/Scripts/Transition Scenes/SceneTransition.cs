@@ -11,13 +11,14 @@ public class SceneTransition : MonoBehaviour {
 	private string previousScene;
 	private string saved;
 
-
-	void Start(){
-	}
-
-	//load cutscene
+	// Load cutscene
 	public void cutscene(){
 		SceneManager.LoadScene("cutscene");
+	}
+
+	// Load credits page
+	public void CreditsPage() {
+		SceneManager.LoadScene ("credits_page");
 	}
 
 	// Load main menu scene
