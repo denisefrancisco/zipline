@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayCutscene : MonoBehaviour {
 
 	public MovieTexture movie;
+	public GameObject backgroundMusic;
 	private AudioSource audio;
 
 	// Use this for initialization
@@ -22,17 +23,20 @@ public class PlayCutscene : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-//		if (Input.GetKeyDown (KeyCode.Space) && movie.isPlaying) 
-//		{
-//			movie.Pause ();
-//		}
+		if (GameObject.Find ("Music for Menu Scenes") != null) {
+			GameObject.Find ("Music for Menu Scenes").SetActive (false);
+		}
+		if (Input.GetMouseButtonDown(0) == true) 
+		{
+			SceneManager.LoadScene ("options_menu");
+		}
 //		else if (Input.GetKeyDown (KeyCode.Space) && !movie.isPlaying) 
 //		{
 //			movie.Play ();
 //		}
 		if (!movie.isPlaying)
 		{
-			SceneManager.LoadScene ("start_menu");
+			SceneManager.LoadScene ("options_menu");
 		}
 	}
 }

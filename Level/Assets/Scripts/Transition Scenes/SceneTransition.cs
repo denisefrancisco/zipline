@@ -15,6 +15,11 @@ public class SceneTransition : MonoBehaviour {
 	void Start(){
 	}
 
+	//load cutscene
+	public void cutscene(){
+		SceneManager.LoadScene("cutscene");
+	}
+
 	// Load main menu scene
 	public void MainMenu() {
 		SceneManager.LoadScene ("start_menu");
