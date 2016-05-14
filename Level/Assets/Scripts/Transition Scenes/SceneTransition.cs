@@ -87,6 +87,16 @@ public class SceneTransition : MonoBehaviour {
 	public void LivingRoom6() {
 		SceneManager.LoadScene ("LivingRoomLevel6");
 	}
+
+	//loading girl character customization
+	public void girlCustomize() {
+		SceneManager.LoadScene("zipline_avatar_customization");
+	}
+
+	//loading boy character customization
+	public void boyCustomize(){
+		SceneManager.LoadScene("male_character_customization");
+	}
 		
 	// Quit game
 	public void quitGame() {

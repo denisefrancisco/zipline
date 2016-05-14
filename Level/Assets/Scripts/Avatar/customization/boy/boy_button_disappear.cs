@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class boy_button_disappear : MonoBehaviour {
-
+	/*DESCRIPTION: This script is used for hiding the specific arrows when at the end of the "clothes' list"
+	 * MODIFIED: May 2nd, 2016
+	*/
 	public GameObject left_button;
 	public GameObject right_button;
 	private GameObject character;
@@ -21,7 +23,10 @@ public class boy_button_disappear : MonoBehaviour {
 		x2 = right_button.transform.position.x;
 		y2 = right_button.transform.position.y;
 	}
-
+	/*remove button hides the left arrow when the player is at the start of the clothes list,
+	 * hides the right arrows when the player is at the end of the clothes list,
+	 * and both arrows shown when in middle of list
+	*/
 	public void remove_button(){
 		if (script.index == 0) {
 			left_button.transform.position = new Vector3 (x1, y1, 10000);

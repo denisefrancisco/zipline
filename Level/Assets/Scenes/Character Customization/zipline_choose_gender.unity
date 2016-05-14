@@ -248,9 +248,9 @@ GameObject:
   - 114: {fileID: 385070286}
   - 114: {fileID: 385070285}
   - 95: {fileID: 385070284}
-  - 114: {fileID: 385070288}
   - 82: {fileID: 385070290}
   - 114: {fileID: 385070289}
+  - 114: {fileID: 385070288}
   m_Layer: 5
   m_Name: female
   m_TagString: SFX
@@ -331,8 +331,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 385070288}
-        m_MethodName: StartGame
+      - m_Target: {fileID: 385070289}
+        m_MethodName: click_button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -342,8 +342,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 385070289}
-        m_MethodName: click_button
+      - m_Target: {fileID: 385070288}
+        m_MethodName: girlCustomize
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 385070282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 882ce505af6314df5b4679ac485039db, type: 3}
+  m_Script: {fileID: 11500000, guid: eb1b4e86ec55e40349866f0bf2473a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &385070289
@@ -622,7 +622,6 @@ GameObject:
   - 114: {fileID: 1229614977}
   - 114: {fileID: 1229614976}
   - 95: {fileID: 1229614979}
-  - 114: {fileID: 1229614980}
   m_Layer: 5
   m_Name: male
   m_TagString: Untagged
@@ -686,8 +685,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1229614980}
-        m_MethodName: StartGame
+      - m_Target: {fileID: 385070289}
+        m_MethodName: click_button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -697,8 +696,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 385070289}
-        m_MethodName: click_button
+      - m_Target: {fileID: 385070288}
+        m_MethodName: boyCustomize
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -760,17 +759,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1229614980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1229614974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a6c90b9c324345c694a183f995cf1de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1886242418
 GameObject:
   m_ObjectHideFlags: 0
