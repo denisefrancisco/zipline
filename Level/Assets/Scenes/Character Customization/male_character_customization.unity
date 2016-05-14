@@ -227,8 +227,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1671013485}
-        m_MethodName: previous_clothing
+      - m_Target: {fileID: 1671013487}
+        m_MethodName: next_clothing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -238,8 +238,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1671013486}
-        m_MethodName: remove_button
+      - m_Target: {fileID: 1671013488}
+        m_MethodName: previous_clothing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1271,6 +1271,9 @@ GameObject:
   - 114: {fileID: 1671013484}
   - 114: {fileID: 1671013485}
   - 114: {fileID: 1671013486}
+  - 114: {fileID: 1671013487}
+  - 114: {fileID: 1671013488}
+  - 114: {fileID: 1671013489}
   m_Layer: 0
   m_Name: Boy
   m_TagString: Untagged
@@ -1329,7 +1332,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1671013481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c1296270e004428b32345a3d72e362, type: 3}
   m_Name: 
@@ -1343,7 +1346,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1671013481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed00f6580f82f4e6b9b413bd5e16ae25, type: 3}
   m_Name: 
@@ -1356,9 +1359,48 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1671013481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0eaacb66243e44a53a2e75ee5911fe52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left_button: {fileID: 338856812}
+  right_button: {fileID: 1931168138}
+--- !u!114 &1671013487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671013481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb509af2532e64b2dba548673222a42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothes: []
+  index: 0
+  lButton: {fileID: 338856812}
+--- !u!114 &1671013488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671013481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f981cc056630745bca2ad635aa2f71d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chosen_clothing: 
+--- !u!114 &1671013489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671013481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e04d3a9bd6d64b7c9e131dcdf913f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   left_button: {fileID: 338856812}
@@ -1497,7 +1539,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1671013484}
+      - m_Target: {fileID: 1671013487}
         m_MethodName: next_clothing
         m_Mode: 1
         m_Arguments:
@@ -1508,8 +1550,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1671013486}
-        m_MethodName: remove_button
+      - m_Target: {fileID: 1671013488}
+        m_MethodName: previous_clothing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

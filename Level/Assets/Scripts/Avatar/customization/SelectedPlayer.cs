@@ -3,8 +3,8 @@ using System.Collections;
 
 public class SelectedPlayer : MonoBehaviour {
 
-	private left_button_customize left_button;
-	private right_button_customize right_button;
+	private button2_for_customizing left_button;
+	private button_for_customizing right_button;
 	private button2_for_customizing left_button_girl;
 	private button_for_customizing right_button_girl;
 	public string chosen_outfit;
@@ -22,7 +22,7 @@ public class SelectedPlayer : MonoBehaviour {
 			avatar = GameObject.Find ("girl");
 			left_button_girl = avatar.GetComponent<button2_for_customizing> ();
 		} else {
-			left_button = avatar.GetComponent<left_button_customize> ();
+			left_button = avatar.GetComponent<button2_for_customizing> ();
 		}
 
 	}

@@ -30,10 +30,6 @@ public class PlayCutscene : MonoBehaviour {
 		{
 			SceneManager.LoadScene ("options_menu");
 		}
-//		else if (Input.GetKeyDown (KeyCode.Space) && !movie.isPlaying) 
-//		{
-//			movie.Play ();
-//		}
 		if (!movie.isPlaying)
 		{
 			SceneManager.LoadScene ("options_menu");

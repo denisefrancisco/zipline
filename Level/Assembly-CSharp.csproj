@@ -50,12 +50,9 @@
      <Compile Include="Assets\Music\failure_build.cs" />
      <Compile Include="Assets\Scenes\Menu Scenes\Cutscene Video\PlayCutscene.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\SelectedPlayer.cs" />
-     <Compile Include="Assets\Scripts\Avatar\customization\boy\boy_button_disappear.cs" />
-     <Compile Include="Assets\Scripts\Avatar\customization\boy\left_button_customize.cs" />
-     <Compile Include="Assets\Scripts\Avatar\customization\boy\right_button_customize.cs" />
-     <Compile Include="Assets\Scripts\Avatar\customization\girl\button2_for_customizing.cs" />
-     <Compile Include="Assets\Scripts\Avatar\customization\girl\button_disappear.cs" />
-     <Compile Include="Assets\Scripts\Avatar\customization\girl\button_for_customizing.cs" />
+     <Compile Include="Assets\Scripts\Avatar\customization\button2_for_customizing.cs" />
+     <Compile Include="Assets\Scripts\Avatar\customization\button_disappear.cs" />
+     <Compile Include="Assets\Scripts\Avatar\customization\button_for_customizing.cs" />
      <Compile Include="Assets\Scripts\Avatar\customization\iPad specification\hoverActivation.cs" />
      <Compile Include="Assets\Scripts\Avatar\level action\animOnButton.cs" />
      <Compile Include="Assets\Scripts\Avatar\level action\removeBoxCollider.cs" />
