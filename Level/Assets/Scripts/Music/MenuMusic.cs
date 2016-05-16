@@ -5,8 +5,6 @@ using System.Collections.Generic;
 
 public class MenuMusic : MonoBehaviour {
 
-	//a boolean that starts a false when the menu music isn't playing
-	private bool audioBegin = false;
 	//music for the main menu
 	public AudioClip menuMusic;
 	private AudioSource musicSource;
@@ -33,10 +31,6 @@ public class MenuMusic : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-//		if (SceneManager.GetActiveScene().name == "map_level") {
-//			musicSource.Stop ();
-//			audioBegin = false;
-//		}
 		foreach (string x in levelList) {
 			if (SceneManager.GetActiveScene().name == x) {
 //				musicSource.Stop ();

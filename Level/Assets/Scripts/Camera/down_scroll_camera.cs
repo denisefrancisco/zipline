@@ -2,16 +2,14 @@
 using System.Collections;
 
 public class down_scroll_camera : MonoBehaviour {
-
-	//	public Transform farLeft;
-	//	public Transform farRight;
+	//these two transforms below are used to reference the boundaries of the level map
 	public Transform farUp;
 	public Transform farDown;
+
 	public Camera mainCamera;
 	private Vector3 current_pos;
 	// Use this for initialization
 	void Start () {
-//		mainCamera.transform.position = new Vector3(-3.8f,mainCamera.transform.position.y,mainCamera.transform.position.z);
 	}
 
 	void OnMouseDrag() {

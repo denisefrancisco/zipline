@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class SelectedPlayer : MonoBehaviour {
-
+	/* DESCRIPTION: This script is used to save the data of the "selected customizable avatar" and is transferred to the gameplay map
+	 * MODIFIED: May 14th, 2016
+	*/
 	private button2_for_customizing left_button;
 	private button_for_customizing right_button;
 	private button2_for_customizing left_button_girl;

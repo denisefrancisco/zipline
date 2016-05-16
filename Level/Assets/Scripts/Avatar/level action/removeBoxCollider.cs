@@ -20,7 +20,8 @@ public class removeBoxCollider : MonoBehaviour {
 		
 		
 	}
-
+	//as the avatar resets to the starting platform, the avatar resets his box collider to becoming a real collider
+	//as opposed to a trigger. 
 	public void resetBoxCollider() {
 		if (gameObject.activeSelf == true) {
 			Time.timeScale = 0.6f;
