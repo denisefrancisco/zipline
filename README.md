@@ -1,7 +1,10 @@
 # Lava Drop
 Created by Lili Borland, Denise Francisco, Anthony Muraco, Kaitlin Chan, and Elli Scharlin
+
 (Programmers: Denise Francisco, Lili Borland, and Elli Scharlin)
+
 for CIS 250 at Wesleyan University
+
 under the guidance of Christopher Weaver, founder of Bethesda Softworks.
 
 High concept: Based on the popular kids imagination game “The Floor is Lava” with a “Honey, I Shrunk the Kids” twist, Lava Drop is an escape-the-room, physics-based puzzle game for kids 8 years old and up. It introduces the STEM concepts of Newtonian physics, trigonometry, and engineering in the exciting context of zip line construction within a lava-filled house.
